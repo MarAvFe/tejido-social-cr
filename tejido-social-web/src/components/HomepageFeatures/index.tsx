@@ -5,48 +5,72 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  emoji: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Descentralizado',
+    emoji: '🌐',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Sin aprobación central. Cualquiera puede organizar una acción bajo los principios documentados. Inspirado en BDS global y Extinction Rebellion.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Documentado',
+    emoji: '📚',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Todo está escrito. Tutoriales, guías prácticas, explicaciones, y referencias. Una persona nueva puede leer la documentación y actuar sin pedir ayuda.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Causa-Neutral',
+    emoji: '⚖️',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Úsalo para clima, vivienda, derechos laborales, o cualquier causa. Forkea y adapta. Licencia CC0 (dominio público).
+      </>
+    ),
+  },
+  {
+    title: 'Principios Claros',
+    emoji: '✊',
+    description: (
+      <>
+        No-violencia, dignidad, horizontalidad, inclusión. Principios publicados que protegen el movimiento de malos actores y atribución falsa.
+      </>
+    ),
+  },
+  {
+    title: 'Niveles de Participación',
+    emoji: '📈',
+    description: (
+      <>
+        Un curriculum de participación. Observador → Participante → Miembro Activo → Coordinador → Formador. Cada persona elige su profundidad.
+      </>
+    ),
+  },
+  {
+    title: 'Organismos Autónomos',
+    emoji: '⚙️',
+    description: (
+      <>
+        8 áreas de trabajo especializadas (Acción, Seguridad, Medios, Educación, Política, Bienestar, Economía, Legal). Actúan independientemente, coordinan cuando necesitan.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, emoji, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <div style={{fontSize: '3rem', marginBottom: '1rem'}}>{emoji}</div>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

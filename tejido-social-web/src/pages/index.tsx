@@ -17,11 +17,20 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p style={{fontSize: '1.1rem', marginBottom: '2rem', maxWidth: '800px', margin: '1rem auto 2rem'}}>
+          Un marco documentado, abierto y neutral para que cualquier movimiento se organice efectivamente sin reinventar la rueda.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/intro"
+            style={{marginRight: '1rem'}}>
+            🧵 Comenzar Aquí
+          </Link>
+          <Link
+            className="button button--outline button--lg"
+            to="/docs/tutorials/primera-protesta">
+            📖 Tutoriales
           </Link>
         </div>
       </div>
@@ -33,8 +42,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title} — Organización Comunitaria Descentralizada`}
+      description="Un marco abierto para la organización comunitaria descentralizada. Documentación, guías prácticas, y recursos para movimientos sociales.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Tejido Social',
+  tagline: 'Un marco abierto para la organización comunitaria descentralizada',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://tejidosocial.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'tejido-social-cr', // Usually your GitHub org/user name.
+  projectName: 'tejido-social', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -75,9 +75,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Tejido Social',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Tejido Social Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -85,11 +85,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentación',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Actualizaciones', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/MarAvFe/tejido-social-cr',
           label: 'GitHub',
           position: 'right',
         },
@@ -99,46 +99,58 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentación',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introducción',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Principios',
+              to: '/docs/principios',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Niveles',
+              to: '/docs/niveles/observador',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Aprende',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Tutoriales',
+              to: '/docs/tutorials/primera-protesta',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Guías Prácticas',
+              to: '/docs/guias/como-organizar-protesta',
+            },
+            {
+              label: 'Explicaciones',
+              to: '/docs/explicacion/historia-tejido-social',
+            },
+          ],
+        },
+        {
+          title: 'Comunidad',
+          items: [
+            {
+              label: 'GitHub Issues',
+              href: 'https://github.com/MarAvFe/tejido-social-cr/issues',
+            },
+            {
+              label: 'Contribuir',
+              href: 'https://github.com/MarAvFe/tejido-social-cr/blob/main/CONTRIBUTING.md',
+            },
+            {
+              label: 'Licencia (CC0)',
+              href: 'https://creativecommons.org/publicdomain/zero/1.0/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Tejido Social. Dominio Público (CC0). Construido con Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
