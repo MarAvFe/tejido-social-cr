@@ -12,9 +12,9 @@ Este repositorio no pertenece a ningún movimiento específico. Es una plataform
 
 La mayoría de los movimientos sociales enfrentan los mismos problemas:
 
-- Gente nueva llega con energía pero no sabe qué hacer
+- Gente nueva llega con energía o indignada pero no sabe qué hacer
 - El conocimiento vive en la cabeza de pocas personas
-- No hay estructura clara de roles o progresión
+- No hay estructura clara de roles o progresión, se desmotivan
 - Los esfuerzos están fragmentados y no se coordinan
 - El agotamiento destruye a los organizadores más comprometidos
 
@@ -145,16 +145,6 @@ Cualquier movimiento o comunidad que:
 - **Práctico:** Primero lo que funciona, luego lo que suena bien
 - **Horizontal:** No hay dueños, hay mantenedores
 - **Sostenible:** El bienestar de las personas es parte del movimiento
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo licencia **CC0 1.0 Universal (Dominio Público)**.
-
-Podés copiar, modificar, distribuir y usar el contenido sin pedir permiso. Sin atribución requerida. Sin restricciones.
-
-Porque el conocimiento para organizarse debe ser libre.
 
 ---
 
