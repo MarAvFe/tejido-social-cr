@@ -1,5 +1,6 @@
 ---
 name: Nuevo Contenido
+about: Tengo una idea nueva
 description: Propongo agregar documentación nueva a Tejido Social
 title: "[CONTENIDO] "
 labels: ["content", "spanish"]

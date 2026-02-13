@@ -1,5 +1,6 @@
 ---
 name: Corrección de Contenido
+about: Algo anda mal con la página
 description: Reportar contenido incorrecto, desactualizado o poco claro
 title: "[CORRECCIÓN] "
 labels: ["fix", "content", "spanish"]
