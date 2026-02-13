@@ -411,3 +411,44 @@ how-to guide. A researcher needs reference. A curious newcomer needs
 explanation.
 
 Keep them separate. When writing any doc, ask: **what type is this?**
+
+## Language & Voice
+
+### Form of Address: Ustedeo
+This project uses **ustedeo** — the form of address standard in Costa Rica
+across all ages, social contexts, and relationships. Unlike other
+Spanish-speaking countries where "usted" feels formal or distant, in
+Costa Rica it carries warmth and respect simultaneously.
+
+Use **usted** instead of vos or tú.
+
+Examples:
+- ❌ "Si querés participar..."
+- ✅ "Si usted quiere participar..."
+
+- ❌ "Vos podés organizarte solo."
+- ✅ "Usted puede organizarse solo."
+
+- ❌ "¿Qué hacés cuando llega la policía?"
+- ✅ "¿Qué hace usted cuando llega la policía?"
+
+### Why ustedeo over voseo?
+- **Inclusive:** Works for all ages, backgrounds, and regions
+- **Warm but not exclusive:** Voseo can feel like "young urban activist"
+  language and alienate older allies or rural communities
+- **Authentically Costa Rican:** Ustedeo is used between friends,
+  family, couples — it does not imply distance
+- **Movement documents should welcome everyone** — not signal
+  membership in a specific subculture
+
+### When voseo is acceptable
+Informal content where the audience is clearly peers:
+- Chants
+- Social media captions
+- Internal chat messages
+
+### Tone
+- Direct and warm — like talking to someone you already trust
+- Not formal, not academic
+- Not condescending — assumes the reader is capable and intelligent
+- Imperative mood is natural: "Llegue temprano." "Lea el documento."

@@ -35,32 +35,32 @@ La mayoría de los movimientos sociales enfrentan los mismos problemas estructur
 
 ### Para Observadores y Nuevos
 
-¿Vienes por primera vez a una acción? Comienza aquí:
+¿Viene por primera vez a una acción? Comience aquí:
 
-1. Lee **[Principios del Movimiento](./principios.md)** — entiende qué representa este movimiento
-2. Ve a **[Observador - Nivel 0](./niveles/observador.md)** — qué esperar y cómo participar seguramente
-3. Consulta **[Preguntas Frecuentes](./recursos/preguntas-frecuentes.md)** — respuestas a dudas comunes
+1. Lea **[Principios del Movimiento](./principios.md)** — entienda qué representa este movimiento
+2. Vaya a **[Observador - Nivel 0](./niveles/observador.md)** — qué esperar y cómo participar seguramente
+3. Consulte **[Preguntas Frecuentes](./recursos/preguntas-frecuentes.md)** — respuestas a dudas comunes
 
 ### Para Participantes Regulares
 
-¿Ya has asistido a varias acciones? Es hora de ir más profundo:
+¿Ya ha asistido a varias acciones? Es hora de ir más profundo:
 
-1. Lee **[Participante - Nivel 1](./niveles/participante.md)** — protocolos, seguridad, qué traer
-2. Explora **[Organismos](./organismos)** — descubre dónde puedes contribuir más allá de asistir
-3. Elige un Organismo que resuene contigo y contacta a sus coordinadores
+1. Lea **[Participante - Nivel 1](./niveles/participante.md)** — protocolos, seguridad, qué traer
+2. Explore **[Organismos](./organismos)** — descubra dónde puede contribuir más allá de asistir
+3. Elija un Organismo que resuene con usted y contacte a sus coordinadores
 
 ### Para Miembros Activos
 
-¿Quieres contribuir regularmente? Aquí está tu camino:
+¿Quiere contribuir regularmente? Aquí está su camino:
 
-1. Lee **[Miembro Activo - Nivel 2](./niveles/miembro-activo.md)** — expectativas y recursos
-2. Revisa la documentación de tu **[Organismo elegido](./organismos)** — ver tools específicas y protocolos
-3. Contacta al coordinador del Organismo para integrarte
-4. Comienza a ejecutar acciones usando las guías prácticas
+1. Lea **[Miembro Activo - Nivel 2](./niveles/miembro-activo.md)** — expectativas y recursos
+2. Revise la documentación de su **[Organismo elegido](./organismos)** — ver tools específicas y protocolos
+3. Contacte al coordinador del Organismo para integrarse
+4. Comience a ejecutar acciones usando las guías prácticas
 
 ### Para Coordinadores
 
-¿Facilitas un Organismo o grupo de trabajo? Necesitas:
+¿Facilita un Organismo o grupo de trabajo? Necesita:
 
 1. **[Coordinador - Nivel 3](./niveles/coordinador.md)** — responsabilidades, facilitación, coordinación interorganismos
 2. Las **[Guías Prácticas](./guias)** — cómo hacer protestas, seguridad, medios, etc.
@@ -68,11 +68,11 @@ La mayoría de los movimientos sociales enfrentan los mismos problemas estructur
 
 ### Para Formadores y Multiplicadores
 
-¿Capacitas a otros o ayudas a nuevos grupos a adoptar este marco?
+¿Capacita a otros o ayuda a nuevos grupos a adoptar este marco?
 
-1. **[Formador - Nivel 4](./niveles/formador.md)** — tu rol y responsabilidades
+1. **[Formador - Nivel 4](./niveles/formador.md)** — su rol y responsabilidades
 2. Todos los guías prácticos y recursos para adaptar y enseñar
-3. Lee **PROJECT.md** en el repositorio para entender la arquitectura completa
+3. Lea **PROJECT.md** en el repositorio para entender la arquitectura completa
 
 ---
 
@@ -81,19 +81,19 @@ La mayoría de los movimientos sociales enfrentan los mismos problemas estructur
 Tejido Social funciona como un **currículum de participación**. No es binario (dentro/fuera). Es una progresión donde cada persona elige su profundidad de involucramiento:
 
 ### 🔵 Nivel 0: Observador
-Tu primera acción. Observa, aprende, decide si esto es para ti.
+Su primera acción. Observe, aprenda, decida si esto es para usted.
 
 ### 🟢 Nivel 1: Participante
-Vienes regularmente a acciones. Sabes qué esperar, proteges a otros, proteges el movimiento.
+Viene regularmente a acciones. Sabe qué esperar, protege a otros, protege el movimiento.
 
 ### 🟡 Nivel 2: Miembro Activo
-Elegiste un **Organismo** (área de trabajo). Contribuyes regularmente con tus habilidades.
+Eligió un **Organismo** (área de trabajo). Contribuye regularmente con sus habilidades.
 
 ### 🟠 Nivel 3: Coordinador
-Facilitas un Organismo. Haces que otros puedan hacer cosas. Enabler, no gatekeeper.
+Facilita un Organismo. Hace que otros puedan hacer cosas. Enabler, no gatekeeper.
 
 ### 🔴 Nivel 4: Formador
-Capacitas a otros. Ayudas a nuevos movimientos a adoptar esta arquitectura. Eres un multiplicador.
+Capacita a otros. Ayuda a nuevos movimientos a adoptar esta arquitectura. Es un multiplicador.
 
 **→ Más detalles en cada página de Nivel (ver menú izquierdo bajo "Niveles")**
 
@@ -118,20 +118,20 @@ Cada Organismo es un equipo autónomo enfocado en un área específica. Operan i
 
 ## Guías Prácticas
 
-¿Necesitas hacer algo específico? Estas guías te dicen exactamente cómo hacerlo:
+¿Necesita hacer algo específico? Estas guías le dicen exactamente cómo hacerlo:
 
 - **[Cómo Organizar una Protesta](./guias/como-organizar-protesta.md)** — paso a paso
 - **[Seguridad en Protestas](./guias/seguridad-en-protestas.md)** — qué hacer si pasa algo
-- **[Derechos Legales](./guias/derechos-legales.md)** — conoce tus derechos
+- **[Derechos Legales](./guias/derechos-legales.md)** — conozca sus derechos
 - **[Manejo de Redes Sociales](./guias/manejo-redes-sociales.md)** — estrategia y táctica
 - **[Cómo Hablar con los Medios](./guias/como-hablar-con-medios.md)** — media training básico
-- **[Prevención del Agotamiento](./guias/prevencion-agotamiento.md)** — cuida tu bienestar
+- **[Prevención del Agotamiento](./guias/prevencion-agotamiento.md)** — cuide su bienestar
 
 ---
 
 ## Recursos Listos para Usar
 
-No tienes que crear todo desde cero. Aquí hay plantillas y materiales:
+No tiene que crear todo desde cero. Aquí hay plantillas y materiales:
 
 - **[Cánticos](./recursos/canticos.md)** — repertorio de cánticos probados
 - **[Plantillas de Pancartas](./recursos/plantillas-pancartas.md)** — frases, diseños, ideas
@@ -163,21 +163,21 @@ La participación es un currículum. Las personas avanzan naturalmente según in
 
 ## Cómo Empezar Ahora
 
-### 1. Entiende la Causa
-Lee **[Principios del Movimiento](./principios.md)**
+### 1. Entienda la Causa
+Lea **[Principios del Movimiento](./principios.md)**
 
-### 2. Encuentra tu Nivel Actual
+### 2. Encuentre su Nivel Actual
 - ¿Primera vez? → **[Observador](./niveles/observador.md)**
-- ¿Vienes regularmente? → **[Participante](./niveles/participante.md)**
-- ¿Quieres contribuir profundamente? → **[Miembro Activo](./niveles/miembro-activo.md)**
+- ¿Viene regularmente? → **[Participante](./niveles/participante.md)**
+- ¿Quiere contribuir profundamente? → **[Miembro Activo](./niveles/miembro-activo.md)**
 
-### 3. Elige un Organismo (si eres Miembro Activo)
-Revisa **[Organismos](./organismos)** y ve cuál resuena con tus habilidades e intereses.
+### 3. Elija un Organismo (si es Miembro Activo)
+Revise **[Organismos](./organismos)** y vea cuál resuena con sus habilidades e intereses.
 
-### 4. Consulta las Guías Prácticas Relevantes
-Si necesitas saber *cómo* hacer algo específico, ve a **[Guías](./guias)**.
+### 4. Consulte las Guías Prácticas Relevantes
+Si necesita saber *cómo* hacer algo específico, vaya a **[Guías](./guias)**.
 
-### 5. Usa los Recursos
+### 5. Use los Recursos
 Cánticos, plantillas, respuestas a preguntas — todo en **[Recursos](./recursos)**.
 
 ---
@@ -188,10 +188,10 @@ Cánticos, plantillas, respuestas a preguntas — todo en **[Recursos](./recurso
 No. Tejido Social es cause-neutral. Cualquier movimiento puede forkearlo y adaptarlo. Esta versión fue creada para activismo por Palestina en Costa Rica, pero la arquitectura funciona para clima, vivienda, derechos laborales, o cualquier causa.
 
 **¿Es un sitio de noticias o redes sociales?**
-No. Es documentación y guías. Las redes sociales (Instagram, WhatsApp) son donde haces anuncios. Aquí es donde la gente aprende *cómo* organizarse.
+No. Es documentación y guías. Las redes sociales (Instagram, WhatsApp) son donde hace anuncios. Aquí es donde la gente aprende *cómo* organizarse.
 
 **¿Necesito experiencia previa?**
-No. Esta documentación está diseñada para principiantes completos. Si has asistido a una protesta, puedes leer esto.
+No. Esta documentación está diseñada para principiantes completos. Si ha asistido a una protesta, puede leer esto.
 
 **¿Cuánto tiempo toma?**
 Depende. Un Observador puede leer su sección en 10 minutos. Un Participante regular debería gastar 30-60 minutos. Un Coordinador debería leer todo (1-2 horas).
@@ -203,11 +203,11 @@ Sí. Ver **CONTRIBUTING.md** en el repositorio. Todo es open-source bajo CC0 (do
 
 ## Siguientes Pasos
 
-Basado en tu situación:
+Basado en su situación:
 
-- **Soy completamente nuevo** → Lee **[Observador](./niveles/observador.md)**
-- **Ya he ido a acciones** → Lee **[Participante](./niveles/participante.md)** y elige un **[Organismo](./organismos)**
-- **Estoy dirigiendo un grupo** → Lee **[Coordinador](./niveles/coordinador.md)**
-- **Quiero entrenar a otros** → Lee **[Formador](./niveles/formador.md)**
+- **Soy completamente nuevo** → Lea **[Observador](./niveles/observador.md)**
+- **Ya he ido a acciones** → Lea **[Participante](./niveles/participante.md)** y elija un **[Organismo](./organismos)**
+- **Estoy dirigiendo un grupo** → Lea **[Coordinador](./niveles/coordinador.md)**
+- **Quiero entrenar a otros** → Lea **[Formador](./niveles/formador.md)**
 
 ¡Bienvenido a Tejido Social! 🧵

@@ -1,10 +1,10 @@
-# Cómo Unirte a un Organismo
+# Cómo Unirse a un Organismo
 
 ## Introducción
 
-Ya has ido a acciones y experimentado en redes. Ahora quieres profundizar — elegir un área donde contribuir regularmente. Esta lección te enseña cómo encontrar tu Organismo (grupo de trabajo), conocer a la gente, y empezar a contribuir.
+Ya ha ido a acciones y ha experimentado en redes. Ahora quiere profundizar — elegir un área donde contribuir regularmente. Esta lección le enseña cómo encontrar su Organismo (grupo de trabajo), conocer a la gente, y empezar a contribuir.
 
-Al final, habrás elegido un Organismo y comenzado tu primera contribución pequeña.
+Al final, habrá elegido un Organismo y comenzado su primera contribución pequeña.
 
 ---
 
@@ -31,45 +31,45 @@ Cada Organismo:
 
 ---
 
-## Paso 1: Descubre Dónde Encajas
+## Paso 1: Descubra Dónde Encaja
 
-### Ejercicio: Tus Fortalezas y Pasiones
-Haz una lista rápida:
+### Ejercicio: Sus Fortalezas y Pasiones
+Haga una lista rápida:
 
 **Pregunta 1: ¿Qué hago bien?**
-- Hablar/comunicar?
-- Diseñar/crear visualmente?
-- Enseñar/explicar?
-- Entender números/analizar?
-- Primeros auxilios/cuidar gente?
-- Escribir?
-- Organizar/coordinación?
+- Hablar/comunicar
+- Diseñar/crear visualmente
+- Enseñar/explicar
+- Entender números/analizar
+- Primeros auxilios/cuidar gente
+- Escribir
+- Organizar/coordinación
 
 **Pregunta 2: ¿Qué me apasiona?**
-- ¿Qué tipo de trabajo siento que es importante?
-- ¿Qué despierta mi energía?
-- ¿Dónde creo que puedo tener impacto?
+- ¿Qué tipo de trabajo siente que es importante?
+- ¿Qué despierta su energía?
+- ¿Dónde cree que puede tener impacto?
 
-**Pregunta 3: ¿Cuánto tiempo tengo?**
+**Pregunta 3: ¿Cuánto tiempo tiene?**
 - ¿2-3 horas por semana?
 - ¿5-10 horas por semana?
 - ¿Más de 10 horas?
 
-### Ejemplo 1: Eres Bueno en Diseño y Tienes Pasión por Comunicación
+### Ejemplo 1: Es Bueno en Diseño y Tiene Pasión por Comunicación
 → **Medios y Comunicación**
 
-### Ejemplo 2: Te Interesan los Derechos y Tienes Background Legal
+### Ejemplo 2: Le Interesan los Derechos y Tiene Background Legal
 → **Apoyo Legal**
 
-### Ejemplo 3: Te Importa el Bienestar Mental y Eres Empático
+### Ejemplo 3: Le Importa el Bienestar Mental y Es Empático
 → **Bienestar**
 
 ---
 
-## Paso 2: Investiga Los Organismos
+## Paso 2: Investigue Los Organismos
 
-### Opción A: Lee Los Documentos
-Cada Organismo tiene una página. Lee la que te interesa:
+### Opción A: Lea Los Documentos
+Cada Organismo tiene una página. Lea la que le interesa:
 - **[Acción Callejera](../organismos/accion-callejera.md)**
 - **[Seguridad y Cuidado](../organismos/seguridad-cuidado.md)**
 - **[Medios y Comunicación](../organismos/medios-comunicacion.md)**
@@ -79,88 +79,88 @@ Cada Organismo tiene una página. Lee la que te interesa:
 - **[Economía Solidaria](../organismos/economia-solidaria.md)**
 - **[Apoyo Legal](../organismos/apoyo-legal.md)**
 
-Busca:
+Busque:
 - ¿Qué actividades específicas hacen?
 - ¿Qué habilidades necesitan?
 - ¿Cómo se reúnen?
 
-### Opción B: Ve a una Reunión
-Pide a alguien que conozcas que te lleve a una reunión de Organismo. Son públicas — puedes ir como observador.
+### Opción B: Vaya a una Reunión
+Pídale a alguien que conozca que lo lleve a una reunión de Organismo. Son públicas — puede ir como observador.
 
 En la reunión:
-- Observa la dinámica
-- Escucha qué problemas enfrentan
-- Pregunta a la gente después: "¿Cómo empezaste aquí?"
+- Observe la dinámica
+- Escuche qué problemas enfrentan
+- Pregúntele a la gente después: "¿Cómo empezó usted aquí?"
 
-### Opción C: Conecta con Un Coordinador
-Cada Organismo tiene un coordinador. Pide que alguien te presente.
+### Opción C: Conéctese con Un Coordinador
+Cada Organismo tiene un coordinador. Pídale que alguien lo presente.
 
-Puedes decir:
+Puede decir:
 - "Me interesa contribuir en [Organismo]. ¿Hay alguien coordinando?"
 - "¿Cuál es el mejor momento para venir a observar?"
 
 ---
 
-## Paso 3: Haz tu Primer Aporte Pequeño
+## Paso 3: Haga Su Primer Aporte Pequeño
 
-No esperes a ser "lo suficientemente bueno." Empieza pequeño.
+No espere a ser "lo suficientemente bueno." Empiece pequeño.
 
 ### Para Acción Callejera
 **Pequeño aporte:**
-- Asiste a una reunión de planificación
-- Ayuda a repartir información sobre la próxima protesta
-- Trae snacks para la reunión
+- Asista a una reunión de planificación
+- Ayude a repartir información sobre la próxima protesta
+- Traiga snacks para la reunión
 
 ### Para Seguridad y Cuidado
 **Pequeño aporte:**
-- Toma una capacitación de primeros auxilios básicos
-- Asiste a una acción y observa el equipo de seguridad
-- Aprende qué observar y reporta a los coordinadores
+- Tome una capacitación de primeros auxilios básicos
+- Asista a una acción y observe el equipo de seguridad
+- Aprenda qué observar y reporte a los coordinadores
 
 ### Para Medios y Comunicación
 **Pequeño aporte:**
-- Toma fotos en la próxima acción
-- Edita una foto simple (recortar, ajustar brillo)
-- Escribe una descripción para un post
+- Tome fotos en la próxima acción
+- Edite una foto simple (recortar, ajustar brillo)
+- Escriba una descripción para un post
 
 ### Para Educación
 **Pequeño aporte:**
-- Enseña algo que ya sabes (20 minutos)
-- Ayuda a preparar materiales de un taller
-- Traduce un documento importante
+- Enseñe algo que ya sabe (20 minutos)
+- Ayude a preparar materiales de un taller
+- Traduzca un documento importante
 
 ### Para Presión Política
 **Pequeño aporte:**
-- Firma y comparte una petición
-- Investigas un contacto de legislador
-- Escribes un email a un diputado
+- Firme y comparta una petición
+- Investigue un contacto de legislador
+- Escriba un email a un diputado
 
 ### Para Bienestar
 **Pequeño aporte:**
-- Organiza un círculo de descompresión
-- Crea una playlist para la próxima acción
-- Propón un evento cultural
+- Organice un círculo de descompresión
+- Cree una playlist para la próxima acción
+- Proponga un evento cultural
 
 ### Para Economía Solidaria
 **Pequeño aporte:**
-- Investigas cooperativas locales
-- Creas un mapa de empresas a boicotear
-- Escribes educativo sobre economía solidaria
+- Investigue cooperativas locales
+- Cree un mapa de empresas a boicotear
+- Escriba educativo sobre economía solidaria
 
 ### Para Apoyo Legal
 **Pequeño aporte:**
-- Toma capacitación de "Know Your Rights"
-- Documentas violaciones en una acción
-- Distribuyes tarjetas de derechos legales
+- Tome capacitación de "Know Your Rights"
+- Documente violaciones en una acción
+- Distribuya tarjetas de derechos legales
 
 ---
 
-## Paso 4: Crecer en Tu Organismo
+## Paso 4: Crezca en Su Organismo
 
-Una vez que empezaste, hay un camino claro:
+Una vez que empezó, hay un camino claro:
 
 ### Mes 1-2: Observador Dentro del Organismo
-- Asistes a reuniones
+- Asiste a reuniones
 - Haces aportes pequeños
 - Entiendes la dinámica
 - Haces amigos
@@ -181,12 +181,12 @@ Una vez que empezaste, hay un camino claro:
 
 ## Paso 5: Integración Horizontal
 
-Recuerda: Los Organismos son **horizontales**. Esto significa:
+Recuerde: Los Organismos son **horizontales**. Esto significa:
 
 ✅ **Lo Que Significa:**
-- Tu voz cuenta tanto como la del coordinador
+- Su voz cuenta tanto como la del coordinador
 - Las decisiones se toman juntos
-- Puedes cuestionar decisiones
+- Puede cuestionar decisiones
 - No hay "jefes" permanentes
 
 ❌ **Lo Que NO Significa:**
@@ -194,25 +194,25 @@ Recuerda: Los Organismos son **horizontales**. Esto significa:
 - Sin estructura — hay roles claros
 - Sin responsabilidad — hay expectativas
 
-**Tu responsabilidad como nuevo miembro:**
-1. Entiende qué está haciendo el Organismo
-2. Haz lo que prometiste hacer
-3. Comunica si no puedes hacerlo
-4. Respeta a los demás
-5. Aporta en las decisiones
+**Su responsabilidad como nuevo miembro:**
+1. Entienda qué está haciendo el Organismo
+2. Haga lo que prometió hacer
+3. Comunique si no puede hacerlo
+4. Respete a los demás
+5. Aporte en las decisiones
 
 ---
 
-## Señales de Que Encontraste el Organismo Correcto
+## Señales de Que Encontró el Organismo Correcto
 
-✅ Te levantás con energía para ir a la reunión
-✅ Entiendes por qué el trabajo importa
+✅ Se levanta con energía para ir a la reunión
+✅ Entiende por qué el trabajo importa
 ✅ Las personas son amigables y acogedoras
-✅ Tu aporte es valorado
-✅ Aprendes cosas nuevas
-✅ Sientes que perteneces a algo
+✅ Su aporte es valorado
+✅ Aprende cosas nuevas
+✅ Siente que pertenece a algo
 
-Si no sientes esto después de 1 mes, **prueba otro Organismo.** No hay penalidad. Todos pasamos por esto.
+Si no siente esto después de 1 mes, **pruebe otro Organismo.** No hay penalidad. Todos pasamos por esto.
 
 ---
 
@@ -222,29 +222,29 @@ Si no sientes esto después de 1 mes, **prueba otro Organismo.** No hay penalida
 No. Cada Organismo capacita a sus miembros. La gana y el aprendizaje importan más que la experiencia.
 
 **¿Puedo estar en múltiples Organismos?**
-Sí, pero empieza con uno. Dos máximo. Si intentas hacer todo, quemas.
+Sí, pero empiece con uno. Dos máximo. Si intenta hacer todo, se quema.
 
 **¿Qué pasa si cometo un error?**
-Cuenta. Aprendes. Los errores son cómo nos desarrollamos. Si es importante, se aborda; si es pequeño, se sigue adelante.
+Cuenta. Aprende. Los errores son cómo nos desarrollamos. Si es importante, se aborda; si es pequeño, se sigue adelante.
 
 **¿Cuáles son los compromisos de tiempo?**
-Varía. Acción Callejera puede ser 10+ horas antes de una protesta. Medios puede ser 2-3 horas de curación semanal. Pregunta a tu Organismo específico.
+Varía. Acción Callejera puede ser 10+ horas antes de una protesta. Medios puede ser 2-3 horas de curación semanal. Pregúntele a su Organismo específico.
 
 **¿Qué pasa si mi trabajo cambia y no tengo tiempo?**
-Dile a tu coordinador. El movimiento es voluntario. Si necesitas parar, está bien. Puedes volver cuando tengas capacidad.
+Dígale a su coordinador. El movimiento es voluntario. Si necesita parar, está bien. Puede volver cuando tenga capacidad.
 
 **¿Hay dinero involucrado?**
-No se espera que pagues. Si hay fondos compartidos (para materiales, etc.), se decide colectivamente.
+No se espera que pague. Si hay fondos compartidos (para materiales, etc.), se decide colectivamente.
 
 ---
 
 ## Próximos Pasos
 
-1. **Elige 1-2 Organismos que te llamen**
-2. **Lee su página en detalle**
-3. **Pide a alguien que te presente al coordinador**
-4. **Asiste a una reunión como observador**
-5. **Haz tu primer pequeño aporte**
+1. **Elija 1-2 Organismos que le llamen**
+2. **Lea su página en detalle**
+3. **Pídale a alguien que lo presente al coordinador**
+4. **Asista a una reunión como observador**
+5. **Haga su primer pequeño aporte**
 
 ---
 
@@ -259,4 +259,4 @@ No se espera que pagues. Si hay fondos compartidos (para materiales, etc.), se d
 - **[Economía Solidaria](../organismos/economia-solidaria.md)** — Construye alternativas
 - **[Apoyo Legal](../organismos/apoyo-legal.md)** — Protege legalmente
 
-¡Bienvenido a tu primer Organismo! 🧵
+¡Bienvenido a su primer Organismo! 🧵
