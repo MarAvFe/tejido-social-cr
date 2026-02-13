@@ -166,6 +166,6 @@ Con principios:
 
 ## Próximos Pasos
 
-- Lee **[Principios del Movimiento](../referencia/principios.md)** para ver un conjunto completo de principios documentados
+- Lee **[Principios del Movimiento](../principios.md)** para ver un conjunto completo de principios documentados
 - Lee **[Historia de Tejido Social](./historia-tejido-social.md)** para entender por qué fue necesario documentar estos principios
 - Lee **[Modelos de Referencia](./modelos-de-referencia.md)** para ver cómo otros movimientos usan principios publicados

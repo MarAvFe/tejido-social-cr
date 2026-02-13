@@ -63,7 +63,7 @@ La mayoría de los movimientos sociales enfrentan los mismos problemas estructur
 ¿Facilita un Organismo o grupo de trabajo? Necesita:
 
 1. **[Coordinador - Nivel 3](./niveles/coordinador.md)** — responsabilidades, facilitación, coordinación interorganismos
-2. Las **[Guías Prácticas](./guias)** — cómo hacer protestas, seguridad, medios, etc.
+2. Las **[Guías Prácticas](./guias/como-organizar-protesta.md)** — cómo hacer protestas, seguridad, medios, etc.
 3. **[Recursos Listos para Usar](./recursos)** — plantillas, cánticos, FAQs
 
 ### Para Formadores y Multiplicadores

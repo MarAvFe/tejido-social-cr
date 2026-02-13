@@ -239,4 +239,4 @@ La opción B es más inteligente.
 
 - Lee **[Historia de Tejido Social](./historia-tejido-social.md)** para entender cómo fue creado
 - Lee **[Economía Solidaria](./economia-solidaria.md)** para profundizar en un modelo específico
-- Lee **[Principios](../referencia/principios.md)** para entender qué principios sostenemos
+- Lee **[Principios](../principios.md)** para entender qué principios sostenemos

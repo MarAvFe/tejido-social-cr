@@ -11,7 +11,7 @@ Al final de esta lección, habrá experimentado su primera protesta y sabrá si 
 ## Antes de la Protesta (1-2 días antes)
 
 ### 1. Entienda Por Qué
-Antes de ir, lea **[Principios del Movimiento](../referencia/principios.md)** en 10 minutos. No necesita estar de acuerdo con todo — solo necesita entender qué defiende el movimiento y aceptar sus líneas rojas (no violencia, respeto mutuo, etc.).
+Antes de ir, lea **[Principios del Movimiento](../principios.md)** en 10 minutos. No necesita estar de acuerdo con todo — solo necesita entender qué defiende el movimiento y aceptar sus líneas rojas (no violencia, respeto mutuo, etc.).
 
 ### 2. Averigüe Cuándo y Dónde
 - Busque en Instagram o grupos de WhatsApp del movimiento
@@ -129,7 +129,7 @@ Una, dos, tres —
 ¡Palestina será!
 ```
 
-Ver **[Cánticos Completos](../referencia/canticos.md)** para más.
+Ver **[Cánticos Completos](../recursos/canticos.md)** para más.
 
 ---
 
@@ -152,9 +152,9 @@ Piense sobre:
 
 **Si no quiere volver:** Está bien. No todos son activistas. Pero ahora entiende qué hace el movimiento. Puede apoyar de otras formas.
 
-**Si quiere volver:** ¡Excelente! Lea **[Participante - Nivel 1](../referencia/roles-y-niveles.md#nivel-1-participante)** para entender qué es lo siguiente.
+**Si quiere volver:** ¡Excelente! Lea **[Participante - Nivel 1](../niveles/participante.md)** para entender qué es lo siguiente.
 
-**Si quiere contribuir más allá de asistir:** Lea **[Miembro Activo - Nivel 2](../referencia/roles-y-niveles.md#nivel-2-miembro-activo)** y elija un **[Organismo](../organismos)**.
+**Si quiere contribuir más allá de asistir:** Lea **[Miembro Activo - Nivel 2](../niveles/miembro-activo.md)** y elija un **[Organismo](../organismos)**.
 
 ---
 

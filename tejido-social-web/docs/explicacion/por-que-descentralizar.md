@@ -146,5 +146,5 @@ Esto significa que Tejido Social puede escalar sin crecer un equipo central. Por
 ## Próximos Pasos
 
 - Lee **[Modelos de Referencia](./modelos-de-referencia.md)** para ver otros ejemplos de descentralización que funcionan
-- Lee **[Principios](../referencia/principios.md)** para entender qué valores sostenemos descentralizadamente
+- Lee **[Principios](../principios.md)** para entender qué valores sostenemos descentralizadamente
 - Lee **[Por Qué Principios Escritos](./por-que-principios-escritos.md)** para entender la herramienta que hace posible la descentralización
