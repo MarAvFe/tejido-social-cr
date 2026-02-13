@@ -11,6 +11,8 @@ He estado involucrado en protestas pro-Palestina durante poco más de 4 meses. Y
 
 Una de las más críticas: **no tenemos documentación como marco para distribuir conocimiento**.
 
+<!-- truncate -->
+
 ## El Problema
 
 Cada acción que hacemos, aprendemos algo nuevo. Alguien resuelve un problema de coordinación. Alguien descubre una mejor forma de comunicarse con los medios. Un compañero comparte un protocolo de seguridad que funciona.

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Tejido Social',
-  tagline: 'Un marco abierto para la organización comunitaria descentralizada',
+  title: 'Tejido Social CR',
+  tagline: 'No estás sol@. Y no tenés que esperar a nadie para actuar.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'tejido-social-cr', // Usually your GitHub org/user name.
-  projectName: 'tejido-social', // Usually your repo name.
+  projectName: 'tejido-social-cr', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 

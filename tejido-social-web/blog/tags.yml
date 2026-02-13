@@ -17,3 +17,22 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+palestina:
+  label: Palestina
+  permalink: /palestina
+  description: Contenido relacionado a Palestina
+
+organización:
+  label: Organización
+  permalink: /organizacion
+  description: Estrategias y prácticas de organización comunitaria
+
+documentación:
+  label: Documentación
+  permalink: /documentacion
+  description: Sobre la importancia de documentar procesos y conocimiento
+
+latinoamérica:
+  label: Latinoamérica
+  permalink: /latinoamerica
+  description: Contexto y movimientos en Latinoamérica

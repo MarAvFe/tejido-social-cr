@@ -17,9 +17,6 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p style={{fontSize: '1.1rem', marginBottom: '2rem', maxWidth: '800px', margin: '1rem auto 2rem'}}>
-          Un marco documentado, abierto y neutral para que cualquier movimiento se organice efectivamente sin reinventar la rueda.
-        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
