@@ -34,7 +34,7 @@ No necesita ser diseñador, influencer, o tener 10,000 seguidores. Cualquiera pu
 No hay "respuesta correcta". Algunos activistas son públicos. Otros usan cuentas anónimas. Su seguridad primero.
 
 ### 2. Entienda las Líneas Rojas
-Lea **[Principios del Movimiento](../referencia/principios.md)** especialmente la sección "Lo Que NO Hacemos."
+Lea **[Principios del Movimiento](../principios.md)** especialmente la sección "Lo Que NO Hacemos."
 
 En redes sociales, esto significa:
 - ❌ No ataque personalmente a opositores
@@ -212,7 +212,7 @@ Sea cauteloso con gente nueva. Verifique que sea real.
 5. **Celebración:** Ganamos algo, felicidad compartida
 
 ### Plantillas Para Usar
-Ver **[Plantillas de Pancartas](../referencia/plantillas-pancartas.md)** para frases que puede adaptar a imágenes.
+Ver **[Plantillas de Pancartas](../recursos/plantillas-pancartas.md)** para frases que puede adaptar a imágenes.
 
 ---
 
@@ -242,7 +242,7 @@ Ver **[Plantillas de Pancartas](../referencia/plantillas-pancartas.md)** para fr
 ## Próximos Pasos
 
 ### Si Quiere Profundizar en Medios y Redes
-Lea **[Manejo de Redes Sociales](../guias/crear-contenido-redes.md)** para estrategia más avanzada.
+Lea **[Manejo de Redes Sociales](../guias/manejo-redes-sociales.md)** para estrategia más avanzada.
 
 ### Si Quiere Unirse al Organismo de Medios
 Lea **[Medios y Comunicación](../organismos/medios-comunicacion.md)** y contacte al coordinador.
@@ -254,6 +254,6 @@ Próximo tutorial: **[Cómo Unirse a un Organismo](./unirse-a-un-organismo.md)**
 
 ## Recursos
 
-- **[Plantillas de Pancartas](../referencia/plantillas-pancartas.md)** — Frases para adaptar
-- **[Cánticos](../referencia/canticos.md)** — Texto de cánticos para compartir
-- **[Glosario](../referencia/glosario.md)** — Términos a explicar
+- **[Plantillas de Pancartas](../recursos/plantillas-pancartas.md)** — Frases para adaptar
+- **[Cánticos](../recursos/canticos.md)** — Texto de cánticos para compartir
+- **[Glosario](../recursos/glosario.md)** — Términos a explicar

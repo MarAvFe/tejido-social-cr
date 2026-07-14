@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://tejidosocial.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/demo/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -69,6 +69,14 @@ const config: Config = {
   ],
 
   themeConfig: {
+    announcementBar: {
+      id: 'demo_not_official',
+      content:
+        'Este es un sitio de demostración del marco Tejido Social. No es contenido oficial de Frente Amplio.',
+      backgroundColor: '#2e8555',
+      textColor: '#ffffff',
+      isCloseable: false,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
