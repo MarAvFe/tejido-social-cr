@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     emoji: '🌐',
     description: (
       <>
-        Sin aprobación central. Actúa bajo los principios documentados.
+        Sin aprobación central. Cualquiera puede organizar una acción bajo los principios documentados. Inspirado en BDS global y Extinction Rebellion.
       </>
     ),
   },
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     emoji: '📚',
     description: (
       <>
-        Todo está escrito. Lee, aprende, actúa.
+        Todo está escrito. Tutoriales, guías prácticas, explicaciones, y referencias. Una persona nueva puede leer la documentación y actuar sin pedir ayuda.
       </>
     ),
   },
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     emoji: '⚖️',
     description: (
       <>
-        Para cualquier movimiento. Forkea y adapta.
+        Úsalo para clima, vivienda, derechos laborales, o cualquier causa. Forkea y adapta. Licencia CC0 (dominio público).
       </>
     ),
   },
@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
     emoji: '✊',
     description: (
       <>
-        No-violencia, dignidad, horizontalidad, inclusión.
+        No-violencia, dignidad, horizontalidad, inclusión. Principios publicados que protegen el movimiento de malos actores y atribución falsa.
       </>
     ),
   },
@@ -51,7 +51,7 @@ const FeatureList: FeatureItem[] = [
     emoji: '📈',
     description: (
       <>
-        Observador → Participante → Activo → Coordinador → Formador.
+        Un curriculum de participación. Observador → Participante → Miembro Activo → Coordinador → Formador. Cada persona elige su profundidad.
       </>
     ),
   },
@@ -60,7 +60,7 @@ const FeatureList: FeatureItem[] = [
     emoji: '⚙️',
     description: (
       <>
-        8 áreas de trabajo. Actúan independientes, coordinan cuando necesitan.
+        8 áreas de trabajo especializadas (Acción, Seguridad, Medios, Educación, Política, Bienestar, Economía, Legal). Actúan independientemente, coordinan cuando necesitan.
       </>
     ),
   },
