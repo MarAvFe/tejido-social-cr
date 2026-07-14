@@ -24,9 +24,13 @@ La solicitud de conformación se presenta ante el Comité Ejecutivo Cantonal (CE
 
 La Presidencia debe convocar al menos una reunión por bimestre (cada dos meses).
 
-## ¿Puedo unirme si ya está conformado el comité?
+## ¿Cómo me afilio al partido?
 
-Sí. Cualquier persona afiliada con domicilio electoral en el distrito puede solicitar su inclusión mediante solicitud firmada dirigida al comité y al CEC. Ver [Cómo afiliarse y sumarse a un comité distrital](../tutorials/unirse-a-un-organismo.md).
+Directamente en [frenteamplio.org/afiliate](https://www.frenteamplio.org/afiliate/). Ver [Cómo Afiliarse al Frente Amplio](../tutorials/unirse-a-un-organismo.md).
+
+## ¿Puedo unirme al comité si ya está conformado?
+
+Sí, una vez afiliado. Cualquier persona afiliada con domicilio electoral en el distrito puede solicitar su inclusión mediante solicitud firmada dirigida al comité y al CEC.
 
 ## ¿Qué pasa si Presidencia o Secretaría renuncian?
 

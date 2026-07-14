@@ -18,8 +18,10 @@ docs/
 │   transparencia y diálogo, inclusión y equidad, cuidado de la vida y el territorio. — U
 │
 ├── tutorials/                                         « TUTORIALES — aprender haciendo »
+│   ├── index.md                                       [NUEVO · Media] [x] HECHO
 │   └── unirse-a-un-organismo.md                       [REUSE · Alta] [x] HECHO
-│       Primer lección guiada: de afiliado a solicitar inclusión en el padrón del comité. — D, U
+│       "Cómo Afiliarse al Frente Amplio" — redirige al proceso oficial
+│       (frenteamplio.org/afiliate), documenta antes/después y enlaza a niveles y comité. — D, U
 │       (primera-accion-digital.md y primera-protesta.md ELIMINADOS: eran stubs sin
 │       contenido y sin respaldo en las fuentes — las ideas se conservan en el demo.)
 │

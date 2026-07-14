@@ -12,7 +12,7 @@ Para cualquier persona afiliada (o interesada en afiliarse) que quiera entender 
 
 ## Por dónde empezar
 
-- **¿Nueva por aquí?** Vea [Cómo afiliarse y sumarse a un comité distrital](./tutorials/unirse-a-un-organismo.md).
+- **¿Nueva por aquí?** Vea [Cómo Afiliarse al Frente Amplio](./tutorials/unirse-a-un-organismo.md).
 - **¿Quiere entender la estructura?** Vea [Organismos](./organismos/index.md) y [Niveles de Participación](./niveles/index.md).
 - **¿Quiere formar un comité en su distrito?** Vea [Cómo conformar un comité distrital](./guias/conformar-comite-distrital.md).
 

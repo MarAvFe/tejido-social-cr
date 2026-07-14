@@ -17,4 +17,4 @@ El espectro de participación en el Frente Amplio, desde simpatizante hasta coor
 
 ## Cómo avanzar de nivel
 
-Cada página de nivel indica el siguiente paso concreto para avanzar. El camino documentado con más detalle es del 1 al 4 — ver [Cómo afiliarse y sumarse a un comité distrital](../tutorials/unirse-a-un-organismo.md) para empezar.
+Cada página de nivel indica el siguiente paso concreto para avanzar. El camino documentado con más detalle es del 1 al 4 — ver [Cómo Afiliarse al Frente Amplio](../tutorials/unirse-a-un-organismo.md) para empezar.

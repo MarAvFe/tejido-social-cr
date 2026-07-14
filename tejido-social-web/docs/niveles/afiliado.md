@@ -4,7 +4,7 @@ Persona formalmente afiliada al Frente Amplio, con domicilio electoral en un dis
 
 ## Qué implica
 
-La afiliación es el requisito para poder integrar el comité del distrito correspondiente al domicilio electoral de la persona. Ver [Cómo afiliarse y sumarse a un comité distrital](../tutorials/unirse-a-un-organismo.md).
+La afiliación es el requisito para poder integrar el comité del distrito correspondiente al domicilio electoral de la persona. Ver [Cómo afiliarse al Frente Amplio](../tutorials/unirse-a-un-organismo.md).
 
 ## Siguiente paso
 
