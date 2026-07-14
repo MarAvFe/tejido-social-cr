@@ -1,0 +1,37 @@
+/**
+ * Global styles. Infima variable overrides for Frente Amplio branding.
+ * Brand: yellow #ffde2d, black #000000.
+ */
+
+:root {
+  --ifm-color-primary: #ffde2d;
+  --ifm-color-primary-dark: #ffd804;
+  --ifm-color-primary-darker: #f5cd00;
+  --ifm-color-primary-darkest: #cba900;
+  --ifm-color-primary-light: #ffe456;
+  --ifm-color-primary-lighter: #ffe76a;
+  --ifm-color-primary-lightest: #fff0a3;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Yellow-on-white needs dark text on primary buttons/badges */
+  --ifm-color-primary-contrast-foreground: #000000;
+  --ifm-button-color: #000000;
+  --ifm-heading-color: #000000;
+}
+
+/* Dark mode: black background, yellow accents */
+[data-theme='dark'] {
+  --ifm-color-primary: #ffde2d;
+  --ifm-color-primary-dark: #ffd804;
+  --ifm-color-primary-darker: #f5cd00;
+  --ifm-color-primary-darkest: #cba900;
+  --ifm-color-primary-light: #ffe456;
+  --ifm-color-primary-lighter: #ffe76a;
+  --ifm-color-primary-lightest: #fff0a3;
+
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #121212;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 222, 45, 0.15);
+}
