@@ -83,7 +83,7 @@ const config: Config = {
             },
             {
               label: 'Niveles',
-              to: '/docs/niveles/observador',
+              to: '/docs/niveles',
             },
           ],
         },
@@ -100,7 +100,7 @@ const config: Config = {
             },
             {
               label: 'Explicaciones',
-              to: '/docs/explicacion/historia-tejido-social',
+              to: '/docs/explicacion/por-que-comites-de-base',
             },
           ],
         },
