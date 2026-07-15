@@ -1,11 +1,12 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkAcronyms from './plugins/remark-acronyms';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Aprende sobre el FA',
+  title: 'Aprendé sobre el FA',
   tagline: 'Organización de base para una Costa Rica más justa, equitativa e inclusiva',
   favicon: 'img/favicon.ico',
 
@@ -33,6 +34,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          remarkPlugins: [remarkAcronyms],
         },
         blog: false,
         theme: {
@@ -48,7 +50,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Aprende sobre el FA',
+      title: 'Aprendé sobre el FA',
       logo: {
         alt: 'Frente Amplio Logo',
         src: 'img/logo.svg',
@@ -88,7 +90,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Aprende',
+          title: 'Aprendé',
           items: [
             {
               label: 'Guías Prácticas',
@@ -108,16 +110,16 @@ const config: Config = {
           title: 'Comunidad',
           items: [
             {
-              label: 'GitHub Issues',
-              href: 'https://github.com/MarAvFe/tejido-social-cr/issues',
+              label: 'Contacto',
+              to: '/contacto',
             },
             {
-              label: 'Contribuir',
+              label: 'Contribuir (GitHub)',
               href: 'https://github.com/MarAvFe/tejido-social-cr/blob/main/CONTRIBUTING.md',
             },
             {
-              label: 'Licencia (CC0)',
-              href: 'https://creativecommons.org/publicdomain/zero/1.0/',
+              label: 'Sitio oficial del partido',
+              href: 'https://www.frenteamplio.org/',
             },
           ],
         },

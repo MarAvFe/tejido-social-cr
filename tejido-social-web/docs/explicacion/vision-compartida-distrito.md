@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Qué es una Visión Compartida de Distrito
 
 ## La idea

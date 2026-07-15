@@ -10,6 +10,13 @@
   overflow: hidden;
 }
 
+/* The hero title uses --ifm-heading-color (theme-wide heading color, light
+   in dark mode) instead of --ifm-hero-text-color, so it doesn't follow the
+   rest of the hero text onto black over the yellow background. */
+.heroBanner :global(.hero__title) {
+  color: var(--ifm-hero-text-color);
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

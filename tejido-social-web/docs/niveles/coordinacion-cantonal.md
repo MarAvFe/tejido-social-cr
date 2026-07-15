@@ -1,3 +1,7 @@
+---
+source_label: "Fuente pendiente"
+---
+
 # Coordinación Cantonal
 
 _Estructura no documentada aún en las fuentes disponibles._

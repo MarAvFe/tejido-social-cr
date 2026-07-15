@@ -1,0 +1,9 @@
+.abbr {
+  text-decoration: underline dotted;
+  text-decoration-color: var(--ifm-color-emphasis-500);
+  cursor: help;
+}
+
+.expanded {
+  font-style: italic;
+}

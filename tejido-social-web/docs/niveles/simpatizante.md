@@ -1,3 +1,7 @@
+---
+source_label: "Editorial"
+---
+
 # Simpatizante
 
 Persona que apoya al Frente Amplio pero **no está afiliada** formalmente al partido — por ejemplo, familiares o amistades de personas afiliadas.

@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Cómo Organizar una Asamblea Constitutiva
 
 Plantilla de facilitación para la asamblea fundacional de un comité distrital, basada en una metodología ya probada en el terreno. Cubre tanto la parte formal (elección de coordinación, fiscalizada por el TEFA) como el trabajo participativo de construir una visión y un plan de acción compartidos.

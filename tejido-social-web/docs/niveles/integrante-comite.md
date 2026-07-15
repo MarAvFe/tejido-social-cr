@@ -1,3 +1,9 @@
+---
+source_label: "Directiva oficial"
+source_note: "Directrices para Comités de Acción Política de Base Comunal"
+source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+---
+
 # Integrante de Comité
 
 Persona afiliada incluida en el padrón del comité de su distrito.

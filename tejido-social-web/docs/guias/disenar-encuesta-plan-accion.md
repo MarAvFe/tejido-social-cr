@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Cómo Diseñar una Encuesta para el Plan de Acción Distrital
 
 Guía práctica para construir una encuesta comunitaria previa a la asamblea constitutiva (o a cualquier ejercicio de planificación distrital), pensada como insumo organizativo, no como estudio estadístico.

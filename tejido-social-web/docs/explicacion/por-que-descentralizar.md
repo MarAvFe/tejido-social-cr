@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Por Qué Descentralizar
 
 ## El argumento territorial

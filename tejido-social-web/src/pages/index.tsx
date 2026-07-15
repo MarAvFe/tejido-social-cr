@@ -16,12 +16,8 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p style={{fontSize: '1.15rem', fontStyle: 'italic', maxWidth: '760px', margin: '1.5rem auto 2rem'}}>
-          «Si compartes nuestros ideales y sueñas con una Costa Rica más justa, equitativa e inclusiva, ¡este es el momento de dar el paso!»
-        </p>
-        <p style={{fontSize: '1.05rem', maxWidth: '680px', margin: '0 auto 2rem'}}>
-          Diste el paso. Empecemos aquí para aprender cómo organizarnos juntos.
+        <p style={{fontSize: '1.15rem', maxWidth: '680px', margin: '1.5rem auto 2rem'}}>
+          Este sitio documenta cómo se organiza el trabajo territorial del Frente Amplio, a nivel de distrito. Guías, roles y principios explicados con claridad, para quien quiera entender o participar.
         </p>
         <div className={styles.buttons}>
           <Link

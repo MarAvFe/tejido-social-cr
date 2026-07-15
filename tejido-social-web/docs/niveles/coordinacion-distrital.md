@@ -1,3 +1,9 @@
+---
+source_label: "Directiva oficial"
+source_note: "Directrices para Comités de Acción Política de Base Comunal"
+source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+---
+
 # Coordinación Distrital
 
 Cargos electos de la Mesa de Coordinación de un distrito: Presidencia, Secretaría, y opcionalmente Subcoordinación y Vocalía.

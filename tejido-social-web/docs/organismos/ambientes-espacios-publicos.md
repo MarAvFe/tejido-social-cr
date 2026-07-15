@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Ambientes Saludables y Espacios Públicos
 
 Comisión temática enfocada en el ambiente y el espacio público del distrito.

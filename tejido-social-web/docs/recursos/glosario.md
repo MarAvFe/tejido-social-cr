@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Glosario
 
 Términos y siglas usados en la organización distrital del Frente Amplio.

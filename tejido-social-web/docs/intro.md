@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+source_label: "Editorial"
 ---
 
 # Introducción

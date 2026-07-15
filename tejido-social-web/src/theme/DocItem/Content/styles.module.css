@@ -1,0 +1,15 @@
+.sourceBadge {
+  margin-top: 3rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--ifm-toc-border-color);
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.sourceBadge a {
+  font-weight: 600;
+}
+
+.sourceLabel {
+  font-weight: 700;
+}

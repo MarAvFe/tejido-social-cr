@@ -1,3 +1,9 @@
+---
+source_label: "Directiva oficial"
+source_note: "Frente Amplio — Afiliate"
+source_url: "https://www.frenteamplio.org/afiliate/"
+---
+
 # Cómo Afiliarse al Frente Amplio
 
 ## Antes de afiliarse

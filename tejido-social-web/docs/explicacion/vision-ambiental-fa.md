@@ -1,3 +1,7 @@
+---
+source_label: "Fuente pendiente"
+---
+
 # Visión Ambiental del Frente Amplio
 
 _Contenido pendiente — taller propuesto por la afiliación del distrito, aún no realizado._

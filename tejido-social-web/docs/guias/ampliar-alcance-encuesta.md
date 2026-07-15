@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Cómo Ampliar el Alcance de una Encuesta Distrital
 
 Guía práctica para el problema de volumen: una encuesta inicial casi siempre llega a una fracción pequeña de la población de un distrito que puede tener miles de habitantes. Esta guía cubre cómo crecer esa base con el tiempo.

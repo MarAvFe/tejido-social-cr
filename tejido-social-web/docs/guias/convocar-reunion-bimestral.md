@@ -1,3 +1,9 @@
+---
+source_label: "Directiva oficial"
+source_note: "Directrices para Comités de Acción Política de Base Comunal"
+source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+---
+
 # Cómo Convocar una Reunión Bimestral
 
 Guía breve para la Presidencia y la Secretaría del comité distrital.

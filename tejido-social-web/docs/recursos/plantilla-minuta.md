@@ -1,3 +1,7 @@
+---
+source_label: "Fuente pendiente"
+---
+
 # Plantilla de Minuta
 
 Plantilla base para que la Secretaría registre las reuniones del comité distrital, según lo exigido por la directriz oficial.

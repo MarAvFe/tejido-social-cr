@@ -11,27 +11,27 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Aprende',
+    title: 'Aprendé',
     emoji: '📚',
     description: (
       <>
         Documentación clara sobre cómo funcionamos, nuestros principios y las
-        formas de participar. Empieza desde cero, a tu ritmo.
+        formas de participar. Empezá desde cero, a tu ritmo.
       </>
     ),
   },
   {
-    title: 'Participa',
+    title: 'Participá',
     emoji: '🤝',
     description: (
       <>
-        Encuentra tu lugar según tu tiempo e intereses. Cada persona aporta, sin
+        Encontrá tu lugar según tu tiempo e intereses. Cada persona aporta, sin
         importar cuánto pueda dedicar.
       </>
     ),
   },
   {
-    title: 'Organiza',
+    title: 'Organizá',
     emoji: '⚙️',
     description: (
       <>

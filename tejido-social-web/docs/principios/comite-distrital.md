@@ -1,10 +1,12 @@
 ---
 sidebar_position: 2
+source: "conocimiento-de-campo"
+source_label: "Conocimiento de campo"
 ---
 
-# Principios
+# Principios del Comité Distrital
 
-Los cinco principios que orientan el trabajo del comité distrital.
+Los cinco principios que orientan el trabajo del comité distrital. Estos son principios prácticos de funcionamiento local, recogidos de la experiencia de comités existentes — no un resumen de los principios estatutarios del partido (ver [Principios del Partido](./partido-nacional.md) para esos).
 
 ## Participación activa
 
@@ -16,7 +18,7 @@ El trabajo territorial depende de relaciones sostenidas entre vecinas y vecinos,
 
 ## Transparencia y diálogo
 
-Los acuerdos, las minutas y las comunicaciones del comité quedan registrados (ver las funciones de la [Secretaría](./organismos/roles-y-responsabilidades.md)) y las decisiones se toman en espacios de diálogo abierto, no de forma unilateral.
+Los acuerdos, las minutas y las comunicaciones del comité quedan registrados (ver las funciones de la [Secretaría](../organismos/roles-y-responsabilidades.md)) y las decisiones se toman en espacios de diálogo abierto, no de forma unilateral.
 
 ## Inclusión y equidad
 
@@ -28,4 +30,4 @@ El distrito no es solo un ámbito administrativo: es un territorio y una comunid
 
 ---
 
-Estos principios no son solo una declaración: orientan las prioridades y comisiones del comité. Ver [Comisiones Temáticas](./organismos/comisiones-tematicas.md) para cómo se traducen en trabajo concreto.
+Estos principios no son solo una declaración: orientan las prioridades y comisiones del comité. Ver [Comisiones Temáticas](../organismos/comisiones-tematicas.md) para cómo se traducen en trabajo concreto.

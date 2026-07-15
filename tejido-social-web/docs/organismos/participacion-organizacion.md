@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Participación y Organización Comunitaria
 
 Comisión temática enfocada en fortalecer la participación ciudadana y la organización comunitaria del distrito.

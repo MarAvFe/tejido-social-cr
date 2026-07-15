@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Educación, Formación y Empleo
 
 Comisión temática enfocada en formación política y oportunidades económicas en el distrito.

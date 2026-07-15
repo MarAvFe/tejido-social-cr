@@ -1,3 +1,7 @@
+---
+source_label: "Conocimiento de campo"
+---
+
 # Cultura, Deporte y Recreación
 
 Comisión temática enfocada en actividades culturales, deportivas y recreativas del distrito.

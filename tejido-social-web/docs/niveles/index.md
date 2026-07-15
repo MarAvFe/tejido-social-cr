@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: "Niveles"
+source_label: "Editorial"
 ---
 
 # Niveles de Participación

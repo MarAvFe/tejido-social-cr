@@ -1,3 +1,7 @@
+---
+source_label: "Fuente pendiente"
+---
+
 # Modelo de Acuerdo Constitutivo
 
 Plantilla orientativa para el acuerdo con el que una asamblea distrital se constituye formalmente como comité.
