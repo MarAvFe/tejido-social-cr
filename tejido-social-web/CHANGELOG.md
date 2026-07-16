@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-16
+
 ### Added
 - Full-text search, powered by `@easyops-cn/docusaurus-search-local` — indexed at build time, runs entirely client-side (no external service, works offline once loaded). Configured for Spanish stemming/indexing.
 - `CLAUDE.md` — workflow rules for keeping this changelog current and for semver bump decisions (patch = content/small fixes, minor = new features, major = reserved for a real adoption milestone like a domain change or canton/national rollout).
@@ -131,6 +133,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Status |
 |---------|------|--------|
+| 0.3.0 | 2026-07-16 | Local full-text search, CLAUDE.md changelog/semver workflow |
 | 0.2.0 | 2026-07-15 | Source transparency, automatic acronym tooltips, content restructuring |
 | 0.1.0 | 2026-02-13 | Initial release - Documentation framework and landing page |
 | 0.0.0 | 2026-02-13 | Pre-release template |
