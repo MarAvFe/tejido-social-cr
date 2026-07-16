@@ -1,0 +1,54 @@
+{
+  "link.title.Documentación": {
+    "message": "Documentación",
+    "description": "The title of the footer links column with title=Documentación in the footer"
+  },
+  "link.title.Aprendé": {
+    "message": "Aprendé",
+    "description": "The title of the footer links column with title=Aprendé in the footer"
+  },
+  "link.title.Comunidad": {
+    "message": "Comunidad",
+    "description": "The title of the footer links column with title=Comunidad in the footer"
+  },
+  "link.item.label.Introducción": {
+    "message": "Introducción",
+    "description": "The label of footer link with label=Introducción linking to /docs/intro"
+  },
+  "link.item.label.Principios": {
+    "message": "Principios",
+    "description": "The label of footer link with label=Principios linking to /docs/principios"
+  },
+  "link.item.label.Niveles": {
+    "message": "Niveles",
+    "description": "The label of footer link with label=Niveles linking to /docs/niveles"
+  },
+  "link.item.label.Guías Prácticas": {
+    "message": "Guías Prácticas",
+    "description": "The label of footer link with label=Guías Prácticas linking to /docs/guias"
+  },
+  "link.item.label.Recursos": {
+    "message": "Recursos",
+    "description": "The label of footer link with label=Recursos linking to /docs/recursos"
+  },
+  "link.item.label.Explicaciones": {
+    "message": "Explicaciones",
+    "description": "The label of footer link with label=Explicaciones linking to /docs/explicacion/por-que-comites-de-base"
+  },
+  "link.item.label.Contacto": {
+    "message": "Contacto",
+    "description": "The label of footer link with label=Contacto linking to /contacto"
+  },
+  "link.item.label.Contribuir (GitHub)": {
+    "message": "Contribuir (GitHub)",
+    "description": "The label of footer link with label=Contribuir (GitHub) linking to https://github.com/MarAvFe/tejido-social-cr/blob/main/CONTRIBUTING.md"
+  },
+  "link.item.label.Sitio oficial del partido": {
+    "message": "Sitio oficial del partido",
+    "description": "The label of footer link with label=Sitio oficial del partido linking to https://www.frenteamplio.org/"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Frente Amplio. Dominio Público (CC0). Construido con Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

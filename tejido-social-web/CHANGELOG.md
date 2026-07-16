@@ -5,6 +5,15 @@ All notable changes to Tejido Social will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Full-text search, powered by `@easyops-cn/docusaurus-search-local` — indexed at build time, runs entirely client-side (no external service, works offline once loaded). Configured for Spanish stemming/indexing.
+- `CLAUDE.md` — workflow rules for keeping this changelog current and for semver bump decisions (patch = content/small fixes, minor = new features, major = reserved for a real adoption milestone like a domain change or canton/national rollout).
+
+### Fixed
+- Translated remaining English strings in `i18n/es/code.json` (search UI, external-link icon label, mobile dropdown labels) that had been auto-generated in English by `write-translations` and never localized.
+
 ## [0.2.0] - 2026-07-15
 
 ### Added

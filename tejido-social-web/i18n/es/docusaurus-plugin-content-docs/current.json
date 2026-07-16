@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Recursos": {
+    "message": "Recursos",
+    "description": "The label for category 'Recursos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Principios": {
+    "message": "Principios",
+    "description": "The label for category 'Principios' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Tutoriales": {
+    "message": "Tutoriales",
+    "description": "The label for category 'Tutoriales' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Guías Prácticas": {
+    "message": "Guías Prácticas",
+    "description": "The label for category 'Guías Prácticas' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Niveles": {
+    "message": "Niveles",
+    "description": "The label for category 'Niveles' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Organismos": {
+    "message": "Organismos",
+    "description": "The label for category 'Organismos' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Explicación": {
+    "message": "Explicación",
+    "description": "The label for category 'Explicación' in sidebar 'tutorialSidebar'"
+  }
+}
