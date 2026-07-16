@@ -5,6 +5,40 @@ All notable changes to Tejido Social will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-07-15
+
+### Added
+
+#### Source Transparency
+- Every article now discloses where its content comes from, rendered automatically at the bottom of the page via a swizzled `DocItem/Content`:
+  - **Directiva oficial** — cites the party's official directive/statute, with a link when available.
+  - **Conocimiento de campo** — knowledge gathered from real district experience (assembly minutes, community consultation), not an official written source.
+  - **Editorial** — framing/structure written by whoever maintains the site, no external source.
+  - **Fuente pendiente** — placeholder content awaiting a real source (workshops not yet held, formats not yet confirmed).
+- Driven entirely by frontmatter (`source_label`, `source_note`, `source_url`) — applied across all 40 existing articles.
+
+#### Automatic Acronym Tooltips
+- `src/data/acronyms.ts` — single registry of party acronyms (FA, CAPB, CEC, CEP, CEN, TEFA, TSE, FAMO).
+- `plugins/remark-acronyms` — remark plugin that wraps every whole-word acronym mention across all content at build time, with no per-article edits required. Adding a new acronym is a one-line registry addition.
+- Renders as a native `<abbr>` with hover tooltip on desktop, plus a tap-to-open floating popover on mobile (hover-only tooltips don't work on touch devices).
+- Site-wide "expand acronyms to full text" mode wired end-to-end (`AcronymModeContext`, localStorage-persisted) — infrastructure ready for a future visible toggle.
+
+#### Content
+- Split `principios.md` into `principios/partido-nacional.md` (the 12 official statutory principles, sourced from frenteamplio.org) and `principios/comite-distrital.md` (the original 5 practical committee values, now clearly labeled as field knowledge, not statute).
+- New tutorial: `tutorials/desarrollar-iniciativa-distrital.md` — how to take a personal initiative from idea to a proposal the district coordination can pick up.
+- New standalone `/contacto` page: current status of the site (a Sabanilla district proposal, not yet official), its purpose, and a contact email.
+- Category landing pages (`guias/`, `recursos/`, `explicacion/`) now list their child articles with descriptions instead of "Contenido pendiente" or nothing at all.
+
+#### Navigation & Branding
+- Sidebar reordered via `_category_.json`: Introducción, Recursos, Principios, Tutoriales, Guías Prácticas, Niveles, Organismos, Explicación.
+- Footer: "GitHub Issues" replaced with "Contacto" (internal link), added "Sitio oficial del partido", dropped the license link.
+- New favicon: inverted colors from the official FA mark, to avoid confusion with frenteamplio.org's own favicon.
+
+### Changed
+- Landing page: voseo pass across hero and feature copy; simplified hero text (dropped the party-pledge quote and the presumptuous "diste el paso" line).
+
+---
+
 ## [0.1.0] - 2026-02-13
 
 ### Added
@@ -76,14 +110,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-### Planned for Next Version
-- Additional nivel pages (participante, miembro-activo, coordinador, formador) with full content
-- Organismo pages with detailed specifications
-- How-to guide pages (complete set)
-- Reference resource pages (canticos, plantillas, glosario, preguntas-frecuentes)
-- English translation of key content
-- Multi-language support (Portuguese, Arabic)
-- Contributing guidelines updates (this changelog)
+### Planned
+- Full-text search
+- Sitemap/SEO/`robots.txt`/`llms.txt` (once the site has a real domain and is ready for adoption)
+- District-level pages (`docs/distritos/<slug>/`) once a second district is active
+- Visible toggle for the acronym expand-all mode (infrastructure already in place, see 0.2.0)
 
 ---
 
@@ -91,5 +122,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Status |
 |---------|------|--------|
+| 0.2.0 | 2026-07-15 | Source transparency, automatic acronym tooltips, content restructuring |
 | 0.1.0 | 2026-02-13 | Initial release - Documentation framework and landing page |
 | 0.0.0 | 2026-02-13 | Pre-release template |
