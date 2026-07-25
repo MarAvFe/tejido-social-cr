@@ -34,4 +34,4 @@ Compare, encuesta a encuesta, cuántos barrios o sectores distintos están repre
 ## Ver también
 
 - [Cómo diseñar una encuesta para el Plan de Acción Distrital](./disenar-encuesta-plan-accion.md)
-- [Participación y Organización Comunitaria](../organismos/participacion-organizacion.md)
+- [Participación y Organización Comunitaria](../organismos/comisiones-tematicas/participacion-organizacion.md)

@@ -11,7 +11,7 @@ Referencia sobre cómo se organiza un comité distrital del Frente Amplio.
 - **[Directrices para Comités de Base Distritales](./directrices-capb.md)** — la norma oficial que rige la conformación y funcionamiento de estos comités.
 - **[Estructura Distrital](./estructura-distrital.md)** — Asamblea Distrital, Mesa de Coordinación y cómo se relacionan.
 - **[Roles y Responsabilidades](./roles-y-responsabilidades.md)** — funciones de cada cargo de coordinación.
-- **[Comisiones Temáticas](./comisiones-tematicas.md)** — las seis áreas de trabajo del distrito.
+- **[Comisiones Temáticas](./comisiones-tematicas/index.md)** — las seis áreas de trabajo del distrito.
 - **[CEC Ampliado](./cec-ampliado.md)** — cómo el Comité Ejecutivo Cantonal se coordina con las coordinaciones distritales.
 - **[Roles Municipales en Costa Rica](./roles-municipales.md)** — qué es un regidor, un síndico, y el resto del gobierno local electo.
 

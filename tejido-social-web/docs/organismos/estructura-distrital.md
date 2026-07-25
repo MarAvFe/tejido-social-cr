@@ -23,7 +23,7 @@ Cada cargo se ejerce por dos años, de forma ad-honorem. Ver el detalle de funci
 
 ## Comisiones temáticas
 
-Bajo la Mesa de Coordinación, el trabajo del distrito se organiza en comisiones temáticas — grupos enfocados en un área concreta del desarrollo distrital. Ver [Comisiones Temáticas](./comisiones-tematicas.md).
+Bajo la Mesa de Coordinación, el trabajo del distrito se organiza en comisiones temáticas — grupos enfocados en un área concreta del desarrollo distrital. Ver [Comisiones Temáticas](./comisiones-tematicas/index.md).
 
 ## Cómo se relacionan estos niveles
 

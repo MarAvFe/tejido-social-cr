@@ -54,8 +54,8 @@ Articles already published as explicit placeholders, waiting on a source that do
 From the minutes of the 12 July 2026 assembly (`M`, §8), these topics still don't have definitive content and depend on the committee resolving them first:
 
 - Exact text of the founding agreement → will feed `recursos/acuerdo-constitutivo-modelo.md`
-- Final approved priorities → will feed `explicacion/como-se-priorizan-necesidades.md` and `organismos/comisiones-tematicas.md`
-- Final composition of commissions → will feed the 6 commission pages in `organismos/`
+- Final approved priorities → will feed `explicacion/como-se-priorizan-necesidades.md` and `organismos/comisiones-tematicas/index.md`
+- Final composition of commissions → will feed the 6 commission pages in `organismos/comisiones-tematicas/`
 - Immediate tasks with owners and deadlines → future article, no location assigned yet
 - Date/location of the next meeting → operational content, likely in the instance zone (see below), not generic
 

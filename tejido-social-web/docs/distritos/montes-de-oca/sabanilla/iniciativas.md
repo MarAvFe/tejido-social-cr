@@ -14,9 +14,9 @@ Publicar el contacto directo de cada persona responsable expondría datos person
 
 ## Iniciativas por comisión
 
-Las iniciativas se agrupan bajo la [comisión temática](../../../organismos/comisiones-tematicas.md) a la que pertenecen — la comisión es el área de trabajo genérica; la iniciativa es el proyecto concreto de Sabanilla dentro de ella.
+Las iniciativas se agrupan bajo la [comisión temática](../../../organismos/comisiones-tematicas/index.md) a la que pertenecen — la comisión es el área de trabajo genérica; la iniciativa es el proyecto concreto de Sabanilla dentro de ella.
 
-### [Movilidad y Derecho a la Ciudad](../../../organismos/movilidad-ciudad.md)
+### [Movilidad y Derecho a la Ciudad](../../../organismos/comisiones-tematicas/movilidad-ciudad.md)
 
 | Iniciativa | Estado |
 | --- | --- |
@@ -24,6 +24,6 @@ Las iniciativas se agrupan bajo la [comisión temática](../../../organismos/com
 
 ### Otras comisiones
 
-Las demás comisiones ([Ambientes Saludables y Espacios Públicos](../../../organismos/ambientes-espacios-publicos.md), [Participación y Organización Comunitaria](../../../organismos/participacion-organizacion.md), [Cultura, Deporte y Recreación](../../../organismos/cultura-deporte-recreacion.md), [Cuidados e Inclusión](../../../organismos/cuidados-inclusion.md), [Educación, Formación y Empleo](../../../organismos/educacion-formacion-empleo.md)) todavía no tienen iniciativas registradas en Sabanilla.
+Las demás comisiones ([Ambientes Saludables y Espacios Públicos](../../../organismos/comisiones-tematicas/ambientes-espacios-publicos.md), [Participación y Organización Comunitaria](../../../organismos/comisiones-tematicas/participacion-organizacion.md), [Cultura, Deporte y Recreación](../../../organismos/comisiones-tematicas/cultura-deporte-recreacion.md), [Cuidados e Inclusión](../../../organismos/comisiones-tematicas/cuidados-inclusion.md), [Educación, Formación y Empleo](../../../organismos/comisiones-tematicas/educacion-formacion-empleo.md)) todavía no tienen iniciativas registradas en Sabanilla.
 
 _Esta lista está casi vacía porque el comité tiene menos de un año de constituido — ver [CEC Ampliado](../../../organismos/cec-ampliado.md) para el estado general de los comités distritales del cantón. Se agregan iniciativas conforme el comité reporte proyectos reales en marcha, no de forma especulativa._

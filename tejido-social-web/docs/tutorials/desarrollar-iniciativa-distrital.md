@@ -23,7 +23,7 @@ No hace falta un documento formal ni extenso, pero sí conviene llegar con estas
 - **Tema** — de qué se trata la iniciativa, en una o dos frases.
 - **Alcance** — qué abarca y qué no. ¿Es una actividad puntual, un proyecto continuo, una comisión nueva?
 - **Por qué le importa al distrito** — qué necesidad real atiende. Si tenés datos de la [encuesta distrital](../guias/disenar-encuesta-plan-accion.md) o de la asamblea que la respalden, mejor — pero la observación directa también cuenta.
-- **Con quién se relaciona** — qué [comisión temática](../organismos/comisiones-tematicas.md) es la más cercana, si ya existe alguna.
+- **Con quién se relaciona** — qué [comisión temática](../organismos/comisiones-tematicas/index.md) es la más cercana, si ya existe alguna.
 
 Otros elementos que ayudan a que la coordinación entienda y apoye la propuesta más rápido:
 
@@ -45,6 +45,6 @@ Toda iniciativa del comité debe enmarcarse dentro de los [principios del comit�
 
 ## Ver también
 
-- **[Comisiones Temáticas](../organismos/comisiones-tematicas.md)** — las seis áreas de trabajo donde una iniciativa suele encajar.
+- **[Comisiones Temáticas](../organismos/comisiones-tematicas/index.md)** — las seis áreas de trabajo donde una iniciativa suele encajar.
 - **[Cómo se Priorizan las Necesidades del Distrito](../explicacion/como-se-priorizan-necesidades.md)** — cómo el comité decide qué atender primero cuando hay varias iniciativas en juego.
 - **[Roles y Responsabilidades](../organismos/roles-y-responsabilidades.md)** — funciones de la coordinación distrital.

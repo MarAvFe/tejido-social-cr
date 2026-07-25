@@ -95,8 +95,8 @@ creating a new thread, add a row.
 - **Generic blueprint:** `tutorials/desarrollar-iniciativa-distrital.md` (the
   process), `tutorials/historia-de-angelica.md` (the narrated example).
 - **Instance home:** `distritos/<canton>/<distrito>/iniciativas.md`.
-- **Related, must stay linked:** `organismos/comisiones-tematicas.md` (every
-  initiative is framed under a commission),
+- **Related, must stay linked:** `organismos/comisiones-tematicas/index.md`
+  (every initiative is framed under a commission),
   `explicacion/como-se-priorizan-necesidades.md`.
 - **Invariant:** a concrete initiative is **always** instance; the process
   and the commission are generic. The commission links to initiatives; the
@@ -104,8 +104,10 @@ creating a new thread, add a row.
 
 ### Thread: **Comisión temática** — the 6 areas of work
 
-- **Generic blueprint:** `organismos/comisiones-tematicas.md` (index) + the 6
-  commission pages (`organismos/ambientes-espacios-publicos.md`, etc.).
+- **Generic blueprint:** `organismos/comisiones-tematicas/index.md` (index) +
+  the 6 commission pages, all nested under `organismos/comisiones-tematicas/`
+  (`organismos/comisiones-tematicas/ambientes-espacios-publicos.md`, etc.) —
+  a real sidebar subcategory, not flat siblings of the rest of `organismos/`.
 - **Instance home:** each district's initiatives, grouped by commission.
 - **Invariant:** the commission page describes **what that area covers for
   any district** — it does not list a specific district's members or actions
@@ -174,6 +176,13 @@ reference each other. **Fixed:** the commission page now links to
 initiatives and explains the relationship; the initiatives page is grouped
 by commission. This is the pattern Part 1 (question 3) and the Iniciativa
 thread prevent going forward.
+
+**Also fixed later:** the 6 commission pages were flat siblings inside
+`organismos/` alongside unrelated pages (roles, CEC, municipal roles) —
+Diátaxis quadrant was right, but the sidebar didn't visually group them as
+one unit. Moved into `organismos/comisiones-tematicas/` as a real sidebar
+subcategory (`_category_.json` + `index.md` + the 6 pages), so the six areas
+of work read as a set in the nav, not just in prose.
 
 ### ⚠️ Open — the 6 commission stubs promise instance content
 

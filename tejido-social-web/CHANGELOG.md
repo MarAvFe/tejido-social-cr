@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-07-25
+
+### Changed
+- **Comisiones Temáticas restructured as a real sidebar subcategory.** The 6 commission pages (`ambientes-espacios-publicos`, `participacion-organizacion`, `cultura-deporte-recreacion`, `movilidad-ciudad`, `cuidados-inclusion`, `educacion-formacion-empleo`) were flat siblings inside `organismos/`, alongside unrelated pages (roles, CEC Ampliado, roles municipales). Diátaxis quadrant was right, but the sidebar didn't visually group the six as one unit. Moved into `organismos/comisiones-tematicas/` with its own `_category_.json`, so they now nest under a collapsible "Comisiones Temáticas" section instead of sitting flat. `comisiones-tematicas.md` becomes `comisiones-tematicas/index.md`. Updated all inbound links (11 files) and `CONTENT-FRAMEWORK.md`'s Comisión/Iniciativa thread entries to match. Pure reorganization — no content change, no new reader-facing category.
+
 ## [0.4.0] - 2026-07-25
 
 ### Changed
