@@ -21,3 +21,9 @@ Cualquier persona integrante del comité distrital puede sumarse a la comisión 
 ## Relación con la Mesa de Coordinación
 
 Las comisiones no son parte formal de la Mesa de Coordinación (Coordinación, Subcoordinación, Vocalía), pero trabajan bajo su seguimiento y reportan avances en las reuniones bimestrales del comité.
+
+## De la comisión a la iniciativa
+
+Una comisión es el **área de trabajo** — genérica, la misma para cualquier distrito. Una **iniciativa** es un proyecto concreto dentro de esa área, impulsado por un distrito en particular (un techo para una parada de bus, una jornada de arborización, un censo de zonas verdes). Cada iniciativa se enmarca en la comisión más cercana.
+
+Para ver iniciativas reales en marcha, revisá la página de iniciativas del distrito correspondiente — por ejemplo, [Iniciativas de Sabanilla](../distritos/montes-de-oca/sabanilla/iniciativas.md). Para llevar una idea propia hasta convertirla en iniciativa, ver [Cómo Desarrollar una Iniciativa en mi Distrito](../tutorials/desarrollar-iniciativa-distrital.md).

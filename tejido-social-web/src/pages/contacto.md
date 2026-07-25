@@ -13,7 +13,7 @@ El objetivo principal es atender el problema de escalabilidad que enfrenta el pa
 
 ## Hacia dónde va
 
-La idea es que, con el tiempo, cada artículo de este sitio termine apuntando a una fuente oficial del partido — o que este mismo sitio se convierta en una fuente oficial de referencia para procesos e ideales del Frente Amplio. Mientras eso no ocurra, cada página indica su fuente al final: si es una directiva oficial, conocimiento de campo recogido de la experiencia real de un distrito, contenido editorial de quienes mantienen el sitio, o un tema todavía sin fuente confirmada.
+La idea es que, con el tiempo, cada artículo de este sitio termine apuntando a una fuente oficial del partido — o que este mismo sitio se convierta en una fuente oficial de referencia para procesos e ideales del Frente Amplio. Mientras eso no ocurra, cada página indica su fuente al final. Ver [¿Cómo se edita y verifica este sitio?](/politica-editorial) para qué significa cada etiqueta y cómo corregir algo si está mal.
 
 ## Escribinos
 

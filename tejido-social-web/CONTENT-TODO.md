@@ -1,151 +1,156 @@
-# CONTENT-TODO.md — Árbol de contenido para "Aprende sobre el FA"
+# CONTENT-TODO.md — Content backlog for "Aprende sobre el FA"
 
-Backlog de artículos organizado según [Diátaxis](https://diataxis.fr): Tutoriales, Guías Prácticas, Explicación y Referencia. Cada entrada indica carpeta/archivo, una línea de descripción, la fuente (si aplica) y si es contenido nuevo (NUEVO), reutilizado de un stub existente (REUSE) o un renombre/reemplazo conceptual de contenido heredado del demo (RENOMBRAR).
+Backlog of articles organized per [Diátaxis](https://diataxis.fr): Tutorials, How-To Guides, Explanation, and Reference. Lists only what's **missing** — still to write or decide. Published content lives in `docs/` and is its own source of truth (its inventory isn't duplicated here; see `CHANGELOG.md` for the history of what was added and when).
 
-> **Privacidad:** las fuentes (`unstructured_knowledge.md`, `raw data/directrices-capb.md`, `raw data/minuta-12jul26.md`) contienen nombres reales de personas privadas. Ningún nombre real debe aparecer en los artículos generados a partir de este TODO — usar solo roles/estructuras genéricas (p. ej. "Coordinación", "representante del TEFA"). Datos de titulares actuales, si hacen falta, van únicamente en una página de instancia distrital (ver sección de arquitectura al final), nunca en contenido genérico.
+Content only — no engineering, config, or process work here. See [SITE-TODO.md](./SITE-TODO.md) for that (Docusaurus config, one-off audits, tooling).
 
-Fuentes: `U` = `unstructured_knowledge.md`, `D` = `raw data/directrices-capb.md`, `M` = `raw data/minuta-12jul26.md`.
-Prioridad: **Alta** = referencia que rige la existencia/funcionamiento del comité o desbloquea trabajo inmediato · **Media** = explicación/how-to de apoyo · **Baja** = enriquecimiento futuro o pendiente de decisión.
+> **Privacy:** the sources (`unstructured_knowledge.md`, `raw data/directrices-capb.md`, `raw data/minuta-12jul26.md`) contain real private individuals' names. No real name may appear in articles generated from this TODO — use only generic roles/structures (e.g. "Coordinación", "representante del TEFA"). Current officeholder data, if needed, goes only in a district instance page (see architecture section at the end), never in generic content. Exception: publicly elected offices (see [VOICE.md](./VOICE.md)).
 
-```
-docs/
-│
-├── intro.md                                          [REUSE · Alta] [x] HECHO
-│   Punto de entrada del sitio: qué es, para quién, cómo navegar. — (sin fuente específica)
-│
-├── principios.md                                     [REUSE · Alta] [x] HECHO
-│   Los 5 principios del distrito: participación activa, solidaridad y confianza,
-│   transparencia y diálogo, inclusión y equidad, cuidado de la vida y el territorio. — U
-│
-├── tutorials/                                         « TUTORIALES — aprender haciendo »
-│   ├── index.md                                       [NUEVO · Media] [x] HECHO
-│   └── unirse-a-un-organismo.md                       [REUSE · Alta] [x] HECHO
-│       "Cómo Afiliarse al Frente Amplio" — redirige al proceso oficial
-│       (frenteamplio.org/afiliate), documenta antes/después y enlaza a niveles y comité. — D, U
-│       (primera-accion-digital.md y primera-protesta.md ELIMINADOS: eran stubs sin
-│       contenido y sin respaldo en las fuentes — las ideas se conservan en el demo.)
-│
-├── guias/                                              « GUÍAS PRÁCTICAS — cómo lograr una tarea »
-│   ├── conformar-comite-distrital.md                  [NUEVO · Alta] [x] HECHO
-│   │   Proceso completo para constituir un comité: ≥3 afiliados, solicitud formal al CEC,
-│   │   asamblea fundacional, fiscalización del TEFA, reporte de resultados. — D
-│   ├── organizar-asamblea-constitutiva.md             [NUEVO · Alta] [x] HECHO
-│   │   Plantilla de facilitación con la metodología de 7 pasos: bienvenida → lectura de
-│   │   la realidad → visión compartida → priorización → organización → compromisos → cierre. — M
-│   ├── disenar-encuesta-plan-accion.md                [NUEVO · Media] [x] HECHO
-│   │   Cómo diseñar la encuesta previa a la asamblea (interés, coordinación, experiencia,
-│   │   solicitudes de información) y leer resultados como base organizativa, no muestra. — M
-│   ├── ampliar-alcance-encuesta.md                     [NUEVO · Media] [x] HECHO
-│   │   Cómo pasar de pocas respuestas a cobertura real del distrito (canales, barrios,
-│   │   cadencia de difusión). — U, M
-│   ├── convocar-reunion-bimestral.md                  [NUEVO · Media] [x] HECHO — breve, falta info oficial de formato
-│   │   Para Presidencia: convocar la reunión mínima bimestral. Para Secretaría: llevar
-│   │   minutas y registro de comunicaciones. — D
-│   (como-hablar-con-medios.md, manejo-redes-sociales.md, derechos-legales.md,
-│    seguridad-en-protestas.md, prevencion-agotamiento.md, como-organizar-protesta.md
-│    ELIMINADOS: stubs sin contenido, sin respaldo en las fuentes. Ideas conservadas en el demo.)
-│
-├── explicacion/                                        « EXPLICACIÓN — entender el porqué »
-│   ├── por-que-comites-de-base.md                     [NUEVO · Alta] [x] HECHO
-│   │   Por qué existen los comités distritales ahora: crecimiento del partido, llamado
-│   │   del TEFA, vacío tras eliminación de asambleas distritales, Art. 31 del Estatuto. — D
-│   ├── por-que-descentralizar.md                       [REUSE · Media] [x] HECHO
-│   │   Repropósito: razón de ser de la organización territorial y su vínculo con lo
-│   │   cantonal/provincial/nacional. — D, U
-│   ├── como-se-priorizan-necesidades.md                [NUEVO · Media] [x] HECHO — breve, falta metodología nacional oficial
-│   │   Cómo se identifican y priorizan necesidades comunitarias: impacto, urgencia,
-│   │   viabilidad, capacidad de involucrar a más personas. — M
-│   ├── vision-compartida-distrito.md                   [NUEVO · Baja] [x] HECHO — breve, falta texto exacto de la visión de Sabanilla
-│   │   Qué significa la "visión compartida a 4 años" y por qué ancla el trabajo del comité. — U, M
-│   ├── fundamentalismo-religioso-control-politico.md   [NUEVO · Baja] [x] PLACEHOLDER
-│   │   Placeholder del taller pendiente sobre fundamentalismo religioso y control político. — U
-│   └── vision-ambiental-fa.md                          [NUEVO · Baja] [x] PLACEHOLDER — taller pendiente de realizar
-│       Placeholder del taller pendiente sobre visión ambiental del FA. — U, M
-│       (por-que-principios-escritos.md, modelos-de-referencia.md, historia-tejido-social.md,
-│        economia-solidaria.md ELIMINADOS: stubs sin contenido, sin respaldo en las fuentes.)
-│
-├── organismos/                                         « REFERENCIA — estructura orgánica »
-│   ├── index.md                                        [REUSE · Media] [x] HECHO
-│   │   Mapa orgánico del distrito: Asamblea → Mesa de Coordinación → 6 comisiones. — U
-│   ├── directrices-capb.md                             [NUEVO · Alta] [x] HECHO
-│   │   Resumen fiel de la directriz oficial (oficio FA-SG-018-2026 / FA-SG-021-2026):
-│   │   base legal, mínimo de afiliados, objetivos, cargos, deberes, fiscalización TEFA. — D
-│   ├── estructura-distrital.md                         [NUEVO · Alta] [x] HECHO
-│   │   Asamblea Distrital y Mesa de Coordinación Distrital como órganos; roles abstractos
-│   │   (Coordinación, Subcoordinación, Vocalía y suplencias), términos de 2 años, ad-honorem. — U, M
-│   ├── roles-y-responsabilidades.md                    [NUEVO · Alta] [x] HECHO
-│   │   Tabla de deberes por rol, incluyendo funciones específicas de Presidencia y
-│   │   Secretaría según la directriz. — U, D
-│   ├── comisiones-tematicas.md                         [NUEVO · Alta] [x] HECHO
-│   │   Índice de las 6 comisiones temáticas del distrito. — U
-│   ├── ambientes-espacios-publicos.md                  [RENOMBRAR · Media] [x] HECHO
-│   │   Mandato de la comisión de ambientes saludables y espacios públicos. — U, M
-│   ├── participacion-organizacion.md                   [RENOMBRAR · Media] [x] HECHO
-│   │   Mandato de la comisión de participación y organización comunitaria. — U
-│   ├── cultura-deporte-recreacion.md                   [RENOMBRAR · Media] [x] HECHO
-│   │   Mandato de la comisión de cultura, deporte y recreación. — U
-│   ├── movilidad-ciudad.md                             [RENOMBRAR · Media] [x] HECHO
-│   │   Mandato de la comisión de movilidad y derecho a la ciudad. — U
-│   ├── cuidados-inclusion.md                           [RENOMBRAR · Media] [x] HECHO
-│   │   Mandato de la comisión de cuidados e inclusión. — U
-│   └── educacion-formacion-empleo.md                   [RENOMBRAR · Media] [x] HECHO
-│       Mandato de la comisión de educación, formación y empleo. — U
-│       (Los 8 stubs heredados del demo —educacion.md, seguridad-cuidado.md,
-│       presion-politica.md, medios-comunicacion.md, economia-solidaria.md,
-│       accion-callejera.md, bienestar.md, apoyo-legal.md— fueron ELIMINADOS:
-│       ninguno mapeaba limpio a las 6 comisiones y estaban vacíos.)
-│
-├── niveles/                                             « REFERENCIA — niveles de participación » [x] HECHO
-│   │   (Reemplazo conceptual completado: participante→afiliado, miembro-activo→integrante-comite,
-│   │   coordinador→coordinacion-distrital; observador.md/formador.md eliminados. Se amplió el
-│   │   espectro con simpatizante (debajo) y coordinación cantonal/provincial/nacional (arriba),
-│   │   estas tres últimas marcadas explícitamente como placeholders sin fuente documentada.)
-│   ├── index.md                                        [NUEVO · Media] [x] HECHO — mapa del espectro completo
-│   ├── simpatizante.md                                 [NUEVO · Baja] [x] HECHO — apoya sin afiliarse
-│   ├── afiliado.md                                     [RENOMBRAR · Media] [x] HECHO
-│   │   Afiliado con domicilio electoral en el distrito. — D
-│   ├── integrante-comite.md                            [RENOMBRAR · Media] [x] HECHO
-│   │   Integrante incluido en el padrón del comité. — D
-│   ├── coordinacion-distrital.md                       [RENOMBRAR · Media] [x] HECHO
-│   │   Presidencia y Secretaría como cargos electos de coordinación. — D, U
-│   ├── coordinacion-cantonal.md                        [NUEVO · Baja] [x] PLACEHOLDER — CEC, sin fuente detallada
-│   ├── coordinacion-provincial.md                      [NUEVO · Baja] [x] PLACEHOLDER — CEP, sin fuente detallada
-│   └── coordinacion-nacional.md                        [NUEVO · Baja] [x] PLACEHOLDER — CEN/TEFA/Secretaría General, sin fuente detallada
-│
-└── recursos/                                            « REFERENCIA — consulta rápida »
-    ├── glosario.md                                     [REUSE · Alta] [x] HECHO
-    │   Siglas y términos: FA, CAPB, CEC, CEP, CEN, TEFA, TSE, Secretaría General, padrón,
-    │   asamblea fundacional/constitutiva, bimestre, ad-honorem, domicilio electoral, FAMO. — D, U, M
-    ├── preguntas-frecuentes.md                         [REUSE · Media] [x] HECHO
-    │   FAQ: mínimo de personas, duración de cargos, remuneración, fiscalización,
-    │   registro, frecuencia de reuniones. — D, U
-    ├── plantilla-minuta.md                             [NUEVO · Media] [x] HECHO — breve, falta formato oficial confirmado
-    │   Plantilla para minutas y registro de comunicaciones que debe llevar la Secretaría. — D
-    ├── acuerdo-constitutivo-modelo.md                  [NUEVO · Baja] [x] HECHO — breve, falta texto real de un acuerdo aprobado
-    │   Plantilla/placeholder para el texto del acuerdo constitutivo (pendiente). — M
-    └── mapa-canton-distritos.md                        [NUEVO · Baja]
-        Mapa/índice del cantón Montes de Oca y sus distritos (Sabanilla, San Rafael,
-        San Pedro, +1). — U
-        (canticos.md, plantillas-pancartas.md ELIMINADOS: stubs sin contenido,
-         sin respaldo en las fuentes.)
-```
+Sources: `U` = `unstructured_knowledge.md`, `D` = `raw data/directrices-capb.md`, `M` = `raw data/minuta-12jul26.md`.
+Priority: **High** = reference that governs the committee's existence/operation or unblocks immediate work · **Medium** = supporting explanation/how-to · **Low** = future enrichment or pending a decision.
 
-## Placeholders pendientes de decisión
+## Existing placeholders awaiting a source
 
-Del acta de la asamblea del 12 de julio de 2026 (`M`, §8), estos temas aún no tienen contenido definitivo y dependen de que el comité los resuelva primero:
+Articles already published as explicit placeholders, waiting on a source that doesn't exist yet (a pending workshop, or a structure without documented detail). These don't require research work — they require the event/decision to happen first.
 
-- Texto exacto del acuerdo constitutivo → alimentará `recursos/acuerdo-constitutivo-modelo.md`
-- Prioridades finales aprobadas → alimentará `explicacion/como-se-priorizan-necesidades.md` y `organismos/comisiones-tematicas.md`
-- Conformación definitiva de comisiones → alimentará las 6 páginas de comisión en `organismos/`
-- Tareas inmediatas con responsables y plazos → futuro artículo, sin ubicación asignada aún
-- Fecha/lugar de la próxima reunión → contenido operativo, probablemente en zona de instancia (ver abajo), no genérico
+- `explicacion/fundamentalismo-religioso-control-politico.md` — pending workshop on religious fundamentalism and political control. — U
+- `explicacion/vision-ambiental-fa.md` — pending workshop on the FA's environmental vision. — U, M
+- `niveles/coordinacion-cantonal.md` — CEC, no detailed source yet.
+- `niveles/coordinacion-provincial.md` — CEP, no detailed source yet.
+- `niveles/coordinacion-nacional.md` — CEN/TEFA/Secretaría General, no detailed source yet.
 
-## Arquitectura de contenido: distrito / cantón / nacional
+## Unpublished backlog (Reference)
 
-**Principio:** separar contenido **genérico** (reutilizable por cualquier distrito — roles, procesos, la directriz oficial) de contenido de **instancia** (propio de Sabanilla en un momento dado — quién coordina hoy, qué priorizó su asamblea).
+- ~~`recursos/mapa-canton-distritos.md`~~ — superseded by
+  `docs/distritos/montes-de-oca/index.md`, created as part of the N5
+  scaffold (see below). Same purpose (a map of the canton and its
+  districts), better location (instance zone, not generic zone).
 
-- **Zona genérica** — las carpetas actuales (`organismos/`, `guias/`, `explicacion/`, `recursos/`, `tutorials/`, `principios.md`, `niveles/`) permanecen distrito-agnósticas. Todo lo derivado de `directrices-capb.md`, la metodología de asamblea, el glosario y las 6 comisiones vive aquí, redactado en términos de "el distrito" / "el Comité", nunca "Sabanilla".
-- **Zona de instancia** — nueva carpeta `docs/distritos/<slug>/` con un subconjunto por distrito, p. ej. `docs/distritos/sabanilla/{index,mesa-de-coordinacion,prioridades,asambleas}.md`. Un futuro distrito (`san-rafael/`, etc.) replica la misma forma sin tocar la zona genérica. Un índice `docs/distritos/index.md` sirve de mapa cantonal (aquí encaja `mapa-canton-distritos.md`).
-- **Nombres de titulares actuales**: solo en `distritos/<slug>/mesa-de-coordinacion.md`, mantenida operativamente por el propio comité — nunca en páginas genéricas.
-- **Convención**: páginas de instancia siempre bajo `distritos/<slug>/`, enlazando hacia la referencia genérica (p. ej. la Mesa de Sabanilla enlaza a `organismos/roles-y-responsabilidades.md`) en lugar de repetir contenido.
-- **Camino a cantón/nacional**: el índice de `distritos/` se convierte naturalmente en el rollup cantonal (Montes de Oca). Para escala nacional, evaluar más adelante una jerarquía `territorios/<provincia>/<canton>/<distrito>/` — no construir esto todavía; la convención plana `distritos/<slug>/` ya escala bien a nivel cantonal y la decisión nacional se difiere hasta que haya demanda real.
+## Original backlog — items not covered in the research summary
+
+- [ ] **Historia de Angélica** — ~~model narrative (Public Narrative /
+  Marshall Ganz) of how a small idea becomes real action.~~ **DONE** — see
+  `docs/tutorials/historia-de-angelica.md`. Note from the original doc: "a
+  complete draft from an earlier conversation already exists" — I searched
+  chat history and did NOT find it. Used the draft handed over directly as
+  the real version, without assuming the lost draft said anything different.
+- [ ] **Where does this model come from?** — partially covered on the site
+  (`por-que-comites-de-base` already explains the organizational gap), but
+  still missing the specific thread of the San José Centro pilot and the
+  national Comisión Política's recognition of that pilot.
+- [ ] **What does the party expect from us?** — translate considerandos 3,
+  4, 6, 7 of the Acuerdo Comisión Política into practical expectations.
+  Still not covered on the site.
+- [ ] **"Public narrative" article** — an educational piece separate from
+  Historia de Angélica: explain the framework (Self/Us/Now, YCMAD) and give
+  a template for any affiliate to write their own story. Distinct from
+  Historia de Angélica — that's the example, this is the tool.
+- [ ] **Party values in plain language** — verify whether
+  `principios/partido-nacional` already covers this or is just the statute
+  reformatted without stripping the ideological jargon. Not confirmed yet.
+
+## Placeholders pending a decision
+
+From the minutes of the 12 July 2026 assembly (`M`, §8), these topics still don't have definitive content and depend on the committee resolving them first:
+
+- Exact text of the founding agreement → will feed `recursos/acuerdo-constitutivo-modelo.md`
+- Final approved priorities → will feed `explicacion/como-se-priorizan-necesidades.md` and `organismos/comisiones-tematicas.md`
+- Final composition of commissions → will feed the 6 commission pages in `organismos/`
+- Immediate tasks with owners and deadlines → future article, no location assigned yet
+- Date/location of the next meeting → operational content, likely in the instance zone (see below), not generic
+
+## Pending intake — 2026-07-25 committee notes (Sabanilla, Frente Amplio)
+
+Source: committee meeting notes, Sabanilla, 2026-07-25. Existing site
+structure (roles, periods, official directives) already covers the
+committee's internal structure well. The gap is: (1) how the party relates
+to the formal municipal structure, (2) cultural/historical context that
+needs human interviews, (3) communication protocols that don't exist yet or
+aren't defined. See [VOICE.md](./VOICE.md) for tone — these all need to land
+in the sober, gap-honest register described there, especially items 4 and 8
+(new/thin structures) and item 3 (public-record names, see VOICE.md's
+privacy section for the public-office exception).
+
+### Ready for research with public sources (research-ready, no interview needed)
+
+- ~~**N1 — Municipal roles in Costa Rica**~~ — DONE, see
+  `organismos/roles-municipales.md`.
+- **N2 — Concejo Municipal vs. internal party representation (CEC)**
+  (Explicación). The formal distinction between the elected local
+  government and a party's internal territorial structure — general
+  principle first, then applied to the FA case. **The committee itself is
+  unsure of this distinction** ("I assume this is the elected municipality
+  vs. the party's representation, but I'm not sure") — confirm via research
+  before drafting, do not assume. Priority: Medium, blocks N3 conceptually
+  (need the distinction clear before writing FA's history within it).
+- **N3 — FA's historical municipal record** (nacional and/or Montes de Oca
+  specifically). Past electoral results, regidores/síndicos elected under
+  the FA banner. Sources: TSE, prensa. **Privacy note:** an elected
+  official's name tied to their public office (TSE record) is citable by
+  name per VOICE.md's public-office exception — this is different from
+  naming a current unpaid committee holder. Priority: Medium, depends on N2
+  landing first for framing.
+
+### Write-ready — committee already has the info, no external research needed
+
+- ~~**N4 — CEC Ampliado**~~ — DONE, see `organismos/cec-ampliado.md`.
+- ~~**N5 — Per-district initiative directory**~~ — DONE, scaffold built at
+  `docs/distritos/montes-de-oca/sabanilla/` (see architecture section
+  below, now updated to namespace by canton — `distritos/<canton-slug>/
+  <distrito-slug>/` — since district names repeat nationally). Initiative
+  history lives in `distritos/montes-de-oca/sabanilla/iniciativas.md`,
+  seeded with the Historia de Angélica tutorial as its first (illustrative)
+  entry. Real entries get added as the committee reports actual initiatives
+  — table is intentionally near-empty right now.
+- **N6 — Party frentes** (women's, La J [divided by canton], ecumenical,
+  sexual diversity, ecological) (Referencia, likely new `organismos/` page
+  or section). Reference article — info already provided by the committee,
+  no fact-finding needed. Priority: Medium.
+
+### Operational goals, not documentation yet — revisit if they become concrete initiatives
+
+- **N7 — FA presence in public spaces** (e.g. Feria del Agricultor de
+  Montes de Oca — currently no FA presence there). This is a committee
+  goal, not a documentable process yet. Revisit later if it becomes a
+  concrete initiative (comparable to Historia de Angélica). Not a doc
+  target today.
+- **N8 — Red de Economía Social Solidaria**. Currently one WhatsApp group
+  in Montes de Oca. The committee itself hasn't decided whether more
+  groups/levels should exist. Stays an internal discussion note — not
+  content for the 92 affiliates until the committee decides the mechanism.
+  Do not draft a page implying a settled structure.
+
+### Blocked on human conversation — do not delegate to research
+
+These are explicitly **not** researchable from public sources. Track as a
+standing "needs interview / needs authority" list, separate from the doc
+tree, so they don't quietly rot as unfinished placeholders.
+
+- **N9 — Cultural/historical narrative** (frame from Ma Antonieta,
+  educator). Question structure exists: what happened, who was involved,
+  what were the results, what was the objective. The committee says this
+  needs depth directly from her. This is a pending interview, not a
+  research task. **Action needed:** schedule the conversation; nothing to
+  draft until then.
+- **N10 — District public-communication protocol + national guidance**
+  (merged topic). No clear guidance yet from the national party to
+  districts/cantons on what can be said publicly, who (if anyone) has veto
+  or retroactive control over social media and other channels, or whether
+  a formal comisión política exists to decide this. **The committee's goal
+  is not to challenge this — it's to open the question of how to work on
+  it going forward.** None of this is researchable from public sources; it
+  needs a direct conversation with someone holding real party authority.
+  This is the largest governance gap in the current notes: the national
+  party hasn't yet given districts an operating guide for this. **Action
+  needed:** identify who that conversation is with, before any article can
+  be drafted.
+
+## Content architecture: district / canton / national
+
+**Principle:** separate **generic** content (reusable by any district — roles, processes, the official directive) from **instance** content (specific to Sabanilla at a given moment — who coordinates today, what its assembly prioritized).
+
+- **Generic zone** — the current folders (`organismos/`, `guias/`, `explicacion/`, `recursos/`, `tutorials/`, `principios.md`, `niveles/`) stay district-agnostic. Everything derived from `directrices-capb.md`, the assembly methodology, the glossary, and the 6 commissions lives here, written in terms of "the district" / "the Committee", never "Sabanilla".
+- **Instance zone** — new folder `docs/distritos/<canton-slug>/<distrito-slug>/`, e.g. `docs/distritos/montes-de-oca/sabanilla/{index,mesa-de-coordinacion,iniciativas}.md`. **The district slug alone isn't unique nationally** — Costa Rica has 496 districts across 82 cantones and several names repeat (there's more than one "San Rafael"). That's why canton always comes first in the path, from the very first district documented, even though only one exists today — this avoids a URL migration later. A future district in the same canton (`docs/distritos/montes-de-oca/san-pedro/`, etc.) replicates the same shape without touching the generic zone; a new canton adds its own folder (`docs/distritos/<other-canton>/`). An index `docs/distritos/index.md` serves as the national map; each `docs/distritos/<canton-slug>/index.md` serves as the canton map. **Already built** for Montes de Oca/Sabanilla — see `docs/distritos/index.md` and `docs/distritos/montes-de-oca/index.md`.
+- **Current officeholder names**: only in `distritos/<canton-slug>/<distrito-slug>/mesa-de-coordinacion.md`, kept up to date operationally by the committee itself — never in generic pages.
+- **Convention**: instance pages always live under `distritos/<canton-slug>/<distrito-slug>/`, linking to the generic reference (e.g. Sabanilla's Mesa links to `organismos/roles-y-responsabilidades.md`) instead of repeating content.
+- **Path to canton/national**: the `distritos/<canton-slug>/` index is already the canton rollup; the `distritos/` index is the national rollup. No separate `territorios/<provincia>/<canton>/<distrito>/` hierarchy is needed — canton/district is already in the path. **The full list of 496 districts / 82 cantones is not onboarded yet** — they're added only as a real district organizes and requests its page, not speculatively.

@@ -141,7 +141,7 @@ Cualquier movimiento o comunidad que:
 ## 📝 Principios de Contribución
 
 - **Neutral:** Este repo no promueve ninguna ideología específica
-- **Abierto:** Todo el contenido es CC0 (dominio público)
+- **Licenciado en dos partes:** código bajo MIT, contenido escrito bajo CC BY-NC-ND 4.0 (postura conservadora provisional — ver [LICENSE-CONTENT](../LICENSE-CONTENT) en la raíz del repo)
 - **Práctico:** Primero lo que funciona, luego lo que suena bien
 - **Horizontal:** No hay dueños, hay mantenedores
 - **Sostenible:** El bienestar de las personas es parte del movimiento

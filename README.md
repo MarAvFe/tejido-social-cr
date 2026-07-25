@@ -35,4 +35,7 @@ Este es un monorepo que contiene:
 
 ## 📖 Licencia
 
-Este proyecto está bajo licencia [MIT](./LICENSE). Te invitamos a adaptarlo, bifurcarlo y usarlo libremente en tu comunidad.
+Este repositorio usa dos licencias distintas:
+
+- **Código del sitio** (`tejido-social-web/src/`, plugins, configuración): [MIT](./LICENSE) — libre de adaptar, bifurcar y reutilizar.
+- **Contenido escrito** (artículos bajo `tejido-social-web/docs/` y páginas independientes): [CC BY-NC-ND 4.0](./LICENSE-CONTENT) — se puede leer y compartir citando la fuente, pero no reutilizar comercialmente ni modificar todavía. Es una postura conservadora provisional mientras se revisa con el partido qué contenido puede licenciarse más abiertamente (parte de él sigue de cerca directrices y estatutos oficiales del Frente Amplio, que este proyecto no originó).

@@ -48,7 +48,11 @@
     "description": "The label of footer link with label=Sitio oficial del partido linking to https://www.frenteamplio.org/"
   },
   "copyright": {
-    "message": "Copyright © 2026 Frente Amplio. Dominio Público (CC0). Construido con Docusaurus.",
+    "message": "Copyright © 2026 Frente Amplio. Contenido bajo licencia CC BY-NC-ND 4.0. Construido con Docusaurus.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Política Editorial": {
+    "message": "Política Editorial",
+    "description": "The label of footer link with label=Política Editorial linking to /politica-editorial"
   }
 }

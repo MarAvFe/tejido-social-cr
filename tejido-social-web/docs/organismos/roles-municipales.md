@@ -1,0 +1,39 @@
+---
+source_label: "Directiva oficial"
+source_note: "Código Municipal de Costa Rica (Ley N.° 7794) y Tribunal Supremo de Elecciones (TSE)."
+source_url: "https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf"
+---
+
+# Roles Municipales en Costa Rica
+
+Referencia sobre el gobierno local costarricense: qué cargos existen, qué hace cada uno, y cómo se eligen. Esta página describe la **municipalidad electa** — es un gobierno local, no una estructura del Frente Amplio. La distinción entre este gobierno local y la representación interna del partido (CEC) todavía no tiene artículo propio
+
+## Los cargos
+
+### Alcaldía
+
+Es el órgano ejecutivo del gobierno municipal, junto con dos vicealcaldías. Se elige por votación directa a nivel de cantón, de forma independiente al Concejo Municipal.
+
+### Concejo Municipal (regidores)
+
+Es el órgano deliberativo del cantón — funciona de forma similar a una asamblea legislativa, pero a escala municipal. Está integrado por **regidurías** (regidores propietarios y sus suplentes), en una cantidad que varía según la población del cantón: 5, 7, 9, 11 o 13 personas propietarias. Se eligen por votación directa, por cantón.
+
+### Concejo de Distrito (síndicos y concejales de distrito)
+
+Cada distrito de un cantón tiene su propio Concejo de Distrito, integrado por cinco personas propietarias: un **síndico** (quien lo preside) y cuatro **concejales de distrito**. Entre sus funciones está proponer ante el Concejo Municipal a personas beneficiarias de becas, bonos de vivienda y otras ayudas estatales del cantón. Se eligen por votación directa, por distrito.
+
+### Concejo Municipal de Distrito (intendencia)
+
+Existe únicamente en ocho distritos autónomos especiales del país. En estos casos, el distrito tiene su propio Concejo Municipal de Distrito, liderado por una **intendencia** (equivalente a la alcaldía) y compuesto por **concejales municipales de distrito**, quienes ejercen exactamente las mismas funciones que los regidores, pero a nivel distrital en lugar de cantonal.
+
+## Cómo se eligen
+
+Todos estos cargos se eligen en las **elecciones municipales**, separadas de las elecciones presidenciales y legislativas, organizadas por el [TSE](https://www.tse.go.cr/) cada cuatro años (la más reciente: 4 de febrero de 2024, para el período 2024–2028). En una misma elección se vota simultáneamente por alcaldía, Concejo Municipal, síndicos, concejales de distrito y, donde aplica, intendencias — cada cargo con su propia papeleta y su propio partido o candidatura. Fuente: [Código Municipal, Ley N.° 7794](https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf) y [TSE](https://www.tse.go.cr/).
+
+## Remuneración
+
+A diferencia de cargos similares en otros países, ninguno de estos puestos es de dedicación exclusiva. Regidores, síndicos y concejales reciben una **dieta** (un pago por sesión a la que asisten), no un salario, y pueden ejercer su profesión libremente fuera de sus funciones en el Concejo. La alcaldía sí recibe un salario, cuyo monto depende de la recaudación de impuestos del cantón.
+
+## Ver también
+
+- **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización distrital del partido.

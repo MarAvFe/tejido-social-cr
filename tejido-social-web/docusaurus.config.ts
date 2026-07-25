@@ -125,6 +125,10 @@ const config: Config = {
               to: '/contacto',
             },
             {
+              label: 'Política Editorial',
+              to: '/politica-editorial',
+            },
+            {
               label: 'Contribuir (GitHub)',
               href: 'https://github.com/MarAvFe/tejido-social-cr/blob/main/CONTRIBUTING.md',
             },
@@ -135,7 +139,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Frente Amplio. Dominio Público (CC0). Construido con Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Frente Amplio. Contenido bajo licencia CC BY-NC-ND 4.0. Construido con Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
