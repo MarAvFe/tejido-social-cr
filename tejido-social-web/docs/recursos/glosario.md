@@ -24,6 +24,10 @@ Términos y siglas usados en la organización distrital del Frente Amplio.
 
 **Secretaría General** — Instancia nacional del partido a la que se comunica la conformación e integración de cada comité distrital.
 
+**JFA** — Juventud del Frente Amplio, conocida como "La J". Órgano de dirección política del partido organizado por sector etario, con estructura propia que se replica por cantón. Ver [Frentes Nacionales y Secretarías](../organismos/frentes-nacionales.md).
+
+**SdM** — Secretaría de las Mujeres. Órgano que reúne voluntariamente a mujeres del partido con funciones internas transversales, entre ellas velar por el cumplimiento de los derechos humanos de las mujeres militantes. Ver [Frentes Nacionales y Secretarías](../organismos/frentes-nacionales.md).
+
 ## Términos
 
 **Afiliado / persona afiliada** — Quien pertenece formalmente al Frente Amplio. Puede solicitar su inclusión en el comité de su distrito si su domicilio electoral está en ese distrito.
@@ -45,3 +49,17 @@ Términos y siglas usados en la organización distrital del Frente Amplio.
 **Comisión temática** — Cada uno de los grupos de trabajo especializados del comité distrital, organizados alrededor de un área (ambiente, cultura, movilidad, etc.). Ver [Comisiones Temáticas](../organismos/comisiones-tematicas/index.md).
 
 **FAMO** — Abreviatura usada informalmente para referirse a estructuras del Frente Amplio en el cantón de Montes de Oca (p. ej. "FAMO Sabanilla").
+
+**Frente Nacional** — Órgano interno del partido organizado por sector social (ecologista, sindical, agrícola, etc.), no por territorio. Distinto de la estructura distrital/cantonal/provincial. Ver [Frentes Nacionales y Secretarías](../organismos/frentes-nacionales.md).
+
+**Plebiscito** — Consulta directa a la afiliación para optar entre dos o más propuestas de línea política u organizativa coyuntural. Ver [Mecanismos de Democracia Participativa](../explicacion/mecanismos-democracia-participativa.md).
+
+**Referendo** — Consulta directa a la afiliación para aprobar o improbar normativa interna del partido, incluyendo reformas al Estatuto. Ver [Mecanismos de Democracia Participativa](../explicacion/mecanismos-democracia-participativa.md).
+
+**Tribunal de Ética** — Órgano rector del régimen ético y disciplinario del partido; resuelve denuncias y aplica sanciones con apego al debido proceso. No debe confundirse con el TEFA (que fiscaliza procesos electivos internos). Ver [Código de Ética del Frente Amplio (Resumen)](../organismos/codigo-de-etica.md) y [Cómo Presentar una Denuncia ante el Tribunal de Ética](../guias/presentar-denuncia-tribunal-etica.md).
+
+**Tribunal de Alzada** — Órgano que resuelve en última instancia las apelaciones contra resoluciones del Tribunal de Ética. Ver [Código de Ética del Frente Amplio (Resumen)](../organismos/codigo-de-etica.md).
+
+**Revocatoria de mandato** — Sanción que retira a una persona afiliada el cargo o los cargos que ocupa dentro del partido, sin expulsarla de la afiliación. Distinta de la expulsión. Ver [Sanciones Disciplinarias y Revocatoria de Mandato](../organismos/sanciones-disciplinarias.md).
+
+**Inopia** — Falta de personas candidatas disponibles para un cargo. El Estatuto permite a la Asamblea Cantonal levantar el requisito de tiempo mínimo de afiliación para postularse en caso de inopia. Ver [Requisitos para Postularse a Cargos de Elección Popular](../organismos/requisitos-candidatura-popular.md).

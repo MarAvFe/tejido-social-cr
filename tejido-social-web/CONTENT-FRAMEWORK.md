@@ -75,6 +75,19 @@ orphan article waiting to be duplicated.
 Conocimiento de campo / pendiente). Already established practice — see
 `VOICE.md`.
 
+**Frontmatter alone is not enough — link inline too.** Every time the body
+names a specific law, article number, or authority ("Artículo 26", "el
+Código Municipal", "el Estatuto del partido"), that mention must itself be a
+markdown link to the source (the PDF, the TSE page, or the internal
+generic-zone article it derives from), not just referenced once in
+`source_note`/`source_url`. Close the article with an explicit "Fuente:"
+line linking everything cited, mirroring the existing pattern in
+`organismos/roles-municipales.md`. This was missed on first pass for three
+articles (`concejo-municipal-vs-cec.md`, `frentes-nacionales.md`,
+`public-narrative.md`) — frontmatter had the source, the prose didn't link
+it — so treat it as a standing check before publishing, the same way the
+internal-doc-name grep is a standing check in `CLAUDE.md`.
+
 ---
 
 ## Part 2 — Concept-thread registry
@@ -93,7 +106,9 @@ creating a new thread, add a row.
 ### Thread: **Iniciativa** — from an idea to a district project
 
 - **Generic blueprint:** `tutorials/desarrollar-iniciativa-distrital.md` (the
-  process), `tutorials/historia-de-angelica.md` (the narrated example).
+  process), `tutorials/historia-de-angelica.md` (the narrated example),
+  `explicacion/public-narrative.md` (the underlying framework — Self/Us/Now —
+  as a reusable tool, distinct from its worked example).
 - **Instance home:** `distritos/<canton>/<distrito>/iniciativas.md`.
 - **Related, must stay linked:** `organismos/comisiones-tematicas/index.md`
   (every initiative is framed under a commission),
@@ -150,6 +165,54 @@ creating a new thread, add a row.
   page).
 - **Note:** the two guides are **not** duplicates — designing ≠ growing
   reach. Don't merge them.
+
+### Thread: **Frentes y Secretarías** — party structure by sector, not territory
+
+- **Generic blueprint:** `organismos/frentes-nacionales.md` (the 12 statutory
+  Frentes Nacionales, plus JFA and Secretaría de las Mujeres as related but
+  separately-regulated sector organs).
+- **Instance home:** none yet — no field data on which Frentes are active in
+  Montes de Oca/Sabanilla. Page says so explicitly rather than implying
+  coverage.
+- **Related:** Estructura del partido thread (this is the sector axis,
+  parallel to the territorial one); JFA's own statute has a cantonal
+  sub-structure that could eventually get its own generic blueprint if a
+  district needs more detail than the summary here.
+- **Invariant:** don't describe a Frente's local presence unless it's
+  confirmed field knowledge — the statute only guarantees the Frente exists
+  nationally, not that it's active in any given canton/district.
+
+### Thread: **Estatuto del partido** — national rules any affiliate can hit
+
+- **Generic blueprint:** `organismos/requisitos-candidatura-popular.md`
+  (candidacy requirements, Art. 22),
+  `explicacion/mecanismos-democracia-participativa.md` (plebiscito/referendo,
+  Arts. 38–42), `organismos/sanciones-disciplinarias.md` (discipline/
+  revocatoria, Arts. 59–61), `organismos/finanzas-del-partido.md` (party
+  finances, Arts. 53–58), `organismos/codigo-de-etica.md` (3-minute summary
+  of the standalone Código de Ética PDF — different source document from
+  the Estatuto, referenced BY the Estatuto and by
+  `requisitos-candidatura-popular.md`/`sanciones-disciplinarias.md`, not a
+  duplicate of either), `guias/presentar-denuncia-tribunal-etica.md` (the
+  How-To counterpart to `codigo-de-etica.md`'s Reference/Explicación —
+  same Capítulo III material, reader-question "how do I do X" instead of
+  "what is X").
+- **Instance home:** none — these are national-level rules that apply
+  identically regardless of district; no per-district variation to capture.
+- **Related:** `organismos/frentes-nacionales.md` (same source document, the
+  Estatuto, different chapter); `requisitos-candidatura-popular.md` ↔
+  `sanciones-disciplinarias.md` ↔ `codigo-de-etica.md` all cross-link (the
+  commitments a candidate accepts, what happens if broken, and the full
+  Tribunal de Ética procedure behind it). **Naming note:** the Estatuto and
+  the Código de Ética both call it the **Tribunal de Ética** — earlier draft
+  of `sanciones-disciplinarias.md` mistakenly called it "Tribunal de Ética y
+  Disciplina," caught and fixed once the Código de Ética PDF was read
+  directly. Watch for this if summarizing from memory instead of the source.
+- **Invariant:** every article in this thread cites specific article numbers
+  inline, linked to the Estatuto PDF, plus a closing "Fuente:" line — see the
+  sourcing-discipline rule in Part 1, question 4. More Estatuto chapters
+  remain unmined (e.g. Cap. IV Órganos Legales, Cap. VIII Principios de
+  Acción Política) — treat this thread as open, not closed at four articles.
 
 ### Thread: **Estructura del partido** — district → canton → province → national
 

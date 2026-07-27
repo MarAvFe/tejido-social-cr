@@ -6,7 +6,7 @@ source_url: "https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf"
 
 # Roles Municipales en Costa Rica
 
-Referencia sobre el gobierno local costarricense: qué cargos existen, qué hace cada uno, y cómo se eligen. Esta página describe la **municipalidad electa** — es un gobierno local, no una estructura del Frente Amplio. La distinción entre este gobierno local y la representación interna del partido (CEC) todavía no tiene artículo propio
+Referencia sobre el gobierno local costarricense: qué cargos existen, qué hace cada uno, y cómo se eligen. Esta página describe la **municipalidad electa** — es un gobierno local, no una estructura del Frente Amplio. Ver **[Concejo Municipal vs. Representación Interna del Partido (CEC)](../explicacion/concejo-municipal-vs-cec.md)** para la distinción entre este gobierno local y la representación interna del partido.
 
 ## Los cargos
 
@@ -32,8 +32,9 @@ Todos estos cargos se eligen en las **elecciones municipales**, separadas de las
 
 ## Remuneración
 
-A diferencia de cargos similares en otros países, ninguno de estos puestos es de dedicación exclusiva. Regidores, síndicos y concejales reciben una **dieta** (un pago por sesión a la que asisten), no un salario, y pueden ejercer su profesión libremente fuera de sus funciones en el Concejo. La alcaldía sí recibe un salario, cuyo monto depende de la recaudación de impuestos del cantón.
+A diferencia de cargos similares en otros países, ninguno de estos puestos es de dedicación exclusiva. Regidores y síndicos reciben una **dieta** (un pago por sesión a la que asisten), no un salario, y pueden ejercer su profesión libremente fuera de sus funciones en el Concejo. Los concejales de distrito, en cambio, ejercen su cargo de forma gratuita, sin dieta ni remuneración alguna. La alcaldía sí recibe un salario, cuyo monto se ajusta según el presupuesto ordinario de la municipalidad.
 
 ## Ver también
 
+- **[Concejo Municipal vs. Representación Interna del Partido (CEC)](../explicacion/concejo-municipal-vs-cec.md)** — en qué se parecen y en qué no este gobierno local y la estructura interna del FA.
 - **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización distrital del partido.
