@@ -55,8 +55,7 @@ Articles already published as explicit placeholders, waiting on a source that do
 From the minutes of the 12 July 2026 assembly (`M`, §8), these topics still don't have definitive content and depend on the committee resolving them first:
 
 - Exact text of the founding agreement → will feed `recursos/acuerdo-constitutivo-modelo.md`
-- Final approved priorities → will feed `explicacion/como-se-priorizan-necesidades.md` and `organismos/comisiones-tematicas/index.md`
-- Final composition of commissions → will feed the 6 commission pages in `organismos/comisiones-tematicas/`
+- Final approved priorities → will feed `explicacion/como-se-priorizan-necesidades.md`, `organismos/pilares-desarrollo/index.md`, and the 6 pillar pages under it. (The minuta's original wording was "conformación de comisiones" — partly obsolete since the 0.4.4 rename: pillars have no membership to compose, so what's still pending from that line is the *priorities per area*, not a roster.)
 - Immediate tasks with owners and deadlines → future article, no location assigned yet
 - Date/location of the next meeting → operational content, likely in the instance zone (see below), not generic
 
@@ -97,7 +96,7 @@ privacy section for the public-office exception).
   `docs/distritos/montes-de-oca/sabanilla/` (see architecture section
   below, now updated to namespace by canton — `distritos/<canton-slug>/
   <distrito-slug>/` — since district names repeat nationally). Initiative
-  history lives in `distritos/montes-de-oca/sabanilla/iniciativas.md`,
+  history lives in `distritos/montes-de-oca/sabanilla/iniciativas/`,
   seeded with the Historia de Angélica tutorial as its first (illustrative)
   entry. Real entries get added as the committee reports actual initiatives
   — table is intentionally near-empty right now.
@@ -212,12 +211,198 @@ sourcing-discipline rule in `CONTENT-FRAMEWORK.md` (question 4).
   correos electrónicos que estime necesarios." Guide says so explicitly
   rather than inventing a contact channel; update once confirmed.
 
+## Pending intake — Sabanilla initiatives + meta projects (2026-07-29)
+
+Source: committee working session, Sabanilla. Three concrete initiatives and
+four cross-cutting "meta project" topics.
+
+### Published — the three concrete initiatives
+
+All three are live under `docs/distritos/montes-de-oca/sabanilla/iniciativas/`,
+each as its own page with the ficha field set, each grouped under its
+pilar de desarrollo. Published deliberately incomplete (state: "en
+formulación"), with unanswered fields marked pending rather than invented —
+per VOICE.md's honesty-about-incompleteness rule.
+
+- **I1 — Biblioteca ambulante** (`iniciativas/biblioteca-ambulante.md`).
+  Pilar: Educación, Formación y Empleo. Mobile library at the Feria del
+  Agricultor on weekends. **The daycare/cuido extension is documented as an
+  idea under discussion, not an approved stage** — it carries legal,
+  safety, and staffing obligations the committee hasn't evaluated. Do not
+  let a future edit promote it to a planned phase without the committee
+  actually deciding. Note this also partially activates N7 (FA presence in
+  public spaces) — the feria goal now has a concrete initiative attached.
+- **I2 — Buses de Sabanilla** (`iniciativas/buses-sabanilla.md`). Pilar:
+  Movilidad y Derecho a la Ciudad. **Least defined of the three — no
+  objetivo, no alcance.** Blocked on the same class of problem as N9: the
+  context lives in one person's ~10 years of accumulated experience, not in
+  public sources. **Action needed:** schedule that conversation, then pick
+  ONE opportunity as the focus (the committee's own stated criterion).
+  Nothing further to draft until the interview happens.
+- **I3 — Comercio local** (`iniciativas/comercio-local.md`). Pilar:
+  Participación y Organización Comunitaria. Interviews doubling as
+  district-opinion gathering and as free visibility for local businesses vs.
+  the big chains. **Unresolved tension flagged in the article itself:**
+  publishing a business profile under the committee's name can read as party
+  endorsement of a specific commerce, or create an expectation of
+  reciprocity. The inclusion criterion is undecided; it also depends on M1
+  (communication rules) landing. Don't write a "how we choose businesses"
+  guide until the committee decides.
+
+### Meta projects — NOT publishable yet, tracked here
+
+Four cross-cutting topics that came up alongside the initiatives. **None of
+these should become a reader-facing article in their current state** — for
+every one, the honest answer today is "the committee hasn't decided," and
+publishing a page about an undecided mechanism performs a consolidation
+that doesn't exist (VOICE.md). They're real work, tracked here so they don't
+evaporate; each has an explicit unblock condition.
+
+- **M1 — Communication: channels, tone, cadence, brand.** Open questions,
+  none answered: does the district have an IG/TikTok presence? Does the
+  canton have official social media, and can the district get posting
+  access? Do we write newspaper columns? Then: what tone, what cadence, and
+  a brand book on top of that.
+  **M1 and N10 are related but NOT the same task, and must not be merged**
+  (corrected 2026-07-29 — an earlier version of this entry wrongly treated
+  them as one):
+  - **N10 is top-down discovery** — find out what national guidance exists.
+    The expected answer is *probably none*. It's a research/inquiry task
+    with an external dependency (someone with party authority).
+  - **M1 is bottom-up construction** — build something reasonable now and
+    leave explicit blanks for whatever N10 turns up. It does **not** wait on
+    N10.
+
+  So M1 is not blocked the way the other meta items are. **Unblock:** a
+  committee decision on channels and tone — nothing external required. The
+  deliverable is deliberately partial: a working communication approach with
+  named gaps, not a finished policy. That shape fits VOICE.md's
+  honesty-about-incompleteness rule directly, so M1 *can* become
+  reader-facing content earlier than M3/M4 — as long as the blanks are
+  visible as blanks. Related field notes already gathered: interest in
+  working with journalists, finding audiovisual producers, shared graphic
+  resources, and a political communication plan (staying current and
+  re-communicating).
+- **M2 — Initiative boilerplate.** ✅ **Resolved without a new article.**
+  The committee's instinct was right that a boilerplate is needed, but
+  `tutorials/desarrollar-iniciativa-distrital.md` already *was* it — it just
+  didn't state the field set as a fixed list. Added a "La ficha de una
+  iniciativa" section there (pilar, responsable, objetivo, alcance, a
+  quién afecta, por qué importa, estado/fecha, qué necesita para avanzar),
+  and all three I1–I3 pages use those exact headings so the shape is
+  visibly one document type. **Do not create a separate boilerplate
+  article** — that would fork the definition and guarantee drift.
+- **M3 — Shared district management: treasury and per-initiative
+  communication.** The real question is architectural: does each initiative
+  hold its own treasury, or is there one district treasury distributed
+  across initiatives? Same question for communication (per-initiative vs.
+  district-level) and for reporting district-wide goals and progress. The
+  committee's stated motivation is exactly right — solve it once instead of
+  re-solving per initiative. **Not documentable yet: no model has been
+  chosen.** Note `organismos/finanzas-del-partido.md` covers *party-level*
+  finance rules (Estatuto Arts. 53–58) and is a constraint on any answer,
+  but it does not answer the district-internal question. **Unblock:**
+  committee decides a model.
+  **Zone decision (2026-07-29): treasury goes in a Sabanilla article, NOT
+  the generic zone — even though the topic is generic in principle.** The
+  reasoning is deliberate and overrides the default: a treasury model is too
+  consequential to publish as a blueprint for every district before it has
+  been tested in one. Sabanilla documents what *it* does; if the model
+  proves itself, it graduates to generic later. Treat "generic in principle"
+  and "ready to be published as generic" as different bars — this is the
+  precedent for that distinction.
+- **M4 — Inter-canton collaboration / not reinventing solutions.** Other
+  cantones (noted in field: Goicoechea, La Unión, Moravia) have presumably
+  faced M1 and M3 already. Two-track intent, and the tracks must not be
+  confused: (a) **today, assume we're the creators** — Sabanilla can't wait
+  for anyone to start; (b) **in parallel, build a practice of connecting
+  outward** to upskill and reuse. Shared resources across the district's
+  initiatives (e.g. one ad manager serving all of them) sit at the
+  intersection of M3 and M4.
+  **Placement decision (2026-07-29): M4 is operative, not documentation —
+  it gets no article.** It's a working practice (make contact, learn, reuse),
+  and a page describing an intention to collaborate isn't content. The one
+  case where it *could* earn a place is if it's reframed as a documented
+  **"upskilling and collaboration" practice** — i.e. an article about how a
+  district learns from other cantones as a repeatable habit, not about the
+  intention to try. Location for that is still undecided and genuinely
+  unclear (`explicacion/`? `guias/`?); **leave it unplaced rather than
+  forcing a folder.** Revisit once there's real experience to describe.
+  **Unblock:** an actual contact made with another canton.
+
+**Structural note, revised 2026-07-29:** the earlier blanket claim that
+M1/M3/M4 all land in the generic zone was too coarse. Per-item now: **M1**
+generic-leaning (a communication approach with visible blanks is reusable);
+**M3** instance-first by explicit decision (Sabanilla only, until the
+treasury model is proven); **M4** no article at all unless reframed as an
+upskilling practice. Only Sabanilla's *chosen* answers (which channels it
+actually uses, what its treasury holds) are instance in every case.
+
+### ✅ Resolved — "pilares" vs. "comisiones temáticas"
+
+Was an open question; **decided 2026-07-29.** They are the same thing, and
+"comisión" was the wrong word. Committee's reasoning: a *comisión* is a body
+of people (a district is a comisión in that sense), and the party's formal
+people-grouping structures are the **Frentes** — already documented
+separately in `organismos/frentes-nacionales.md`. Using "comisión" for an
+*area of work* implied six standing groups with their own membership, which a
+district of this scale cannot staff. In practice the Mesa de Coordinación
+coordinates, and the six areas only distribute the work.
+
+**Done:** full rename to **Pilares de Desarrollo** (generic/district-level,
+no territorial qualifier) — folder, sidebar, all prose, glossary entry, and
+the `pilares-desarrollo/index.md` page rewritten to state that a pillar is
+an area of work and not a group of people. The national **Comisión Política**
+kept its name (statutory organ, unrelated). 301 redirects for the old public
+URLs live in the root `netlify.toml`. See the Pilar de desarrollo thread in
+`CONTENT-FRAMEWORK.md` for the standing rule.
+
+Still unplaced from the same session: "puntos abstractos del Parque del
+Este" — too thin to place, needs the committee to say what it means.
+
 ## Content architecture: district / canton / national
 
 **Principle:** separate **generic** content (reusable by any district — roles, processes, the official directive) from **instance** content (specific to Sabanilla at a given moment — who coordinates today, what its assembly prioritized).
 
-- **Generic zone** — the current folders (`organismos/`, `guias/`, `explicacion/`, `recursos/`, `tutorials/`, `principios.md`, `niveles/`) stay district-agnostic. Everything derived from `directrices-capb.md`, the assembly methodology, the glossary, and the 6 commissions lives here, written in terms of "the district" / "the Committee", never "Sabanilla".
+- **Generic zone** — the current folders (`organismos/`, `guias/`, `explicacion/`, `recursos/`, `tutorials/`, `principios.md`, `niveles/`) stay district-agnostic. Everything derived from `directrices-capb.md`, the assembly methodology, the glossary, and the 6 pillars lives here, written in terms of "the district" / "the Committee", never "Sabanilla".
 - **Instance zone** — new folder `docs/distritos/<canton-slug>/<distrito-slug>/`, e.g. `docs/distritos/montes-de-oca/sabanilla/{index,mesa-de-coordinacion,iniciativas}.md`. **The district slug alone isn't unique nationally** — Costa Rica has 496 districts across 82 cantones and several names repeat (there's more than one "San Rafael"). That's why canton always comes first in the path, from the very first district documented, even though only one exists today — this avoids a URL migration later. A future district in the same canton (`docs/distritos/montes-de-oca/san-pedro/`, etc.) replicates the same shape without touching the generic zone; a new canton adds its own folder (`docs/distritos/<other-canton>/`). An index `docs/distritos/index.md` serves as the national map; each `docs/distritos/<canton-slug>/index.md` serves as the canton map. **Already built** for Montes de Oca/Sabanilla — see `docs/distritos/index.md` and `docs/distritos/montes-de-oca/index.md`.
 - **Current officeholder names**: only in `distritos/<canton-slug>/<distrito-slug>/mesa-de-coordinacion.md`, kept up to date operationally by the committee itself — never in generic pages.
 - **Convention**: instance pages always live under `distritos/<canton-slug>/<distrito-slug>/`, linking to the generic reference (e.g. Sabanilla's Mesa links to `organismos/roles-y-responsabilidades.md`) instead of repeating content.
 - **Path to canton/national**: the `distritos/<canton-slug>/` index is already the canton rollup; the `distritos/` index is the national rollup. No separate `territorios/<provincia>/<canton>/<distrito>/` hierarchy is needed — canton/district is already in the path. **The full list of 496 districts / 82 cantones is not onboarded yet** — they're added only as a real district organizes and requests its page, not speculatively.
+
+Definir pilares de sabanilla
+iniciativas en cada pilar
+
+cada iniciativa tiene un líder.
+qué mas?
+- objetivo
+- alcance
+- fecha
+- por qué es importante?
+- a quien afecta?
+- algo más?
+
+notes:
+biblioteca ambulante. cuido?
+buses sabanilla. oportunidades? elegir una
+comunicar, publicitar negocios locales. historias y opiniones, entrevistas
+
+Meta proyectos:
+- comunicación: Goico, la union, moravia
+- marco de lineamientos
+
+puntos abstractos del parque del este
+
+
+marco para llevar una initiactiva
+cuanta gente? 
+qué recursos ocupa?
+comunicarlo?
+
+
+A Mariano le interesa trabajar con periodistas.
+
+encontrar productores audiovisuales
+recursos gráficos? unificar comunicación? libro de marca?
+plan de comunicación política (estar al día con lo que sucede y recomunicar)
+- acercarse a los negocios locales. publicidad y opinión pública

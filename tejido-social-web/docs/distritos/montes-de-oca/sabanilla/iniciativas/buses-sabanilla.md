@@ -14,7 +14,7 @@ Iniciativa sobre el transporte público de bus en Sabanilla: qué se puede mejor
 
 | Campo | Detalle |
 | --- | --- |
-| **Comisión** | [Movilidad y Derecho a la Ciudad](../../../../organismos/comisiones-tematicas/movilidad-ciudad.md) |
+| **Pilar** | [Movilidad y Derecho a la Ciudad](../../../../organismos/pilares-desarrollo/movilidad-ciudad.md) |
 | **Responsable** | Asignado por la coordinación distrital (no publicado) |
 | **Objetivo** | Sin definir. Depende de qué oportunidad de mejora se escoja como foco. |
 | **Alcance** | Sin definir. El primer paso de la iniciativa es precisamente delimitarlo. |

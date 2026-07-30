@@ -29,4 +29,4 @@ Para pasar de esa base inicial a un alcance mayor, ver [Cómo ampliar el alcance
 
 ## Qué hacer con los resultados
 
-Presente los resultados en la asamblea como insumo para la fase de "lectura de la realidad" y "priorización" — ver [Cómo organizar una asamblea constitutiva](./organizar-asamblea-constitutiva.md). Las prioridades con mayor interés o urgencia identificadas ahí alimentan directamente las comisiones temáticas del comité.
+Presente los resultados en la asamblea como insumo para la fase de "lectura de la realidad" y "priorización" — ver [Cómo organizar una asamblea constitutiva](./organizar-asamblea-constitutiva.md). Las prioridades con mayor interés o urgencia identificadas ahí alimentan directamente los pilares de trabajo del comité.

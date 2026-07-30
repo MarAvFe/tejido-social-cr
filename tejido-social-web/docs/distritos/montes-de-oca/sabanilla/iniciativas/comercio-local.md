@@ -14,7 +14,7 @@ Entrevistas a personas dueñas de negocios de Sabanilla que cumplen dos funcione
 
 | Campo | Detalle |
 | --- | --- |
-| **Comisión** | [Participación y Organización Comunitaria](../../../../organismos/comisiones-tematicas/participacion-organizacion.md) |
+| **Pilar** | [Participación y Organización Comunitaria](../../../../organismos/pilares-desarrollo/participacion-organizacion.md) |
 | **Responsable** | Asignado por la coordinación distrital (no publicado) |
 | **Objetivo** | Recoger la perspectiva del comercio local sobre el distrito y, al mismo tiempo, dar visibilidad a esos negocios. |
 | **Alcance** | Entrevistas a negocios locales de Sabanilla. Sin definir: cuántos negocios, con qué frecuencia, y en qué formato se publica cada entrevista. |

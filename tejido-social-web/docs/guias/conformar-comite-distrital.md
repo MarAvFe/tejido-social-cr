@@ -44,7 +44,7 @@ Tras la asamblea, el TEFA comunica el resultado de la elección de Presidencia y
 
 - Defina la cadencia de reuniones (mínimo una por bimestre, responsabilidad de la Presidencia).
 - Empiece a llevar minutas y registro de comunicaciones (responsabilidad de la Secretaría).
-- Organice el trabajo en [comisiones temáticas](../organismos/comisiones-tematicas/index.md).
+- Organice el trabajo en [pilares de desarrollo](../organismos/pilares-desarrollo/index.md).
 
 ## Referencias
 

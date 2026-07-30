@@ -21,9 +21,9 @@ Es el equipo de articulación electo por la Asamblea que da seguimiento a los ac
 
 Cada cargo se ejerce por dos años, de forma ad-honorem. Ver el detalle de funciones de cada uno en [Roles y Responsabilidades](./roles-y-responsabilidades.md).
 
-## Comisiones temáticas
+## Pilares de desarrollo
 
-Bajo la Mesa de Coordinación, el trabajo del distrito se organiza en comisiones temáticas — grupos enfocados en un área concreta del desarrollo distrital. Ver [Comisiones Temáticas](./comisiones-tematicas/index.md).
+Bajo la Mesa de Coordinación, el trabajo del distrito se reparte en pilares de desarrollo — áreas concretas del desarrollo distrital, no grupos de personas con integrantes propios. Ver [Pilares de Desarrollo](./pilares-desarrollo/index.md).
 
 ## Cómo se relacionan estos niveles
 
@@ -36,7 +36,7 @@ Mesa de Coordinación Distrital (Coordinación, Subcoordinación, Vocalía)
       │
       │  organiza el trabajo en
       ▼
-Comisiones Temáticas
+Pilares de Desarrollo
 ```
 
 La Mesa de Coordinación no reemplaza a la Asamblea: le rinde cuentas y ejecuta lo que esta decide. Hacia arriba, el comité distrital se coordina con el Comité Ejecutivo Cantonal (CEC), y a través de este con las estructuras provinciales y nacionales del partido.

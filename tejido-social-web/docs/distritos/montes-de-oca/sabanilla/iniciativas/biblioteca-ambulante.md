@@ -14,7 +14,7 @@ Una biblioteca móvil presente en la Feria del Agricultor de Sabanilla los fines
 
 | Campo | Detalle |
 | --- | --- |
-| **Comisión** | [Educación, Formación y Empleo](../../../../organismos/comisiones-tematicas/educacion-formacion-empleo.md) |
+| **Pilar** | [Educación, Formación y Empleo](../../../../organismos/pilares-desarrollo/educacion-formacion-empleo.md) |
 | **Responsable** | Asignado por la coordinación distrital (no publicado) |
 | **Objetivo** | Fomentar el hábito de lectura y el acceso a la educación en las personas menores del distrito. |
 | **Alcance** | Presencia recurrente los fines de semana en la Feria del Agricultor. Sin definir: cantidad de libros, modalidad de préstamo o lectura en sitio, y si se extiende a otros espacios del distrito. |
@@ -29,7 +29,7 @@ El comité ha planteado que, más adelante, la biblioteca podría funcionar tamb
 
 Esto es una idea en discusión, no una etapa acordada. Un servicio de cuido implica responsabilidades legales, de seguridad y de personal que la iniciativa hoy no tiene resueltas ni evaluadas, y que exceden lo que requiere una biblioteca ambulante. Se documenta acá porque forma parte de la intención original de la propuesta, con la advertencia explícita de que no está aprobado ni planificado.
 
-Si esa extensión avanza, conecta también con [Cuidados e Inclusión](../../../../organismos/comisiones-tematicas/cuidados-inclusion.md).
+Si esa extensión avanza, conecta también con [Cuidados e Inclusión](../../../../organismos/pilares-desarrollo/cuidados-inclusion.md).
 
 ## Ver también
 

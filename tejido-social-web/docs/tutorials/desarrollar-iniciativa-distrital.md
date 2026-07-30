@@ -21,9 +21,9 @@ Llevá tu idea a la [Coordinación Distrital](../niveles/coordinacion-distrital.
 No hace falta un documento formal ni extenso, pero sí conviene llegar con estas ideas claras:
 
 - **Tema** — de qué se trata la iniciativa, en una o dos frases.
-- **Alcance** — qué abarca y qué no. ¿Es una actividad puntual, un proyecto continuo, una comisión nueva?
+- **Alcance** — qué abarca y qué no. ¿Es una actividad puntual o un proyecto continuo?
 - **Por qué le importa al distrito** — qué necesidad real atiende. Si tenés datos de la [encuesta distrital](../guias/disenar-encuesta-plan-accion.md) o de la asamblea que la respalden, mejor — pero la observación directa también cuenta.
-- **Con quién se relaciona** — qué [comisión temática](../organismos/comisiones-tematicas/index.md) es la más cercana, si ya existe alguna.
+- **Con quién se relaciona** — qué [pilar de desarrollo](../organismos/pilares-desarrollo/index.md) es el más cercano.
 
 Otros elementos que ayudan a que la coordinación entienda y apoye la propuesta más rápido:
 
@@ -37,7 +37,7 @@ Cuando una iniciativa queda acordada, el comité la registra con un conjunto fij
 
 | Campo | Qué responde |
 | --- | --- |
-| **Comisión** | Bajo qué [comisión temática](../organismos/comisiones-tematicas/index.md) se enmarca. |
+| **Pilar** | Bajo qué [pilar de desarrollo](../organismos/pilares-desarrollo/index.md) se enmarca. |
 | **Responsable** | Qué persona la impulsa. Se registra internamente por la coordinación; el sitio no publica nombres ni contactos. |
 | **Objetivo** | Qué cambia si la iniciativa funciona, en una frase. |
 | **Alcance** | Qué abarca y qué explícitamente no. |
@@ -54,7 +54,7 @@ Las iniciativas registradas de cada distrito viven en su propia página — por 
 
 La coordinación revisa la propuesta y, generalmente:
 
-- Te la asigna a vos como responsable de impulsarla, dentro de la comisión temática correspondiente (o como base de una comisión nueva, si no encaja en ninguna existente).
+- Te la asigna a vos como responsable de impulsarla, dentro del pilar de desarrollo correspondiente.
 - Te conecta con otras personas del distrito que ya estén trabajando en algo similar o relacionado, para sumar esfuerzos en vez de duplicarlos.
 - Da seguimiento al avance en las reuniones bimestrales del comité, como con cualquier otra iniciativa acordada.
 
@@ -64,6 +64,6 @@ Toda iniciativa del comité debe enmarcarse dentro de los [principios del comit�
 
 ## Ver también
 
-- **[Comisiones Temáticas](../organismos/comisiones-tematicas/index.md)** — las seis áreas de trabajo donde una iniciativa suele encajar.
+- **[Pilares de Desarrollo](../organismos/pilares-desarrollo/index.md)** — las seis áreas de trabajo donde una iniciativa suele encajar.
 - **[Cómo se Priorizan las Necesidades del Distrito](../explicacion/como-se-priorizan-necesidades.md)** — cómo el comité decide qué atender primero cuando hay varias iniciativas en juego.
 - **[Roles y Responsabilidades](../organismos/roles-y-responsabilidades.md)** — funciones de la coordinación distrital.

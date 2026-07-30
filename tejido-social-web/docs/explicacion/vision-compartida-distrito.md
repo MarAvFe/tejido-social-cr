@@ -6,7 +6,7 @@ source_label: "Conocimiento de campo"
 
 ## La idea
 
-Antes de priorizar temas concretos, una asamblea distrital construye colectivamente cómo se ve el distrito deseado en un horizonte de varios años (por ejemplo, cuatro) y qué valores lo orientan. Esa visión compartida ancla las decisiones posteriores del comité: las prioridades y comisiones existen para acercar al distrito a esa visión, no al revés.
+Antes de priorizar temas concretos, una asamblea distrital construye colectivamente cómo se ve el distrito deseado en un horizonte de varios años (por ejemplo, cuatro) y qué valores lo orientan. Esa visión compartida ancla las decisiones posteriores del comité: las prioridades y los pilares de trabajo existen para acercar al distrito a esa visión, no al revés.
 
 ## Por qué no se salta este paso
 

@@ -30,4 +30,4 @@ El distrito no es solo un ámbito administrativo: es un territorio y una comunid
 
 ---
 
-Estos principios no son solo una declaración: orientan las prioridades y comisiones del comité. Ver [Comisiones Temáticas](../organismos/comisiones-tematicas/index.md) para cómo se traducen en trabajo concreto.
+Estos principios no son solo una declaración: orientan las prioridades y los pilares de trabajo del comité. Ver [Pilares de Desarrollo](../organismos/pilares-desarrollo/index.md) para cómo se traducen en trabajo concreto.

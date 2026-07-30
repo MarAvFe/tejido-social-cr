@@ -10,7 +10,7 @@ Persona afiliada incluida en el padrón del comité de su distrito.
 
 ## Qué implica
 
-Puede participar en la Asamblea Distrital, sumarse a una [comisión temática](../organismos/comisiones-tematicas/index.md), y votar en la elección de la Mesa de Coordinación. La inclusión se solicita por escrito al comité y al CEC — ver [Roles y Responsabilidades](../organismos/roles-y-responsabilidades.md) y [Comisiones Temáticas](../organismos/comisiones-tematicas/index.md).
+Puede participar en la Asamblea Distrital, sumarse a una iniciativa dentro de cualquier [pilar de desarrollo](../organismos/pilares-desarrollo/index.md), y votar en la elección de la Mesa de Coordinación. La inclusión se solicita por escrito al comité y al CEC — ver [Roles y Responsabilidades](../organismos/roles-y-responsabilidades.md) y [Pilares de Desarrollo](../organismos/pilares-desarrollo/index.md).
 
 ## Siguiente paso
 

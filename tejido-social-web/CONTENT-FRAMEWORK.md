@@ -51,7 +51,7 @@ an Explicación article, not absorb it.
 
 **Hard rule:** if the draft names Sabanilla or lists real actions of a
 specific district, it's instance — don't put it in a generic page. And if a
-generic page "wants" to list real actions (the commission-stub case, see
+generic page "wants" to list real actions (the pillar-stub case, see
 Part 3), that's the signal that content belongs in the instance zone: **link
 to it, don't embed it.**
 
@@ -106,27 +106,62 @@ creating a new thread, add a row.
 ### Thread: **Iniciativa** — from an idea to a district project
 
 - **Generic blueprint:** `tutorials/desarrollar-iniciativa-distrital.md` (the
-  process), `tutorials/historia-de-angelica.md` (the narrated example),
+  process **and the ficha** — the fixed field set every initiative page
+  fills in: pilar, responsable, objetivo, alcance, a quién afecta, por
+  qué importa, estado/fecha, qué necesita para avanzar),
+  `tutorials/historia-de-angelica.md` (the narrated example),
   `explicacion/public-narrative.md` (the underlying framework — Self/Us/Now —
   as a reusable tool, distinct from its worked example).
-- **Instance home:** `distritos/<canton>/<distrito>/iniciativas.md`.
-- **Related, must stay linked:** `organismos/comisiones-tematicas/index.md`
-  (every initiative is framed under a commission),
+- **Instance home:** `distritos/<canton>/<distrito>/iniciativas/` — an
+  `index.md` grouping by pillar, plus **one page per initiative**
+  (`iniciativas/<slug>.md`). Was a single flat `iniciativas.md`; split once
+  real initiatives arrived, because each accumulates enough detail (interview
+  context, per-initiative open questions) to outgrow a table row. Built for
+  Sabanilla: `biblioteca-ambulante`, `buses-sabanilla`, `comercio-local`.
+- **Related, must stay linked:** `organismos/pilares-desarrollo/index.md`
+  (every initiative is framed under a pillar),
   `explicacion/como-se-priorizan-necesidades.md`.
-- **Invariant:** a concrete initiative is **always** instance; the process
-  and the commission are generic. The commission links to initiatives; the
-  initiatives page groups **by commission**.
+- **Invariant:** a concrete initiative is **always** instance; the process,
+  the ficha, and the pillar are generic. The pillar links to
+  initiatives; the initiatives index groups **by pillar**. The ficha
+  field set is defined in **one** place (the tutorial) — never re-define it
+  in a second "boilerplate" article, and never let an initiative page invent
+  its own field names.
+- **Invariant:** an initiative page publishes with unanswered ficha fields
+  marked pending, never filled with plausible guesses — early-stage
+  initiatives are the normal case, not an exception (see `VOICE.md`).
 
-### Thread: **Comisión temática** — the 6 areas of work
+### Thread: **Pilar de desarrollo** — the 6 areas of work
 
-- **Generic blueprint:** `organismos/comisiones-tematicas/index.md` (index) +
-  the 6 commission pages, all nested under `organismos/comisiones-tematicas/`
-  (`organismos/comisiones-tematicas/ambientes-espacios-publicos.md`, etc.) —
+- **Generic blueprint:** `organismos/pilares-desarrollo/index.md` (index) +
+  the 6 pillar pages, all nested under `organismos/pilares-desarrollo/`
+  (`organismos/pilares-desarrollo/ambientes-espacios-publicos.md`, etc.) —
   a real sidebar subcategory, not flat siblings of the rest of `organismos/`.
-- **Instance home:** each district's initiatives, grouped by commission.
-- **Invariant:** the commission page describes **what that area covers for
+- **Instance home:** each district's initiatives, grouped by pillar.
+- **Invariant:** the pillar page describes **what that area covers for
   any district** — it does not list a specific district's members or actions
   (that's the Iniciativa thread, in instance).
+- **Invariant — a pilar is an area of work, never a group of people.** This
+  thread was originally called "comisión temática" and was renamed
+  wholesale in 0.4.4. The rename was not cosmetic: "comisión" means a *body
+  of people* (like a district, or the national **Comisión Política**), and
+  using it for an *area of work* implied six standing groups each with its
+  own membership and meetings. A district running on ad-honorem volunteers
+  cannot staff six such groups — in practice the **Mesa de Coordinación is
+  the coordinating body**, and pillars only distribute the work. Never
+  reintroduce "comisión" for a pillar, and never write "conformar/integrar
+  un pilar" or "integrantes del pilar" — people join *initiatives*, not
+  pillars.
+- **Do not touch:** the national **Comisión Política** (in
+  `organismos/sanciones-disciplinarias.md` and
+  `organismos/frentes-nacionales.md`) is a statutory party organ, unrelated
+  to district work. It kept its name through the rename. Likewise
+  **Frentes** (`organismos/frentes-nacionales.md`) are the party's formal
+  structures that *do* group people by sector — that's the thread to point
+  at when a reader asks "where are the actual groups?", not this one.
+- **Legacy URLs:** `/docs/organismos/comisiones-tematicas/*` was public
+  before the rename; 301 redirects to `pilares-desarrollo` live in the root
+  `netlify.toml`. Don't remove them.
 
 ### Thread: **Membresía / Niveles** — from sympathizer to national coordination
 
@@ -231,9 +266,14 @@ creating a new thread, add a row.
 Cases where the framework detects tension. The first is the canonical example
 of what this whole thing is for.
 
-### ✅ Resolved — Comisión ⇄ Iniciativa were disconnected
+> **Vocabulary note:** entries below written before 0.4.4 say "commission"
+> where the site now says "pillar" — these are kept as an accurate record of
+> what things were called when each conflict was found and fixed. For the
+> current rule, see the Pilar de desarrollo thread in Part 2.
 
-`comisiones-tematicas.md` is the generic blueprint for a district's
+### ✅ Resolved — Pilar ⇄ Iniciativa were disconnected
+
+`pilares-desarrollo/index.md` is the generic blueprint for a district's
 initiatives — the same blueprint↔instance relationship — but they didn't
 reference each other. **Fixed:** the commission page now links to
 initiatives and explains the relationship; the initiatives page is grouped
@@ -243,18 +283,18 @@ thread prevent going forward.
 **Also fixed later:** the 6 commission pages were flat siblings inside
 `organismos/` alongside unrelated pages (roles, CEC, municipal roles) —
 Diátaxis quadrant was right, but the sidebar didn't visually group them as
-one unit. Moved into `organismos/comisiones-tematicas/` as a real sidebar
+one unit. Moved into `organismos/pilares-desarrollo/` as a real sidebar
 subcategory (`_category_.json` + `index.md` + the 6 pages), so the six areas
 of work read as a set in the nav, not just in prose.
 
-### ⚠️ Open — the 6 commission stubs promise instance content
+### ✅ Resolved — the 6 commission stubs promised instance content
 
-Each commission page ends with *"Contenido pendiente: integrantes, plan de
+Each commission page ended with *"Contenido pendiente: integrantes, plan de
 trabajo y próximas acciones."* But a specific district's members and actions
-are **instance** (Iniciativa thread), not generic. That footer invites
-breaking the generic↔instance boundary. **Suggested action:** rewrite the
-footer to point to the district's initiatives instead of promising content
-that shouldn't live there.
+are **instance** (Iniciativa thread), not generic — that footer invited
+breaking the generic↔instance boundary. **Fixed** on all six: the footer now
+states that members/plan/actions belong to each district and links to the
+district index, instead of promising content that shouldn't live there.
 
 ### ⚠️ Open — `roles-municipales` lives in Organismos but isn't party structure
 

@@ -4,3 +4,15 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# "Comisiones temáticas" was renamed to "Pilares de desarrollo" (0.4.4).
+# The old URLs were public, so keep them resolving instead of 404ing.
+[[redirects]]
+  from = "/docs/organismos/comisiones-tematicas"
+  to = "/docs/organismos/pilares-desarrollo"
+  status = 301
+
+[[redirects]]
+  from = "/docs/organismos/comisiones-tematicas/*"
+  to = "/docs/organismos/pilares-desarrollo/:splat"
+  status = 301

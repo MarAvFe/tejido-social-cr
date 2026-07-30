@@ -22,7 +22,7 @@ Grupos de WhatsApp de barrio, páginas de Facebook comunitarias, y redes de orga
 Una encuesta no tiene que ser un evento aislado. Volver a consultar periódicamente —antes de cada reunión bimestral, por ejemplo— permite ir ampliando la base de forma sostenida en vez de depender de un solo esfuerzo inicial.
 
 ### Convierta cada respuesta en una invitación
-Cada persona que responde y muestra interés en participar es una oportunidad de sumarla directamente a una comisión temática, no solo un dato. Haga seguimiento personal a los ofrecimientos de coordinación y a quienes piden información.
+Cada persona que responde y muestra interés en participar es una oportunidad de sumarla directamente a una iniciativa del distrito, no solo un dato. Haga seguimiento personal a los ofrecimientos de coordinación y a quienes piden información.
 
 ### Aproveche actividades presenciales
 La difusión digital tiene un techo. Actividades presenciales del comité (limpiezas, ferias, reuniones abiertas) son una oportunidad de conseguir respuestas de personas que no siguen los canales digitales del partido.
@@ -34,4 +34,4 @@ Compare, encuesta a encuesta, cuántos barrios o sectores distintos están repre
 ## Ver también
 
 - [Cómo diseñar una encuesta para el Plan de Acción Distrital](./disenar-encuesta-plan-accion.md)
-- [Participación y Organización Comunitaria](../organismos/comisiones-tematicas/participacion-organizacion.md)
+- [Participación y Organización Comunitaria](../organismos/pilares-desarrollo/participacion-organizacion.md)

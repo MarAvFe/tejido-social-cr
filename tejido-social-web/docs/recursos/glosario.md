@@ -46,7 +46,7 @@ Términos y siglas usados en la organización distrital del Frente Amplio.
 
 **Asamblea Distrital** — El espacio de encuentro y decisión abierto a todas las personas interesadas en el desarrollo del distrito, no solo a quienes integran la Mesa de Coordinación.
 
-**Comisión temática** — Cada uno de los grupos de trabajo especializados del comité distrital, organizados alrededor de un área (ambiente, cultura, movilidad, etc.). Ver [Comisiones Temáticas](../organismos/comisiones-tematicas/index.md).
+**Pilar de desarrollo** — Cada una de las seis áreas en que un comité distrital reparte su trabajo (ambiente, cultura, movilidad, etc.). Es un área de trabajo, no un grupo de personas con integrantes propios. Ver [Pilares de Desarrollo](../organismos/pilares-desarrollo/index.md).
 
 **FAMO** — Abreviatura usada informalmente para referirse a estructuras del Frente Amplio en el cantón de Montes de Oca (p. ej. "FAMO Sabanilla").
 

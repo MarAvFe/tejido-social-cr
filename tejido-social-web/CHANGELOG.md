@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.4] - 2026-07-29
+
+### Changed
+- **"Comisiones Temáticas" renamed to "Pilares de Desarrollo" across the site.** Not a wording preference — a correction. "Comisión" names a *body of people* (a district is a comisión in that sense; the party's formal people-grouping structures are the **Frentes**, documented separately in `organismos/frentes-nacionales.md`). Using it for an *area of work* implied six standing groups each with its own membership and meetings, which a district running on ad-honorem volunteers cannot staff. In practice the Mesa de Coordinación coordinates the work, and the six areas only distribute it.
+  - `docs/organismos/comisiones-tematicas/` → `docs/organismos/pilares-desarrollo/` (folder, sidebar label, and all 6 pillar pages).
+  - `pilares-desarrollo/index.md` rewritten, not just relabeled: new section stating outright that a pillar is an area of work and **not** a group of people, why six separate groups aren't realistic at district scale, and where the party's actual sector groupings live (Frentes). The old "Cómo se conforma una comisión" section is gone — it described joining a group, which is no longer the model.
+  - Terminology updated in 20 further files (guías, tutoriales, niveles, principios, explicación, glosario, organismos, and the Sabanilla initiative pages). Where the old prose said people "sumarse a una comisión temática," it now says they join an *initiative* within a pillar — people join initiatives, not pillars.
+  - The initiative ficha's first field is now **Pilar** (was **Comisión**), in the tutorial and all three initiative pages.
+  - Glossary entry replaced: "Comisión temática" → "Pilar de desarrollo," with the area-of-work-not-a-group distinction stated.
+  - **Not renamed:** the national **Comisión Política** in `organismos/sanciones-disciplinarias.md` and `organismos/frentes-nacionales.md` — a statutory party organ, unrelated to district work.
+- `netlify.toml`: 301 redirects from the old public `/docs/organismos/comisiones-tematicas/*` URLs to `pilares-desarrollo`, so links shared before the rename keep resolving.
+
 ## [0.4.3] - 2026-07-29
 
 ### Added

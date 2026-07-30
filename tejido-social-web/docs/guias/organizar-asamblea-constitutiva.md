@@ -28,7 +28,7 @@ Construya colectivamente cómo se ve el distrito deseado en un horizonte de vari
 Seleccione, entre los temas que surgieron, cuáles atender primero. Use criterios explícitos: impacto, urgencia, viabilidad, y capacidad de involucrar a más personas — no solo lo que grite más fuerte en la sala.
 
 ### 5. Organización para actuar
-Defina comisiones temáticas, coordinaciones, mecanismos de decisión y seguimiento. Aquí ocurre la elección formal de Presidencia y Secretaría (fiscalizada por el TEFA), y opcionalmente de otros cargos de coordinación.
+Defina los pilares de trabajo, las coordinaciones, y los mecanismos de decisión y seguimiento. Aquí ocurre la elección formal de Presidencia y Secretaría (fiscalizada por el TEFA), y opcionalmente de otros cargos de coordinación.
 
 ### 6. Primeros compromisos
 Acuerde acciones concretas para los siguientes tres meses, con responsables y un cronograma inicial. Evite cerrar la asamblea solo con buenas intenciones sin nombres ni fechas.

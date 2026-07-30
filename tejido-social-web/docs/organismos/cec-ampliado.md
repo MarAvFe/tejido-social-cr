@@ -21,7 +21,7 @@ Reunir al CEC con las coordinaciones distritales en un mismo espacio permite:
 ## Quién participa
 
 - El CEC (Comité Ejecutivo Cantonal) en su composición habitual.
-- La Coordinación y Subcoordinación de cada comité distrital constituido en el cantón — no el resto de la Mesa de Coordinación ni las comisiones temáticas.
+- La Coordinación y Subcoordinación de cada comité distrital constituido en el cantón — no el resto de la Mesa de Coordinación.
 
 ## Ver también
 
