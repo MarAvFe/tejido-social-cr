@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.3] - 2026-07-29
+
+### Added
+- **Sabanilla's first three real initiatives**, each as its own page under `docs/distritos/montes-de-oca/sabanilla/iniciativas/`, grouped by comisión temática in the index:
+  - `iniciativas/biblioteca-ambulante.md` — mobile library at the Feria del Agricultor on weekends, to build reading habits among children of the district (Educación, Formación y Empleo). The possible daycare/cuido extension is documented as an idea under discussion, explicitly not an approved stage, since it carries legal/safety/staffing obligations the committee hasn't evaluated.
+  - `iniciativas/buses-sabanilla.md` — public bus service in the district (Movilidad y Derecho a la Ciudad). Published with objetivo and alcance openly undefined: the article says outright that the context lives in one person's accumulated experience rather than public sources, and that the next step is that conversation, followed by picking a single opportunity as the focus.
+  - `iniciativas/comercio-local.md` — interviews with local business owners that double as district-opinion gathering and as visibility for those businesses against larger chains (Participación y Organización Comunitaria). Names the unresolved tension between interviewing a business and publicly promoting it under the committee's name.
+- `docs/tutorials/desarrollar-iniciativa-distrital.md`: new "La ficha de una iniciativa" section defining the fixed field set every initiative page fills in — comisión, responsable, objetivo, alcance, a quién afecta, por qué importa, estado/fecha, qué necesita para avanzar. This makes the existing tutorial the single definition of the initiative boilerplate (rather than adding a second article that would drift from it), and states that unanswered fields are recorded as pending, never filled with assumptions.
+
+### Changed
+- **Initiatives restructured from one flat page into a folder.** `distritos/montes-de-oca/sabanilla/iniciativas.md` becomes `iniciativas/index.md` with a `_category_.json`, plus one page per initiative. A single table row can't hold what a real initiative accumulates (interview context, per-initiative open questions), and doing the split now — with the first three real entries — avoids a URL migration later, the same reasoning behind putting canton first in the district path. Inbound links updated in `tutorials/historia-de-angelica.md`, `tutorials/desarrollar-iniciativa-distrital.md`, `organismos/comisiones-tematicas/index.md`, and the Sabanilla index.
+- **All 6 comisión temática pages: footer no longer promises instance content.** Each ended with "Contenido pendiente: integrantes, plan de trabajo y próximas acciones" — but a district's members and actions are instance content, so that footer invited breaking the generic↔instance boundary. Now states that those belong to each district and links to the district index, keeping the generic↔instance separation intact.
+
 ## [0.4.2] - 2026-07-25
 
 ### Added

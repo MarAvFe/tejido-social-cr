@@ -39,4 +39,4 @@ Si tenés una idea así de pequeña o así de grande, el camino es el mismo: ide
 
 - **[Qué es Public Narrative](../explicacion/public-narrative.md)** — el marco (Self/Us/Now) detrás de esta historia, para que puedas usarlo con la tuya.
 - **[Cómo Desarrollar una Iniciativa en mi Distrito](./desarrollar-iniciativa-distrital.md)** — la misma ruta que siguió Angélica, como guía paso a paso.
-- **[Iniciativas de Sabanilla](../distritos/montes-de-oca/sabanilla/iniciativas.md)** — historial real de iniciativas del distrito.
+- **[Iniciativas de Sabanilla](../distritos/montes-de-oca/sabanilla/iniciativas/index.md)** — historial real de iniciativas del distrito.

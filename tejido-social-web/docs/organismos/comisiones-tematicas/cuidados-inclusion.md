@@ -16,4 +16,4 @@ Comisión temática enfocada en cuidados, bienestar social e inclusión en el di
 
 La inclusión y la equidad, y el cuidado de la vida y el territorio, son dos de los cinco [principios del comité distrital](../../principios/comite-distrital.md) que orientan el trabajo del distrito. Esta comisión es donde esos principios se traducen en acción concreta.
 
-_Contenido pendiente: integrantes, plan de trabajo y próximas acciones de esta comisión._
+_Los integrantes, el plan de trabajo y las acciones concretas de esta comisión son propios de cada distrito, no de esta página — ver la [página de iniciativas del distrito](../../distritos/index.md) correspondiente._

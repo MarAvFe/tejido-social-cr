@@ -16,4 +16,4 @@ Comisión temática enfocada en formación política y oportunidades económicas
 
 El comité ya tiene talleres de formación pendientes de realizar, identificados por la propia afiliación — por ejemplo sobre fundamentalismo religioso y control político, y sobre visión ambiental del partido (ver [Explicación](../../explicacion/fundamentalismo-religioso-control-politico.md)). Esta comisión es responsable de dar seguimiento a ese tipo de agenda formativa.
 
-_Contenido pendiente: integrantes, plan de trabajo y próximas acciones de esta comisión._
+_Los integrantes, el plan de trabajo y las acciones concretas de esta comisión son propios de cada distrito, no de esta página — ver la [página de iniciativas del distrito](../../distritos/index.md) correspondiente._

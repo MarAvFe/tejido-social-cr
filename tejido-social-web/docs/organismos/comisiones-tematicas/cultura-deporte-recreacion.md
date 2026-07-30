@@ -16,4 +16,4 @@ Comisión temática enfocada en actividades culturales, deportivas y recreativas
 
 La consulta comunitaria previa a la asamblea constitutiva registró interés sostenido en actividades culturales y recreativas como parte de la visión compartida del distrito.
 
-_Contenido pendiente: integrantes, plan de trabajo y próximas acciones de esta comisión._
+_Los integrantes, el plan de trabajo y las acciones concretas de esta comisión son propios de cada distrito, no de esta página — ver la [página de iniciativas del distrito](../../distritos/index.md) correspondiente._

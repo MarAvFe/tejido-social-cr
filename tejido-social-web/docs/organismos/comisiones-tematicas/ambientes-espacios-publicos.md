@@ -17,4 +17,4 @@ Comisión temática enfocada en el ambiente y el espacio público del distrito.
 
 En la consulta comunitaria previa a la asamblea constitutiva del distrito, los temas ambientales fueron los que reunieron mayor interés: arborizar calles, proteger zonas verdes, recuperar espacios públicos, limpiar ríos y quebradas, y recuperar parques para actividades encabezaron las prioridades identificadas.
 
-_Contenido pendiente: integrantes, plan de trabajo y próximas acciones de esta comisión._
+_Los integrantes, el plan de trabajo y las acciones concretas de esta comisión son propios de cada distrito, no de esta página — ver la [página de iniciativas del distrito](../../distritos/index.md) correspondiente._

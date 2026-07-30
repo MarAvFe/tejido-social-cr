@@ -31,6 +31,25 @@ Otros elementos que ayudan a que la coordinación entienda y apoye la propuesta 
 - **Un primer paso concreto** — algo realizable en las próximas semanas, no el proyecto completo.
 - **Cómo se sabría que funciona** — una señal simple de que la iniciativa está avanzando (aunque no sea una métrica formal).
 
+## La ficha de una iniciativa
+
+Cuando una iniciativa queda acordada, el comité la registra con un conjunto fijo de campos. No es burocracia: es lo mínimo que permite que otra persona entienda la iniciativa sin tener que preguntarle a quien la impulsa, y que el comité le dé seguimiento en las reuniones bimestrales.
+
+| Campo | Qué responde |
+| --- | --- |
+| **Comisión** | Bajo qué [comisión temática](../organismos/comisiones-tematicas/index.md) se enmarca. |
+| **Responsable** | Qué persona la impulsa. Se registra internamente por la coordinación; el sitio no publica nombres ni contactos. |
+| **Objetivo** | Qué cambia si la iniciativa funciona, en una frase. |
+| **Alcance** | Qué abarca y qué explícitamente no. |
+| **A quién afecta** | Qué población del distrito se beneficia o se ve involucrada. |
+| **Por qué importa** | Qué necesidad real atiende, y con qué respaldo (encuesta, asamblea, observación directa). |
+| **Estado y fecha** | En qué etapa está y desde cuándo. |
+| **Qué necesita para avanzar** | Gente, recursos, permisos o contactos pendientes. |
+
+Los campos que todavía no tienen respuesta se registran como pendientes, no se rellenan con supuestos — una iniciativa en etapa temprana con la mitad de la ficha vacía es información honesta; una ficha completa inventada no lo es.
+
+Las iniciativas registradas de cada distrito viven en su propia página — por ejemplo, las de Sabanilla en [Iniciativas de Sabanilla](../distritos/montes-de-oca/sabanilla/iniciativas/index.md).
+
 ## Paso 4: La coordinación evalúa y conecta
 
 La coordinación revisa la propuesta y, generalmente:

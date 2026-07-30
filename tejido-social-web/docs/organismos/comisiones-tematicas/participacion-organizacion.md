@@ -17,4 +17,4 @@ Comisión temática enfocada en fortalecer la participación ciudadana y la orga
 
 Uno de los objetivos estatutarios del comité distrital es "construir vinculación con las organizaciones y luchas comunales" y "contribuir al crecimiento político-organizativo del partido en el distrito". Esta comisión es donde ese objetivo se vuelve trabajo concreto.
 
-_Contenido pendiente: integrantes, plan de trabajo y próximas acciones de esta comisión._
+_Los integrantes, el plan de trabajo y las acciones concretas de esta comisión son propios de cada distrito, no de esta página — ver la [página de iniciativas del distrito](../../distritos/index.md) correspondiente._
