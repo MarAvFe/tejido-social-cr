@@ -1,11 +1,26 @@
 /**
  * Global styles. Infima variable overrides for Frente Amplio branding.
  * Brand: yellow #ffde2d, black #000000.
- * Pure black/white and yellow-as-text are avoided for contrast reasons —
- * see docs/README notes below each block.
+ *
+ * ACCESSIBILITY CONTRACT — read before changing any color in this file.
+ * Brand yellow (#ffde2d) sits at 1.22:1 against the page background.
+ * WCAG AA requires 4.5:1 for body text and 3:1 for UI borders. No shade of
+ * the brand yellow reaches 4.5:1 on a light background — darkening it far
+ * enough turns it brown and stops reading as the brand color at all.
+ *
+ * So on light backgrounds yellow never carries meaning and never renders
+ * text. It appears as a background under near-black text (hero, buttons,
+ * navbar) and as an underline/accent bar beside text that gets its
+ * contrast from being near-black. The brand stays present on every page
+ * while the words themselves stay legible. In dark mode the same yellow
+ * hits 13:1 on carbon gray, so there it may be used as text.
  */
 
 :root {
+  /* La marca real, para fondos y acentos — nunca como color de texto
+     sobre fondo claro. */
+  --fa-brand-yellow: #ffde2d;
+
   --ifm-color-primary: #ffde2d;
   --ifm-color-primary-dark: #ffd804;
   --ifm-color-primary-darker: #f5cd00;
@@ -17,8 +32,6 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  /* Real brand yellow used for links even in light mode (matches official
-     site); contrast against white isn't perfect but is accepted as-is. */
   --ifm-color-primary-contrast-foreground: #1a1a1a;
   --ifm-button-color: #1a1a1a;
   --ifm-heading-color: #1a1a1a;
@@ -26,6 +39,175 @@
   /* Off-white instead of pure white */
   --ifm-background-color: #f5f5f3;
   --ifm-background-surface-color: #ffffff;
+
+  /* 16px por defecto; el lector lo escala con la barra de accesibilidad
+     (ver html[data-text-size] más abajo). */
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+
+  /* Enlaces: texto near-black (15.9:1) con subrayado amarillo de marca.
+     El contraste lo aporta el texto; el amarillo queda como firma. */
+  --ifm-link-color: #1a1a1a;
+  --ifm-link-hover-color: #000000;
+  --ifm-link-decoration: none;
+
+  --fa-focus-ring: #14509c;
+}
+
+/* ---------- Enlaces ---------- */
+
+/* El subrayado es permanente, no solo en hover: WCAG 1.4.1 prohíbe que el
+   color sea el único indicador de que algo es un enlace.
+   Ojo: esto aplica a enlaces EN PROSA. La barra lateral se trata aparte
+   (ver "Barra lateral"): son ~60 enlaces apilados, y subrayarlos todos
+   convierte el menú en un bloque de amarillo. */
+.markdown a:not(.button):not(.card) {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+  box-shadow: inset 0 -0.35em 0 var(--fa-brand-yellow);
+  transition: box-shadow 120ms ease-in-out;
+}
+
+.markdown a:not(.button):not(.card):hover {
+  color: var(--ifm-link-hover-color);
+  box-shadow: inset 0 -0.9em 0 var(--fa-brand-yellow);
+}
+
+/* ---------- Barra lateral ---------- */
+
+/* En una lista de navegación no hace falta marcar "esto es un enlace":
+   la estructura ya lo comunica, así que WCAG 1.4.1 no obliga a subrayar.
+   El amarillo se reserva para señalar la página ACTIVA, que es la única
+   distinción que el lector necesita mientras navega. */
+.menu__link {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  box-shadow: none;
+  border-radius: var(--ifm-global-radius);
+}
+
+.menu__link:hover {
+  color: var(--ifm-color-emphasis-900);
+  background-color: var(--ifm-color-emphasis-200);
+  box-shadow: none;
+}
+
+/* Página activa: barra amarilla a la izquierda + negrita. La negrita
+   importa — el amarillo solo no puede ser el único indicador. */
+.menu__link--active,
+.menu__link--active:hover {
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 700;
+  background-color: var(--ifm-color-emphasis-100);
+  box-shadow: inset 3px 0 0 var(--fa-brand-yellow);
+}
+
+/* Las categorías desplegables no son destino de navegación, solo
+   contenedores: no llevan el marcador amarillo de activo. */
+.menu__list-item-collapsible .menu__link--active:not(.menu__link--sublist) {
+  box-shadow: inset 3px 0 0 var(--fa-brand-yellow);
+}
+
+.menu__caret:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+/* El footer de Infima ya es oscuro: ahí el texto va claro y el subrayado
+   amarillo es una línea fina, no un resaltado. */
+.footer--dark a {
+  color: #f5f5f3;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--fa-brand-yellow);
+  text-decoration-thickness: 2px;
+}
+
+.footer--dark a:hover {
+  color: #ffffff;
+  text-decoration-thickness: 3px;
+}
+
+/* ---------- Foco visible ---------- */
+
+/* Anillo propio: el de Infima es tenue y desaparece sobre el amarillo. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--fa-focus-ring);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+[data-theme='dark'] a:focus-visible,
+[data-theme='dark'] button:focus-visible,
+[data-theme='dark'] input:focus-visible,
+[data-theme='dark'] select:focus-visible,
+[data-theme='dark'] textarea:focus-visible,
+[data-theme='dark'] [tabindex]:focus-visible {
+  outline-color: var(--fa-brand-yellow);
+}
+
+/* Sobre el amarillo de marca el anillo azul no contrasta; ahí va negro. */
+.navbar a:focus-visible,
+.navbar button:focus-visible,
+.hero--primary a:focus-visible,
+.hero--primary button:focus-visible {
+  outline-color: #1a1a1a;
+}
+
+/* ---------- Escala de texto ---------- */
+
+/* La barra de accesibilidad fija data-text-size en <html>. Se escala la
+   base tipográfica y no un tamaño puntual, para que titulares, listas y
+   tablas crezcan proporcionalmente. */
+html[data-text-size='large'] {
+  --ifm-font-size-base: 18px;
+  --ifm-line-height-base: 1.75;
+}
+
+html[data-text-size='xlarge'] {
+  --ifm-font-size-base: 21px;
+  --ifm-line-height-base: 1.85;
+}
+
+/* Medida de línea cómoda: sin esto, agrandar la fuente alarga la línea y
+   empeora la lectura en vez de mejorarla. */
+.markdown {
+  max-width: 70ch;
+}
+
+.markdown p,
+.markdown li {
+  line-height: var(--ifm-line-height-base);
+}
+
+/* ---------- Utilidades ---------- */
+
+/* Visible solo para lectores de pantalla. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Hero (.hero--primary) uses --ifm-color-primary as its yellow background
@@ -37,8 +219,9 @@
   --ifm-hero-text-color: #1a1a1a;
 }
 
-/* Dark mode: carbon gray background (not pure black), full-brightness
-   yellow reserved for accents/buttons, not body text. */
+/* Dark mode: carbon gray background (not pure black). Here the brand
+   yellow reaches 13:1 as text, so links may be yellow — still underlined,
+   so color is never the sole cue. */
 [data-theme='dark'] {
   --ifm-color-primary: #ffde2d;
   --ifm-color-primary-dark: #ffd804;
@@ -53,4 +236,43 @@
   --ifm-heading-color: #f5f5f3;
   --ifm-font-color-base: #e8e8e6;
   --docusaurus-highlighted-code-line-bg: rgba(255, 222, 45, 0.15);
+
+  --ifm-link-color: #ffde2d;
+  --ifm-link-hover-color: #fff0a3;
+}
+
+[data-theme='dark'] .markdown a:not(.button):not(.card) {
+  color: var(--ifm-link-color);
+  box-shadow: none;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 2px;
+}
+
+[data-theme='dark'] .markdown a:not(.button):not(.card):hover {
+  color: var(--ifm-link-hover-color);
+  box-shadow: none;
+  text-decoration-thickness: 3px;
+}
+
+/* La barra lateral en oscuro sigue el mismo criterio que en claro: texto
+   normal, sin subrayado, y el amarillo solo para la página activa. */
+[data-theme='dark'] .menu__link {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  box-shadow: none;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  color: #ffffff;
+  background-color: var(--ifm-color-emphasis-200);
+  box-shadow: none;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .menu__link--active,
+[data-theme='dark'] .menu__link--active:hover {
+  color: #ffffff;
+  background-color: var(--ifm-color-emphasis-200);
+  box-shadow: inset 3px 0 0 var(--fa-brand-yellow);
 }

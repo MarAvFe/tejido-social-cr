@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-07-31
+
+### Added
+- **Accessibility toolbar at the top of every doc page** (`src/components/A11yToolbar/`) — readers reported the site was hard to read and that the theme switch was unfindable on mobile.
+  - **Text size control (A / A＋ / A＋＋).** Scales `--ifm-font-size-base` (16 → 18 → 21px) with matching line-height, so headings, lists and tables scale proportionally rather than just paragraphs. Choice persists in `localStorage`. Default stays 16px.
+  - **Light/dark toggle duplicated here.** The navbar toggle collapses behind the mobile hamburger menu; this one stays visible in the page flow on every screen size.
+  - **Read-aloud button** using the browser's built-in Web Speech API — no external service, no cost, works offline. Picks an `es-CR` voice when present, falls back to any Spanish voice. Long articles are chunked by sentence (browsers truncate long utterances), and code blocks/ToC are stripped before reading. Hidden entirely where the browser lacks support.
+
+### Changed
+- **Body links no longer use brand yellow as text.** Yellow on the page background measured **1.22:1** against WCAG AA's 4.5:1 minimum — this was the root cause of the "yellow over white" complaints. Prose links are now near-black (**15.94:1**) sitting on a thick brand-yellow underline that thickens on hover, so the brand color still marks every link while the words carry the contrast. Dark mode keeps yellow link text, where it measures 13:1 on the carbon background and passes.
+- **Sidebar styled as navigation, not as prose.** The underline treatment above deliberately stops at the article body: applied to a ~60-entry stacked menu it turned the sidebar into a block of highlighter. Sidebar entries are now plain text with a subtle gray hover, and brand yellow is reserved for the **active page** — a 3px left bar plus bold weight, so the "you are here" cue never rests on color alone. WCAG 1.4.1's underline requirement targets links embedded in text; a nav list is self-evidently navigation, so the structure carries it. Light and dark both measure ≥11.8:1. The yellow bar itself is decorative (1.22:1) and carries no meaning the bold weight and background tint don't already convey.
+- `src/css/custom.css` opens with an explicit **accessibility contract** documenting why yellow may be a background but never light-mode text — replacing the old comment that acknowledged the contrast problem and marked it "accepted as-is."
+- Visible focus rings on all interactive elements (blue on light, yellow on dark, near-black over yellow surfaces where blue wouldn't contrast); `prefers-reduced-motion` respected; article measure capped at 70ch so larger text doesn't produce unreadably long lines.
+- Site URL now points at the live Netlify deployment (`https://tejidosocialcr.netlify.app`) instead of the placeholder `tejidosocial.org`, so sitemap and canonical URLs resolve. Added a matching `homepage` field to `package.json`.
+
+### Fixed
+- **`<Acronym>` announced itself as "botón" to screen readers.** `role="button"` was set directly on the `<abbr>`, overriding its native abbreviation semantics and suppressing the `title` expansion. The trigger is now a real `<button>` wrapping an untouched `<abbr>` — keyboard activation comes free, the popover is linked via `aria-controls`/`role="tooltip"`, and Escape closes it.
+- Acronym dotted underline moved from `--ifm-color-emphasis-500` to `-700`, which clears the 3:1 threshold for non-text indicators.
+
 ## [0.4.4] - 2026-07-29
 
 ### Changed

@@ -1,0 +1,99 @@
+/* Barra de accesibilidad. Vive en el flujo de la página, arriba del
+   contenido del artículo, para que sea visible en móvil — el toggle de
+   tema del navbar queda escondido tras el menú hamburguesa y los lectores
+   reportaron no encontrarlo. */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-background-surface-color);
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+  margin-right: 0.25rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  /* 44px de alto mínimo: objetivo táctil recomendado por WCAG 2.5.5. */
+  min-height: 44px;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 0.875rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-600);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--fa-focus-ring);
+  outline-offset: 2px;
+}
+
+/* El tamaño activo se marca con la barra amarilla de marca, no solo con
+   color de fondo — el amarillo no puede portar significado por sí solo. */
+.buttonActive {
+  border-color: var(--ifm-color-emphasis-800);
+  box-shadow: inset 0 -3px 0 var(--fa-brand-yellow);
+  font-weight: 700;
+}
+
+.sizeGroup {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.sizeButton {
+  min-width: 44px;
+  justify-content: center;
+}
+
+.sizeBase {
+  font-size: 0.8125rem;
+}
+
+.sizeLarge {
+  font-size: 0.9375rem;
+}
+
+.sizeXlarge {
+  font-size: 1.0625rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 500px) {
+  .toolbar {
+    gap: 0.375rem;
+  }
+
+  .label {
+    /* En pantallas angostas el texto "Accesibilidad:" se oculta pero
+       permanece para lectores de pantalla vía aria-label del grupo. */
+    display: none;
+  }
+
+  .spacer {
+    display: none;
+  }
+}

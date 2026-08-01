@@ -1,6 +1,23 @@
+/* El <button> que envuelve la abreviatura: sin cromo propio, para que en
+   medio de un párrafo se vea como texto y no como un control. */
+.abbrTrigger {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: help;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+
 .abbr {
   text-decoration: underline dotted;
-  text-decoration-color: var(--ifm-color-emphasis-500);
+  /* emphasis-500 no llega a 3:1 contra el fondo; -700 sí, y el punteado
+     sigue leyéndose como "hay una definición acá". */
+  text-decoration-color: var(--ifm-color-emphasis-700);
+  text-underline-offset: 0.15em;
   cursor: help;
   background: none;
   border: none;

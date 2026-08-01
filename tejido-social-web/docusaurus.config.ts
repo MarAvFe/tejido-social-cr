@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // TODO: revisit `url` when a definitive domain is chosen for the real site.
-  url: 'https://tejidosocial.org',
+  url: 'https://tejidosocialcr.netlify.app',
   baseUrl: '/',
 
   organizationName: 'tejido-social-cr',
@@ -149,3 +149,4 @@ const config: Config = {
 };
 
 export default config;
+
