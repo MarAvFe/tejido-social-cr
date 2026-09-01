@@ -33,6 +33,7 @@ Fuente: [Código Municipal, Ley N.° 7794](https://www.tse.go.cr/pdf/normativa/c
 ## Ver también
 
 - **[Roles Municipales en Costa Rica](../organismos/roles-municipales.md)** — detalle del gobierno local electo.
+- **[El Gobierno Municipal de Montes de Oca](../distritos/montes-de-oca/gobierno-municipal.md)** — este gobierno local, en un cantón concreto.
 - **[CEC Ampliado](../organismos/cec-ampliado.md)** — cómo se conecta el CEC con los comités distritales.
 - **[Directrices para Comités de Acción Política de Base](../organismos/directrices-capb.md)** — cómo se organiza la estructura distrital del partido.
 - **[Glosario](../recursos/glosario.md)** — significado de CEC y otras siglas.

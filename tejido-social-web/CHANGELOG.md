@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **`distritos/montes-de-oca/gobierno-municipal.md`** — overview of how the Montes de Oca municipal government works (structure and separation of powers, staffing, presupuestos participativos, citizen channels, council composition by party only, regiduría/síndicatura functions, session mechanics, dietas, consejos de distrito), sourced from a 2026-08-28 orientation session. First article under a new instance thread ("Gobierno municipal") registered in `CONTENT-FRAMEWORK.md`; sets up a series of deeper per-topic articles once the full session recording is transcribed (tracked in `CONTENT-TODO.md`).
+
 ## [0.5.0] - 2026-07-31
 
 ### Added

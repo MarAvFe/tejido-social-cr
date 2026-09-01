@@ -249,6 +249,28 @@ creating a new thread, add a row.
   remain unmined (e.g. Cap. IV Órganos Legales, Cap. VIII Principios de
   Acción Política) — treat this thread as open, not closed at four articles.
 
+### Thread: **Gobierno municipal (instancia cantonal)** — the State government, in one real canton
+
+- **Generic blueprint:** `organismos/roles-municipales.md` (what each municipal office is,
+  nationally), `explicacion/concejo-municipal-vs-cec.md` (why this is not the party).
+- **Instance home:** `distritos/<canton>/gobierno-municipal.md` — one per canton, sits
+  alongside the district pages (not inside a specific district, since the Concejo
+  Municipal and the alcaldía are cantonal, not distrital). First one:
+  `distritos/montes-de-oca/gobierno-municipal.md`.
+- **Related:** `organismos/roles-y-responsabilidades.md` (party-side roles, do not conflate).
+- **Invariant:** generic definitions of each office stay in the two blueprint articles above
+  — the instance page reports real, current, cantón-specific facts only (staffing counts,
+  session schedule, dieta split, budget percentages, which party/coalition holds which
+  seat) and never re-defines what a "regiduría" or "síndico" *is*. Party/coalition names
+  are TSE public record and may be named; individual officeholders' personal names may
+  not — cite by role only (e.g. "Síndico por San Pedro al 2026"), same rule as any other
+  field-knowledge source under `VOICE.md`.
+- **Origin:** first populated from an orientation session held for Montes de Oca militancia
+  on 2026-08-28 (`raw data/minuta-28ago26-organizacion-municipal.md`). The full session
+  recording was not yet transcribed when the first article was written — deeper articles
+  per sub-topic (separation of powers, presupuestos participativos, session procedure,
+  consejos de distrito/elections) are expected once it is; see `CONTENT-TODO.md`.
+
 ### Thread: **Estructura del partido** — district → canton → province → national
 
 - **Generic blueprint:** `organismos/directrices-capb.md`,

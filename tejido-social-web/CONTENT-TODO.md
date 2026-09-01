@@ -360,6 +360,56 @@ URLs live in the root `netlify.toml`. See the Pilar de desarrollo thread in
 Still unplaced from the same session: "puntos abstractos del Parque del
 Este" — too thin to place, needs the committee to say what it means.
 
+## Pending intake — 2026-08-28 municipal orientation session (Montes de Oca)
+
+Source: orientation session for Montes de Oca militancia, facilitated by the
+Síndico por San Pedro al 2026, 2026-08-28
+(`raw data/minuta-28ago26-organizacion-municipal.md`). What's saved so far
+is a session summary handed over by the user, not the full recording —
+**the full transcript is still pending.** Privacy note: the raw source names
+real individuals; per the standing rule at the top of this file, no personal
+name may appear in generated articles — cite by public office/role only
+(e.g. "Síndico por San Pedro al 2026"), see `VOICE.md`.
+
+- ~~**MU0 — Overview/teaser article**~~ — DONE, see
+  `distritos/montes-de-oca/gobierno-municipal.md`. Covers, at survey depth,
+  everything the summary already documents: the three-part structure,
+  staffing breakdown, presupuestos participativos, citizen-facing channels,
+  council composition (by party/coalition only, no names), regiduría/
+  síndicatura functions, session mechanics, dietas, consejos de distrito,
+  and how to participate. Registered as a new thread ("Gobierno municipal
+  (instancia cantonal)") in `CONTENT-FRAMEWORK.md`.
+
+Deep-dive articles below are **blocked on the full transcript** — the
+summary doesn't have enough detail to write any of them without guessing,
+and VOICE.md's honesty rule says don't. Draft only once the recording lands.
+
+- **MU1 — Separación de poderes en la práctica**: the alcaldía/Concejo
+  negotiation dynamic beyond the formal split (tax approval, how a specific
+  district project gets into the presupuesto ordinario), with real examples
+  from the session instead of the hypotheticals used in the overview.
+- **MU2 — Presupuestos participativos, a fondo**: full assembly-to-approval
+  process, what "juramentado por el Concejo" actually requires of a group,
+  the mediano/largo-plazo policy shift, and the participatory-budget
+  platform once its exact name/URL is confirmed (summary garbled it two
+  different ways — "Montedioca Decide" / "Montío Cadecide" — don't guess
+  which is right).
+  Confirm before publishing: exact platform name/URL — see MU2.
+- **MU3 — Cómo funciona una sesión del Concejo Municipal**: agenda phases,
+  quórum math, voting thresholds, mociones de orden procedure, why control
+  político rarely gets used in practice — the overview only lists these,
+  this article walks through one.
+- **MU4 — Consejos de distrito: elección y reglamento**: cociente/
+  subcociente mechanics, the 2017 Montes de Oca reglamento's
+  participatory-democracy framing vs. the top-down default, and the
+  institutional-email bottleneck raised in the session (needs field
+  confirmation before naming it as a general problem, not just an
+  anecdote).
+- Connects to existing **N3 — FA's historical municipal record** (still
+  open, see the 2026-07-25 intake above): the session's Sabanilla vote-count
+  discussion is about a different party's sindicatura, not the FA's, so it
+  doesn't resolve N3 — kept separate.
+
 ## Content architecture: district / canton / national
 
 **Principle:** separate **generic** content (reusable by any district — roles, processes, the official directive) from **instance** content (specific to Sabanilla at a given moment — who coordinates today, what its assembly prioritized).

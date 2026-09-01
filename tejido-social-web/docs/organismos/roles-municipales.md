@@ -37,4 +37,5 @@ A diferencia de cargos similares en otros países, ninguno de estos puestos es d
 ## Ver también
 
 - **[Concejo Municipal vs. Representación Interna del Partido (CEC)](../explicacion/concejo-municipal-vs-cec.md)** — en qué se parecen y en qué no este gobierno local y la estructura interna del FA.
+- **[El Gobierno Municipal de Montes de Oca](../distritos/montes-de-oca/gobierno-municipal.md)** — estos cargos, en la práctica, en un cantón concreto.
 - **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización distrital del partido.
