@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.3] - 2026-09-02
+
 ### Changed (ética split)
 - **`principios/codigo-de-etica.md`** moved from `organismos/` — it's a set of commitments/values, same kind of document as `partido-nacional.md` and `comite-distrital.md`, not an organizational body. Every inbound link fixed (`guias/presentar-denuncia-tribunal-etica.md`, `organismos/sanciones-disciplinarias.md`, `organismos/requisitos-candidatura-popular.md`, `recursos/glosario.md`, `principios/index.md`, `organismos/index.md`).
 - **New `organismos/tribunal-de-etica.md`** — split out of the old `codigo-de-etica.md`: composition (5 titulares + 5 suplentes, 4-year term via Asamblea Nacional), functional autonomy (including the TSE precedent on revocatoria de mandato, moved here from `sanciones-disciplinarias.md`), Tribunal de Alzada, and the two recourse paths. This is the actual órgano; `principios/codigo-de-etica.md` is the document it enforces — keeping them apart means "what are the rules" and "who enforces them" don't collide in one article.
