@@ -12,10 +12,10 @@ Usage:
 Mapping file shape:
 {
   "roles": [
-    {"label": "Síndico por San Pedro al 2026", "variants": ["Sergio Rodriguez Sequeira", "Sergio"]}
+    {"label": "Síndico por San Pedro al 2026", "variants": ["Nombre Apellido Apellido", "Nombre"]}
   ],
   "generic": [
-    {"tag": "Persona 1", "variants": ["Monn", "Mónica"]}
+    {"tag": "Persona 1", "variants": ["Apodo", "NombrePila"]}
   ]
 }
 
