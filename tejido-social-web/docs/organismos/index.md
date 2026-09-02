@@ -14,6 +14,9 @@ Referencia sobre cómo se organiza un comité distrital del Frente Amplio.
 - **[Pilares de Desarrollo](./pilares-desarrollo/index.md)** — las seis áreas de trabajo del distrito.
 - **[CEC Ampliado](./cec-ampliado.md)** — cómo el Comité Ejecutivo Cantonal se coordina con las coordinaciones distritales.
 - **[Roles Municipales en Costa Rica](./roles-municipales.md)** — qué es un regidor, un síndico, y el resto del gobierno local electo.
+- **[Concejos de Distrito: Composición y Elección](./concejos-de-distrito.md)** — cómo se compone y se elige el órgano del gobierno local más cercano al distrito.
+- **[Cómo Funciona una Sesión del Concejo Municipal](./sesiones-concejo-municipal.md)** — convocatoria, quórum, votaciones y control político.
+- **[Presupuestos Participativos Municipales](./presupuestos-participativos-municipales.md)** — cómo una comunidad organizada puede financiar proyectos con fondos municipales.
 - **[Frentes Nacionales y Secretarías](./frentes-nacionales.md)** — organización interna del partido por sector social, distinta de la estructura territorial.
 - **[Requisitos para Postularse a Cargos de Elección Popular](./requisitos-candidatura-popular.md)** — qué exige el Estatuto a quien quiera ser candidato o candidata del FA.
 - **[Sanciones Disciplinarias y Revocatoria de Mandato](./sanciones-disciplinarias.md)** — qué pasa cuando una persona afiliada incumple sus compromisos con el partido.
