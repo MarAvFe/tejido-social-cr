@@ -6,7 +6,7 @@ source_note: "Explicación basada en una sesión informativa sobre gobierno muni
 
 # Presupuestos Participativos Municipales
 
-:::note "Nota"
+:::note
 
 En la sesión de la que sale este artículo, quien explicaba el mecanismo dudó, en el momento, entre llamarlo "por ley" o "por acuerdo del Concejo Municipal" — y se corrigió a sí mismo hacia lo segundo. No se confirmó todavía si el presupuesto participativo está mandatado por una ley específica o si cada Concejo Municipal lo adopta por acuerdo propio. Tratá el mecanismo descrito acá como conocimiento de campo, no como cita legal, hasta que se confirme la fuente exacta.
 
