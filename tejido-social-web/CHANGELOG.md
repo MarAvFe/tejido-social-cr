@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed (ética split)
+- **`principios/codigo-de-etica.md`** moved from `organismos/` — it's a set of commitments/values, same kind of document as `partido-nacional.md` and `comite-distrital.md`, not an organizational body. Every inbound link fixed (`guias/presentar-denuncia-tribunal-etica.md`, `organismos/sanciones-disciplinarias.md`, `organismos/requisitos-candidatura-popular.md`, `recursos/glosario.md`, `principios/index.md`, `organismos/index.md`).
+- **New `organismos/tribunal-de-etica.md`** — split out of the old `codigo-de-etica.md`: composition (5 titulares + 5 suplentes, 4-year term via Asamblea Nacional), functional autonomy (including the TSE precedent on revocatoria de mandato, moved here from `sanciones-disciplinarias.md`), Tribunal de Alzada, and the two recourse paths. This is the actual órgano; `principios/codigo-de-etica.md` is the document it enforces — keeping them apart means "what are the rules" and "who enforces them" don't collide in one article.
+- **Tribunal de Elecciones del Frente Amplio (colloquially "TEFA") confirmed distinct from Tribunal de Ética**, verified against the Estatuto's own text (Art. 33 vs. Art. 34, which explicitly bars simultaneous membership in both) rather than relying on the site's pre-existing glossary claim alone. `recursos/glosario.md`'s TEFA entry rewritten to lead with the full name and cite the incompatibility clause.
+
+## [0.5.2] - 2026-09-02
+
 ### Added
 - **Four generic, country-level municipal-government articles**, sourced from the full transcript of the 2026-08-28 orientation session: `explicacion/alcaldia-concejo-en-la-practica.md` (alcaldía/Concejo negotiation dynamics), `organismos/presupuestos-participativos-municipales.md` (the participatory-budget mechanism — legal basis flagged as unconfirmed), `organismos/sesiones-concejo-municipal.md` (session/voting procedure), `organismos/concejos-de-distrito.md` (concejo-de-distrito election mechanics, composición sourced to Código Municipal Art. 55). These extend `roles-municipales.md`/`concejo-municipal-vs-cec.md` and apply to any canton, not just Montes de Oca.
 - **`distritos/montes-de-oca/composicion-politica-concejo.md`** — Concejo Municipal party/coalition composition and electoral history for Montes de Oca, explicitly marked "en revisión": sourced to a single internal session, not yet cross-checked against TSE/prensa, published as editorial/field knowledge for the people who hold these seats to review and correct. Kept deliberately separate from the neutral institutional articles per `VOICE.md`'s sober register.
