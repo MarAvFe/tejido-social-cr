@@ -58,6 +58,17 @@ La coordinación revisa la propuesta y, generalmente:
 - Te conecta con otras personas del distrito que ya estén trabajando en algo similar o relacionado, para sumar esfuerzos en vez de duplicarlos.
 - Da seguimiento al avance en las reuniones bimestrales del comité, como con cualquier otra iniciativa acordada.
 
+## De dónde puede salir el dinero
+
+Muchas iniciativas no necesitan financiamiento, pero las que sí tienen una vía concreta: el [presupuesto participativo municipal](../organismos/presupuestos-participativos-municipales.md), donde las municipalidades que lo aplican destinan una parte de sus ingresos a proyectos que la comunidad propone y prioriza.
+
+Dos condiciones prácticas que conviene conocer desde el inicio, porque tienen plazo:
+
+- El grupo que presenta la propuesta debe estar **juramentado** por el Concejo Municipal. No hace falta personería jurídica, pero sí ese trámite previo.
+- La convocatoria se abre una vez al año, típicamente entre mayo y junio.
+
+No todas las municipalidades aplican esta figura. Consultá con la sindicatura de tu distrito si la tuya lo hace.
+
 ## Un límite importante
 
 Toda iniciativa del comité debe enmarcarse dentro de los [principios del comité distrital](../principios/comite-distrital.md) y los [principios del partido](../principios/partido-nacional.md). La coordinación puede rechazar o pedir ajustes a una propuesta que no sea compatible con ellos.

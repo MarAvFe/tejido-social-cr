@@ -45,3 +45,27 @@ El comité, en coordinación con el CEC, convoca una nueva asamblea para elegir 
 ## ¿Qué pasa si mi distrito aún no tiene comité?
 
 Cualquier persona afiliada puede promover su formación, o el CEC del cantón puede planificarla. Ver [Cómo conformar un comité distrital](../guias/conformar-comite-distrital.md).
+
+## Sobre el gobierno municipal
+
+Estas preguntas son sobre la **municipalidad**, no sobre el partido. Ver [Concejo Municipal vs. Representación Interna del Partido (CEC)](../explicacion/concejo-municipal-vs-cec.md) si no tiene clara la diferencia.
+
+### ¿Qué es una dieta y quién la recibe?
+
+Un pago por sesión asistida, no un salario. La reciben regidurías y sindicaturas; las concejalías de distrito ejercen su cargo sin remuneración. Ver [Roles Municipales en Costa Rica](../organismos/roles-municipales.md).
+
+### ¿Para qué sirve un cargo que no vota?
+
+Las sindicaturas y las regidurías suplentes participan con voz pero sin voto. La voz sigue teniendo peso: permite dejar constancia pública de una posición, plantear necesidades del distrito y, en la práctica, incidir en cómo se redacta una moción antes de votarse. Ver [El Gobierno Municipal de Montes de Oca](../distritos/montes-de-oca/gobierno-municipal.md).
+
+### ¿Cuánto tiene que tardar la municipalidad en responderme?
+
+Por ley, cualquier funcionario público tiene **10 días hábiles** para responder una solicitud o denuncia — responder, no necesariamente resolver.
+
+### ¿Puedo llevar un problema directamente al departamento que corresponde?
+
+Sí. También puede canalizarlo a través de la sindicatura o de una regiduría de su distrito, que puede darle seguimiento dentro del Concejo. Ver [Concejos de Distrito](../organismos/concejos-de-distrito.md).
+
+### ¿Puede mi grupo de vecinos pedir fondos municipales?
+
+En las municipalidades que aplican presupuesto participativo, sí: no se necesita personería jurídica, pero el grupo debe estar juramentado por el Concejo Municipal y presentarse en la convocatoria anual. Ver [Presupuestos Participativos Municipales](../organismos/presupuestos-participativos-municipales.md).

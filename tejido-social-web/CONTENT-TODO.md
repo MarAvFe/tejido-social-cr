@@ -410,14 +410,15 @@ treated as settled.
   "por ley" and "por acuerdo del Concejo Municipal" for the legal basis and
   never landed on one — the article says so explicitly and needs a
   truth-bearer to confirm which it is. The participatory-budget platform's
-  name is confirmed (2026-09-02, by the user): **Montes de Oca Decide** — the
-  transcript's three ASR renderings ("Montío Cadecide", "Montioca de Sidana",
-  "Montedioca Decide") were all the same tool, mangled. Named in
+  name and URL are confirmed (2026-09-02, by the user): **Montes de Oca
+  Decide**, https://decide.montesdeoca.go.cr/ — the transcript's three ASR
+  renderings ("Montío Cadecide", "Montioca de Sidana", "Montedioca Decide")
+  were all the same tool, mangled. Named and linked in
   `distritos/montes-de-oca/gobierno-municipal.md` (it's Montes de Oca-specific,
-  not this generic article); **direct URL still not confirmed**, so not
-  linked yet. The municipality's real domain is `montesdeoca.go.cr` (not
-  `montoca.go.cr`, another ASR mangling) — confirmed via the org-chart page
-  the user linked, now cited in `gobierno-municipal.md`'s staffing section.
+  not this generic article). The municipality's real domain is
+  `montesdeoca.go.cr` (not `montoca.go.cr`, another ASR mangling) — confirmed
+  via the org-chart page the user linked, now cited in
+  `gobierno-municipal.md`'s staffing section.
 - ~~**MU3 — Cómo funciona una sesión del Concejo Municipal**~~ — DONE, see
   `organismos/sesiones-concejo-municipal.md`. Includes the quórum formula
   (mitad+1 of regidurías propietarias) and the two procedural mechanisms the

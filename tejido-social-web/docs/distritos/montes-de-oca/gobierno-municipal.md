@@ -32,7 +32,7 @@ Ver el [organigrama publicado por la Municipalidad](https://montesdeoca.go.cr/la
 
 Montes de Oca es uno de los pocos cantones del país que ejerce esta figura — ver **[Presupuestos Participativos Municipales](../../organismos/presupuestos-participativos-municipales.md)** para el mecanismo general (el 10%/70%/30%, la juramentación, el ciclo anual).
 
-Dos cosas específicas de Montes de Oca: la alcaldía actual ha impulsado orientar estos proyectos hacia programas de mediano y largo plazo en vez de acciones puntuales de un solo año. Y existe una plataforma municipal en línea, **Montes de Oca Decide**, para consultar presupuestos participativos anteriores, proyectos finalistas y montos por concejo de distrito — el enlace directo todavía no está confirmado, así que no se cita acá hasta tenerlo.
+Dos cosas específicas de Montes de Oca: la alcaldía actual ha impulsado orientar estos proyectos hacia programas de mediano y largo plazo en vez de acciones puntuales de un solo año. Y existe una plataforma municipal en línea, **[Montes de Oca Decide](https://decide.montesdeoca.go.cr/)**, para consultar presupuestos participativos anteriores, proyectos finalistas y montos por concejo de distrito.
 
 ## Canales de atención ciudadana
 

@@ -98,22 +98,34 @@ const config: Config = {
               label: 'Niveles',
               to: '/docs/niveles',
             },
+            {
+              label: 'Organismos',
+              to: '/docs/organismos',
+            },
+            {
+              label: 'Distritos',
+              to: '/docs/distritos',
+            },
           ],
         },
         {
           title: 'Aprendé',
           items: [
             {
+              label: 'Tutoriales',
+              to: '/docs/tutorials',
+            },
+            {
               label: 'Guías Prácticas',
               to: '/docs/guias',
             },
             {
-              label: 'Recursos',
-              to: '/docs/recursos',
+              label: 'Explicaciones',
+              to: '/docs/explicacion',
             },
             {
-              label: 'Explicaciones',
-              to: '/docs/explicacion/por-que-comites-de-base',
+              label: 'Recursos',
+              to: '/docs/recursos',
             },
           ],
         },

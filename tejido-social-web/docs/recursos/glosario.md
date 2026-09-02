@@ -63,3 +63,33 @@ Términos y siglas usados en la organización distrital del Frente Amplio.
 **Revocatoria de mandato** — Sanción que retira a una persona afiliada el cargo o los cargos que ocupa dentro del partido, sin expulsarla de la afiliación. Distinta de la expulsión. Ver [Sanciones Disciplinarias y Revocatoria de Mandato](../organismos/sanciones-disciplinarias.md).
 
 **Inopia** — Falta de personas candidatas disponibles para un cargo. El Estatuto permite a la Asamblea Cantonal levantar el requisito de tiempo mínimo de afiliación para postularse en caso de inopia. Ver [Requisitos para Postularse a Cargos de Elección Popular](../organismos/requisitos-candidatura-popular.md).
+
+## Términos del gobierno municipal
+
+Estos términos son del **gobierno local costarricense**, no de la estructura interna del partido. Ver [Concejo Municipal vs. Representación Interna del Partido (CEC)](../explicacion/concejo-municipal-vs-cec.md) para no confundirlos.
+
+**Concejo (con "c") vs. consejo (con "s")** — El **Concejo** Municipal y el **Concejo** de Distrito son órganos de gobierno; se escriben con "c". "Consejo" con "s" significa consejo en el sentido de recomendación, y se identifican por su contexto. La distinción importa: no son sinónimos.
+
+**Regiduría propietaria** — Cargo electo que integra el Concejo Municipal con voz y voto. Delibera, presenta mociones, vota acuerdos, integra comisiones y ejerce control político. Ver [Roles Municipales en Costa Rica](../organismos/roles-municipales.md).
+
+**Regiduría suplente** — Mismas funciones que la propietaria excepto el voto, que adquiere solo al sustituirla formalmente en una sesión.
+
+**Sindicatura** — Cargo electo que preside el Concejo de Distrito y representa al distrito ante el Concejo Municipal, con voz pero sin voto. No forma parte formal del Concejo Municipal. Ver [Concejos de Distrito](../organismos/concejos-de-distrito.md).
+
+**Concejalía de distrito** — Cada uno de los cuatro cargos que, junto a la sindicatura, integran el Concejo de Distrito. Se ejerce sin remuneración.
+
+**Cociente y subcociente** — Sistema para repartir puestos de elección proporcional (concejalías, regidurías, diputaciones). El cociente es el total de votos dividido entre los puestos disponibles; el subcociente es la mitad de esa cifra. Ver [Concejos de Distrito](../organismos/concejos-de-distrito.md).
+
+**Dieta** — Pago por sesión asistida, no salario, que reciben regidurías y sindicaturas. Las concejalías de distrito no la reciben.
+
+**Cogobierno** — Situación que la separación de poderes municipal busca evitar: que la alcaldía y el Concejo Municipal invadan las funciones del otro. Ver [Cómo se Relacionan en la Práctica la Alcaldía y el Concejo Municipal](../explicacion/alcaldia-concejo-en-la-practica.md).
+
+**Control político** — Espacio formal de la sesión del Concejo Municipal para plantear denuncias o problemas del distrito no relacionados con el tema en discusión. Fuera de ese espacio, cada intervención debe ceñirse al asunto que se delibera. Ver [Cómo Funciona una Sesión del Concejo Municipal](../organismos/sesiones-concejo-municipal.md).
+
+**Moción de orden** — Solicitud para atender de inmediato algo urgente y ajeno al tema en discusión. Solo una regiduría propietaria puede presentarla. Distinta de la **alteración del orden del día**, que reordena la agenda ya aprobada y requiere votación.
+
+**Mayoría absoluta / mayoría simple** — Absoluta es más de la mitad del total de regidurías propietarias del Concejo y aprueba de inmediato; simple es mayoría de las personas presentes y obliga a esperar la aprobación del acta en la sesión siguiente.
+
+**Juramentación** — Trámite breve en sesión del Concejo Municipal mediante el cual un grupo comunitario queda reconocido para participar en convocatorias municipales. No requiere personería jurídica. Ver [Presupuestos Participativos Municipales](../organismos/presupuestos-participativos-municipales.md).
+
+**Presupuesto participativo** — Porción de los ingresos municipales destinada a proyectos que la comunidad propone y prioriza. No todas las municipalidades del país lo aplican.
