@@ -252,24 +252,42 @@ creating a new thread, add a row.
 ### Thread: **Gobierno municipal (instancia cantonal)** — the State government, in one real canton
 
 - **Generic blueprint:** `organismos/roles-municipales.md` (what each municipal office is,
-  nationally), `explicacion/concejo-municipal-vs-cec.md` (why this is not the party).
+  nationally), `explicacion/concejo-municipal-vs-cec.md` (why this is not the party),
+  `explicacion/alcaldia-concejo-en-la-practica.md` (separation-of-powers dynamics in
+  practice), `organismos/presupuestos-participativos-municipales.md` (the national
+  participatory-budget legal mechanism), `organismos/sesiones-concejo-municipal.md`
+  (Concejo Municipal session/voting procedure), `organismos/consejos-de-distrito.md`
+  (consejo-de-distrito election mechanics, cociente/subcociente). **Scope test for this
+  thread specifically:**
+  if a mechanic is defined by the Código Municipal and would read the same in any canton
+  (even if not every municipality actually uses it, e.g. not all run presupuestos
+  participativos), it's generic — genericize the illustrating examples too, they don't
+  need to name a specific district to make the point.
 - **Instance home:** `distritos/<canton>/gobierno-municipal.md` — one per canton, sits
   alongside the district pages (not inside a specific district, since the Concejo
   Municipal and the alcaldía are cantonal, not distrital). First one:
   `distritos/montes-de-oca/gobierno-municipal.md`.
 - **Related:** `organismos/roles-y-responsabilidades.md` (party-side roles, do not conflate).
-- **Invariant:** generic definitions of each office stay in the two blueprint articles above
-  — the instance page reports real, current, cantón-specific facts only (staffing counts,
-  session schedule, dieta split, budget percentages, which party/coalition holds which
-  seat) and never re-defines what a "regiduría" or "síndico" *is*. Party/coalition names
-  are TSE public record and may be named; individual officeholders' personal names may
-  not — cite by role only (e.g. "Síndico por San Pedro al 2026"), same rule as any other
-  field-knowledge source under `VOICE.md`.
+- **Invariant:** generic definitions and mechanics stay in the blueprint articles — the
+  instance page reports real, current, cantón-specific facts only (staffing counts, session
+  schedule, dieta split, budget percentages, which reglamento/tools this canton actually
+  uses) and never re-defines what a "regiduría" or "síndico" *is*, or re-explains a
+  mechanic MU1–4 already covers — link to it instead (VOICE.md "cross-link instead of
+  repeating"). Once MU1–4 exist, revisit `gobierno-municipal.md` for overlap it should
+  replace with a link.
+- **Invariant — keep partisan content out of the generic blueprint and out of
+  `gobierno-municipal.md`:** Concejo Municipal party/coalition composition, coalition
+  formation/breakup history, and electoral strategy live in their own instance article,
+  `distritos/montes-de-oca/composicion-politica-concejo.md`, explicitly marked "en
+  revisión" rather than folded into the neutral institutional pages. Decided 2026-09-02:
+  that content is categorically different (partisan/strategic vs. institutional-
+  explanatory) and would break `VOICE.md`'s sober register if mixed in. Party/coalition
+  names are TSE public record and are named in that dedicated article; personal names
+  never are, there or anywhere else.
 - **Origin:** first populated from an orientation session held for Montes de Oca militancia
-  on 2026-08-28 (`raw data/minuta-28ago26-organizacion-municipal.md`). The full session
-  recording was not yet transcribed when the first article was written — deeper articles
-  per sub-topic (separation of powers, presupuestos participativos, session procedure,
-  consejos de distrito/elections) are expected once it is; see `CONTENT-TODO.md`.
+  on 2026-08-28 (`raw data/minuta-28ago26-organizacion-municipal.md`, full transcript in
+  `transcrip-28ago26-organizacion-municipal.anon.md`). MU1–4 published 2026-09-02; see
+  `CONTENT-TODO.md` for per-article sourcing caveats.
 
 ### Thread: **Estructura del partido** — district → canton → province → national
 

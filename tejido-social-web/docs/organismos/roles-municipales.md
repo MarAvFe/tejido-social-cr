@@ -18,9 +18,13 @@ Es el órgano ejecutivo del gobierno municipal, junto con dos vicealcaldías. Se
 
 Es el órgano deliberativo del cantón — funciona de forma similar a una asamblea legislativa, pero a escala municipal. Está integrado por **regidurías** (regidores propietarios y sus suplentes), en una cantidad que varía según la población del cantón: 5, 7, 9, 11 o 13 personas propietarias. Se eligen por votación directa, por cantón.
 
+Una **regiduría propietaria** delibera, presenta mociones, vota, revisa acuerdos, participa en comisiones y en la definición del presupuesto, y ejerce control político. Una **regiduría suplente** tiene exactamente las mismas funciones, con una sola diferencia: no vota, salvo que sustituya formalmente a la persona propietaria de su mismo partido en una sesión — ahí adquiere el voto por esa sesión. Ver **[Cómo Funciona una Sesión del Concejo Municipal](./sesiones-concejo-municipal.md)** para dónde ocurre esto en la práctica.
+
 ### Concejo de Distrito (síndicos y concejales de distrito)
 
-Cada distrito de un cantón tiene su propio Concejo de Distrito, integrado por cinco personas propietarias: un **síndico** (quien lo preside) y cuatro **concejales de distrito**. Entre sus funciones está proponer ante el Concejo Municipal a personas beneficiarias de becas, bonos de vivienda y otras ayudas estatales del cantón. Se eligen por votación directa, por distrito.
+Cada distrito de un cantón tiene su propio Concejo de Distrito, integrado por cinco personas propietarias: un **síndico** (quien lo preside) y cuatro **concejales de distrito**. Entre sus funciones está proponer ante el Concejo Municipal a personas beneficiarias de becas, bonos de vivienda y otras ayudas estatales del cantón. Se eligen por votación directa, por distrito — ver **[Consejos de Distrito: Composición y Elección](./consejos-de-distrito.md)** para el sistema electoral detrás de estos puestos.
+
+La sindicatura no forma parte formal del Concejo Municipal, pero lo representa: participa en sus sesiones con voz, nunca con voto, y su función es canalizar hacia el Concejo Municipal los acuerdos y necesidades que surgen en su propio Concejo de Distrito.
 
 ### Concejo Municipal de Distrito (intendencia)
 
@@ -37,5 +41,9 @@ A diferencia de cargos similares en otros países, ninguno de estos puestos es d
 ## Ver también
 
 - **[Concejo Municipal vs. Representación Interna del Partido (CEC)](../explicacion/concejo-municipal-vs-cec.md)** — en qué se parecen y en qué no este gobierno local y la estructura interna del FA.
+- **[Cómo se Relacionan en la Práctica la Alcaldía y el Concejo Municipal](../explicacion/alcaldia-concejo-en-la-practica.md)** — la negociación detrás de la separación formal de poderes.
+- **[Cómo Funciona una Sesión del Concejo Municipal](./sesiones-concejo-municipal.md)** — el procedimiento completo de una sesión.
+- **[Presupuestos Participativos Municipales](./presupuestos-participativos-municipales.md)** — cómo una comunidad prioriza y ejecuta proyectos con fondos municipales.
+- **[Consejos de Distrito: Composición y Elección](./consejos-de-distrito.md)** — el sistema de cociente y subcociente detrás de las concejalías.
 - **[El Gobierno Municipal de Montes de Oca](../distritos/montes-de-oca/gobierno-municipal.md)** — estos cargos, en la práctica, en un cantón concreto.
 - **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización distrital del partido.

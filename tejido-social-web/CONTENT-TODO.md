@@ -380,35 +380,77 @@ name may appear in generated articles — cite by public office/role only
   and how to participate. Registered as a new thread ("Gobierno municipal
   (instancia cantonal)") in `CONTENT-FRAMEWORK.md`.
 
-Deep-dive articles below are **blocked on the full transcript** — the
-summary doesn't have enough detail to write any of them without guessing,
-and VOICE.md's honesty rule says don't. Draft only once the recording lands.
+**Full transcript received, anonymized, and read in full (2026-09-02)** —
+`raw data/transcrip-28ago26-organizacion-municipal.anon.md`, produced by
+`scripts/anonymize-transcript.py` (mapping stays local, gitignored).
 
-- **MU1 — Separación de poderes en la práctica**: the alcaldía/Concejo
-  negotiation dynamic beyond the formal split (tax approval, how a specific
-  district project gets into the presupuesto ordinario), with real examples
-  from the session instead of the hypotheticals used in the overview.
-- **MU2 — Presupuestos participativos, a fondo**: full assembly-to-approval
-  process, what "juramentado por el Concejo" actually requires of a group,
-  the mediano/largo-plazo policy shift, and the participatory-budget
-  platform once its exact name/URL is confirmed (summary garbled it two
-  different ways — "Montedioca Decide" / "Montío Cadecide" — don't guess
-  which is right).
-  Confirm before publishing: exact platform name/URL — see MU2.
-- **MU3 — Cómo funciona una sesión del Concejo Municipal**: agenda phases,
-  quórum math, voting thresholds, mociones de orden procedure, why control
-  político rarely gets used in practice — the overview only lists these,
-  this article walks through one.
-- **MU4 — Consejos de distrito: elección y reglamento**: cociente/
-  subcociente mechanics, the 2017 Montes de Oca reglamento's
-  participatory-democracy framing vs. the top-down default, and the
-  institutional-email bottleneck raised in the session (needs field
-  confirmation before naming it as a general problem, not just an
-  anecdote).
-- Connects to existing **N3 — FA's historical municipal record** (still
-  open, see the 2026-07-25 intake above): the session's Sabanilla vote-count
-  discussion is about a different party's sindicatura, not the FA's, so it
-  doesn't resolve N3 — kept separate.
+**Scope correction (2026-09-02):** MU1–MU4 turned out to be **generic,
+country-level** articles, not Montes de Oca instance content — same
+placement logic as the existing `organismos/roles-municipales.md` and
+`explicacion/concejo-municipal-vs-cec.md`, which they extend. The mechanics
+they describe (the three-part split, the national participatory-budget
+legal mechanism, session/voting procedure, the cociente/subcociente election
+formula) come from the Código Municipal and apply to any canton — the
+Síndico's own framing in the session draws this line explicitly ("esta
+información probablemente no le va a servir a San José... pero en algunos
+puntos sí"). Concejo Municipal party/coalition composition, coalition
+history, and electoral strategy were kept **out** of MU1–4 and out of the
+instance article — that content is categorically partisan/strategic rather
+than institutional-explanatory, and lives in a new dedicated instance
+article instead (MU5, below), explicitly flagged for review rather than
+treated as settled.
+
+- ~~**MU1 — Separación de poderes en la práctica**~~ — DONE, see
+  `explicacion/alcaldia-concejo-en-la-practica.md`. The alcaldía/Concejo
+  negotiation dynamic beyond the formal split, genericized (no canton named
+  in the examples).
+- ~~**MU2 — Presupuestos participativos**~~ — DONE, see
+  `organismos/presupuestos-participativos-municipales.md`. **Sourcing flagged
+  inline in the article itself**, not just here: the session hedged between
+  "por ley" and "por acuerdo del Concejo Municipal" for the legal basis and
+  never landed on one — the article says so explicitly and needs a
+  truth-bearer to confirm which it is. The participatory-budget platform's
+  exact name/URL is **still unresolved** even after the full transcript
+  (three different ASR renderings heard: "Montío Cadecide", "Montioca de
+  Sidana", "Montedioca Decide") — kept out of this generic article entirely
+  (it's Montes de Oca-specific anyway) and flagged in
+  `distritos/montes-de-oca/gobierno-municipal.md` as needing direct
+  verification against the municipality's site.
+- ~~**MU3 — Cómo funciona una sesión del Concejo Municipal**~~ — DONE, see
+  `organismos/sesiones-concejo-municipal.md`. Includes the quórum formula
+  (mitad+1 of regidurías propietarias) and the two procedural mechanisms the
+  original summary had conflated: **moción de orden** vs. **alteración del
+  orden del día**.
+- ~~**MU4 — Consejos de distrito: elección y reglamento**~~ — DONE, see
+  `organismos/consejos-de-distrito.md`. Cociente/subcociente mechanics with
+  a worked (illustrative, not real) example, plus a flagged sourcing gap:
+  the gender-parity suplencia reform is reported without a confirmed article
+  number or date.
+- **MU5 — Composición Política del Concejo Municipal de Montes de Oca**
+  (instance, not generic) — DRAFTED, see
+  `distritos/montes-de-oca/composicion-politica-concejo.md`. Coalition
+  composition, the FA + Gente Montesoca coalition's formation and how it
+  functions today, presidency/vicepresidencia history, and the electoral
+  reported figures — all explicitly marked **"en revisión"** in the article
+  itself, sourced to a single internal session, not cross-checked against
+  TSE or press. This is deliberately published as editorial/field knowledge
+  rather than held back — the intent (per the user, 2026-09-02) is that the
+  people who actually hold these seats review it once it's live and open
+  discussion from there, rather than waiting for a private review pass
+  first. Partisan framing (e.g. pejorative labels for rival parties) was
+  stripped to stay within VOICE.md's sober register even though the article
+  is provisional. **Still open:** cross-check against TSE/prensa for the
+  proper N3 (FA's historical municipal record, 2026-07-25 intake above) —
+  this article is a strong first draft toward N3, not a replacement for
+  doing that verification.
+
+Also fixed while writing these: `distritos/montes-de-oca/gobierno-municipal.md`
+originally said concejales de distrito receive a dieta — the transcript
+confirms only regidores and síndicos do (concejalías de distrito serve
+unpaid), matching what `organismos/roles-municipales.md` already said
+correctly. Corrected, and that article trimmed generally to link to
+MU1–4 instead of re-explaining their mechanics, per VOICE.md's
+"cross-link instead of repeating."
 
 ## Content architecture: district / canton / national
 

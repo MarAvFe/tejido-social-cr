@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Four generic, country-level municipal-government articles**, sourced from the full transcript of the 2026-08-28 orientation session: `explicacion/alcaldia-concejo-en-la-practica.md` (alcaldía/Concejo negotiation dynamics), `organismos/presupuestos-participativos-municipales.md` (the participatory-budget mechanism — legal basis flagged as unconfirmed), `organismos/sesiones-concejo-municipal.md` (session/voting procedure), `organismos/consejos-de-distrito.md` (consejo-de-distrito election mechanics). These extend `roles-municipales.md`/`concejo-municipal-vs-cec.md` and apply to any canton, not just Montes de Oca.
+- **`distritos/montes-de-oca/composicion-politica-concejo.md`** — Concejo Municipal party/coalition composition and electoral history for Montes de Oca, explicitly marked "en revisión": sourced to a single internal session, not yet cross-checked against TSE/prensa, published as editorial/field knowledge for the people who hold these seats to review and correct. Kept deliberately separate from the neutral institutional articles per `VOICE.md`'s sober register.
+
+### Changed
+- **`distritos/montes-de-oca/gobierno-municipal.md`** trimmed to link out to the four new generic articles instead of re-explaining their mechanics, per `VOICE.md`'s "cross-link instead of repeating." Also corrected: it previously said concejalías de distrito receive a dieta — the transcript confirms only regidores and síndicos do; concejalías de distrito serve unpaid (this already matched `roles-municipales.md`, which was correct).
+- **`organismos/roles-municipales.md`** extended with regiduría propietaria/suplente functions and the sindicatura's voice-no-vote role in Concejo sessions — detail that didn't have a generic home before.
+
 ## [0.5.1] - 2026-09-01
 
 ### Added

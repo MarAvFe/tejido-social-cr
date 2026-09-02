@@ -9,19 +9,11 @@ source_note: "Sesión informativa sobre organización municipal para la militanc
 
 El 28 de agosto de 2026, el comité convocó una sesión informativa para explicar cómo funciona la Municipalidad de Montes de Oca. La convocatoria partió de un diagnóstico simple: buena parte de la militancia del cantón no conoce el funcionamiento de la entidad que gobierna su territorio. La sesión estuvo a cargo del **Síndico por San Pedro al 2026**, quien expuso la estructura, las funciones y la dinámica política del gobierno local.
 
-Este artículo reúne lo que ya quedó documentado de esa sesión. Es el punto de partida de una serie: cada uno de los temas que siguen — la estructura de poderes, los presupuestos participativos, el funcionamiento de las sesiones, los consejos de distrito — va a tener su propio artículo con más detalle una vez que se transcriba la grabación completa de la sesión. Por ahora, esto es el mapa general.
+Este artículo reúne lo que ya quedó documentado de esa sesión, ahora contrastado con la grabación completa. La explicación general de cómo funciona cualquier gobierno municipal costarricense —la separación de poderes, los presupuestos participativos, el procedimiento de sesión, los consejos de distrito— vive en artículos genéricos aplicables a cualquier cantón, enlazados abajo; este artículo se queda solo con lo específico de Montes de Oca: sus números reales, sus herramientas, sus particularidades.
 
-## Las tres patas del gobierno municipal
+## Estructura del gobierno local
 
-El gobierno local de Montes de Oca se organiza en tres partes, para evitar que una invada las funciones de la otra (lo que en la sesión se llamó "cogobierno"):
-
-- **La alcaldía** — el órgano ejecutivo. Dirige, administra y ejecuta: dirige las dependencias municipales, administra el presupuesto y el personal, y ejecuta los acuerdos que toma el Concejo Municipal.
-- **El Concejo Municipal** — el órgano normativo y de control político. Delibera, acuerda, reglamenta y controla. No ejecuta directamente.
-- **La estructura territorial** — las síndicaturas y los consejos de distrito, que representan a cada distrito ante el Concejo Municipal sin formar parte de él.
-
-Estas funciones no deberían cruzarse, pero en la práctica alcaldía y Concejo negocian e influyen mutuamente — por ejemplo, al aprobar impuestos o al decidir si un proyecto distrital específico entra al presupuesto ordinario. La separación formal de poderes no elimina la negociación política entre ambos.
-
-Ver **[Roles Municipales en Costa Rica](../../organismos/roles-municipales.md)** para la definición general de cada cargo (alcaldía, regidurías, síndicos, concejales de distrito) y **[Concejo Municipal vs. Representación Interna del Partido (CEC)](../../explicacion/concejo-municipal-vs-cec.md)** para no confundir este gobierno local con la estructura interna del FA.
+El gobierno local de Montes de Oca se organiza, como el de cualquier cantón, en tres partes — la alcaldía (ejecutiva), el Concejo Municipal (normativo y de control político) y la estructura territorial (síndicaturas y consejos de distrito) — para evitar que una invada las funciones de la otra. Ver **[Roles Municipales en Costa Rica](../../organismos/roles-municipales.md)** para la definición de cada cargo y **[Cómo se Relacionan en la Práctica la Alcaldía y el Concejo Municipal](../../explicacion/alcaldia-concejo-en-la-practica.md)** para la negociación real detrás de esa separación formal.
 
 ## Organización interna y personal
 
@@ -36,14 +28,9 @@ Algunas de estas áreas, a grandes rasgos:
 
 ## Presupuestos participativos
 
-El 10% de los ingresos municipales se destina a proyectos comunitarios gestionados por asambleas. Ese 10% se divide en dos partes:
+Montes de Oca es uno de los pocos cantones del país que ejerce esta figura — ver **[Presupuestos Participativos Municipales](../../organismos/presupuestos-participativos-municipales.md)** para el mecanismo general (el 10%/70%/30%, la juramentación, el ciclo anual).
 
-- **70%** para propuestas ciudadanas presentadas mediante asambleas distritales abiertas.
-- **30%** administrado directamente por los consejos de distrito.
-
-Para que un grupo comunitario participe en las convocatorias (que se abren en mayo y junio de cada año), debe estar juramentado por el Concejo Municipal. En la sesión se mencionó que la alcaldía actual ha propuesto orientar estos proyectos hacia programas de mediano y largo plazo, en vez de acciones puntuales.
-
-Existe una plataforma municipal en línea donde se pueden consultar presupuestos participativos anteriores, proyectos finalistas y los montos asignados a cada consejo de distrito — nombre exacto y enlace pendientes de confirmar en la transcripción completa.
+Dos cosas específicas de Montes de Oca: la alcaldía actual ha impulsado orientar estos proyectos hacia programas de mediano y largo plazo en vez de acciones puntuales de un solo año. Y existe una plataforma municipal en línea para consultar presupuestos participativos anteriores, proyectos finalistas y montos por consejo de distrito — **su nombre exacto y enlace siguen sin confirmar incluso después de leer la transcripción completa** (se escuchó de al menos tres formas distintas: "Montío Cadecide", "Montioca de Sidana", "Montedioca Decide" — probablemente los tres son la misma herramienta mal transcrita, pero no se va a adivinar cuál es la correcta; confirmar directamente contra el sitio de la municipalidad antes de citarla en cualquier artículo).
 
 ## Canales de atención ciudadana
 
@@ -56,44 +43,35 @@ Dos herramientas digitales mencionadas en la sesión:
 
 ## Composición política del Concejo Municipal
 
-El Concejo Municipal de Montes de Oca está integrado por siete regidurías propietarias con sus respectivas suplencias. La alcaldía y las cuatro síndicaturas distritales están repartidas entre distintos partidos y coaliciones cantonales — la composición exacta y actualizada de cada papeleta puede consultarse directamente en el [TSE](https://www.tse.go.cr/). Este artículo no publica nombres de personas, solo la estructura y las funciones de los cargos.
+El Concejo Municipal de Montes de Oca está integrado por siete regidurías propietarias con sus respectivas suplencias, repartidas entre distintos partidos y coaliciones cantonales. Este artículo se queda deliberadamente neutral — para la composición actual, la coalición vigente y el contexto político, ver **[Composición Política del Concejo Municipal de Montes de Oca](./composicion-politica-concejo.md)** (contenido en revisión) o consultar directamente el [TSE](https://www.tse.go.cr/). Este artículo no publica nombres de personas, solo la estructura y las funciones de los cargos.
 
 ## Funciones de regidurías y síndicaturas
 
-- **Regiduría propietaria** — delibera, presenta mociones, vota, revisa acuerdos, participa en comisiones y en la definición del presupuesto, y ejerce control político.
-- **Regiduría suplente** — tiene las mismas funciones que la propietaria, excepto el voto, que adquiere únicamente al sustituirla formalmente en una sesión.
-- **Síndicatura** — representa al distrito ante el Concejo Municipal, preside el Concejo de Distrito, y canaliza las necesidades del distrito con voz pero sin voto.
+Qué hace cada cargo (regiduría propietaria, suplente, síndicatura) es igual en cualquier cantón — ver **[Roles Municipales en Costa Rica](../../organismos/roles-municipales.md)**.
 
 Un cargo sin voto no deja de tener peso político: en la sesión se señaló que el micrófono y la cámara en una sesión municipal sirven para plantear injusticias, manifestar necesidades comunitarias y mantener una posición pública, incluso frente a una mayoría opositora. Se citó un caso en el que observaciones presentadas desde un cargo sin voto lograron modificar una moción antes de su aprobación.
 
 ## Cómo funcionan las sesiones
 
-Las sesiones ordinarias del Concejo Municipal de Montes de Oca se realizan todos los lunes, de 6:00 p. m. a 9:30 p. m. Algunas reglas del proceso:
-
-- **Convocatoria** — con 24 horas de anticipación.
-- **Quórum** — fijado en 5 personas.
-- **Votación** — mayoría absoluta (5 votos) aprueba de inmediato; mayoría simple (4 votos) aprueba con una semana de espera para ratificar el acta.
-- **Tiempos de palabra** — primera intervención de 5 minutos, segunda de 3, tercera de 2, antes de pasar a votación.
-- **Mociones de orden** (para alterar el orden del día) — deben ser acogidas por una regiduría propietaria y sometidas a votación.
-- **Control político** — el único espacio formal para plantear denuncias o problemas distritales que no están relacionados con la moción que se delibera en ese momento. En la práctica, este espacio rara vez llega a concretarse dentro de la dinámica del Concejo.
-
-Entre las competencias resolutivas del Concejo Municipal: definir políticas cantonales (por ejemplo, ambiente o no violencia), aprobar el presupuesto ordinario (incluida la validación final de los presupuestos participativos), aprobar reglamentos, fijar tasas y precios, ejercer control político, y aprobar audiencias a solicitudes ciudadanas.
+El procedimiento de una sesión (agenda, quórum, votación, mociones de orden, control político) es el mismo en cualquier Concejo Municipal — ver **[Cómo Funciona una Sesión del Concejo Municipal](../../organismos/sesiones-concejo-municipal.md)**. Lo específico de Montes de Oca: las sesiones ordinarias se realizan todos los lunes, de 6:00 p. m. a 9:30 p. m.
 
 ## Dietas
 
-Regidores, síndicos y concejales de distrito reciben una dieta por sesión, condicionada a la asistencia tanto a las sesiones del Concejo Municipal como a las del Concejo de Distrito:
+Regidores y síndicos reciben una dieta por sesión (los concejales de distrito no — ejercen su cargo sin remuneración, ver **[Roles Municipales en Costa Rica](../../organismos/roles-municipales.md#remuneración)**), condicionada a la asistencia tanto a las sesiones del Concejo Municipal como a las del Concejo de Distrito:
 
 - Regiduría propietaria: **100%**.
 - Sindicatura propietaria y regiduría suplente: **50%**.
 - Sindicatura suplente: **25%**.
 
-Ver **[Roles Municipales en Costa Rica](../../organismos/roles-municipales.md#remuneración)** para cómo funciona la dieta a nivel general en cualquier municipalidad del país.
+El monto exacto no es fijo — varía sesión a sesión según el presupuesto municipal, y ni siquiera quien lo cobra tiene siempre claro cuánto va a recibir.
 
 ## Los consejos de distrito
 
-Cada uno de los cuatro distritos de Montes de Oca (San Pedro, Sabanilla, San Rafael y Mercedes) tiene un Concejo de Distrito: un síndico, elegido por mayoría simple, y cuatro concejalías propietarias con sus suplentes, elegidas por el sistema de cociente y subcociente. Cada consejo de distrito opera de forma autónoma, con sus propias fechas de reunión, que no deben coincidir con las de otras instancias.
+Cómo se compone y se elige un consejo de distrito (síndico, cuatro concejalías, cociente y subcociente) es igual en cualquier cantón — ver **[Consejos de Distrito: Composición y Elección](../../organismos/consejos-de-distrito.md)**.
 
-Su función principal es resolver y canalizar las necesidades comunitarias ante la administración municipal o el Concejo Municipal. En la sesión se mencionó que el reglamento específico de los consejos de distrito lo define cada municipalidad por separado — el de Montes de Oca data de 2017 y está pensado desde la democracia participativa, en contraste con una lógica más tradicional de arriba hacia abajo.
+Lo específico de Montes de Oca: el reglamento que rige sus cuatro consejos de distrito data de 2017 y está pensado desde la democracia participativa, en contraste con una lógica más tradicional de arriba hacia abajo — aunque, según la propia sesión, no está claro si ese reglamento sigue vigente tal cual o si está en proceso de revisión ("no sé si eso ocurrió o por dónde va", se dijo textualmente). Tratá su estado actual como pendiente de confirmar, no como un hecho asentado.
+
+Otra particularidad reportada: las solicitudes ciudadanas hacia la administración pasan por un correo institucional centralizado, que se describe como un cuello de botella — de un volumen reportado de alrededor de 10 solicitudes semanales enviadas por esa vía, solo cerca de 2 reciben respuesta en un tiempo razonable. Quienes ocupan cargos territoriales suelen terminar contactando directamente a la jefatura del departamento correspondiente en vez de esperar esa vía. Este dato viene de una sola fuente y no está contrastado con la administración municipal.
 
 ## Cómo puede participar la ciudadanía
 
@@ -112,6 +90,11 @@ Un cargo municipal —con dieta o sin ella— exige más tiempo del que la remun
 ## Ver también
 
 - **[Roles Municipales en Costa Rica](../../organismos/roles-municipales.md)** — qué es cada cargo del gobierno local y cómo se elige, en cualquier cantón del país.
+- **[Cómo se Relacionan en la Práctica la Alcaldía y el Concejo Municipal](../../explicacion/alcaldia-concejo-en-la-practica.md)**
+- **[Presupuestos Participativos Municipales](../../organismos/presupuestos-participativos-municipales.md)**
+- **[Cómo Funciona una Sesión del Concejo Municipal](../../organismos/sesiones-concejo-municipal.md)**
+- **[Consejos de Distrito: Composición y Elección](../../organismos/consejos-de-distrito.md)**
+- **[Composición Política del Concejo Municipal de Montes de Oca](./composicion-politica-concejo.md)** — la coalición vigente y el contexto político (en revisión).
 - **[Concejo Municipal vs. Representación Interna del Partido (CEC)](../../explicacion/concejo-municipal-vs-cec.md)** — por qué este gobierno local no debe confundirse con la estructura interna del FA.
 - **[Montes de Oca](./index.md)** — el resto del contenido documentado para este cantón.
 
