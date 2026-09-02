@@ -1,19 +1,19 @@
 ---
-sidebar_label: "Consejos de distrito"
+sidebar_label: "Concejos de distrito"
 source_label: "Conocimiento de campo"
-source_note: "Explicación basada en una sesión informativa sobre gobierno municipal, facilitada por una sindicatura en ejercicio (2026-08-28)."
+source_note: "Composición: Código Municipal, Art. 55. Resto: sesión informativa sobre gobierno municipal, facilitada por una sindicatura en ejercicio (2026-08-28)."
 ---
 
-# Consejos de Distrito: Composición y Elección
+# Concejos de Distrito: Composición y Elección
 
 Cada distrito de un cantón tiene su propio Concejo de Distrito. Ver **[Roles Municipales en Costa Rica](./roles-municipales.md)** para su lugar dentro de la estructura general del gobierno local.
 
 ## Composición
 
-Cinco personas propietarias:
+Cinco personas propietarias, cada una con su suplencia — fijo por [Artículo 55 del Código Municipal](https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf):
 
-- Un **síndico** (o síndica) propietario, con su suplencia.
-- Cuatro **concejalías de distrito** propietarias, cada una con su suplencia.
+- Un **síndico** (o síndica).
+- Cuatro **concejalías de distrito**.
 
 ## Cómo se elige el síndico
 
@@ -31,7 +31,7 @@ Por ejemplo: si un distrito tiene 800 votos válidos repartidos entre las candid
 
 ## Reglamento propio de cada municipalidad
 
-El Código Municipal deja en manos de cada municipalidad definir el **reglamento operativo** de sus consejos de distrito — no existe un reglamento único nacional. Esto significa que dos cantones pueden tener consejos de distrito con dinámicas de trabajo distintas, dependiendo de cuándo y con qué enfoque se redactó el reglamento de cada uno.
+El Código Municipal deja en manos de cada municipalidad definir el **reglamento operativo** de sus concejos de distrito — no existe un reglamento único nacional. Esto significa que dos cantones pueden tener concejos de distrito con dinámicas de trabajo distintas, dependiendo de cuándo y con qué enfoque se redactó el reglamento de cada uno.
 
 ## Una reforma reciente de paridad de género
 
@@ -39,7 +39,7 @@ Según lo reportado en la sesión, una reforma al Código Municipal exige que la
 
 ## Autonomía
 
-Cada Concejo de Distrito opera de forma autónoma, con sus propias fechas de sesión. Esas fechas no pueden coincidir con las de otras instancias del gobierno local del mismo cantón (el Concejo Municipal, otras comisiones, u otros consejos de distrito).
+Cada Concejo de Distrito opera de forma autónoma, con sus propias fechas de sesión. Esas fechas no pueden coincidir con las de otras instancias del gobierno local del mismo cantón (el Concejo Municipal, otras comisiones, u otros concejos de distrito).
 
 ## Su función principal
 
@@ -49,6 +49,6 @@ Canalizar las necesidades y problemáticas de la comunidad hacia la administraci
 
 - **[Roles Municipales en Costa Rica](./roles-municipales.md)** — la sindicatura y la concejalía de distrito como cargos.
 - **[Presupuestos Participativos Municipales](./presupuestos-participativos-municipales.md)** — el 30% que administra directamente cada Concejo de Distrito.
-- **[Cómo Funciona una Sesión del Concejo Municipal](./sesiones-concejo-municipal.md)** — a dónde llegan los acuerdos y quejas que canaliza un consejo de distrito.
+- **[Cómo Funciona una Sesión del Concejo Municipal](./sesiones-concejo-municipal.md)** — a dónde llegan los acuerdos y quejas que canaliza un concejo de distrito.
 
-Fuente: Conocimiento de campo — sesión informativa sobre gobierno municipal (2026-08-28).
+Fuente: [Código Municipal, Art. 55](https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf) (composición) y Conocimiento de campo — sesión informativa sobre gobierno municipal (2026-08-28) (resto).

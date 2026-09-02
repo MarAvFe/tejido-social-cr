@@ -376,7 +376,7 @@ name may appear in generated articles — cite by public office/role only
   everything the summary already documents: the three-part structure,
   staffing breakdown, presupuestos participativos, citizen-facing channels,
   council composition (by party/coalition only, no names), regiduría/
-  síndicatura functions, session mechanics, dietas, consejos de distrito,
+  síndicatura functions, session mechanics, dietas, concejos de distrito,
   and how to participate. Registered as a new thread ("Gobierno municipal
   (instancia cantonal)") in `CONTENT-FRAMEWORK.md`.
 
@@ -410,19 +410,21 @@ treated as settled.
   "por ley" and "por acuerdo del Concejo Municipal" for the legal basis and
   never landed on one — the article says so explicitly and needs a
   truth-bearer to confirm which it is. The participatory-budget platform's
-  exact name/URL is **still unresolved** even after the full transcript
-  (three different ASR renderings heard: "Montío Cadecide", "Montioca de
-  Sidana", "Montedioca Decide") — kept out of this generic article entirely
-  (it's Montes de Oca-specific anyway) and flagged in
-  `distritos/montes-de-oca/gobierno-municipal.md` as needing direct
-  verification against the municipality's site.
+  name is confirmed (2026-09-02, by the user): **Montes de Oca Decide** — the
+  transcript's three ASR renderings ("Montío Cadecide", "Montioca de Sidana",
+  "Montedioca Decide") were all the same tool, mangled. Named in
+  `distritos/montes-de-oca/gobierno-municipal.md` (it's Montes de Oca-specific,
+  not this generic article); **direct URL still not confirmed**, so not
+  linked yet. The municipality's real domain is `montesdeoca.go.cr` (not
+  `montoca.go.cr`, another ASR mangling) — confirmed via the org-chart page
+  the user linked, now cited in `gobierno-municipal.md`'s staffing section.
 - ~~**MU3 — Cómo funciona una sesión del Concejo Municipal**~~ — DONE, see
   `organismos/sesiones-concejo-municipal.md`. Includes the quórum formula
   (mitad+1 of regidurías propietarias) and the two procedural mechanisms the
   original summary had conflated: **moción de orden** vs. **alteración del
   orden del día**.
-- ~~**MU4 — Consejos de distrito: elección y reglamento**~~ — DONE, see
-  `organismos/consejos-de-distrito.md`. Cociente/subcociente mechanics with
+- ~~**MU4 — Concejos de distrito: elección y reglamento**~~ — DONE, see
+  `organismos/concejos-de-distrito.md`. Cociente/subcociente mechanics with
   a worked (illustrative, not real) example, plus a flagged sourcing gap:
   the gender-parity suplencia reform is reported without a confirmed article
   number or date.
@@ -451,6 +453,22 @@ unpaid), matching what `organismos/roles-municipales.md` already said
 correctly. Corrected, and that article trimmed generally to link to
 MU1–4 instead of re-explaining their mechanics, per VOICE.md's
 "cross-link instead of repeating."
+
+**Spelling correction (2026-09-02, caught by the user):** the body is
+"**Concejo** de Distrito" (with C — the deliberative body, same root as
+Concejo Municipal), not "Consejo de Distrito" (with S, which reads as
+"advice"). MU4's file was renamed
+`organismos/consejos-de-distrito.md` → `organismos/concejos-de-distrito.md`,
+and every inbound link plus every body mention of "consejo(s) de distrito"
+across the batch (`roles-municipales.md`, `presupuestos-participativos-municipales.md`,
+`gobierno-municipal.md`, `composicion-politica-concejo.md`,
+`distritos/montes-de-oca/index.md`, and this file) was fixed to match. Not
+touched: `distritos/montes-de-oca/sabanilla/iniciativas/buses-sabanilla.md`'s
+link to the **Consejo de Transporte Público** (CTP) — a different, unrelated
+national body that is correctly spelled with S. Watch for this distinction
+in any future municipal-government content — "Concejo" (C) for a governing
+body (Concejo Municipal, Concejo de Distrito), "Consejo" (S) for an advisory
+one (like the CTP) or the common noun.
 
 ## Content architecture: district / canton / national
 

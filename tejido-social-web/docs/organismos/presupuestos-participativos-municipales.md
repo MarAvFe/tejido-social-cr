@@ -6,7 +6,11 @@ source_note: "Explicación basada en una sesión informativa sobre gobierno muni
 
 # Presupuestos Participativos Municipales
 
-**Nota sobre la fuente:** en la sesión de la que sale este artículo, quien explicaba el mecanismo dudó, en el momento, entre llamarlo "por ley" o "por acuerdo del Concejo Municipal" — y se corrigió a sí mismo hacia lo segundo. No se confirmó todavía si el presupuesto participativo está mandatado por una ley específica o si cada Concejo Municipal lo adopta por acuerdo propio. Tratá el mecanismo descrito acá como conocimiento de campo, no como cita legal, hasta que se confirme la fuente exacta.
+:::note "Nota"
+
+En la sesión de la que sale este artículo, quien explicaba el mecanismo dudó, en el momento, entre llamarlo "por ley" o "por acuerdo del Concejo Municipal" — y se corrigió a sí mismo hacia lo segundo. No se confirmó todavía si el presupuesto participativo está mandatado por una ley específica o si cada Concejo Municipal lo adopta por acuerdo propio. Tratá el mecanismo descrito acá como conocimiento de campo, no como cita legal, hasta que se confirme la fuente exacta.
+
+:::
 
 ## Qué es
 
@@ -35,7 +39,7 @@ Un grupo comunitario —una asociación de desarrollo, un comité de vecinos, un
 ## Ver también
 
 - **[Roles Municipales en Costa Rica](./roles-municipales.md)** — qué es un Concejo de Distrito y cómo se compone.
-- **[Consejos de Distrito: Composición y Elección](./consejos-de-distrito.md)** — el órgano que administra el 30% distrital.
+- **[Concejos de Distrito: Composición y Elección](./concejos-de-distrito.md)** — el órgano que administra el 30% distrital.
 - **[Cómo Funciona una Sesión del Concejo Municipal](./sesiones-concejo-municipal.md)** — dónde se valida el presupuesto ordinario.
 
 Fuente: Conocimiento de campo — sesión informativa sobre gobierno municipal (2026-08-28). Base legal exacta pendiente de confirmar.

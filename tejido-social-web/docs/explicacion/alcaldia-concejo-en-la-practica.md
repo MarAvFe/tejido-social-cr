@@ -18,7 +18,7 @@ Visto desde afuera, el resultado es que el Concejo terminó influyendo en algo q
 
 ## Lo que no cambia pese a la negociación
 
-Esta dinámica no es una excepción a la regla, es la regla en la práctica — pero tiene un límite claro: **un regidor no manda sobre un departamento, y la alcaldía no sustituye al consejo.** La negociación puede inclinar qué se prioriza o qué se vota, pero no traslada la autoridad legal de un órgano a otro. El Concejo sigue sin poder ejecutar directamente un acuerdo, y la alcaldía sigue sin poder aprobar un reglamento o fijar una tasa por su cuenta.
+Esta dinámica no es una excepción a la regla, es la regla en la práctica — pero tiene un límite claro: **un regidor no manda sobre un departamento, y la alcaldía no sustituye al concejo.** La negociación puede inclinar qué se prioriza o qué se vota, pero no traslada la autoridad legal de un órgano a otro. El Concejo sigue sin poder ejecutar directamente un acuerdo, y la alcaldía sigue sin poder aprobar un reglamento o fijar una tasa por su cuenta.
 
 ## Por qué importa entender esto
 

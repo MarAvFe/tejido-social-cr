@@ -22,7 +22,7 @@ Una **regiduría propietaria** delibera, presenta mociones, vota, revisa acuerdo
 
 ### Concejo de Distrito (síndicos y concejales de distrito)
 
-Cada distrito de un cantón tiene su propio Concejo de Distrito, integrado por cinco personas propietarias: un **síndico** (quien lo preside) y cuatro **concejales de distrito**. Entre sus funciones está proponer ante el Concejo Municipal a personas beneficiarias de becas, bonos de vivienda y otras ayudas estatales del cantón. Se eligen por votación directa, por distrito — ver **[Consejos de Distrito: Composición y Elección](./consejos-de-distrito.md)** para el sistema electoral detrás de estos puestos.
+Cada distrito de un cantón tiene su propio Concejo de Distrito, integrado por cinco personas propietarias ([Art. 55](https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf)): un **síndico** (quien lo preside) y cuatro **concejales de distrito** — fijo por ley, sin importar el tamaño del distrito. Entre sus funciones está proponer ante el Concejo Municipal a personas beneficiarias de becas, bonos de vivienda y otras ayudas estatales del cantón. Se eligen por votación directa, por distrito — ver **[Concejos de Distrito: Composición y Elección](./concejos-de-distrito.md)** para el sistema electoral detrás de estos puestos.
 
 La sindicatura no forma parte formal del Concejo Municipal, pero lo representa: participa en sus sesiones con voz, nunca con voto, y su función es canalizar hacia el Concejo Municipal los acuerdos y necesidades que surgen en su propio Concejo de Distrito.
 
@@ -44,6 +44,6 @@ A diferencia de cargos similares en otros países, ninguno de estos puestos es d
 - **[Cómo se Relacionan en la Práctica la Alcaldía y el Concejo Municipal](../explicacion/alcaldia-concejo-en-la-practica.md)** — la negociación detrás de la separación formal de poderes.
 - **[Cómo Funciona una Sesión del Concejo Municipal](./sesiones-concejo-municipal.md)** — el procedimiento completo de una sesión.
 - **[Presupuestos Participativos Municipales](./presupuestos-participativos-municipales.md)** — cómo una comunidad prioriza y ejecuta proyectos con fondos municipales.
-- **[Consejos de Distrito: Composición y Elección](./consejos-de-distrito.md)** — el sistema de cociente y subcociente detrás de las concejalías.
+- **[Concejos de Distrito: Composición y Elección](./concejos-de-distrito.md)** — el sistema de cociente y subcociente detrás de las concejalías.
 - **[El Gobierno Municipal de Montes de Oca](../distritos/montes-de-oca/gobierno-municipal.md)** — estos cargos, en la práctica, en un cantón concreto.
 - **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización distrital del partido.

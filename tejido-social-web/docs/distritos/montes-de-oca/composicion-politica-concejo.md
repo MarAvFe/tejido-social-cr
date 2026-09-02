@@ -7,7 +7,11 @@ source_note: "Sesión informativa sobre organización municipal para militancia 
 
 # Composición Política del Concejo Municipal de Montes de Oca (2024–2028)
 
+:::note
+
 **Estado de este artículo: en revisión.** Todo lo que sigue viene de una única sesión informativa interna, no de un cruce con el registro oficial del [TSE](https://www.tse.go.cr/) ni de prensa. Fechas exactas, el orden de algunos hechos y algunas cifras se reportan tal como se narraron, con las dudas que la propia sesión dejó abiertas. Antes de tratar este artículo como referencia firme, necesita revisión de quienes ocupan hoy estos cargos — es exactamente el tipo de contenido que existe para generar esa discusión, no para cerrarla. Para la explicación neutral de cómo funciona el gobierno municipal en general, ver **[El Gobierno Municipal de Montes de Oca](./gobierno-municipal.md)**; este artículo es su complemento político, deliberadamente separado (ver la nota de alcance en [Roles Municipales en Costa Rica](../../organismos/roles-municipales.md) sobre por qué se mantienen distintos).
+
+:::
 
 ## Composición actual
 
@@ -23,7 +27,7 @@ Las cuatro sindicaturas, una por distrito, se reportan así: San Pedro (Frente A
 
 ## La coalición Frente Amplio + Gente Montesoca
 
-Para la elección de 2024, el Frente Amplio y el partido cantonal Gente Montesoca formaron una coalición y repartieron puestos entre sí: la alcaldía y una vicealcaldía para Gente Montesoca, la otra vicealcaldía para el Frente Amplio, las regidurías propietarias y suplentes alternadas entre ambos partidos, y las cuatro sindicaturas divididas dos y dos — Frente Amplio en San Pedro y Sabanilla, Gente Montesoca en Mercedes y San Rafael. Las suplencias de cada sindicatura se asignaron al partido contrario y de sexo opuesto a la persona propietaria, para cumplir con la paridad de género (ver **[Consejos de Distrito: Composición y Elección](../../organismos/consejos-de-distrito.md)** sobre esta regla).
+Para la elección de 2024, el Frente Amplio y el partido cantonal Gente Montesoca formaron una coalición y repartieron puestos entre sí: la alcaldía y una vicealcaldía para Gente Montesoca, la otra vicealcaldía para el Frente Amplio, las regidurías propietarias y suplentes alternadas entre ambos partidos, y las cuatro sindicaturas divididas dos y dos — Frente Amplio en San Pedro y Sabanilla, Gente Montesoca en Mercedes y San Rafael. Las suplencias de cada sindicatura se asignaron al partido contrario y de sexo opuesto a la persona propietaria, para cumplir con la paridad de género (ver **[Concejos de Distrito: Composición y Elección](../../organismos/concejos-de-distrito.md)** sobre esta regla).
 
 **Importante: esta coalición ya no funciona como bloque de gobierno**, aunque se haya mantenido para la papeleta. Según lo reportado, tras la elección la regiduría de Gente Montesoca se realineó con el grupo que apoya a la alcaldía. El patrón de votación que se describe en la sesión es, con frecuencia, de cinco votos a favor y dos en contra — con el Frente Amplio en el bloque de los dos. El partido "En Común" también se describe como aliado inicial que pasó a la oposición.
 
@@ -36,7 +40,7 @@ La presidencia y la vicepresidencia se eligen cada dos años. Según lo reportad
 - La sindicatura de Sabanilla (Unidad Social Cristiana) se reporta electa con 1,296 votos.
 - La concejalía de distrito de Sabanilla ocupada por el Frente Amplio se reporta electa por subcociente, con un margen aproximado de "poco menos de 200" votos — cifra recordada de memoria por quien la relató, no un dato verificado.
 
-Para el mecanismo detrás de estas cifras (cociente, subcociente, mayoría simple), ver **[Consejos de Distrito: Composición y Elección](../../organismos/consejos-de-distrito.md)**.
+Para el mecanismo detrás de estas cifras (cociente, subcociente, mayoría simple), ver **[Concejos de Distrito: Composición y Elección](../../organismos/concejos-de-distrito.md)**.
 
 ## Panorama hacia las próximas elecciones municipales
 
@@ -45,7 +49,7 @@ En la sesión se planteó una inquietud: que un partido de alcance nacional busq
 ## Ver también
 
 - **[El Gobierno Municipal de Montes de Oca](./gobierno-municipal.md)** — la explicación institucional neutral, sin composición política.
-- **[Consejos de Distrito: Composición y Elección](../../organismos/consejos-de-distrito.md)** — el sistema electoral detrás de estas cifras.
+- **[Concejos de Distrito: Composición y Elección](../../organismos/concejos-de-distrito.md)** — el sistema electoral detrás de estas cifras.
 - **[Roles Municipales en Costa Rica](../../organismos/roles-municipales.md)** — los cargos involucrados.
 - [TSE](https://www.tse.go.cr/) — para verificar composición y resultados oficiales.
 

@@ -256,8 +256,8 @@ creating a new thread, add a row.
   `explicacion/alcaldia-concejo-en-la-practica.md` (separation-of-powers dynamics in
   practice), `organismos/presupuestos-participativos-municipales.md` (the national
   participatory-budget legal mechanism), `organismos/sesiones-concejo-municipal.md`
-  (Concejo Municipal session/voting procedure), `organismos/consejos-de-distrito.md`
-  (consejo-de-distrito election mechanics, cociente/subcociente). **Scope test for this
+  (Concejo Municipal session/voting procedure), `organismos/concejos-de-distrito.md`
+  (concejo-de-distrito election mechanics, cociente/subcociente). **Scope test for this
   thread specifically:**
   if a mechanic is defined by the Código Municipal and would read the same in any canton
   (even if not every municipality actually uses it, e.g. not all run presupuestos
