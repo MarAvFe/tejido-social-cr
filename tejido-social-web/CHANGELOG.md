@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.4] - 2026-09-02
+
+### Added
+- **Custom 404 page**, sober and helpful instead of Docusaurus's generic default: explains the link is likely broken or moved, and links back to Introducción, Organismos, Guías Prácticas, and the Glosario. Implemented by swizzling `@theme/NotFound/Content` rather than adding `src/pages/404.tsx` alone — the latter only controls the static file crawlers see before JS loads; Docusaurus's client-side router falls back to a separate `@theme/NotFound` component after hydration, which would otherwise silently replace a page-only custom 404 with the stock translated copy. Also fixed the page `<title>`, sourced from an untouched `i18n/es/code.json` string (`theme.NotFound.title`) — same category of bug as the footer-copyright fix in 0.4.0.
+- **Branded social share image** (`static/img/social-card.png`), replacing the stock Docusaurus placeholder that every shared link had been showing. Matches the site's actual hero styling (yellow background, FA mark, near-black text). Sized for WhatsApp specifically, which center-crops preview images sometimes down to near-square: all content sits well inside a safe center zone with generous margin, verified by simulating a worst-case square crop, rather than filling the full 1200×630 canvas edge-to-edge.
+
 ## [0.5.3] - 2026-09-02
 
 ### Changed (ética split)
