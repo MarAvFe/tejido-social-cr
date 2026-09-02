@@ -224,24 +224,33 @@ creating a new thread, add a row.
   `explicacion/mecanismos-democracia-participativa.md` (plebiscito/referendo,
   Arts. 38–42), `organismos/sanciones-disciplinarias.md` (discipline/
   revocatoria, Arts. 59–61), `organismos/finanzas-del-partido.md` (party
-  finances, Arts. 53–58), `organismos/codigo-de-etica.md` (3-minute summary
+  finances, Arts. 53–58), `principios/codigo-de-etica.md` (3-minute summary
   of the standalone Código de Ética PDF — different source document from
   the Estatuto, referenced BY the Estatuto and by
   `requisitos-candidatura-popular.md`/`sanciones-disciplinarias.md`, not a
-  duplicate of either), `guias/presentar-denuncia-tribunal-etica.md` (the
-  How-To counterpart to `codigo-de-etica.md`'s Reference/Explicación —
-  same Capítulo III material, reader-question "how do I do X" instead of
-  "what is X").
+  duplicate of either), `organismos/tribunal-de-etica.md` (the órgano itself
+  — composition, autonomy, Tribunal de Alzada — split out from
+  `codigo-de-etica.md` 2026-09-02 when that file moved to `principios/`, so
+  the *values/commitments* content and the *governing body* content don't
+  live in the same folder), `guias/presentar-denuncia-tribunal-etica.md`
+  (the How-To counterpart — same Capítulo III material, reader-question
+  "how do I do X" instead of "what is X").
 - **Instance home:** none — these are national-level rules that apply
   identically regardless of district; no per-district variation to capture.
 - **Related:** `organismos/frentes-nacionales.md` (same source document, the
   Estatuto, different chapter); `requisitos-candidatura-popular.md` ↔
-  `sanciones-disciplinarias.md` ↔ `codigo-de-etica.md` all cross-link (the
-  commitments a candidate accepts, what happens if broken, and the full
-  Tribunal de Ética procedure behind it). **Naming note:** the Estatuto and
-  the Código de Ética both call it the **Tribunal de Ética** — earlier draft
-  of `sanciones-disciplinarias.md` mistakenly called it "Tribunal de Ética y
-  Disciplina," caught and fixed once the Código de Ética PDF was read
+  `sanciones-disciplinarias.md` ↔ `codigo-de-etica.md` ↔ `tribunal-de-etica.md`
+  all cross-link (the commitments a candidate accepts, what happens if
+  broken, who decides, and the full procedure behind it). **Placement note:**
+  `codigo-de-etica.md` lives in `principios/` (what one commits to,
+  alongside `partido-nacional.md`/`comite-distrital.md`) — not `organismos/`
+  (who enforces it, i.e. `tribunal-de-etica.md`). Don't re-merge these; the
+  split exists precisely because "what are the rules" and "which body
+  enforces them" are different reader questions. **Naming note:** the
+  Estatuto and the Código de Ética both call it the **Tribunal de Ética** —
+  earlier draft of `sanciones-disciplinarias.md` mistakenly called it
+  "Tribunal de Ética y Disciplina," caught and fixed once the Código de
+  Ética PDF was read
   directly. Watch for this if summarizing from memory instead of the source.
 - **Invariant:** every article in this thread cites specific article numbers
   inline, linked to the Estatuto PDF, plus a closing "Fuente:" line — see the

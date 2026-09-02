@@ -16,7 +16,7 @@ Toda persona postulante debe:
 - Estar al día con la CCSS y otras entidades de la Seguridad Social.
 - Presentar hoja de delincuencia, sin sentencia judicial que la inhiba para ejercer un cargo público de elección.
 - Declarar que carece de sanciones —administrativas o judiciales, vigentes al momento de la postulación— por hostigamiento o acoso sexual, o por violencia contra las mujeres en la política.
-- Firmar una declaración jurada de conocer y comprometerse a cumplir los Compromisos Éticos y Políticos ([Código de Ética](./codigo-de-etica.md)) del partido.
+- Firmar una declaración jurada de conocer y comprometerse a cumplir los Compromisos Éticos y Políticos ([Código de Ética](../principios/codigo-de-etica.md)) del partido.
 - Aceptar por escrito que, de ser electa, se sujeta a los principios de revocación de cargos que el Frente Amplio defina.
 - Haber recibido capacitación en violencia de género, en particular la relativa a la Ley para Prevenir, Atender, Sancionar y Erradicar la Violencia contra las Mujeres en la Política (Ley N.° 10.235).
 
@@ -37,7 +37,7 @@ El Estatuto original incluía, en los incisos c), d), e) y f) del Artículo 22, 
 
 - **[Roles Municipales en Costa Rica](./roles-municipales.md)** — a qué cargos aplica esto en el gobierno local.
 - **[Sanciones Disciplinarias y Revocatoria de Mandato](./sanciones-disciplinarias.md)** — qué pasa si una persona electa incumple sus compromisos.
-- **[Código de Ética del Frente Amplio (Resumen)](./codigo-de-etica.md)** — el documento que se firma conocer y cumplir.
+- **[Código de Ética del Frente Amplio (Resumen)](../principios/codigo-de-etica.md)** — el documento que se firma conocer y cumplir.
 - **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización del partido.
 
 Fuente: [Estatuto del Partido Frente Amplio](https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf), Capítulo V, Artículo 22.

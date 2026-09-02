@@ -184,7 +184,11 @@ Estatuto — link every article number cited inline to the PDF, per the
 sourcing-discipline rule in `CONTENT-FRAMEWORK.md` (question 4).
 
 - ~~**N15 — Código de Ética del Frente Amplio (resumen)**~~ — DONE, see
-  `organismos/codigo-de-etica.md`. User-requested (not from the Statute
+  `principios/codigo-de-etica.md` (moved from `organismos/` 2026-09-02; the
+  Tribunal de Ética's own composition/autonomy split out into
+  `organismos/tribunal-de-etica.md`, a new organism page — see
+  `CONTENT-FRAMEWORK.md`'s Estatuto del partido thread). User-requested
+  (not from the Statute
   read-through): a 3-minute, explicitly-not-a-replacement summary of the
   standalone [Código de Ética PDF](https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf)
   (46 articles, 5 chapters) — the document candidates declare they'll

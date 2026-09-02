@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 source_label: "Directiva oficial"
 source_note: "Código de Ética del Frente Amplio."
 source_url: "https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf"
@@ -6,20 +7,17 @@ source_url: "https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-E
 
 # Código de Ética del Frente Amplio (Resumen)
 
-Resumen de lectura rápida del [Código de Ética del Frente Amplio](https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf), el documento que toda persona candidata a un cargo de elección popular declara conocer y comprometerse a cumplir (ver [Requisitos para Postularse a Cargos de Elección Popular](./requisitos-candidatura-popular.md)). **Este resumen no reemplaza el documento oficial** — es una guía de tres minutos para entender el compromiso, no la fuente para resolver un caso real. Ante cualquier duda o denuncia concreta, el texto completo del Código es lo que rige.
+Resumen de lectura rápida del [Código de Ética del Frente Amplio](https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf), el documento que toda persona candidata a un cargo de elección popular declara conocer y comprometerse a cumplir (ver [Requisitos para Postularse a Cargos de Elección Popular](../organismos/requisitos-candidatura-popular.md)). **Este resumen no reemplaza el documento oficial** — es una guía de tres minutos para entender el compromiso, no la fuente para resolver un caso real. Ante cualquier duda o denuncia concreta, el texto completo del Código es lo que rige.
 
 ## Qué compromete (Capítulo I)
 
-Además de compartir los [Principios del Partido](../principios/partido-nacional.md), el Código fija deberes concretos para toda persona afiliada: mantener una conducta digna en su vida pública y también en la privada cuando esta trasciende a lo público; respetar el ordenamiento electoral y los acuerdos válidamente aprobados por el partido; contribuir económicamente según sus posibilidades; y abstenerse de discriminación, violencia contra las mujeres en la política, o expresiones injuriosas contra copartidarios u otras fuerzas políticas.
+Además de compartir los [Principios del Partido](./partido-nacional.md), el Código fija deberes concretos para toda persona afiliada: mantener una conducta digna en su vida pública y también en la privada cuando esta trasciende a lo público; respetar el ordenamiento electoral y los acuerdos válidamente aprobados por el partido; contribuir económicamente según sus posibilidades; y abstenerse de discriminación, violencia contra las mujeres en la política, o expresiones injuriosas contra copartidarios u otras fuerzas políticas.
 
 Para personas candidatas o que ya ocupan un cargo de elección popular, el compromiso es más estricto: rendición de cuentas cada cuatro meses ante la asamblea de personas militantes; firmar de antemano una carta de renuncia que el partido puede ejecutar si se determina, con debido proceso, que traicionó sus compromisos; y no usar el cargo público para beneficio personal, económico o de tráfico de influencias.
 
 ## Quién vela por su cumplimiento (Capítulo II)
 
-- **Tribunal de Ética** — órgano rector del régimen ético y disciplinario del partido. Cinco personas titulares y cinco suplentes, electas por la Asamblea Nacional por cuatro años. Sus resoluciones son de acatamiento obligatorio y solo apelables ante el Tribunal de Alzada.
-- **Tribunal de Alzada** — resuelve en definitiva las apelaciones a las resoluciones del Tribunal de Ética. Tres personas titulares y tres suplentes, mismo período.
-
-Ambos tribunales gozan de autonomía funcional: sus decisiones no dependen de otro órgano del partido para ser válidas.
+El **[Tribunal de Ética](../organismos/tribunal-de-etica.md)** es el órgano rector del régimen ético y disciplinario del partido, con el **Tribunal de Alzada** resolviendo sus apelaciones en última instancia — ver esa página para su composición y autonomía.
 
 ## Cómo funciona una denuncia (Capítulo III)
 
@@ -39,10 +37,11 @@ Toda resolución del Tribunal de Ética admite recurso de revocatoria ante el mi
 
 ## Ver también
 
+- **[Tribunal de Ética](../organismos/tribunal-de-etica.md)** — quién integra el Tribunal de Ética y el Tribunal de Alzada, y qué autoridad tienen.
 - **[Cómo Presentar una Denuncia ante el Tribunal de Ética](../guias/presentar-denuncia-tribunal-etica.md)** — guía paso a paso del procedimiento resumido en el Capítulo III.
-- **[Requisitos para Postularse a Cargos de Elección Popular](./requisitos-candidatura-popular.md)** — dónde se firma el compromiso de conocer y cumplir este Código.
-- **[Sanciones Disciplinarias y Revocatoria de Mandato](./sanciones-disciplinarias.md)** — el marco estatutario que este Código desarrolla en detalle.
-- **[Principios del Partido](../principios/partido-nacional.md)** — los doce principios que este Código convierte en deberes concretos.
+- **[Requisitos para Postularse a Cargos de Elección Popular](../organismos/requisitos-candidatura-popular.md)** — dónde se firma el compromiso de conocer y cumplir este Código.
+- **[Sanciones Disciplinarias y Revocatoria de Mandato](../organismos/sanciones-disciplinarias.md)** — el marco estatutario que este Código desarrolla en detalle.
+- **[Principios del Partido](./partido-nacional.md)** — los doce principios que este Código convierte en deberes concretos.
 - **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización del partido.
 
 Fuente: [Código de Ética del Frente Amplio](https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf).

@@ -18,7 +18,7 @@ Términos y siglas usados en la organización distrital del Frente Amplio.
 
 **CEN** — Comité Ejecutivo Nacional. El organismo de dirección nacional del partido; emite las directrices que regulan a los comités distritales.
 
-**TEFA** — Tribunal Electoral del Frente Amplio. El órgano encargado de fiscalizar los procesos electivos internos del partido, incluida la elección de coordinaciones distritales.
+**TEFA** — Nombre usual del **Tribunal de Elecciones del Frente Amplio** ([Art. 34 del Estatuto](https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf)): cinco personas titulares y cinco suplentes, organiza, dirige y vigila todos los procesos electorales internos del partido, incluida la elección de coordinaciones distritales. Distinto del [Tribunal de Ética](../organismos/tribunal-de-etica.md) — el Estatuto declara la membresía en ambos incompatible entre sí (Art. 34, inciso c).
 
 **TSE** — Tribunal Supremo de Elecciones. El órgano electoral de Costa Rica, externo al partido.
 
@@ -56,9 +56,9 @@ Términos y siglas usados en la organización distrital del Frente Amplio.
 
 **Referendo** — Consulta directa a la afiliación para aprobar o improbar normativa interna del partido, incluyendo reformas al Estatuto. Ver [Mecanismos de Democracia Participativa](../explicacion/mecanismos-democracia-participativa.md).
 
-**Tribunal de Ética** — Órgano rector del régimen ético y disciplinario del partido; resuelve denuncias y aplica sanciones con apego al debido proceso. No debe confundirse con el TEFA (que fiscaliza procesos electivos internos). Ver [Código de Ética del Frente Amplio (Resumen)](../organismos/codigo-de-etica.md) y [Cómo Presentar una Denuncia ante el Tribunal de Ética](../guias/presentar-denuncia-tribunal-etica.md).
+**Tribunal de Ética** — Órgano rector del régimen ético y disciplinario del partido; resuelve denuncias y aplica sanciones con apego al debido proceso. No debe confundirse con el TEFA (que fiscaliza procesos electivos internos). Ver [Tribunal de Ética](../organismos/tribunal-de-etica.md), [Código de Ética del Frente Amplio (Resumen)](../principios/codigo-de-etica.md) y [Cómo Presentar una Denuncia ante el Tribunal de Ética](../guias/presentar-denuncia-tribunal-etica.md).
 
-**Tribunal de Alzada** — Órgano que resuelve en última instancia las apelaciones contra resoluciones del Tribunal de Ética. Ver [Código de Ética del Frente Amplio (Resumen)](../organismos/codigo-de-etica.md).
+**Tribunal de Alzada** — Órgano que resuelve en última instancia las apelaciones contra resoluciones del Tribunal de Ética. Ver [Tribunal de Ética](../organismos/tribunal-de-etica.md).
 
 **Revocatoria de mandato** — Sanción que retira a una persona afiliada el cargo o los cargos que ocupa dentro del partido, sin expulsarla de la afiliación. Distinta de la expulsión. Ver [Sanciones Disciplinarias y Revocatoria de Mandato](../organismos/sanciones-disciplinarias.md).
 

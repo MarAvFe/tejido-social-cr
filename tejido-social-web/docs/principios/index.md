@@ -10,3 +10,4 @@ Dos marcos de principios distintos conviven en este partido: los principios esta
 
 1. **[Principios del Partido](./partido-nacional.md)** — el marco ideológico estatutario del Frente Amplio a nivel nacional.
 2. **[Principios del Comité Distrital](./comite-distrital.md)** — los valores prácticos que orientan el trabajo de un comité distrital.
+3. **[Código de Ética del Frente Amplio (Resumen)](./codigo-de-etica.md)** — los deberes concretos en que ambos marcos se traducen, y qué pasa si se incumplen.

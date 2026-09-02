@@ -20,7 +20,7 @@ Referencia sobre cómo se organiza un comité distrital del Frente Amplio.
 - **[Frentes Nacionales y Secretarías](./frentes-nacionales.md)** — organización interna del partido por sector social, distinta de la estructura territorial.
 - **[Requisitos para Postularse a Cargos de Elección Popular](./requisitos-candidatura-popular.md)** — qué exige el Estatuto a quien quiera ser candidato o candidata del FA.
 - **[Sanciones Disciplinarias y Revocatoria de Mandato](./sanciones-disciplinarias.md)** — qué pasa cuando una persona afiliada incumple sus compromisos con el partido.
-- **[Código de Ética del Frente Amplio (Resumen)](./codigo-de-etica.md)** — resumen de tres minutos del compromiso ético que asume toda persona afiliada, y en especial quien ocupa un cargo de elección popular.
+- **[Tribunal de Ética](./tribunal-de-etica.md)** — el órgano que resuelve denuncias y aplica sanciones dentro del partido.
 - **[Finanzas y Control Contable del Partido](./finanzas-del-partido.md)** — de dónde viene el dinero del partido y cómo se controla.
 
 ## Mapa orgánico

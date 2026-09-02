@@ -6,7 +6,7 @@ source_url: "https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-E
 
 # Cómo Presentar una Denuncia ante el Tribunal de Ética
 
-Guía práctica sobre cómo iniciar una denuncia ante el [Tribunal de Ética](../organismos/codigo-de-etica.md) del Frente Amplio, según el [Capítulo III del Código de Ética](https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf). Cualquier persona puede denunciar — afiliada o no.
+Guía práctica sobre cómo iniciar una denuncia ante el [Tribunal de Ética](../organismos/tribunal-de-etica.md) del Frente Amplio, según el [Capítulo III del Código de Ética](https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf). Cualquier persona puede denunciar — afiliada o no.
 
 ## Paso 1: Verificá el plazo
 
@@ -57,5 +57,6 @@ _Falta confirmar el canal oficial de recepción de denuncias (correo electrónic
 
 ## Ver también
 
-- **[Código de Ética del Frente Amplio (Resumen)](../organismos/codigo-de-etica.md)** — el marco completo: quién integra el Tribunal, las sanciones posibles, y sus causales.
+- **[Tribunal de Ética](../organismos/tribunal-de-etica.md)** — quién lo integra y su autonomía.
+- **[Código de Ética del Frente Amplio (Resumen)](../principios/codigo-de-etica.md)** — el marco completo: las sanciones posibles y sus causales.
 - **[Sanciones Disciplinarias y Revocatoria de Mandato](../organismos/sanciones-disciplinarias.md)** — el marco estatutario detrás de este procedimiento.

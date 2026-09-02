@@ -34,7 +34,7 @@ Cualquier sanción debe respetar el debido proceso, con motivación probada, y d
 
 ## Quién decide
 
-La materia disciplinaria y sancionatoria corresponde al **Tribunal de Ética**, el órgano encargado de aplicar estas sanciones garantizando el debido proceso en toda denuncia. Este punto tuvo un ajuste relevante: una reforma que intentaba trasladar la revocatoria de mandato al mismo órgano que nombra a la persona afiliada en un cargo fue **denegada por el TSE**, precisamente porque esa función es competencia exclusiva del Tribunal de Ética, no del órgano nominador. Sus resoluciones son apelables ante el **Tribunal de Alzada**, que resuelve en última instancia. Ver **[Código de Ética del Frente Amplio (Resumen)](./codigo-de-etica.md)** para el detalle de ambos tribunales y cómo funciona una denuncia en la práctica.
+La materia disciplinaria y sancionatoria corresponde al **[Tribunal de Ética](./tribunal-de-etica.md)**, con apelación ante el Tribunal de Alzada. Ver esa página para su composición y autonomía, y **[Cómo Presentar una Denuncia](../guias/presentar-denuncia-tribunal-etica.md)** para el procedimiento.
 
 ## Los estímulos (la contracara de las sanciones)
 
@@ -43,7 +43,8 @@ El [Artículo 61](https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf
 ## Ver también
 
 - **[Requisitos para Postularse a Cargos de Elección Popular](./requisitos-candidatura-popular.md)** — los compromisos que una persona candidata acepta por escrito antes de ser electa.
-- **[Código de Ética del Frente Amplio (Resumen)](./codigo-de-etica.md)** — el detalle del Tribunal de Ética, el procedimiento de denuncia, y las causales específicas de cada sanción.
+- **[Tribunal de Ética](./tribunal-de-etica.md)** — composición y autonomía del órgano que aplica estas sanciones.
+- **[Código de Ética del Frente Amplio (Resumen)](../principios/codigo-de-etica.md)** — el procedimiento de denuncia y las causales específicas de cada sanción.
 - **[Glosario](../recursos/glosario.md)** — siglas y términos usados en la organización del partido.
 
 Fuente: [Estatuto del Partido Frente Amplio](https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf), Capítulo X, Artículos 59, 60 y 61.
