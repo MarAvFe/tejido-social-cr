@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.5.5] - 2026-09-02
+## [0.5.6] - 2026-09-02
+
+### Fixed
+- **Navbar theme toggle showed a 3rd state** — with `colorMode.respectPrefersColorScheme: true` (kept so a first-time visitor's theme still follows their OS preference), Docusaurus's stock toggle also cycles light → dark → system → light... on click, showing a distinct "system" icon along the way. Swizzled `Navbar/ColorModeToggle` to decouple the two behaviors it ties together: the button always shows and toggles between just sun/moon (based on the *effective* resolved color, not the raw choice), and every click sets an explicit light/dark value — so once touched, it never falls back to "system" again, but a fresh visitor still gets the right theme on first load.
 
 ### Changed
 - **404 page copy rewritten** — the generic "Este enlace no funciona" headline is now "Tomamos la dirección equivocada," playing on "dirección" meaning both web address and direction/leadership (also the Estatuto's own term for the party's governing bodies, "Órganos de Dirección"). Added a simple map-pin SVG icon as a visual anchor, in the site's own brand colors rather than an emoji (emoji were tried first but rendered as empty boxes in at least one environment, so nothing that depends on system emoji-font support was kept).

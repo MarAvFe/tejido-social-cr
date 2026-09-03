@@ -58,6 +58,14 @@ const config: Config = {
   themeConfig: {
     image: 'img/social-card.png',
     colorMode: {
+      // Stays true so a first-time visitor's initial theme follows their
+      // OS preference (handled by Docusaurus's pre-hydration inline
+      // script, independent of the toggle button). The swizzled
+      // Navbar/ColorModeToggle below is what keeps the actual click
+      // behavior a plain 2-state sun/moon toggle — Docusaurus's stock
+      // toggle ties both behaviors to this one flag, cycling light →
+      // dark → system → light... once respectPrefersColorScheme is true,
+      // which is the 3rd state that was showing up.
       respectPrefersColorScheme: true,
     },
     navbar: {
