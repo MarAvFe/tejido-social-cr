@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.5] - 2026-09-02
+
+### Changed
+- **404 page copy rewritten** — the generic "Este enlace no funciona" headline is now "Tomamos la dirección equivocada," playing on "dirección" meaning both web address and direction/leadership (also the Estatuto's own term for the party's governing bodies, "Órganos de Dirección"). Added a simple map-pin SVG icon as a visual anchor, in the site's own brand colors rather than an emoji (emoji were tried first but rendered as empty boxes in at least one environment, so nothing that depends on system emoji-font support was kept).
+
 ## [0.5.4] - 2026-09-02
 
 ### Added

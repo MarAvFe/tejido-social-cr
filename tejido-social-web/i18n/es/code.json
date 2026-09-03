@@ -131,7 +131,7 @@
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.NotFound.title": {
-    "message": "Página no encontrada",
+    "message": "Tomamos la dirección equivocada",
     "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
