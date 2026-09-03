@@ -1,4 +1,5 @@
 ---
+description: "Cómo el crecimiento de afiliados reveló el vacío organizativo que los comités distritales vinieron a resolver."
 source_label: "Directiva oficial"
 source_note: "Directrices para Comités de Acción Política de Base Comunal"
 source_url: "https://www.frenteamplio.org/partido/reglamentos/"

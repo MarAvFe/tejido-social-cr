@@ -13,7 +13,6 @@ Priority: **High** = reference that governs the committee's existence/operation 
 
 Articles already published as explicit placeholders, waiting on a source that doesn't exist yet (a pending workshop, or a structure without documented detail). These don't require research work — they require the event/decision to happen first.
 
-- `explicacion/fundamentalismo-religioso-control-politico.md` — pending workshop on religious fundamentalism and political control. — U
 - `explicacion/vision-ambiental-fa.md` — pending workshop on the FA's environmental vision. — U, M
 - `niveles/coordinacion-cantonal.md` — CEC, no detailed source yet.
 - `niveles/coordinacion-provincial.md` — CEP, no detailed source yet.

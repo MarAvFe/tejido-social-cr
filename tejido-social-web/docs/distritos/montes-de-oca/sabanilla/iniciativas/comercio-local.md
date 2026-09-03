@@ -2,6 +2,7 @@
 sidebar_position: 3
 sidebar_label: "Comercio local"
 source_label: "Conocimiento de campo"
+description: "Entrevistas a negocios locales de Sabanilla para recoger perspectiva del comercio y dar visibilidad, en formulación."
 ---
 
 # Comercio Local: Entrevistas y Perfil del Distrito

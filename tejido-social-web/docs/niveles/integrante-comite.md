@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Directrices para Comités de Acción Política de Base Comunal"
 source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+description: "Afiliado incluido en el padrón de su comité, con derecho a participar en asamblea y votar la coordinación."
 ---
 
 # Integrante de Comité

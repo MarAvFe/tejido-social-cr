@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Meta descriptions** — added `description:` frontmatter field to all 70+ articles across all doc categories for SEO and preview text.
+
 ## [0.5.7] - 2026-09-02
 
 ### Added

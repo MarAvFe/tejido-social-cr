@@ -3,6 +3,7 @@ sidebar_position: 2
 sidebar_label: "Gobierno municipal"
 source_label: "Conocimiento de campo"
 source_note: "Sesión informativa sobre organización municipal para la militancia de Montes de Oca, facilitada por el Síndico por San Pedro al 2026 (28 de agosto de 2026)."
+description: "Estructura y funcionamiento de la Municipalidad de Montes de Oca: alcaldía, Concejo, presupuestos participativos, concejos de distrito."
 ---
 
 # El Gobierno Municipal de Montes de Oca

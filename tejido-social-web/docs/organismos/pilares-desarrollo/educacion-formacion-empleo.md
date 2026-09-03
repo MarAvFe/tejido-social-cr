@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Pilar de trabajo distrital orientado a formación política y generación de oportunidades económicas locales."
 ---
 
 # Educación, Formación y Empleo
@@ -14,6 +15,6 @@ Pilar de desarrollo enfocado en formación política y oportunidades económicas
 
 ## Por qué importa
 
-El comité ya tiene talleres de formación pendientes de realizar, identificados por la propia afiliación — por ejemplo sobre fundamentalismo religioso y control político, y sobre visión ambiental del partido (ver [Explicación](../../explicacion/fundamentalismo-religioso-control-politico.md)). Este pilar es responsable de dar seguimiento a ese tipo de agenda formativa.
+El comité ya tiene talleres de formación pendientes de realizar, identificados por la propia afiliación — por ejemplo sobre visión ambiental del partido. Este pilar es responsable de dar seguimiento a ese tipo de agenda formativa.
 
 _Las iniciativas concretas dentro de este pilar son propias de cada distrito, no de esta página — ver la [página de iniciativas del distrito](../../distritos/index.md) correspondiente._

@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Frente Amplio — Afiliate"
 source_url: "https://www.frenteamplio.org/afiliate/"
+description: "Cómo afiliarse al Frente Amplio y qué pasos seguir después para participar activamente en el comité del distrito."
 ---
 
 # Cómo Afiliarse al Frente Amplio

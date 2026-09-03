@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Directrices para Comités de Acción Política de Base Comunal"
 source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+description: "Requisito previo para participar en un comité distrital: afiliación formal con domicilio electoral definido."
 ---
 
 # Afiliado

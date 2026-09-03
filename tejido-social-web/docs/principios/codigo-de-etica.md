@@ -3,6 +3,7 @@ sidebar_position: 3
 source_label: "Directiva oficial"
 source_note: "Código de Ética del Frente Amplio."
 source_url: "https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf"
+description: "Resumen ejecutivo del Código de Ética del Frente Amplio: qué compromete a cada afiliado, cómo se denuncian incumplimientos y qué sanciones aplican."
 ---
 
 # Código de Ética del Frente Amplio (Resumen)

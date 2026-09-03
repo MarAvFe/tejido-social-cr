@@ -1,4 +1,5 @@
 ---
+description: "Criterios para ordenar las prioridades comunitarias del distrito según impacto, urgencia y viabilidad."
 source_label: "Conocimiento de campo"
 ---
 

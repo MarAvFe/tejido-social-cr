@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Recursos"
 source_label: "Editorial"
+description: "Material de consulta rápida para el trabajo del comité: glosario, preguntas frecuentes, plantillas de minuta y acuerdo constitutivo."
 ---
 
 # Recursos

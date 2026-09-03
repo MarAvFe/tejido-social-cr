@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Términos y siglas de la organización del Frente Amplio, incluyendo distinciones con gobierno municipal y roles locales."
 ---
 
 # Glosario

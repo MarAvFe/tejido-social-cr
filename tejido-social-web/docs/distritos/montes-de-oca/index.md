@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Montes de Oca"
 source_label: "Editorial"
+description: "Distritos por cantón con comité documentado, estructura municipal y panorama político."
 ---
 
 # Montes de Oca

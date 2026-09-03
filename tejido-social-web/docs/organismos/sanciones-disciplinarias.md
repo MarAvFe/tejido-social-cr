@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Estatuto del Partido Frente Amplio, Capítulo X, Artículos 59 y 60 (TSE)."
 source_url: "https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf"
+description: "Régimen de sanciones disciplinarias del Frente Amplio: seis niveles desde amonestación privada hasta expulsión, aplicadas por el Tribunal de Ética."
 ---
 
 # Sanciones Disciplinarias y Revocatoria de Mandato

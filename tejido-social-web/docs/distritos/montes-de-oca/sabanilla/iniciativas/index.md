@@ -2,6 +2,7 @@
 sidebar_position: 2
 sidebar_label: "Iniciativas"
 source_label: "Conocimiento de campo"
+description: "Historial de iniciativas activas del comité de Sabanilla, organizado por pilar de desarrollo, sin datos de responsables."
 ---
 
 # Iniciativas de Sabanilla

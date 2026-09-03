@@ -1,5 +1,6 @@
 ---
 sidebar_label: "Alcaldía y Concejo en la práctica"
+description: "Cómo la alcaldía y el Concejo se necesitan mutuamente para avanzar gestiones, aunque sus funciones formales están separadas."
 source_label: "Conocimiento de campo"
 source_note: "Explicación basada en una sesión informativa sobre gobierno municipal, facilitada por una sindicatura en ejercicio (2026-08-28), contrastada con el Código Municipal."
 ---

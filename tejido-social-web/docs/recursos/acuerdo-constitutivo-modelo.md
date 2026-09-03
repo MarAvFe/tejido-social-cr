@@ -1,5 +1,6 @@
 ---
 source_label: "Fuente pendiente"
+description: "Plantilla orientativa de los elementos que debe incluir el acuerdo constitutivo de un comité distrital."
 ---
 
 # Modelo de Acuerdo Constitutivo

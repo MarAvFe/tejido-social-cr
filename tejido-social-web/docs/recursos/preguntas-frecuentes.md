@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Directrices para Comités de Acción Política de Base Comunal"
 source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+description: "Respuestas a dudas comunes sobre la participación en el comité distrital y sobre cargos en gobiernos municipales locales."
 ---
 
 # Preguntas Frecuentes

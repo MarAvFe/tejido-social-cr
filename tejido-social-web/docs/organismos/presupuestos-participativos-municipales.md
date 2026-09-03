@@ -2,6 +2,7 @@
 sidebar_label: "Presupuestos participativos"
 source_label: "Conocimiento de campo"
 source_note: "Explicación basada en una sesión informativa sobre gobierno municipal, facilitada por una sindicatura en ejercicio (2026-08-28). Base legal exacta sin confirmar — ver nota abajo."
+description: "Cómo acceder a presupuestos municipales participativos: comunidades proponen, votan y priorizan proyectos anualmente."
 ---
 
 # Presupuestos Participativos Municipales

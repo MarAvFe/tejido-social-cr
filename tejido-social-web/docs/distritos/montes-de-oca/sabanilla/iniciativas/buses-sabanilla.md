@@ -2,6 +2,7 @@
 sidebar_position: 2
 sidebar_label: "Buses de Sabanilla"
 source_label: "Conocimiento de campo"
+description: "Iniciativa sobre mejoras en transporte de bus de Sabanilla, en formulación sin alcance ni objetivo definidos."
 ---
 
 # Buses de Sabanilla

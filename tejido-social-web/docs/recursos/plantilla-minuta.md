@@ -1,5 +1,6 @@
 ---
 source_label: "Fuente pendiente"
+description: "Plantilla con campos sugeridos para que la Secretaría registre oficialmente las reuniones del comité distrital."
 ---
 
 # Plantilla de Minuta

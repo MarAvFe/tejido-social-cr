@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Estatuto del Partido Frente Amplio, Capítulo V, Artículo 22 (TSE)."
 source_url: "https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf"
+description: "Requisitos estatutarios para candidatos del Frente Amplio: documentación, afiliación mínima y compromiso de contribución económica al partido."
 ---
 
 # Requisitos para Postularse a Cargos de Elección Popular

@@ -2,6 +2,7 @@
 sidebar_label: "Concejos de distrito"
 source_label: "Conocimiento de campo"
 source_note: "Composición: Código Municipal, Art. 55. Resto: sesión informativa sobre gobierno municipal, facilitada por una sindicatura en ejercicio (2026-08-28)."
+description: "Composición y elección de los Concejos de Distrito del gobierno local municipal, incluyendo el rol del síndico y las concejalías de distrito."
 ---
 
 # Concejos de Distrito: Composición y Elección

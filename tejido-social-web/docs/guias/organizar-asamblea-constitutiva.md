@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Metodología de facilitación para la asamblea fundacional de un comité distrital: desde lectura de realidad hasta acuerdos operativos y elección de coordinación."
 ---
 
 # Cómo Organizar una Asamblea Constitutiva

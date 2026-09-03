@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Distritos"
 source_label: "Editorial"
+description: "Mapa de distritos con comité de base organizado y documentado, separado del contenido genérico de organismos y procesos."
 ---
 
 # Distritos

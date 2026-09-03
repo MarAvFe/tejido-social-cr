@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Pilar de desarrollo orientado a cuidados, bienestar social e inclusión: identificación de necesidades y articulación con redes de apoyo existentes."
 ---
 
 # Cuidados e Inclusión

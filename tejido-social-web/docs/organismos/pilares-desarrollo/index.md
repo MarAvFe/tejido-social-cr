@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Pilares de Desarrollo"
 source_label: "Conocimiento de campo"
+description: "Seis áreas de trabajo del comité distrital: ambientes, participación, cultura, movilidad, cuidados y educación, coordinadas por la Mesa Distrital."
 ---
 
 # Pilares de Desarrollo

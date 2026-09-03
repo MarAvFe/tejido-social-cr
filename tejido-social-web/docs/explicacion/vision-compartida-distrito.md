@@ -1,4 +1,5 @@
 ---
+description: "La visión compartida ancla las decisiones posteriores del comité en un rumbo acordado colectivamente."
 source_label: "Conocimiento de campo"
 ---
 

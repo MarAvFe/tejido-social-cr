@@ -50,8 +50,37 @@ performing completeness.
   with the same confidence as a body that's existed for a decade.
 
 This matters specifically because the committee's own credibility depends on
-new affiliates trusting what the site tells them. Overstating maturity or
-certainty is a worse failure than an honest "this part is still forming."
+new affiliates trusting what the site tells them. But it cuts both ways, and
+in practice the second failure below is the more frequent one:
+
+- **Overstating maturity** misleads about what exists.
+- **Burying what *is* settled under hedges about what isn't** leaves the
+  reader unable to act on any of it. An article qualified at every turn has
+  told them nothing, at greater length. This is not the safe direction to
+  err in — it is the other way to fail.
+
+### Where a hedge goes, and where it doesn't
+
+**One statement per gap, at the point where it changes what the reader
+should do.** Not restated in every article that touches the subject.
+
+**Ambient uncertainty is site-level, not per-article.** That the distrital
+structure is young and much of it still informal is true of nearly
+everything here. It is stated once, in `src/pages/politica-editorial.md`,
+and is not re-litigated page by page. A hedge that could be pasted into any
+article on the site without editing is not telling the reader anything
+about *this* article.
+
+**Deletion test:** if the gap were filled tomorrow, would this sentence
+need to change? If not, it is decoration — cut it.
+
+- ✅ "El plazo para presentar la denuncia no está definido en las
+  directrices; consultá con la Coordinación antes de asumir uno." — the
+  gap changes the reader's next action.
+- ❌ "Las decisiones se toman en la Asamblea Distrital, aunque la forma
+  exacta en que esto ocurre no está formalmente definida en ningún
+  documento." — the second clause gives the reader nothing to act on. If
+  the first clause is true, state it and stop.
 
 ## Sourcing discipline
 

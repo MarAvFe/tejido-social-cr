@@ -1,5 +1,6 @@
 ---
 source_label: "Fuente pendiente"
+description: "Nivel provincial no documentado: existe el Comité Ejecutivo Provincial en la cadena territorial, pero sin detalles operativos."
 ---
 
 # Coordinación Provincial

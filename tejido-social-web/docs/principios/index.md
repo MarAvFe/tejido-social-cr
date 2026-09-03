@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Principios"
 source_label: "Editorial"
+description: "Presenta los dos marcos de principios que rigen el Frente Amplio: los principios estatutarios nacionales y los valores prácticos del comité distrital."
 ---
 
 # Principios

@@ -1,5 +1,6 @@
 ---
 source_label: "Fuente pendiente"
+description: "Nivel nacional no documentado: el Comité Ejecutivo Nacional emitió la directriz de comités, fiscalizados por TEFA."
 ---
 
 # Coordinación Nacional

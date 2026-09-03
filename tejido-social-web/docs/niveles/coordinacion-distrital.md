@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Directrices para Comités de Acción Política de Base Comunal"
 source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+description: "Cargos electos de un comité distrital: presidencia, secretaría, subcoordinación y vocalía, por dos años ad-honorem."
 ---
 
 # Coordinación Distrital

@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Pilar de desarrollo enfocado en movilidad peatonal, transporte público, accesibilidad y uso equitativo del espacio urbano del distrito."
 ---
 
 # Movilidad y Derecho a la Ciudad

@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Pilar de desarrollo enfocado en ambiente y espacio público: arborización, zonas verdes, parques y limpieza de ríos y quebradas."
 ---
 
 # Ambientes Saludables y Espacios Públicos

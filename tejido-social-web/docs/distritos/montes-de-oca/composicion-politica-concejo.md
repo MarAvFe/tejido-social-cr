@@ -3,6 +3,7 @@ sidebar_position: 3
 sidebar_label: "Composición política del Concejo"
 source_label: "Conocimiento de campo"
 source_note: "Sesión informativa sobre organización municipal para militancia de Montes de Oca (2026-08-28). Contenido pendiente de revisión — ver nota abajo."
+description: "Composición del Concejo Municipal 2024–2028, reportada desde fuente interna, pendiente de verificación con TSE."
 ---
 
 # Composición Política del Concejo Municipal de Montes de Oca (2024–2028)

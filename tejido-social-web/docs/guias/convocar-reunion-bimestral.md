@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Directrices para Comités de Acción Política de Base Comunal"
 source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+description: "Responsabilidades de Presidencia y Secretaría en las reuniones bimestrales requeridas: convocatoria y documentación de acuerdos."
 ---
 
 # Cómo Convocar una Reunión Bimestral

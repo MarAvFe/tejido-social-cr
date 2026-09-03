@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Estatuto del Partido Frente Amplio, Capítulo VI, Artículos 23, 26 y 27 (TSE)."
 source_url: "https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf"
+description: "Órganos del Frente Amplio organizados por sector social: doce Frentes Nacionales, La Juventud del FA, y La Secretaría de las Mujeres."
 ---
 
 # Frentes Nacionales y Secretarías

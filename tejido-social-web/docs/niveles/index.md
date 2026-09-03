@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Niveles"
 source_label: "Editorial"
+description: "Espectro de participación en el Frente Amplio, desde simpatizante hasta coordinación nacional, documentado en tres niveles."
 ---
 
 # Niveles de Participación

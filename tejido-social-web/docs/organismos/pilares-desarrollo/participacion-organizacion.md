@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Pilar enfocado en participación ciudadana: vinculación con organizaciones comunitarias, escucha ciudadana y crecimiento del comité distrital."
 ---
 
 # Participación y Organización Comunitaria

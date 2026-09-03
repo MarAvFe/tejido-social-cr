@@ -1,4 +1,5 @@
 ---
+description: "Contenido pendiente — taller sobre visión ambiental del Frente Amplio propuesto por la afiliación."
 source_label: "Fuente pendiente"
 ---
 

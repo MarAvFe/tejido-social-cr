@@ -4,6 +4,7 @@ source: "directiva-oficial"
 source_label: "Directiva oficial"
 source_note: "Frente Amplio — Principios del partido"
 source_url: "https://www.frenteamplio.org/partido/principios/"
+description: "Los doce principios estatutarios que definen la identidad ideológica del Frente Amplio como organización política nacional."
 ---
 
 # Principios del Partido

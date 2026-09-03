@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Cómo convertir una idea local en iniciativa del comité: pasos para presentarla, cómo se registra y fuentes de financiamiento."
 ---
 
 # Cómo Desarrollar una Iniciativa en mi Distrito

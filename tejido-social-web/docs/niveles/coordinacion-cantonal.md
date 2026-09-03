@@ -1,5 +1,6 @@
 ---
 source_label: "Fuente pendiente"
+description: "Estructura no documentada: existe el Comité Ejecutivo Cantonal que coordina los distritales, pero faltan detalles operativos."
 ---
 
 # Coordinación Cantonal

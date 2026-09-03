@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Código Municipal de Costa Rica (Ley N.° 7794) y Tribunal Supremo de Elecciones (TSE)."
 source_url: "https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf"
+description: "Estructura del gobierno municipal costarricense: alcaldía, Concejo Municipal, concejos de distrito, elección y funciones de cada cargo."
 ---
 
 # Roles Municipales en Costa Rica

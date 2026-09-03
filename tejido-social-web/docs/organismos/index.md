@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Organismos"
 source_label: "Conocimiento de campo"
+description: "Estructura organizativa de un comité distrital del Frente Amplio: roles, pilares de desarrollo y relación con instancias cantonal y municipal."
 ---
 
 # Organismos

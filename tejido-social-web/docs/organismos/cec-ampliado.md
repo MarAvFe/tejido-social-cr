@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Reunión ampliada del Comité Ejecutivo Cantonal con la coordinación de cada comité distrital del cantón para seguimiento y coordinación inter-distrital."
 ---
 
 # CEC Ampliado

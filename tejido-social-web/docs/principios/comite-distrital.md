@@ -2,6 +2,7 @@
 sidebar_position: 2
 source: "conocimiento-de-campo"
 source_label: "Conocimiento de campo"
+description: "Los cinco principios prácticos que orientan el trabajo del comité: participación, solidaridad, transparencia, inclusión y cuidado del territorio."
 ---
 
 # Principios del Comité Distrital

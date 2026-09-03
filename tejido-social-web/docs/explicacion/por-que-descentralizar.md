@@ -1,4 +1,5 @@
 ---
+description: "Por qué el Frente Amplio extiende su estructura hasta el distrito para conectar con conocimiento local."
 source_label: "Conocimiento de campo"
 ---
 

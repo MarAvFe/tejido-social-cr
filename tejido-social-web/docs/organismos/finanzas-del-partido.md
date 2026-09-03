@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Estatuto del Partido Frente Amplio, Capítulo IX, Artículos 53 a 58 (TSE)."
 source_url: "https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf"
+description: "Régimen financiero del Frente Amplio: fuentes permitidas, porcentajes de gasto obligatorio en formación y organización, y control de fondos."
 ---
 
 # Finanzas y Control Contable del Partido

@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Metodología para diseñar y aplicar una encuesta comunitaria como base organizativa inicial para la planificación distrital."
 ---
 
 # Cómo Diseñar una Encuesta para el Plan de Acción Distrital

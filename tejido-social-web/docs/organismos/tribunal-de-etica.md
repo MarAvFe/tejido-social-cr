@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Código de Ética del Frente Amplio, Capítulo II, y Estatuto del Partido, Artículos 59 a 61 (TSE)."
 source_url: "https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf"
+description: "Estructura y autoridad del Tribunal de Ética como órgano rector del régimen disciplinario del Frente Amplio, y procedimientos de apelación ante sus resoluciones."
 ---
 
 # Tribunal de Ética

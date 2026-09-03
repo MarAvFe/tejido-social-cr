@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Sabanilla"
 source_label: "Conocimiento de campo"
+description: "Comité de Acción Política de Base de Sabanilla, constituido en julio de 2026, con historial de iniciativas."
 ---
 
 # Sabanilla (Montes de Oca)

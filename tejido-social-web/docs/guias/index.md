@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Guías Prácticas"
 source_label: "Editorial"
+description: "Índice de guías prácticas sobre tareas frecuentes del trabajo organizativo distrital: conformación, asambleas, encuestas y procedimientos internos."
 ---
 
 # Guías Prácticas

@@ -1,4 +1,5 @@
 ---
+description: "Plebiscito y referendo: cómo la afiliación puede convocar consultas directas vinculantes en el partido."
 source_label: "Directiva oficial"
 source_note: "Estatuto del Partido Frente Amplio, Capítulo VII, Artículos 38 a 42 (TSE)."
 source_url: "https://www.tse.go.cr/pdf/normativa/estatutos/frenteamplio.pdf"

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: "Explicación"
+description: "Contexto y razones detrás de la organización distrital del Frente Amplio."
 source_label: "Editorial"
 ---
 
@@ -16,5 +17,4 @@ El porqué detrás de cómo se organiza el trabajo distrital — contexto y razo
 - **[Cómo se Relacionan en la Práctica la Alcaldía y el Concejo Municipal](./alcaldia-concejo-en-la-practica.md)** — por qué la separación formal de poderes no elimina la negociación política entre ambos.
 - **[Qué es Public Narrative](./public-narrative.md)** — el marco (Self/Us/Now) detrás de cómo contar por qué una iniciativa importa.
 - **[Mecanismos de Democracia Participativa del Partido](./mecanismos-democracia-participativa.md)** — plebiscito, referendo, y cómo la afiliación puede convocar una consulta directa.
-- **[Fundamentalismo Religioso y Control Político](./fundamentalismo-religioso-control-politico.md)** _(pendiente)_ — taller propuesto por la afiliación, aún no realizado.
 - **[Visión Ambiental del Frente Amplio](./vision-ambiental-fa.md)** _(pendiente)_ — taller propuesto por la afiliación, aún no realizado.

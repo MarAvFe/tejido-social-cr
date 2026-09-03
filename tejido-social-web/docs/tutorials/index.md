@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Tutoriales"
 source_label: "Editorial"
+description: "Lecciones paso a paso para comenzar: afiliarse, desarrollar una iniciativa distrital y aprender del ejemplo de Angélica."
 ---
 
 # Tutoriales

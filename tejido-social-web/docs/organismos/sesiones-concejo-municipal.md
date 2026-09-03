@@ -2,6 +2,7 @@
 sidebar_label: "Sesiones del Concejo Municipal"
 source_label: "Conocimiento de campo"
 source_note: "Explicación basada en una sesión informativa sobre gobierno municipal, facilitada por una sindicatura en ejercicio (2026-08-28). El Código Municipal y el reglamento interno de cada Concejo regulan el detalle exacto — no se cita artículo específico porque no se confirmó todavía."
+description: "Procedimiento formal de una sesión del Concejo Municipal: convocatoria, quórum, fases, sistemas de votación y control político."
 ---
 
 # Cómo Funciona una Sesión del Concejo Municipal

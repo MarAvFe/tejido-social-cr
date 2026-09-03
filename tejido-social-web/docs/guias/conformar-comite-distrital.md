@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Directrices para Comités de Acción Política de Base Comunal"
 source_url: "https://www.frenteamplio.org/partido/reglamentos/"
+description: "Pasos para llevar un distrito sin comité hasta la constitución formal y reconocimiento de un Comité de Acción Política de Base Distrital."
 ---
 
 # Cómo Conformar un Comité Distrital

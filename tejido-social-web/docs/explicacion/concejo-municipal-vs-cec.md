@@ -1,4 +1,5 @@
 ---
+description: "El Concejo Municipal y el CEC del partido son estructuras independientes con orígenes y funciones distintos."
 source_label: "Directiva oficial"
 source_note: "Código Municipal de Costa Rica (Ley N.° 7794), Estatuto del Partido Frente Amplio (TSE) y Directrices para la conformación de los Comités de Acción Política de Base Comunal (FA-SG-018-2026)."
 source_url: "https://www.tse.go.cr/pdf/normativa/codigomunicipal.pdf"

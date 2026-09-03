@@ -1,4 +1,5 @@
 ---
+description: "Cómo estructurar una historia personal para explicar por qué una iniciativa importa: Self, Us, Now."
 source_label: "Editorial"
 source_note: "Basado en el framework de Public Narrative (Marshall Ganz, Harvard Kennedy School)."
 source_url: "https://marshallganz.scholars.harvard.edu/public-narrative-self-us-now-mld-355"

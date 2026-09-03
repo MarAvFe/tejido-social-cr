@@ -1,6 +1,7 @@
 ---
 source_label: "Editorial"
 source_note: "Narrativa ilustrativa basada en el framework de Public Narrative (Marshall Ganz)."
+description: "Caso narrado: cómo una idea de vecindario se convierte en iniciativa real del comité a través de coordinación y conexiones."
 ---
 
 # La historia de Angélica

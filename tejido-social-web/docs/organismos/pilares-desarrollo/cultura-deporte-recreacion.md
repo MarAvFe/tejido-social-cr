@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Pilar de desarrollo enfocado en actividades culturales, deportivas y recreativas que conecten la política con la vida cultural del distrito."
 ---
 
 # Cultura, Deporte y Recreación

@@ -1,5 +1,6 @@
 ---
 source_label: "Conocimiento de campo"
+description: "Estrategias para aumentar la cobertura geográfica de las encuestas distritales más allá de la base inicial, usando canales existentes y actividades presenciales."
 ---
 
 # Cómo Ampliar el Alcance de una Encuesta Distrital

@@ -1,5 +1,6 @@
 ---
 source_label: "Editorial"
+description: "Cómo puede participar una persona que apoya el Frente Amplio sin estar afiliada formalmente."
 ---
 
 # Simpatizante

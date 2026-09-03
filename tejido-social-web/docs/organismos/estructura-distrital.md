@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 source_label: "Conocimiento de campo"
+description: "Estructura interna de un comité distrital: Asamblea Distrital que elige una Mesa de Coordinación, bajo la cual se organizan los Pilares de Desarrollo."
 ---
 
 # Estructura Distrital

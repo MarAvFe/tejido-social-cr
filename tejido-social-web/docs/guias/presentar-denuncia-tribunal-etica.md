@@ -2,6 +2,7 @@
 source_label: "Directiva oficial"
 source_note: "Código de Ética del Frente Amplio, Capítulo III (De los Procedimientos)."
 source_url: "https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf"
+description: "Procedimiento paso a paso para presentar una denuncia ante el Tribunal de Ética: plazos, requisitos documentales y trámite posterior."
 ---
 
 # Cómo Presentar una Denuncia ante el Tribunal de Ética

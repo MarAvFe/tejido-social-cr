@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: "Biblioteca ambulante"
 source_label: "Conocimiento de campo"
+description: "Biblioteca móvil en espacios públicos de Sabanilla para promover lectura en personas menores, en formulación."
 ---
 
 # Biblioteca Ambulante
