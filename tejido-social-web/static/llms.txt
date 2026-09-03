@@ -1,0 +1,22 @@
+# Aprendé sobre el FA
+
+> Documentación abierta, en español, sobre cómo se organiza el trabajo político territorial del Frente Amplio (Costa Rica) y cómo funciona el gobierno municipal costarricense — para personas afiliadas, comités distritales, y cualquiera que quiera entender ambas estructuras. Editado por voluntariado del partido en el cantón de Montes de Oca; no es un sitio oficial del partido ni contenido generado por usuarios.
+
+## Empezar
+- [Introducción](https://tejidosocialcr.netlify.app/docs/intro): para quién es el sitio y por dónde empezar.
+- [Política Editorial](https://tejidosocialcr.netlify.app/politica-editorial): cómo se etiqueta cada fuente (directiva oficial, conocimiento de campo, editorial) y cómo reportar un error.
+
+## Contenido genérico (aplica a cualquier distrito o cantón)
+- [Principios](https://tejidosocialcr.netlify.app/docs/principios/): marco ideológico estatutario del partido y valores prácticos de un comité distrital.
+- [Niveles de Participación](https://tejidosocialcr.netlify.app/docs/niveles/): de simpatizante a coordinación nacional.
+- [Organismos](https://tejidosocialcr.netlify.app/docs/organismos/): estructura territorial y por sector del partido, ética y disciplina, y el gobierno municipal costarricense.
+- [Explicación](https://tejidosocialcr.netlify.app/docs/explicacion/): el porqué detrás de cómo se organiza el trabajo distrital.
+- [Tutoriales](https://tejidosocialcr.netlify.app/docs/tutorials/): lecciones paso a paso para quien recién empieza.
+- [Guías Prácticas](https://tejidosocialcr.netlify.app/docs/guias/): pasos concretos para tareas frecuentes, como conformar un comité o presentar una denuncia.
+- [Recursos](https://tejidosocialcr.netlify.app/docs/recursos/): glosario y preguntas frecuentes.
+
+## Contenido de instancia (específico de un distrito ya organizado)
+- [Distritos](https://tejidosocialcr.netlify.app/docs/distritos/): comités distritales activos, sus iniciativas y coordinación actual — hoy solo Sabanilla, Montes de Oca.
+
+## Licencia
+Código bajo MIT. Contenido escrito bajo CC BY-NC-ND 4.0 (marcado como conservador, pendiente de revisión legal). Detalle en /LICENSE y /LICENSE-CONTENT del repositorio del proyecto.
