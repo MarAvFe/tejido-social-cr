@@ -45,6 +45,23 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
       EVENT_CALENDARS.filter((cal) => enabledIds.has(cal.id)).map((cal) => ({
         googleCalendarId: cal.id,
         color: cal.color,
+        // Strip the URL the google-calendar plugin sets to each event's own
+        // Google Calendar page (from the API's htmlLink) — we always want
+        // our own dialog, never a navigation away from the site. Leaving it
+        // in actively crashes list/agenda view: FullCalendar marks any
+        // event with a url as "fc-event-forced-url", and its click handler
+        // does `container.querySelector('a[href]').href` *before* calling
+        // our eventClick, assuming its own default rendering (an <a> tag)
+        // is still there. Our custom eventContent renders plain <div>s
+        // instead, so that querySelector returns null and reading .href
+        // throws. Month/week don't hit this because FullCalendar wraps
+        // those events in its own <a> regardless of eventContent; list
+        // view delegates that entirely to the content it's given.
+        // `url: ''`, not `undefined` — FullCalendar's refiner checks
+        // `'url' in input` (key existence, not truthiness) then coerces
+        // with `String(...)`, and `String(undefined)` is the truthy string
+        // "undefined", which would make things worse, not better.
+        eventDataTransform: (raw: Record<string, unknown>) => ({...raw, url: ''}),
       })),
     [enabledIds],
   );

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.2] - 2026-09-04
+
+### Fixed
+- **Agenda view's events weren't clickable** — Google Calendar's `htmlLink` gave every event a `url`, which FullCalendar's list view needs an actual `<a>` tag for; our custom rendering doesn't have one, so its click handler crashed reading `.href` off `null` before our own handler ever ran. Now stripped via `eventDataTransform` on each source, since we always want our own dialog anyway, never a navigation away from the site.
+
 ## [0.6.1] - 2026-09-04
 
 ### Added
