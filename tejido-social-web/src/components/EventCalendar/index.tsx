@@ -15,6 +15,7 @@ import {
   type EventModality,
 } from '@site/src/utils/eventTags';
 import {sanitizeDescriptionHtml, descriptionToPlainText} from '@site/src/utils/richText';
+import {parseEventMetadata, ESTADO_LABELS, ESTADO_ICONS, type EventMetadata} from '@site/src/utils/eventMetadata';
 import styles from './styles.module.css';
 
 interface Props {
@@ -25,9 +26,10 @@ interface SelectedEvent extends CalendarEventInfo {
   modality: EventModality | null;
   /** Sanitized HTML for on-page rendering; `description` stays plain text for the .ics/Google-link exports. */
   descriptionHtml?: string;
+  metadata: EventMetadata;
 }
 
-const ALL_MODALITIES: EventModality[] = ['presencial', 'virtual'];
+const ALL_MODALITIES: EventModality[] = ['presencial', 'virtual', 'hibrida'];
 
 export default function EventCalendar({apiKey}: Props): React.ReactElement {
   const [enabledIds, setEnabledIds] = useState<Set<string>>(
@@ -98,6 +100,7 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
       description: rawDescription ? descriptionToPlainText(rawDescription) : undefined,
       descriptionHtml: rawDescription ? sanitizeDescriptionHtml(rawDescription) : undefined,
       modality,
+      metadata: parseEventMetadata(rawDescription),
     });
   }
 
@@ -135,7 +138,8 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
       <div
         className={styles.calendarWrapper}
         data-hide-virtual={enabledModalities.has('virtual') ? undefined : ''}
-        data-hide-presencial={enabledModalities.has('presencial') ? undefined : ''}>
+        data-hide-presencial={enabledModalities.has('presencial') ? undefined : ''}
+        data-hide-hibrida={enabledModalities.has('hibrida') ? undefined : ''}>
         <FullCalendar
           plugins={[dayGridPlugin, timeGridPlugin, listPlugin, googleCalendarPlugin]}
           initialView="dayGridMonth"
@@ -168,12 +172,25 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
               ×
             </button>
             <h3>{selectedEvent.title}</h3>
+            {selectedEvent.metadata.estado !== 'confirmada' && (
+              <p>
+                <strong>
+                  {ESTADO_ICONS[selectedEvent.metadata.estado]} {ESTADO_LABELS[selectedEvent.metadata.estado]}
+                </strong>
+              </p>
+            )}
             {selectedEvent.modality && (
               <p>
                 {MODALITY_ICONS[selectedEvent.modality]} {MODALITY_LABELS[selectedEvent.modality]}
               </p>
             )}
             {selectedEvent.location && <p>📍 {selectedEvent.location}</p>}
+            {selectedEvent.metadata.responsable && <p>A cargo de: {selectedEvent.metadata.responsable}</p>}
+            {selectedEvent.metadata.sector && <p>Sector: {selectedEvent.metadata.sector}</p>}
+            {selectedEvent.metadata.requiereInscripcion !== undefined && (
+              <p>{selectedEvent.metadata.requiereInscripcion ? '📝 Requiere inscripción' : 'No requiere inscripción'}</p>
+            )}
+            {selectedEvent.metadata.contacto && <p>Contacto: {selectedEvent.metadata.contacto}</p>}
             {selectedEvent.descriptionHtml && (
               <div dangerouslySetInnerHTML={{__html: selectedEvent.descriptionHtml}} />
             )}

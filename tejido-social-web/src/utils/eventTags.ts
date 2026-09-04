@@ -1,15 +1,15 @@
 /**
  * Modality tagging convention: whoever manages a calendar's events prefixes
- * an event's title with "[Virtual]" or "[Presencial]" in the normal Google
- * Calendar editor — no custom fields needed, since the public web UI
- * doesn't expose any. An untagged event has unknown modality: it always
- * stays visible regardless of the modality filter, so a manager who forgets
- * the tag never loses visibility of their event.
+ * an event's title with "[Virtual]", "[Presencial]", or "[Híbrida]" in the
+ * normal Google Calendar editor — no custom fields needed, since the public
+ * web UI doesn't expose any. An untagged event has unknown modality: it
+ * always stays visible regardless of the modality filter, so a manager who
+ * forgets the tag never loses visibility of their event.
  */
 
-export type EventModality = 'virtual' | 'presencial';
+export type EventModality = 'virtual' | 'presencial' | 'hibrida';
 
-const TAG_PATTERN = /^\s*\[(virtual|presencial)\]\s*/i;
+const TAG_PATTERN = /^\s*\[(virtual|presencial|h[ií]brida)\]\s*/i;
 
 export interface ParsedEventTitle {
   modality: EventModality | null;
@@ -21,8 +21,10 @@ export function parseEventTitle(rawTitle: string): ParsedEventTitle {
   if (!match) {
     return {modality: null, cleanTitle: rawTitle};
   }
+  const raw = match[1].toLowerCase();
+  const modality: EventModality = raw.startsWith('h') ? 'hibrida' : (raw as EventModality);
   return {
-    modality: match[1].toLowerCase() as EventModality,
+    modality,
     cleanTitle: rawTitle.slice(match[0].length),
   };
 }
@@ -30,9 +32,11 @@ export function parseEventTitle(rawTitle: string): ParsedEventTitle {
 export const MODALITY_LABELS: Record<EventModality, string> = {
   virtual: 'Virtual',
   presencial: 'Presencial',
+  hibrida: 'Híbrida',
 };
 
 export const MODALITY_ICONS: Record<EventModality, string> = {
   virtual: '💻',
   presencial: '📍',
+  hibrida: '🔀',
 };

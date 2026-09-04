@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.2] - 2026-09-04
+
+### Added
+- **Structured event metadata via plain "Etiqueta: valor" lines in the description** — same trick as the `[Virtual]`/`[Presencial]` title tag, since Google Calendar's web UI still has no custom fields. `src/utils/eventMetadata.ts` recognizes `Organiza:`/`A cargo de:`/`Responsable:` (the specific body running it, distinct from which calendar/municipality it lives in), `Sector:`/`Espacio:`, `Inscripción:` (sí/no), `Contacto:`/`Enlace:`, and `Estado:` (confirmada/tentativa/cancelada) — each optional, each shown as its own row in the event popup when present. `Estado` defaults to "confirmada" when unstated (a public event is assumed to be happening unless said otherwise) and only renders a badge for the two exception states, so routine confirmed events don't get a redundant label. Every other field simply doesn't render when absent — there's no guessed default for e.g. "requiere inscripción" that could misinform someone.
+- **`[Híbrida]` as a third modality tag**, alongside `[Virtual]`/`[Presencial]` — same parsing, filtering, and icon treatment (🔀), covering events that are both in-person and streamed.
+
+### Fixed
+- **Calendar header toolbar (prev/next, month title, Mes/Semana/Agenda) overlapped on narrow screens** — FullCalendar's toolbar is a single-row flex (`justify-content: space-between`) across its three sections, and the title never wraps onto its own line; a longer title like "31 ago – 6 sept 2026" just grew and sat on top of the buttons instead of the toolbar wrapping. Fixed with a `max-width: 640px` media query in `custom.css` that stacks the three sections into their own centered rows below that width.
+
 ## [0.6.1] - 2026-09-04
 
 ### Fixed

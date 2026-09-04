@@ -307,18 +307,44 @@ html[data-text-size='xlarge'] {
   display: table-cell;
 }
 
-/* Modality filter (Virtual/Presencial checkboxes in EventCalendar): events
-   are tagged via a "[Virtual]"/"[Presencial]" title prefix (parsed in
-   src/utils/eventTags.ts), which also adds one of these two classes to the
-   event's DOM element. Hiding is a pure CSS toggle driven by a data
-   attribute on an ancestor — the events themselves stay fetched, only
-   their visibility changes, so toggling the filter never re-hits the
-   Google Calendar API. An event with neither class (no tag) is never
-   matched here, so untagged events always stay visible. */
+/* FullCalendar's header toolbar is a single-row flex
+   (`justify-content: space-between`) across its three chunks — nav
+   buttons, title, view switcher — and the title never wraps onto its own
+   line. On narrow screens a long title ("31 ago – 6 sept 2026") just grows
+   and overlaps the button chunks instead of the toolbar wrapping. Stack
+   the three chunks on their own centered rows below the breakpoint where
+   that first starts to collide. */
+@media (max-width: 640px) {
+  .fc .fc-header-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  .fc .fc-toolbar-chunk {
+    display: flex;
+    justify-content: center;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* Modality filter (Virtual/Presencial/Híbrida checkboxes in EventCalendar):
+   events are tagged via a "[Virtual]"/"[Presencial]"/"[Híbrida]" title
+   prefix (parsed in src/utils/eventTags.ts), which also adds one of these
+   three classes to the event's DOM element. Hiding is a pure CSS toggle
+   driven by a data attribute on an ancestor — the events themselves stay
+   fetched, only their visibility changes, so toggling the filter never
+   re-hits the Google Calendar API. An event with none of these classes (no
+   tag) is never matched here, so untagged events always stay visible. */
 [data-hide-virtual] .tejido-modality-virtual {
   display: none;
 }
 [data-hide-presencial] .tejido-modality-presencial {
+  display: none;
+}
+[data-hide-hibrida] .tejido-modality-hibrida {
   display: none;
 }
 
