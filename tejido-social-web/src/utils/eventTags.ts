@@ -9,7 +9,7 @@
 
 export type EventModality = 'virtual' | 'presencial' | 'hibrida';
 
-const TAG_PATTERN = /^\s*\[(virtual|presencial|h[ií]brida)\]\s*/i;
+const TAG_PATTERN = /^\s*\[\s*(virtual|presencial|h[ií]brida)\s*\]\s*/i;
 
 export interface ParsedEventTitle {
   modality: EventModality | null;

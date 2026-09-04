@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.3] - 2026-09-04
+
+### Fixed
+- **`Inscripción: Sí, ...` (or any accented value followed by trailing text) silently failed to parse** — the 0.6.2 tagging patterns used `\b` (word boundary) to allow prefix matches like "Sí, hasta las 5pm", but JavaScript's `\b` is ASCII-only and doesn't count "í" as a word character. Right after "Sí", neither the í nor the following comma counts as "word", so no boundary is ever detected there and the whole match silently fails — for a feature whose entire point is prefix-tolerant parsing of Spanish yes/no answers. Replaced with a negative lookahead for "another letter follows" (covering the accented range directly), which gets the same "whole word, not a prefix of a longer word" effect without depending on `\w`. Also added inner-bracket whitespace tolerance to the modality tag (`[ Virtual ]` as well as `[Virtual]`), and "Organizador" as an accepted spelling alongside "Organiza". Caught by sweeping caps/spacing/accent/trailing-text variations through the actual parser rather than trusting the regexes by inspection.
+
 ## [0.6.2] - 2026-09-04
 
 ### Added

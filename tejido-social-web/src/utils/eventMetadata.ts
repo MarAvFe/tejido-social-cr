@@ -39,8 +39,13 @@ function extractField(lines: string[], keyPattern: RegExp): string | undefined {
 
 function parseBoolean(value: string | undefined): boolean | undefined {
   if (!value) return undefined;
-  if (/^(s[ií]|true|yes)$/i.test(value.trim())) return true;
-  if (/^(no|false)$/i.test(value.trim())) return false;
+  // Prefix match, not exact — "Sí, hasta las 5pm" should still count as yes.
+  // Not `\b`: JS's word-boundary is ASCII-only and doesn't count "í" as a
+  // word character, so `\b` right after "Sí" silently fails to match at
+  // all. A negative lookahead for "another letter follows" gets the same
+  // "whole word, not a prefix of a longer word" effect without that gap.
+  if (/^(s[ií]|true|yes)(?![a-záéíóúñ])/i.test(value.trim())) return true;
+  if (/^(no|false)(?![a-záéíóúñ])/i.test(value.trim())) return false;
   return undefined;
 }
 
@@ -54,7 +59,10 @@ export function parseEventMetadata(rawDescription: string | undefined): EventMet
   const lines = rawDescription ? descriptionToPlainText(rawDescription).split('\n') : [];
 
   return {
-    responsable: extractField(lines, /^\s*(?:organiza|a\s*cargo(?:\s*de)?|responsable)\s*:\s*(.+)$/i),
+    responsable: extractField(
+      lines,
+      /^\s*(?:organiza(?:dor)?|a\s*cargo(?:\s*de)?|responsable)\s*:\s*(.+)$/i,
+    ),
     sector: extractField(lines, /^\s*(?:sector|espacio)\s*:\s*(.+)$/i),
     requiereInscripcion: parseBoolean(
       extractField(lines, /^\s*(?:requiere\s*)?inscripci[oó]n\s*:\s*(.+)$/i),
