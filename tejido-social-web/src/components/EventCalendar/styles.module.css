@@ -29,9 +29,62 @@
 }
 
 .legend {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
   font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-700);
+}
+
+.legendTitle {
   margin: 0 0 0.5rem;
+  font-weight: bold;
+}
+
+.legendList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.legendSwatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.badgePendiente {
+  background: var(--tejido-estado-pendiente-color);
+  color: #1a1a1a;
+}
+
+.badgeCancelada {
+  background: var(--ifm-color-emphasis-500);
+  text-decoration: line-through;
 }
 
 .eventDialog {

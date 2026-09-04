@@ -21,6 +21,14 @@
      sobre fondo claro. */
   --fa-brand-yellow: #ffde2d;
 
+  /* Colores de estado en /calendar (EventCalendar) — un solo lugar para
+     que la leyenda y los eventos coloreados usen exactamente el mismo
+     valor. Pendiente reutiliza el amarillo de marca; Confirmada es un
+     verde ajeno a la marca, elegido solo por ser un "verde de estado"
+     reconocible y con suficiente contraste para texto blanco encima. */
+  --tejido-estado-pendiente-color: var(--fa-brand-yellow);
+  --tejido-estado-confirmada-color: #2e7d32;
+
   --ifm-color-primary: #ffde2d;
   --ifm-color-primary-dark: #ffd804;
   --ifm-color-primary-darker: #f5cd00;
@@ -330,35 +338,42 @@ html[data-text-size='xlarge'] {
   }
 }
 
-/* Modality filter (Virtual/Presencial/Híbrida checkboxes in EventCalendar):
-   events are tagged via a "[Virtual]"/"[Presencial]"/"[Híbrida]" title
-   prefix (parsed in src/utils/eventTags.ts), which also adds one of these
-   three classes to the event's DOM element. Hiding is a pure CSS toggle
-   driven by a data attribute on an ancestor — the events themselves stay
-   fetched, only their visibility changes, so toggling the filter never
-   re-hits the Google Calendar API. An event with none of these classes (no
-   tag) is never matched here, so untagged events always stay visible. */
-[data-hide-virtual] .tejido-modality-virtual {
-  display: none;
+/* Event color reflects status (parsed from "Estado:" in the description,
+   src/utils/eventMetadata.ts) rather than the organizer's calendar color —
+   the organizer swatch still identifies who's running it in the "Filtrar
+   por organizador" checkboxes, but the calendar body itself needs to answer
+   "is this actually happening" at a glance. Overrides both the `--fc-event-*`
+   custom properties AND the literal `background-color`/`border-color`
+   properties, `!important`: FullCalendar sets color per event as a literal
+   inline style (not only through the custom property), computed once from
+   the eventSource's `color` — a variable-only override is silently never
+   painted, since the inline literal wins over any non-`!important`
+   stylesheet rule regardless of what the variable resolves to. Disponible
+   has no override here — it keeps the organizer's color, with its 🟢 icon
+   (see the bottom legend) as the only status cue. */
+.tejido-estado-confirmada {
+  --fc-event-bg-color: var(--tejido-estado-confirmada-color);
+  --fc-event-border-color: #1b5e20;
+  background-color: var(--tejido-estado-confirmada-color) !important;
+  border-color: #1b5e20 !important;
 }
-[data-hide-presencial] .tejido-modality-presencial {
-  display: none;
+.tejido-estado-pendiente {
+  --fc-event-bg-color: var(--tejido-estado-pendiente-color);
+  --fc-event-border-color: var(--ifm-color-primary-darkest);
+  --fc-event-text-color: #1a1a1a;
+  background-color: var(--tejido-estado-pendiente-color) !important;
+  border-color: var(--ifm-color-primary-darkest) !important;
+  color: #1a1a1a !important;
 }
-[data-hide-hibrida] .tejido-modality-hibrida {
-  display: none;
-}
-
-/* Cancelled events ("Estado: Cancelada" in the description, parsed in
-   src/utils/eventMetadata.ts) stay visible but visually marked as
-   cancelled — muted gray instead of their organizer's color, struck
-   through — rather than disappearing outright, so a visitor who already
-   knew about the activity can still find it and see it was called off.
-   `!important` because FullCalendar sets its per-event color as inline
-   `--fc-event-*` custom properties, which would otherwise always win over
-   a plain class-selector rule. */
+/* Cancelled events stay visible but visually marked as cancelled — muted
+   gray, struck through — rather than disappearing outright, so a visitor
+   who already knew about the activity can still find it and see it was
+   called off. */
 .tejido-estado-cancelada {
-  --fc-event-bg-color: var(--ifm-color-emphasis-500) !important;
-  --fc-event-border-color: var(--ifm-color-emphasis-600) !important;
+  --fc-event-bg-color: var(--ifm-color-emphasis-500);
+  --fc-event-border-color: var(--ifm-color-emphasis-600);
+  background-color: var(--ifm-color-emphasis-500) !important;
+  border-color: var(--ifm-color-emphasis-600) !important;
   opacity: 0.7;
 }
 .tejido-estado-cancelada .fc-event-title,

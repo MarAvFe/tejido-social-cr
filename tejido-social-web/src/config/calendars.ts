@@ -25,7 +25,7 @@ export interface EventCalendar {
 export const EVENT_CALENDARS: EventCalendar[] = [
   {
     id: 'f4d369068d8171579b964caf9013291645707e1d8f3fe60a685c69b20eb0510b@group.calendar.google.com',
-    label: 'Sabanilla',
+    label: 'Montes de Oca',
     color: '#1a73e8',
   },
 ];

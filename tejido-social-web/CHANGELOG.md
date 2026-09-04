@@ -10,19 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.6.1] - 2026-09-04
 
 ### Added
-- Organizer and modality (💻 Virtual / 📍 Presencial / 🔀 Híbrida) filters for `/calendar`, tagged via a `[Modalidad]` title prefix.
-- Structured per-event fields via plain `Etiqueta: valor` lines in the description: `Organiza`, `Sector`, `Inscripción`, `Contacto`, `Estado` (Confirmada/Pendiente/Disponible/Cancelada), `Título corto` (month view only). Cancelled events show grayed out and struck through rather than disappearing. Tag lines are shown once, as badges, not repeated in the prose below.
+- Organizer filter, and a per-event modality icon (💻 Virtual / 📍 Presencial / 🔀 Híbrida), tagged via a `[Modalidad]` title prefix.
+- Structured per-event fields via plain `Etiqueta: valor` lines in the description: `Organiza`, `Sector`, `Inscripción`, `Contacto`, `Estado`, `Título corto` (month view only) — shown as pill badges in the event popup rather than repeated in the prose below.
+- Event color reflects status: green (Confirmada), yellow (Pendiente), gray and struck through (Cancelada — stays visible rather than disappearing), 🟢 icon (Disponible). A "Referencia" legend at the bottom of the calendar summarizes it.
 - Week/day views hide 22:00–05:00.
 - Event descriptions render as sanitized rich text (Google Calendar stores these as real HTML) instead of showing raw tags.
-- [Cómo Usar el Calendario de Actividades](docs/guias/usar-calendario-actividades.md) guide.
+- [Cómo Usar el Calendario de Actividades](docs/explicacion/usar-calendario-actividades.md) — reader guide plus the full tag-syntax reference for whoever maintains a calendar.
 - Local dev reads `GOOGLE_CALENDAR_API_KEY` from a gitignored `.env`.
 
 ### Fixed
-- FullCalendar's grid layout, dark-mode theming, and mobile header toolbar conflicted with Docusaurus's own CSS.
+- FullCalendar's grid layout, dark-mode theming, and mobile header toolbar all conflicted with Docusaurus's own CSS.
 - Agenda view's events weren't clickable (Google Calendar's own event link collided with our custom rendering).
-
-### Fixed
-- FullCalendar's grid layout, dark-mode theming, and mobile header toolbar all conflicted with Docusaurus's own CSS; fixed with `.fc`-scoped overrides in `custom.css`.
+- Event status colors were silently never painted — FullCalendar sets a literal inline `background-color` per event, not just the CSS variable we were overriding.
 
 ## [0.6.0] - 2026-09-04
 

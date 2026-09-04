@@ -41,9 +41,6 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
   const [enabledIds, setEnabledIds] = useState<Set<string>>(
     () => new Set(EVENT_CALENDARS.map((cal) => cal.id)),
   );
-  const [enabledModalities, setEnabledModalities] = useState<Set<EventModality>>(
-    () => new Set(ALL_MODALITIES),
-  );
   const [selectedEvent, setSelectedEvent] = useState<SelectedEvent | null>(null);
 
   const eventSources = useMemo(
@@ -79,18 +76,6 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
         next.delete(id);
       } else {
         next.add(id);
-      }
-      return next;
-    });
-  }
-
-  function toggleModality(modality: EventModality): void {
-    setEnabledModalities((prev) => {
-      const next = new Set(prev);
-      if (next.has(modality)) {
-        next.delete(modality);
-      } else {
-        next.add(modality);
       }
       return next;
     });
@@ -153,29 +138,7 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
         ))}
       </fieldset>
 
-      <fieldset className={styles.filters}>
-        <legend>Filtrar por modalidad</legend>
-        {ALL_MODALITIES.map((modality) => (
-          <label key={modality} className={styles.filterLabel}>
-            <input
-              type="checkbox"
-              checked={enabledModalities.has(modality)}
-              onChange={() => toggleModality(modality)}
-            />
-            {MODALITY_ICONS[modality]} {MODALITY_LABELS[modality]}
-          </label>
-        ))}
-      </fieldset>
-
-      <p className={styles.legend}>
-        {ESTADO_ICONS.cancelada} Los eventos en <s>gris y tachados</s> están cancelados.
-      </p>
-
-      <div
-        className={styles.calendarWrapper}
-        data-hide-virtual={enabledModalities.has('virtual') ? undefined : ''}
-        data-hide-presencial={enabledModalities.has('presencial') ? undefined : ''}
-        data-hide-hibrida={enabledModalities.has('hibrida') ? undefined : ''}>
+      <div className={styles.calendarWrapper}>
         <FullCalendar
           plugins={[dayGridPlugin, timeGridPlugin, listPlugin, googleCalendarPlugin]}
           initialView="dayGridMonth"
@@ -189,20 +152,57 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
           }}
           slotMinTime="05:00:00"
           slotMaxTime="22:00:00"
+          // Default 'auto' renders timed events in month view as a small
+          // dot + text ("fc-daygrid-dot-event") with a transparent
+          // background — the status color is set correctly either way (it's
+          // a CSS custom property either way), but a dot never actually
+          // paints it. Force full colored blocks so status is visible at a
+          // glance, not just readable in the popup.
+          eventDisplay="block"
           eventContent={renderEventContent}
           eventClassNames={(arg) => {
             const {modality} = parseEventTitle(arg.event.title);
             const description = arg.event.extendedProps.description as string | undefined;
             const {estado} = parseEventMetadata(description);
-            const classes: string[] = [];
+            // Event color reflects status (see the estado rules in
+            // custom.css); modality no longer has a filter, but still gets
+            // its own icon in renderEventContent.
+            const classes: string[] = [`tejido-estado-${estado}`];
             if (modality) classes.push(`tejido-modality-${modality}`);
-            // Cancelled events are hidden from the calendar entirely, not just badged.
-            if (estado === 'cancelada') classes.push('tejido-estado-cancelada');
             return classes;
           }}
           eventClick={handleEventClick}
           height="auto"
         />
+      </div>
+
+      <div className={styles.legend}>
+        <p className={styles.legendTitle}>Referencia</p>
+        <ul className={styles.legendList}>
+          <li>{MODALITY_ICONS.presencial} {MODALITY_LABELS.presencial}</li>
+          <li>{MODALITY_ICONS.virtual} {MODALITY_LABELS.virtual}</li>
+          <li>{MODALITY_ICONS.hibrida} {MODALITY_LABELS.hibrida}</li>
+          <li>
+            <span
+              className={styles.legendSwatch}
+              style={{backgroundColor: 'var(--tejido-estado-confirmada-color)'}}
+              aria-hidden="true"
+            />{' '}
+            {ESTADO_LABELS.confirmada}
+          </li>
+          <li>
+            <span
+              className={styles.legendSwatch}
+              style={{backgroundColor: 'var(--tejido-estado-pendiente-color)'}}
+              aria-hidden="true"
+            />{' '}
+            {ESTADO_LABELS.pendiente}
+          </li>
+          <li>{ESTADO_ICONS.disponible} {ESTADO_LABELS.disponible}</li>
+          <li>
+            <s>{ESTADO_LABELS.cancelada}</s> (gris y tachado)
+          </li>
+        </ul>
       </div>
 
       {selectedEvent && (
@@ -216,25 +216,38 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
               ×
             </button>
             <h3>{selectedEvent.title}</h3>
-            {selectedEvent.metadata.estado !== 'confirmada' && (
-              <p>
-                <strong>
+            <div className={styles.badgeRow}>
+              {selectedEvent.metadata.estado !== 'confirmada' && (
+                <span
+                  className={`${styles.badge} ${
+                    selectedEvent.metadata.estado === 'pendiente'
+                      ? styles.badgePendiente
+                      : selectedEvent.metadata.estado === 'cancelada'
+                        ? styles.badgeCancelada
+                        : ''
+                  }`}>
                   {ESTADO_ICONS[selectedEvent.metadata.estado]} {ESTADO_LABELS[selectedEvent.metadata.estado]}
-                </strong>
-              </p>
-            )}
-            {selectedEvent.modality && (
-              <p>
-                {MODALITY_ICONS[selectedEvent.modality]} {MODALITY_LABELS[selectedEvent.modality]}
-              </p>
-            )}
+                </span>
+              )}
+              {selectedEvent.modality && (
+                <span className={styles.badge}>
+                  {MODALITY_ICONS[selectedEvent.modality]} {MODALITY_LABELS[selectedEvent.modality]}
+                </span>
+              )}
+              {selectedEvent.metadata.responsable && (
+                <span className={styles.badge}>A cargo de: {selectedEvent.metadata.responsable}</span>
+              )}
+              {selectedEvent.metadata.sector && <span className={styles.badge}>Sector: {selectedEvent.metadata.sector}</span>}
+              {selectedEvent.metadata.requiereInscripcion !== undefined && (
+                <span className={styles.badge}>
+                  {selectedEvent.metadata.requiereInscripcion ? '📝 Requiere inscripción' : 'No requiere inscripción'}
+                </span>
+              )}
+              {selectedEvent.metadata.contacto && (
+                <span className={styles.badge}>Contacto: {selectedEvent.metadata.contacto}</span>
+              )}
+            </div>
             {selectedEvent.location && <p>📍 {selectedEvent.location}</p>}
-            {selectedEvent.metadata.responsable && <p>A cargo de: {selectedEvent.metadata.responsable}</p>}
-            {selectedEvent.metadata.sector && <p>Sector: {selectedEvent.metadata.sector}</p>}
-            {selectedEvent.metadata.requiereInscripcion !== undefined && (
-              <p>{selectedEvent.metadata.requiereInscripcion ? '📝 Requiere inscripción' : 'No requiere inscripción'}</p>
-            )}
-            {selectedEvent.metadata.contacto && <p>Contacto: {selectedEvent.metadata.contacto}</p>}
             {selectedEvent.descriptionHtml && (
               <div dangerouslySetInnerHTML={{__html: selectedEvent.descriptionHtml}} />
             )}

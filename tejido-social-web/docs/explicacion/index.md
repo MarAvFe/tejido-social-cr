@@ -18,3 +18,4 @@ El porqué detrás de cómo se organiza el trabajo distrital — contexto y razo
 - **[Qué es Public Narrative](./public-narrative.md)** — el marco (Self/Us/Now) detrás de cómo contar por qué una iniciativa importa.
 - **[Mecanismos de Democracia Participativa del Partido](./mecanismos-democracia-participativa.md)** — plebiscito, referendo, y cómo la afiliación puede convocar una consulta directa.
 - **[Visión Ambiental del Frente Amplio](./vision-ambiental-fa.md)** _(pendiente)_ — taller propuesto por la afiliación, aún no realizado.
+- **[Cómo Usar el Calendario de Actividades](./usar-calendario-actividades.md)** — leer el calendario, la sintaxis completa de etiquetas para quien lo mantiene, y cómo pedir que se agregue una actividad o un nuevo calendario.

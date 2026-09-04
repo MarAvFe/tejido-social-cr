@@ -18,7 +18,7 @@ export default function CalendarPage(): React.ReactElement {
           Eventos públicos organizados por municipalidad. Este calendario es de solo lectura desde
           el sitio: la programación la gestionan directamente las personas encargadas de cada
           calendario municipal en Google Calendar. Ver{' '}
-          <Link to="/docs/guias/usar-calendario-actividades">
+          <Link to="/docs/explicacion/usar-calendario-actividades">
             cómo leer sus etiquetas e íconos, y cómo pedir que se agregue una actividad
           </Link>
           .
