@@ -15,6 +15,16 @@ Meta doc — English throughout, per `CLAUDE.md`'s language rule.
 
 ## Open items
 
+- [ ] **`/calendar` needs its API key set in Netlify before it's live** — the
+  real Sabanilla Calendar ID is already in `src/config/calendars.ts` and a
+  restricted (HTTP-referrer + API-scope) API key has been confirmed working
+  locally against it (events render correctly in month/week/agenda views).
+  The one remaining step is setting `GOOGLE_CALENDAR_API_KEY` in Netlify's
+  build environment variables — and adding the production domain to that
+  key's allowed HTTP referrers in Google Cloud Console if not already
+  there — so the deployed site can fetch events too. Additional
+  municipalities: create their public Google Calendar, share edit access,
+  add one entry to `src/config/calendars.ts`.
 - [ ] **Legal review of content licensing** — the site's written content is
   currently under CC BY-NC-ND 4.0 (see `LICENSE-CONTENT` in the repo root)
   as a deliberately conservative placeholder, because parts of the content

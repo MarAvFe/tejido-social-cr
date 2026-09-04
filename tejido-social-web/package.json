@@ -1,6 +1,6 @@
 {
   "name": "frente-amplio-web",
-  "version": "0.5.7",
+  "version": "0.6.0",
   "private": true,
   "homepage": "https://tejidosocialcr.netlify.app/",
   "scripts": {
@@ -21,6 +21,12 @@
     "@docusaurus/preset-classic": "^3.10.2",
     "@docusaurus/theme-mermaid": "^3.10.2",
     "@easyops-cn/docusaurus-search-local": "0.55.2",
+    "@fullcalendar/core": "^6.1.21",
+    "@fullcalendar/daygrid": "^6.1.21",
+    "@fullcalendar/google-calendar": "^6.1.21",
+    "@fullcalendar/list": "^6.1.21",
+    "@fullcalendar/react": "^6.1.21",
+    "@fullcalendar/timegrid": "^6.1.21",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
@@ -33,6 +39,7 @@
     "@docusaurus/tsconfig": "^3.10.2",
     "@docusaurus/types": "^3.10.2",
     "@types/svg-pan-zoom": "^3.3.0",
+    "dotenv": "^17.4.2",
     "typescript": "~5.6.2"
   },
   "overrides": {

@@ -1,0 +1,193 @@
+import React, {useMemo, useState} from 'react';
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import listPlugin from '@fullcalendar/list';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import esLocale from '@fullcalendar/core/locales/es';
+import type {EventClickArg, EventContentArg} from '@fullcalendar/core';
+import {EVENT_CALENDARS} from '@site/src/config/calendars';
+import {buildGoogleAddUrl, downloadIcs, type CalendarEventInfo} from '@site/src/utils/addToCalendar';
+import {
+  parseEventTitle,
+  MODALITY_LABELS,
+  MODALITY_ICONS,
+  type EventModality,
+} from '@site/src/utils/eventTags';
+import styles from './styles.module.css';
+
+interface Props {
+  apiKey: string;
+}
+
+interface SelectedEvent extends CalendarEventInfo {
+  modality: EventModality | null;
+}
+
+const ALL_MODALITIES: EventModality[] = ['presencial', 'virtual'];
+
+export default function EventCalendar({apiKey}: Props): React.ReactElement {
+  const [enabledIds, setEnabledIds] = useState<Set<string>>(
+    () => new Set(EVENT_CALENDARS.map((cal) => cal.id)),
+  );
+  const [enabledModalities, setEnabledModalities] = useState<Set<EventModality>>(
+    () => new Set(ALL_MODALITIES),
+  );
+  const [selectedEvent, setSelectedEvent] = useState<SelectedEvent | null>(null);
+
+  const eventSources = useMemo(
+    () =>
+      EVENT_CALENDARS.filter((cal) => enabledIds.has(cal.id)).map((cal) => ({
+        googleCalendarId: cal.id,
+        color: cal.color,
+      })),
+    [enabledIds],
+  );
+
+  function toggleCalendar(id: string): void {
+    setEnabledIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  }
+
+  function toggleModality(modality: EventModality): void {
+    setEnabledModalities((prev) => {
+      const next = new Set(prev);
+      if (next.has(modality)) {
+        next.delete(modality);
+      } else {
+        next.add(modality);
+      }
+      return next;
+    });
+  }
+
+  function renderEventContent(arg: EventContentArg): React.ReactElement {
+    const {modality, cleanTitle} = parseEventTitle(arg.event.title);
+    return (
+      <>
+        {arg.timeText && <div className="fc-event-time">{arg.timeText}</div>}
+        <div className="fc-event-title">
+          {modality && <span aria-hidden="true">{MODALITY_ICONS[modality]} </span>}
+          {cleanTitle}
+        </div>
+      </>
+    );
+  }
+
+  function handleEventClick(arg: EventClickArg): void {
+    arg.jsEvent.preventDefault();
+    const {event} = arg;
+    const {modality, cleanTitle} = parseEventTitle(event.title);
+    setSelectedEvent({
+      title: cleanTitle,
+      start: event.start as Date,
+      end: event.end,
+      allDay: event.allDay,
+      location: event.extendedProps.location as string | undefined,
+      description: event.extendedProps.description as string | undefined,
+      modality,
+    });
+  }
+
+  return (
+    <div>
+      <fieldset className={styles.filters}>
+        <legend>Filtrar por organizador</legend>
+        {EVENT_CALENDARS.map((cal) => (
+          <label key={cal.id} className={styles.filterLabel}>
+            <input
+              type="checkbox"
+              checked={enabledIds.has(cal.id)}
+              onChange={() => toggleCalendar(cal.id)}
+            />
+            <span className={styles.swatch} style={{backgroundColor: cal.color}} aria-hidden="true" />
+            {cal.label}
+          </label>
+        ))}
+      </fieldset>
+
+      <fieldset className={styles.filters}>
+        <legend>Filtrar por modalidad</legend>
+        {ALL_MODALITIES.map((modality) => (
+          <label key={modality} className={styles.filterLabel}>
+            <input
+              type="checkbox"
+              checked={enabledModalities.has(modality)}
+              onChange={() => toggleModality(modality)}
+            />
+            {MODALITY_ICONS[modality]} {MODALITY_LABELS[modality]}
+          </label>
+        ))}
+      </fieldset>
+
+      <div
+        className={styles.calendarWrapper}
+        data-hide-virtual={enabledModalities.has('virtual') ? undefined : ''}
+        data-hide-presencial={enabledModalities.has('presencial') ? undefined : ''}>
+        <FullCalendar
+          plugins={[dayGridPlugin, timeGridPlugin, listPlugin, googleCalendarPlugin]}
+          initialView="dayGridMonth"
+          googleCalendarApiKey={apiKey}
+          eventSources={eventSources}
+          locale={esLocale}
+          headerToolbar={{
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,listMonth',
+          }}
+          eventContent={renderEventContent}
+          eventClassNames={(arg) => {
+            const {modality} = parseEventTitle(arg.event.title);
+            return modality ? [`tejido-modality-${modality}`] : [];
+          }}
+          eventClick={handleEventClick}
+          height="auto"
+        />
+      </div>
+
+      {selectedEvent && (
+        <div className={styles.eventDialog} role="dialog" aria-modal="true" aria-label={selectedEvent.title}>
+          <div className={styles.eventDialogContent}>
+            <button
+              type="button"
+              className={styles.closeButton}
+              onClick={() => setSelectedEvent(null)}
+              aria-label="Cerrar">
+              ×
+            </button>
+            <h3>{selectedEvent.title}</h3>
+            {selectedEvent.modality && (
+              <p>
+                {MODALITY_ICONS[selectedEvent.modality]} {MODALITY_LABELS[selectedEvent.modality]}
+              </p>
+            )}
+            {selectedEvent.location && <p>📍 {selectedEvent.location}</p>}
+            {selectedEvent.description && <p>{selectedEvent.description}</p>}
+            <div className={styles.actions}>
+              <a
+                className="button button--primary"
+                href={buildGoogleAddUrl(selectedEvent)}
+                target="_blank"
+                rel="noreferrer">
+                Agregar a Google Calendar
+              </a>
+              <button
+                type="button"
+                className="button button--secondary"
+                onClick={() => downloadIcs(selectedEvent)}>
+                Descargar .ics
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

@@ -276,3 +276,75 @@ html[data-text-size='xlarge'] {
   background-color: var(--ifm-color-emphasis-200);
   box-shadow: inset 3px 0 0 var(--fa-brand-yellow);
 }
+
+/* ---------- FullCalendar (/calendar) ---------- */
+
+/* Infima's global `table { display: block; overflow: auto; }` (further up
+   this file's cascade, meant to make long markdown tables scroll on
+   mobile) also lands on FullCalendar's internal <table> elements. Its
+   month/week/day grids depend on the browser's native table layout
+   algorithm — a `height: 1px` + `rowspan` trick — to stretch rows to fill
+   the available height; forcing `display: block` breaks that algorithm
+   entirely and collapses every row to ~0px. Only the Agenda/list view
+   escaped this, since it doesn't use the same table-sizing trick. Restore
+   real table display roles, scoped to `.fc` so ordinary content tables
+   elsewhere on the site keep Infima's responsive behavior. */
+.fc table {
+  display: table;
+  overflow: visible;
+}
+.fc thead {
+  display: table-header-group;
+}
+.fc tbody {
+  display: table-row-group;
+}
+.fc tr {
+  display: table-row;
+}
+.fc th,
+.fc td {
+  display: table-cell;
+}
+
+/* Modality filter (Virtual/Presencial checkboxes in EventCalendar): events
+   are tagged via a "[Virtual]"/"[Presencial]" title prefix (parsed in
+   src/utils/eventTags.ts), which also adds one of these two classes to the
+   event's DOM element. Hiding is a pure CSS toggle driven by a data
+   attribute on an ancestor — the events themselves stay fetched, only
+   their visibility changes, so toggling the filter never re-hits the
+   Google Calendar API. An event with neither class (no tag) is never
+   matched here, so untagged events always stay visible. */
+[data-hide-virtual] .tejido-modality-virtual {
+  display: none;
+}
+[data-hide-presencial] .tejido-modality-presencial {
+  display: none;
+}
+
+/* FullCalendar's own stylesheet has no idea Docusaurus has a dark mode: its
+   background/border/text CSS custom properties (--fc-page-bg-color and
+   friends) are fixed light-theme values regardless of `[data-theme]`. Left
+   alone, the whole grid stays a white box in dark mode — and Infima's
+   global `a { color: var(--ifm-link-color) }` (further up this file)
+   correctly turns brand yellow in dark mode, so the day-number links
+   (`.fc-daygrid-day-number` is an <a>) render as yellow text stranded on
+   that still-white background: exactly the "yellow on white, unreadable"
+   failure this file's own accessibility contract at the top warns about.
+   Re-point FullCalendar's variables at the site's dark tokens, and reset
+   `.fc a` to normal dark-mode body text — day numbers are UI chrome, not
+   emphasis links, matching how .menu__link deliberately avoids yellow too. */
+[data-theme='dark'] .fc {
+  --fc-page-bg-color: var(--ifm-background-surface-color);
+  --fc-neutral-bg-color: rgba(255, 255, 255, 0.06);
+  --fc-neutral-text-color: var(--ifm-font-color-base);
+  --fc-border-color: rgba(255, 255, 255, 0.15);
+  --fc-more-link-bg-color: rgba(255, 255, 255, 0.12);
+  --fc-more-link-text-color: var(--ifm-font-color-base);
+  --fc-highlight-color: rgba(255, 255, 255, 0.1);
+  --fc-today-bg-color: rgba(255, 222, 45, 0.12);
+}
+
+[data-theme='dark'] .fc a {
+  color: var(--ifm-font-color-base);
+}

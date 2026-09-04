@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -25,6 +26,15 @@ const config: Config = {
 
   markdown: {
     mermaid: true,
+  },
+
+  // GOOGLE_CALENDAR_API_KEY is not a secret: it's restricted by HTTP
+  // referrer + API scope in Google Cloud Console, so it's safe to ship in
+  // the client bundle. Set it in Netlify's build environment; for local
+  // dev, copy .env.example to .env (gitignored) and fill it in. See
+  // /calendar.
+  customFields: {
+    googleCalendarApiKey: process.env.GOOGLE_CALENDAR_API_KEY || '',
   },
 
   i18n: {
@@ -85,6 +95,11 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Documentación',
+        },
+        {
+          to: '/calendar',
+          position: 'left',
+          label: 'Calendario',
         },
         {
           href: 'https://github.com/MarAvFe/tejido-social-cr',
