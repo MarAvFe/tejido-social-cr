@@ -14,6 +14,7 @@ import {
   MODALITY_ICONS,
   type EventModality,
 } from '@site/src/utils/eventTags';
+import {sanitizeDescriptionHtml, descriptionToPlainText} from '@site/src/utils/richText';
 import styles from './styles.module.css';
 
 interface Props {
@@ -22,6 +23,8 @@ interface Props {
 
 interface SelectedEvent extends CalendarEventInfo {
   modality: EventModality | null;
+  /** Sanitized HTML for on-page rendering; `description` stays plain text for the .ics/Google-link exports. */
+  descriptionHtml?: string;
 }
 
 const ALL_MODALITIES: EventModality[] = ['presencial', 'virtual'];
@@ -85,13 +88,15 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
     arg.jsEvent.preventDefault();
     const {event} = arg;
     const {modality, cleanTitle} = parseEventTitle(event.title);
+    const rawDescription = event.extendedProps.description as string | undefined;
     setSelectedEvent({
       title: cleanTitle,
       start: event.start as Date,
       end: event.end,
       allDay: event.allDay,
       location: event.extendedProps.location as string | undefined,
-      description: event.extendedProps.description as string | undefined,
+      description: rawDescription ? descriptionToPlainText(rawDescription) : undefined,
+      descriptionHtml: rawDescription ? sanitizeDescriptionHtml(rawDescription) : undefined,
       modality,
     });
   }
@@ -169,7 +174,9 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
               </p>
             )}
             {selectedEvent.location && <p>📍 {selectedEvent.location}</p>}
-            {selectedEvent.description && <p>{selectedEvent.description}</p>}
+            {selectedEvent.descriptionHtml && (
+              <div dangerouslySetInnerHTML={{__html: selectedEvent.descriptionHtml}} />
+            )}
             <div className={styles.actions}>
               <a
                 className="button button--primary"

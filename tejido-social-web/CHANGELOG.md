@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-09-04
+
+### Fixed
+- **`/calendar` event descriptions showed raw HTML tags as literal text** (e.g. `<span><br>...`) — Google Calendar's own editor writes descriptions as real HTML, not plain text or escaped entities, and the event popup was dumping that string straight into a `<p>`. Now sanitized through `DOMPurify` (`src/utils/richText.ts`) with a small allowlist (`br`, `b`/`strong`, `i`/`em`, `u`, `span`, `a`, `p`, `ul`/`ol`/`li`) and rendered as real HTML — links are forced to open in a new tab safely (`target="_blank" rel="noopener noreferrer"`). It's sanitized rather than trusted outright since it's still externally-edited content, even from a small trusted group today. A literal `\n` (no rich formatting used) is treated as a line break the same way. The "add to Google Calendar" link and `.ics` download get a separate plain-text conversion of the same description, decoded through the DOM so entities like `&nbsp;` come through as a real space instead of literal text.
+
 ## [0.6.0] - 2026-09-04
 
 ### Added
