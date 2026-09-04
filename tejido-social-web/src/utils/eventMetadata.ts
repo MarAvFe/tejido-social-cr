@@ -52,8 +52,8 @@ function parseBoolean(value: string | undefined): boolean | undefined {
 }
 
 function parseEstado(value: string | undefined): EventStatus {
-  // "tentativ*" accepted as a synonym for "pendiente" in case it's already in use somewhere.
-  if (value && /^(pendient|tentativ)/i.test(value.trim())) return 'pendiente';
+  // "tentativ*"/"por confirmar" accepted as synonyms for "pendiente".
+  if (value && /^(pendient|tentativ|por\s*confirmar)/i.test(value.trim())) return 'pendiente';
   if (value && /^disponible/i.test(value.trim())) return 'disponible';
   if (value && /^cancelad/i.test(value.trim())) return 'cancelada';
   return 'confirmada';

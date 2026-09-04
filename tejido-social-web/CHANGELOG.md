@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.5] - 2026-09-04
+
+### Fixed
+- **`Estado: Por confirmar` wasn't recognized** — only `Pendiente`/`Tentativa` mapped to the pending state, so a real-world event using the org's own phrasing would have silently defaulted to `Confirmada`. Added as another accepted synonym.
+
 ## [0.6.4] - 2026-09-04
 
 ### Added
