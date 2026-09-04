@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Meta descriptions** — added `description:` frontmatter field to all 70+ articles across all doc categories for SEO and preview text.
 - **Mermaid diagram support**, with pan/zoom — enabled `@docusaurus/theme-mermaid` and swizzled (wrapped) `theme/Mermaid` to add pan/zoom controls via `svg-pan-zoom`, since diagrams can render wider or taller than the article column. Diagrams sit in a fixed-height, bordered viewport instead of pushing page layout around. First used in [`docs/guias/presentar-denuncia-tribunal-etica.md`](docs/guias/presentar-denuncia-tribunal-etica.md) for the full complaint-filing flowchart, including its correction and appeal loops.
 
+### Fixed
+- **Production build was broken site-wide** (all 71 pages, not just the one with a diagram) — the Mermaid pan/zoom wrapper above did `import svgPanZoom from 'svg-pan-zoom'` as a static top-level import. `svg-pan-zoom` touches `window` at module-eval time, and this file is pulled in unconditionally by theme-classic's shared `MDXComponents` (for the `mermaid` fence mapping) on *every* doc page during SSR — so it crashed Node the instant it was required, before any diagram was even rendered. `npm run build` failed locally the whole time; Netlify silently kept serving the last successful deploy, which is why the new diagram never appeared live. Fixed by making the `svg-pan-zoom` import dynamic (`await import(...)` inside `useEffect`), which never runs on the server. Caught by reproducing `npm run build` locally rather than trusting `npm start` (dev mode doesn't do static-site generation, so it never hit this).
+
 ## [0.5.7] - 2026-09-02
 
 ### Added
