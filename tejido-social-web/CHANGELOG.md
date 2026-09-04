@@ -7,36 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.6.5] - 2026-09-04
-
-### Fixed
-- **`Estado: Por confirmar` wasn't recognized** — only `Pendiente`/`Tentativa` mapped to the pending state, so a real-world event using the org's own phrasing would have silently defaulted to `Confirmada`. Added as another accepted synonym.
-
-## [0.6.4] - 2026-09-04
-
-### Added
-- **`Estado:` now recognizes the org's existing spreadsheet vocabulary** — `Pendiente` and `Disponible` alongside `Confirmada`/`Cancelada` (`tentativ*` still accepted as a synonym for `Pendiente`), matching the workflow already in use in the "Actividades"/"Vista mensual" sheets rather than inventing new terms.
-- **`Título corto:` description line** — an optional shorter title used only in month view, where a long real title wraps awkwardly in a narrow day cell; week/day/agenda and the event popup always show the full real title. Mirrors the spreadsheet's "columna M" short-title convention.
-- **Cancelled events stay visible, marked instead of hidden** — muted gray, struck through, still clickable — rather than disappearing outright as the spreadsheet's own "Vista mensual" does, so a visitor who already knew about an activity can still find out it was called off instead of it silently vanishing. A one-line key under the filters explains the convention.
-
-## [0.6.3] - 2026-09-04
-
-### Fixed
-- **`Inscripción: Sí, ...` (or any accented value followed by trailing text) silently failed to parse** — the 0.6.2 tagging patterns used `\b` (word boundary) to allow prefix matches like "Sí, hasta las 5pm", but JavaScript's `\b` is ASCII-only and doesn't count "í" as a word character. Right after "Sí", neither the í nor the following comma counts as "word", so no boundary is ever detected there and the whole match silently fails — for a feature whose entire point is prefix-tolerant parsing of Spanish yes/no answers. Replaced with a negative lookahead for "another letter follows" (covering the accented range directly), which gets the same "whole word, not a prefix of a longer word" effect without depending on `\w`. Also added inner-bracket whitespace tolerance to the modality tag (`[ Virtual ]` as well as `[Virtual]`), and "Organizador" as an accepted spelling alongside "Organiza". Caught by sweeping caps/spacing/accent/trailing-text variations through the actual parser rather than trusting the regexes by inspection.
-
-## [0.6.2] - 2026-09-04
-
-### Added
-- **Structured event metadata via plain "Etiqueta: valor" lines in the description** — same trick as the `[Virtual]`/`[Presencial]` title tag, since Google Calendar's web UI still has no custom fields. `src/utils/eventMetadata.ts` recognizes `Organiza:`/`A cargo de:`/`Responsable:` (the specific body running it, distinct from which calendar/municipality it lives in), `Sector:`/`Espacio:`, `Inscripción:` (sí/no), `Contacto:`/`Enlace:`, and `Estado:` (confirmada/tentativa/cancelada) — each optional, each shown as its own row in the event popup when present. `Estado` defaults to "confirmada" when unstated (a public event is assumed to be happening unless said otherwise) and only renders a badge for the two exception states, so routine confirmed events don't get a redundant label. Every other field simply doesn't render when absent — there's no guessed default for e.g. "requiere inscripción" that could misinform someone.
-- **`[Híbrida]` as a third modality tag**, alongside `[Virtual]`/`[Presencial]` — same parsing, filtering, and icon treatment (🔀), covering events that are both in-person and streamed.
-
-### Fixed
-- **Calendar header toolbar (prev/next, month title, Mes/Semana/Agenda) overlapped on narrow screens** — FullCalendar's toolbar is a single-row flex (`justify-content: space-between`) across its three sections, and the title never wraps onto its own line; a longer title like "31 ago – 6 sept 2026" just grew and sat on top of the buttons instead of the toolbar wrapping. Fixed with a `max-width: 640px` media query in `custom.css` that stacks the three sections into their own centered rows below that width.
-
 ## [0.6.1] - 2026-09-04
 
+### Added
+- Organizer and modality (💻 Virtual / 📍 Presencial / 🔀 Híbrida) filters for `/calendar`, tagged via a `[Modalidad]` title prefix.
+- Structured per-event fields via plain `Etiqueta: valor` lines in the description: `Organiza`, `Sector`, `Inscripción`, `Contacto`, `Estado` (Confirmada/Pendiente/Disponible/Cancelada — matches the org's existing spreadsheet wording). Cancelled events show grayed out and struck through rather than disappearing. `Título corto` gives a shorter title for month view only.
+- Event descriptions render as sanitized rich text (Google Calendar stores these as real HTML, not plain text) instead of showing raw tags.
+- [Cómo Usar el Calendario de Actividades](docs/guias/usar-calendario-actividades.md) — reader guide to the filters, tags, and how to request a new calendar or activity.
+- Local dev reads `GOOGLE_CALENDAR_API_KEY` from a gitignored `.env` (see `.env.example`) instead of needing it exported by hand.
+
 ### Fixed
-- **`/calendar` event descriptions showed raw HTML tags as literal text** (e.g. `<span><br>...`) — Google Calendar's own editor writes descriptions as real HTML, not plain text or escaped entities, and the event popup was dumping that string straight into a `<p>`. Now sanitized through `DOMPurify` (`src/utils/richText.ts`) with a small allowlist (`br`, `b`/`strong`, `i`/`em`, `u`, `span`, `a`, `p`, `ul`/`ol`/`li`) and rendered as real HTML — links are forced to open in a new tab safely (`target="_blank" rel="noopener noreferrer"`). It's sanitized rather than trusted outright since it's still externally-edited content, even from a small trusted group today. A literal `\n` (no rich formatting used) is treated as a line break the same way. The "add to Google Calendar" link and `.ics` download get a separate plain-text conversion of the same description, decoded through the DOM so entities like `&nbsp;` come through as a real space instead of literal text.
+- FullCalendar's grid layout, dark-mode theming, and mobile header toolbar all conflicted with Docusaurus's own CSS; fixed with `.fc`-scoped overrides in `custom.css`.
 
 ## [0.6.0] - 2026-09-04
 

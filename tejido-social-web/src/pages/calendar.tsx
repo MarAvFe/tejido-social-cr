@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function CalendarPage(): React.ReactElement {
@@ -16,7 +17,11 @@ export default function CalendarPage(): React.ReactElement {
         <p>
           Eventos públicos organizados por municipalidad. Este calendario es de solo lectura desde
           el sitio: la programación la gestionan directamente las personas encargadas de cada
-          calendario municipal en Google Calendar.
+          calendario municipal en Google Calendar. Ver{' '}
+          <Link to="/docs/guias/usar-calendario-actividades">
+            cómo leer sus etiquetas e íconos, y cómo pedir que se agregue una actividad
+          </Link>
+          .
         </p>
         {apiKey ? (
           <BrowserOnly fallback={<div>Cargando calendario…</div>}>
