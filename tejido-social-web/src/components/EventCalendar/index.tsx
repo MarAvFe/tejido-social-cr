@@ -187,6 +187,8 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,listMonth',
           }}
+          slotMinTime="05:00:00"
+          slotMaxTime="22:00:00"
           eventContent={renderEventContent}
           eventClassNames={(arg) => {
             const {modality} = parseEventTitle(arg.event.title);

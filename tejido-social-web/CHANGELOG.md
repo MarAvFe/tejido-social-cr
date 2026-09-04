@@ -7,24 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.6.3] - 2026-09-04
-
-### Fixed
-- **Event popup showed tag lines twice** — `Sector:`/`Organiza:`/etc. were shown as badges *and* left in the raw description below, which for a description that's entirely tag lines read as a duplicated description. Recognized lines are now stripped from the displayed prose, leaving only genuinely free text.
-
-## [0.6.2] - 2026-09-04
-
-### Fixed
-- **Agenda view's events weren't clickable** — Google Calendar's `htmlLink` gave every event a `url`, which FullCalendar's list view needs an actual `<a>` tag for; our custom rendering doesn't have one, so its click handler crashed reading `.href` off `null` before our own handler ever ran. Now stripped via `eventDataTransform` on each source, since we always want our own dialog anyway, never a navigation away from the site.
-
 ## [0.6.1] - 2026-09-04
 
 ### Added
 - Organizer and modality (💻 Virtual / 📍 Presencial / 🔀 Híbrida) filters for `/calendar`, tagged via a `[Modalidad]` title prefix.
-- Structured per-event fields via plain `Etiqueta: valor` lines in the description: `Organiza`, `Sector`, `Inscripción`, `Contacto`, `Estado` (Confirmada/Pendiente/Disponible/Cancelada — matches the org's existing spreadsheet wording). Cancelled events show grayed out and struck through rather than disappearing. `Título corto` gives a shorter title for month view only.
-- Event descriptions render as sanitized rich text (Google Calendar stores these as real HTML, not plain text) instead of showing raw tags.
-- [Cómo Usar el Calendario de Actividades](docs/guias/usar-calendario-actividades.md) — reader guide to the filters, tags, and how to request a new calendar or activity.
-- Local dev reads `GOOGLE_CALENDAR_API_KEY` from a gitignored `.env` (see `.env.example`) instead of needing it exported by hand.
+- Structured per-event fields via plain `Etiqueta: valor` lines in the description: `Organiza`, `Sector`, `Inscripción`, `Contacto`, `Estado` (Confirmada/Pendiente/Disponible/Cancelada), `Título corto` (month view only). Cancelled events show grayed out and struck through rather than disappearing. Tag lines are shown once, as badges, not repeated in the prose below.
+- Week/day views hide 22:00–05:00.
+- Event descriptions render as sanitized rich text (Google Calendar stores these as real HTML) instead of showing raw tags.
+- [Cómo Usar el Calendario de Actividades](docs/guias/usar-calendario-actividades.md) guide.
+- Local dev reads `GOOGLE_CALENDAR_API_KEY` from a gitignored `.env`.
+
+### Fixed
+- FullCalendar's grid layout, dark-mode theming, and mobile header toolbar conflicted with Docusaurus's own CSS.
+- Agenda view's events weren't clickable (Google Calendar's own event link collided with our custom rendering).
 
 ### Fixed
 - FullCalendar's grid layout, dark-mode theming, and mobile header toolbar all conflicted with Docusaurus's own CSS; fixed with `.fc`-scoped overrides in `custom.css`.
