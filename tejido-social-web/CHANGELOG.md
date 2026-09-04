@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.3] - 2026-09-04
+
+### Fixed
+- **Event popup showed tag lines twice** — `Sector:`/`Organiza:`/etc. were shown as badges *and* left in the raw description below, which for a description that's entirely tag lines read as a duplicated description. Recognized lines are now stripped from the displayed prose, leaving only genuinely free text.
+
 ## [0.6.2] - 2026-09-04
 
 ### Fixed

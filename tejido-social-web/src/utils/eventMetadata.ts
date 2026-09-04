@@ -29,6 +29,17 @@ export interface EventMetadata {
   tituloCorto?: string;
 }
 
+// Shared with stripRecognizedLines below, so the description prose shown
+// alongside these badges doesn't just repeat the same lines verbatim.
+const FIELD_PATTERNS: RegExp[] = [
+  /^\s*(?:organiza(?:dor)?|a\s*cargo(?:\s*de)?|responsable)\s*:\s*(.+)$/i,
+  /^\s*(?:sector|espacio)\s*:\s*(.+)$/i,
+  /^\s*(?:requiere\s*)?inscripci[oó]n\s*:\s*(.+)$/i,
+  /^\s*(?:contacto|enlace)\s*:\s*(.+)$/i,
+  /^\s*estado\s*:\s*(.+)$/i,
+  /^\s*t[ií]tulo\s*corto\s*:\s*(.+)$/i,
+];
+
 function extractField(lines: string[], keyPattern: RegExp): string | undefined {
   for (const line of lines) {
     const match = line.match(keyPattern);
@@ -61,20 +72,40 @@ function parseEstado(value: string | undefined): EventStatus {
 
 export function parseEventMetadata(rawDescription: string | undefined): EventMetadata {
   const lines = rawDescription ? descriptionToPlainText(rawDescription).split('\n') : [];
+  const [organiza, sector, inscripcion, contacto, estado, tituloCorto] = FIELD_PATTERNS.map(
+    (pattern) => extractField(lines, pattern),
+  );
 
   return {
-    responsable: extractField(
-      lines,
-      /^\s*(?:organiza(?:dor)?|a\s*cargo(?:\s*de)?|responsable)\s*:\s*(.+)$/i,
-    ),
-    sector: extractField(lines, /^\s*(?:sector|espacio)\s*:\s*(.+)$/i),
-    requiereInscripcion: parseBoolean(
-      extractField(lines, /^\s*(?:requiere\s*)?inscripci[oó]n\s*:\s*(.+)$/i),
-    ),
-    contacto: extractField(lines, /^\s*(?:contacto|enlace)\s*:\s*(.+)$/i),
-    estado: parseEstado(extractField(lines, /^\s*estado\s*:\s*(.+)$/i)),
-    tituloCorto: extractField(lines, /^\s*t[ií]tulo\s*corto\s*:\s*(.+)$/i),
+    responsable: organiza,
+    sector,
+    requiereInscripcion: parseBoolean(inscripcion),
+    contacto,
+    estado: parseEstado(estado),
+    tituloCorto,
   };
+}
+
+/**
+ * Removes lines recognized as one of the tags above from an already-
+ * sanitized HTML description, so the prose shown alongside the structured
+ * badges doesn't just repeat them verbatim — which, for an event whose
+ * description is *entirely* tag lines, otherwise reads as the same
+ * information printed twice. Google's editor keeps each line's own
+ * formatting self-contained between `<br>`s (each line is its own complete
+ * `<span>`/etc., never one tag spanning several lines), so splitting on
+ * `<br>` and testing each fragment's text content is safe — it can't leave
+ * a dangling unclosed tag behind.
+ */
+export function stripRecognizedLines(sanitizedHtml: string): string {
+  const fragments = sanitizedHtml.split(/<br\s*\/?>/i);
+  const kept = fragments.filter((fragment) => {
+    const container = document.createElement('div');
+    container.innerHTML = fragment;
+    const text = (container.textContent || '').trim();
+    return !FIELD_PATTERNS.some((pattern) => pattern.test(text));
+  });
+  return kept.join('<br>');
 }
 
 export const ESTADO_LABELS: Record<EventStatus, string> = {

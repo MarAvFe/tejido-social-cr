@@ -15,7 +15,13 @@ import {
   type EventModality,
 } from '@site/src/utils/eventTags';
 import {sanitizeDescriptionHtml, descriptionToPlainText} from '@site/src/utils/richText';
-import {parseEventMetadata, ESTADO_LABELS, ESTADO_ICONS, type EventMetadata} from '@site/src/utils/eventMetadata';
+import {
+  parseEventMetadata,
+  stripRecognizedLines,
+  ESTADO_LABELS,
+  ESTADO_ICONS,
+  type EventMetadata,
+} from '@site/src/utils/eventMetadata';
 import styles from './styles.module.css';
 
 interface Props {
@@ -112,6 +118,11 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
     const {event} = arg;
     const {modality, cleanTitle} = parseEventTitle(event.title);
     const rawDescription = event.extendedProps.description as string | undefined;
+    // The tag lines (Sector:, Organiza:, etc.) are already shown as their
+    // own badges below — leaving them in the prose too just repeats the
+    // same information a second time, which for a description that's
+    // *entirely* tag lines reads as a duplicated description.
+    const strippedHtml = rawDescription ? stripRecognizedLines(sanitizeDescriptionHtml(rawDescription)) : '';
     setSelectedEvent({
       title: cleanTitle,
       start: event.start as Date,
@@ -119,7 +130,7 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
       allDay: event.allDay,
       location: event.extendedProps.location as string | undefined,
       description: rawDescription ? descriptionToPlainText(rawDescription) : undefined,
-      descriptionHtml: rawDescription ? sanitizeDescriptionHtml(rawDescription) : undefined,
+      descriptionHtml: strippedHtml || undefined,
       modality,
       metadata: parseEventMetadata(rawDescription),
     });
