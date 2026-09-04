@@ -75,12 +75,16 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
 
   function renderEventContent(arg: EventContentArg): React.ReactElement {
     const {modality, cleanTitle} = parseEventTitle(arg.event.title);
+    const description = arg.event.extendedProps.description as string | undefined;
+    const {tituloCorto} = parseEventMetadata(description);
+    // "Título corto" only applies in month view — week/day/agenda have room for the real title.
+    const displayTitle = arg.view.type === 'dayGridMonth' && tituloCorto ? tituloCorto : cleanTitle;
     return (
       <>
         {arg.timeText && <div className="fc-event-time">{arg.timeText}</div>}
         <div className="fc-event-title">
           {modality && <span aria-hidden="true">{MODALITY_ICONS[modality]} </span>}
-          {cleanTitle}
+          {displayTitle}
         </div>
       </>
     );
@@ -135,6 +139,10 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
         ))}
       </fieldset>
 
+      <p className={styles.legend}>
+        {ESTADO_ICONS.cancelada} Los eventos en <s>gris y tachados</s> están cancelados.
+      </p>
+
       <div
         className={styles.calendarWrapper}
         data-hide-virtual={enabledModalities.has('virtual') ? undefined : ''}
@@ -154,7 +162,13 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
           eventContent={renderEventContent}
           eventClassNames={(arg) => {
             const {modality} = parseEventTitle(arg.event.title);
-            return modality ? [`tejido-modality-${modality}`] : [];
+            const description = arg.event.extendedProps.description as string | undefined;
+            const {estado} = parseEventMetadata(description);
+            const classes: string[] = [];
+            if (modality) classes.push(`tejido-modality-${modality}`);
+            // Cancelled events are hidden from the calendar entirely, not just badged.
+            if (estado === 'cancelada') classes.push('tejido-estado-cancelada');
+            return classes;
           }}
           eventClick={handleEventClick}
           height="auto"

@@ -348,6 +348,24 @@ html[data-text-size='xlarge'] {
   display: none;
 }
 
+/* Cancelled events ("Estado: Cancelada" in the description, parsed in
+   src/utils/eventMetadata.ts) stay visible but visually marked as
+   cancelled — muted gray instead of their organizer's color, struck
+   through — rather than disappearing outright, so a visitor who already
+   knew about the activity can still find it and see it was called off.
+   `!important` because FullCalendar sets its per-event color as inline
+   `--fc-event-*` custom properties, which would otherwise always win over
+   a plain class-selector rule. */
+.tejido-estado-cancelada {
+  --fc-event-bg-color: var(--ifm-color-emphasis-500) !important;
+  --fc-event-border-color: var(--ifm-color-emphasis-600) !important;
+  opacity: 0.7;
+}
+.tejido-estado-cancelada .fc-event-title,
+.tejido-estado-cancelada .fc-event-time {
+  text-decoration: line-through;
+}
+
 /* FullCalendar's own stylesheet has no idea Docusaurus has a dark mode: its
    background/border/text CSS custom properties (--fc-page-bg-color and
    friends) are fixed light-theme values regardless of `[data-theme]`. Left

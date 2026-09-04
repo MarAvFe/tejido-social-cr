@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.4] - 2026-09-04
+
+### Added
+- **`Estado:` now recognizes the org's existing spreadsheet vocabulary** — `Pendiente` and `Disponible` alongside `Confirmada`/`Cancelada` (`tentativ*` still accepted as a synonym for `Pendiente`), matching the workflow already in use in the "Actividades"/"Vista mensual" sheets rather than inventing new terms.
+- **`Título corto:` description line** — an optional shorter title used only in month view, where a long real title wraps awkwardly in a narrow day cell; week/day/agenda and the event popup always show the full real title. Mirrors the spreadsheet's "columna M" short-title convention.
+- **Cancelled events stay visible, marked instead of hidden** — muted gray, struck through, still clickable — rather than disappearing outright as the spreadsheet's own "Vista mensual" does, so a visitor who already knew about an activity can still find out it was called off instead of it silently vanishing. A one-line key under the filters explains the convention.
+
 ## [0.6.3] - 2026-09-04
 
 ### Fixed

@@ -12,7 +12,7 @@ import {descriptionToPlainText} from '@site/src/utils/richText';
  * surfaced as scannable rows.
  */
 
-export type EventStatus = 'confirmada' | 'tentativa' | 'cancelada';
+export type EventStatus = 'confirmada' | 'pendiente' | 'disponible' | 'cancelada';
 
 export interface EventMetadata {
   /** "Organiza:" / "A cargo de:" / "Responsable:" — the specific body running it, distinct from which calendar (municipality/Nacional) it lives in. */
@@ -23,8 +23,10 @@ export interface EventMetadata {
   requiereInscripcion?: boolean;
   /** "Contacto:" / "Enlace:" — a person, phone, email, or URL. */
   contacto?: string;
-  /** "Estado:" — defaults to "confirmada" when not stated, since an event on a public calendar is assumed to be happening unless said otherwise. */
+  /** "Estado:" — defaults to "confirmada" when not stated, since an event on a public calendar is assumed to be happening unless said otherwise. A "cancelada" event is hidden from the calendar entirely, not just badged — see EventCalendar's eventClassNames. */
   estado: EventStatus;
+  /** "Título corto:" — used only in month view, where a long title wraps awkwardly in a narrow day cell; week/day/agenda and the popup always show the real title. */
+  tituloCorto?: string;
 }
 
 function extractField(lines: string[], keyPattern: RegExp): string | undefined {
@@ -50,7 +52,9 @@ function parseBoolean(value: string | undefined): boolean | undefined {
 }
 
 function parseEstado(value: string | undefined): EventStatus {
-  if (value && /^tentativ/i.test(value.trim())) return 'tentativa';
+  // "tentativ*" accepted as a synonym for "pendiente" in case it's already in use somewhere.
+  if (value && /^(pendient|tentativ)/i.test(value.trim())) return 'pendiente';
+  if (value && /^disponible/i.test(value.trim())) return 'disponible';
   if (value && /^cancelad/i.test(value.trim())) return 'cancelada';
   return 'confirmada';
 }
@@ -69,17 +73,20 @@ export function parseEventMetadata(rawDescription: string | undefined): EventMet
     ),
     contacto: extractField(lines, /^\s*(?:contacto|enlace)\s*:\s*(.+)$/i),
     estado: parseEstado(extractField(lines, /^\s*estado\s*:\s*(.+)$/i)),
+    tituloCorto: extractField(lines, /^\s*t[ií]tulo\s*corto\s*:\s*(.+)$/i),
   };
 }
 
 export const ESTADO_LABELS: Record<EventStatus, string> = {
   confirmada: 'Confirmada',
-  tentativa: 'Tentativa',
+  pendiente: 'Pendiente',
+  disponible: 'Disponible',
   cancelada: 'Cancelada',
 };
 
 export const ESTADO_ICONS: Record<EventStatus, string> = {
   confirmada: '✅',
-  tentativa: '❓',
+  pendiente: '🕓',
+  disponible: '🟢',
   cancelada: '❌',
 };

@@ -28,6 +28,12 @@
   margin-top: 0.5rem;
 }
 
+.legend {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0 0 0.5rem;
+}
+
 .eventDialog {
   position: fixed;
   inset: 0;
