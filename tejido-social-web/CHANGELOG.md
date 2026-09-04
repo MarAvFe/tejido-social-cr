@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Meta descriptions** — added `description:` frontmatter field to all 70+ articles across all doc categories for SEO and preview text.
+- **Mermaid diagram support**, with pan/zoom — enabled `@docusaurus/theme-mermaid` and swizzled (wrapped) `theme/Mermaid` to add pan/zoom controls via `svg-pan-zoom`, since diagrams can render wider or taller than the article column. Diagrams sit in a fixed-height, bordered viewport instead of pushing page layout around. First used in [`docs/guias/presentar-denuncia-tribunal-etica.md`](docs/guias/presentar-denuncia-tribunal-etica.md) for the full complaint-filing flowchart, including its correction and appeal loops.
 
 ## [0.5.7] - 2026-09-02
 

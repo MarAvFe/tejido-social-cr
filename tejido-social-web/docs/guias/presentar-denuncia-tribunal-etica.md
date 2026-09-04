@@ -9,6 +9,50 @@ description: "Procedimiento paso a paso para presentar una denuncia ante el Trib
 
 Guía práctica sobre cómo iniciar una denuncia ante el [Tribunal de Ética](../organismos/tribunal-de-etica.md) del Frente Amplio, según el [Capítulo III del Código de Ética](https://www.frenteamplio.org/wp-content/uploads/2025/05/Codigo-de-Etica-FA.pdf). Cualquier persona puede denunciar — afiliada o no.
 
+```mermaid
+flowchart TD
+    Start([Querés denunciar]) --> P1{"Paso 1: ¿Dentro del plazo?"}
+    P1 -- "No (y no es\ncorrupción/viol. sexual\nni impedimento justificado)" --> NoPlazo([No se puede denunciar])
+    P1 -- "Sí (1 año, o sin\nprescripción si es\ncorrupción/viol. sexual)" --> P2[Paso 2: Preparar denuncia por escrito<br/>identificación + hechos + pruebas]
+
+    P2 --> Anon{"¿Es anónima?"}
+    Anon -- "Sí, y es corrupción o\nfalta a deberes públicos" --> CEN([Se traslada al Comité\nEjecutivo Nacional])
+    Anon -- "Sí, y es violencia\no discriminación" --> Victima[Debe indicarse la víctima\ny cómo contactarla]
+    Victima --> Informa([Tribunal le informa\nsu derecho a denunciar])
+    Anon -- "Sí, otro caso" --> NoTramita([No se tramita])
+    Anon -- No --> P3[Paso 3: Enviar la denuncia\nal Tribunal de Ética]
+
+    P3 --> Revisa{"Tribunal revisa:\n¿cumple requisitos y\nno es temeraria?"}
+    Revisa -- No --> Corrige[Se comunica por escrito,\nuna sola vez]
+    Corrige -- "5 días hábiles\npara corregir" --> Revisa
+    Revisa -- Sí --> Organo[Tribunal nombra Órgano Director\nhasta 3 integrantes, notifica a las partes]
+
+    Organo -.->|"casos graves: corrupción,\ndelitos sexuales, electorales"| Cautelar[[Medidas cautelares posibles,\nej. suspensión temporal]]
+
+    Organo --> Contesta["Persona denunciada contesta\ny ofrece pruebas (15 días hábiles)"]
+    Contesta --> Compare[Comparecencia oral y privada:\npresentan y contrainterrogan prueba]
+
+    Compare --> Concilia{"¿Ambas partes aceptan\nconciliación o mediación?\n(no aplica en viol. de género)"}
+    Concilia -- Sí --> Acuerdo([Conciliación / mediación:\nse resuelve sin sanción])
+    Concilia -- No --> Resuelve[Tribunal dicta resolución motivada\nhasta 15 días naturales tras la comparecencia]
+
+    Resuelve --> Acuerdo2{"¿Conforme con\nla resolución?"}
+    Acuerdo2 -- Sí --> Firme([Resolución firme])
+    Acuerdo2 -- "No (5 días hábiles)" --> Recurso{"¿Qué recurso?"}
+    Recurso -- Revocatoria --> Revoc[Resuelve el mismo\nTribunal de Ética]
+    Recurso -- Apelación --> Apela[Resuelve el Tribunal\nde Alzada]
+    Revoc --> FinalR([Decisión, última instancia\nsi no se apela])
+    Apela --> FinalA([Decisión final,\núltima instancia])
+
+    style NoPlazo fill:#f8d7da,stroke:#c00
+    style NoTramita fill:#f8d7da,stroke:#c00
+    style Acuerdo fill:#d4edda,stroke:#2a2
+    style Firme fill:#d4edda,stroke:#2a2
+    style FinalR fill:#d4edda,stroke:#2a2
+    style FinalA fill:#d4edda,stroke:#2a2
+    style Cautelar fill:#fff3cd,stroke:#c90
+```
+
 ## Paso 1: Verificá el plazo
 
 - Plazo general: **un año** desde que tuviste conocimiento de los hechos (salvo que hayas estado impedido/a por causas justificadas, en cuyo caso el plazo corre desde que cesó ese impedimento).
