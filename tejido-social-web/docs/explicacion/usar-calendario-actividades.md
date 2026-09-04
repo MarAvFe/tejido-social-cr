@@ -25,6 +25,8 @@ Una actividad sin ninguna de estas etiquetas se sigue mostrando con normalidad �
 
 **Estado y color**: sin etiqueta de `Estado`, la actividad se asume confirmada (verde). `Pendiente` la pinta amarilla. `Cancelada` la deja visible pero en gris y tachada, en vez de ocultarla — alguien que ya sabía de la actividad puede así confirmar que se canceló, en lugar de que desaparezca sin explicación. `Disponible` no cambia el color; se distingue solo por su ícono 🟢, para marcar un espacio libre que alguien podría organizar.
 
+**Afiche de la actividad**: no hace falta ninguna etiqueta — si la descripción incluye en cualquier parte el enlace a una publicación pública de Instagram (`instagram.com/p/...` o `/reel/...`), el sitio la detecta sola y muestra el afiche directamente en el detalle de la actividad. Alcanza con pegar el enlace como se haría en cualquier chat.
+
 ## Quién organiza cada actividad
 
 El calendario no es un espacio genérico: cada actividad vive en el calendario de Google del distrito o comité que la organiza, y esa es la organización responsable de mantenerla actualizada. Por ahora el calendario incluye a **Montes de Oca**, el cantón piloto de este sitio; se suman más organizadores a medida que los piden.

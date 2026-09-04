@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Event descriptions render as sanitized rich text (Google Calendar stores these as real HTML) instead of showing raw tags.
 - [Cómo Usar el Calendario de Actividades](docs/explicacion/usar-calendario-actividades.md) — reader guide plus the full tag-syntax reference for whoever maintains a calendar.
 - Local dev reads `GOOGLE_CALENDAR_API_KEY` from a gitignored `.env`.
+- Flyer images: a public Instagram post link found anywhere in the description (no tag needed) is embedded directly in the event popup via Instagram's no-auth iframe embed, since flyers already live there and re-uploading them elsewhere just for a public URL is unnecessary friction.
 
 ### Fixed
 - FullCalendar's grid layout, dark-mode theming, and mobile header toolbar all conflicted with Docusaurus's own CSS.

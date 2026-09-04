@@ -22,6 +22,7 @@ import {
   ESTADO_ICONS,
   type EventMetadata,
 } from '@site/src/utils/eventMetadata';
+import {extractInstagramEmbedUrl} from '@site/src/utils/instagramEmbed';
 import styles from './styles.module.css';
 
 interface Props {
@@ -33,6 +34,7 @@ interface SelectedEvent extends CalendarEventInfo {
   /** Sanitized HTML for on-page rendering; `description` stays plain text for the .ics/Google-link exports. */
   descriptionHtml?: string;
   metadata: EventMetadata;
+  instagramEmbedUrl: string | null;
 }
 
 const ALL_MODALITIES: EventModality[] = ['presencial', 'virtual', 'hibrida'];
@@ -118,6 +120,7 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
       descriptionHtml: strippedHtml || undefined,
       modality,
       metadata: parseEventMetadata(rawDescription),
+      instagramEmbedUrl: extractInstagramEmbedUrl(rawDescription),
     });
   }
 
@@ -248,6 +251,15 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
               )}
             </div>
             {selectedEvent.location && <p>📍 {selectedEvent.location}</p>}
+            {selectedEvent.instagramEmbedUrl && (
+              <iframe
+                key={selectedEvent.instagramEmbedUrl}
+                src={selectedEvent.instagramEmbedUrl}
+                className={styles.instagramEmbed}
+                scrolling="no"
+                title="Publicación de Instagram"
+              />
+            )}
             {selectedEvent.descriptionHtml && (
               <div dangerouslySetInnerHTML={{__html: selectedEvent.descriptionHtml}} />
             )}
