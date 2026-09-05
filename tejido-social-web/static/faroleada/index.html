@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="robots" content="noindex">
+<title>Datos de seguridad - Faroleada San José</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#111111;
+    --muted:#4a4a4a;
+    --line:#111111;
+    --panel:#f4f4f4;
+    --green:#1b5e20;
+    --green-bg:#e8f3e8;
+    --red:#b3261e;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.45;
+    padding-bottom:3rem;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 1rem;}
+  header.top{
+    background:var(--ink);
+    color:#fff;
+    padding:1.5rem 1rem 1.2rem;
+    border-bottom:6px solid var(--green);
+  }
+  header.top h1{
+    margin:0 0 .3rem;
+    font-size:1.35rem;
+    letter-spacing:.01em;
+  }
+  header.top p{margin:.15rem 0;color:#d8d8d8;font-size:.85rem;}
+  .badge{
+    display:inline-block;
+    background:var(--green);
+    color:#fff;
+    font-size:.7rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    padding:.15rem .5rem;
+    border-radius:2px;
+    margin-bottom:.6rem;
+  }
+  .emergency{
+    display:flex;
+    gap:.6rem;
+    align-items:center;
+    background:var(--red);
+    color:#fff;
+    margin:1rem 0 0;
+    padding:.7rem .9rem;
+    border-radius:4px;
+    font-weight:700;
+    font-size:1rem;
+  }
+  .emergency .num{font-size:1.5rem;line-height:1;}
+  .emergency small{display:block;font-weight:400;font-size:.72rem;color:#ffdada;}
+  section{margin:1.6rem 0;}
+  h2{
+    font-size:1rem;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:.3rem;
+    margin:0 0 .7rem;
+  }
+  h2 .n{
+    display:inline-block;
+    background:var(--green);
+    color:#fff;
+    width:1.5em;
+    text-align:center;
+    border-radius:2px;
+    margin-right:.4rem;
+    font-size:.85em;
+  }
+  h3{font-size:.92rem;margin:1rem 0 .3rem;color:var(--ink);}
+  p{margin:.4rem 0;}
+  ul{margin:.3rem 0;padding-left:1.2rem;}
+  li{margin:.25rem 0;}
+  .card{
+    border:1px solid var(--line);
+    border-left:4px solid var(--green);
+    background:var(--panel);
+    padding:.7rem .9rem;
+    border-radius:2px;
+    margin:.6rem 0;
+  }
+  .grid{display:grid;grid-template-columns:1fr;gap:.6rem;}
+  @media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr;}}
+  .contact{
+    border:1px solid var(--line);
+    padding:.6rem .8rem;
+    border-radius:2px;
+    background:#fff;
+  }
+  .contact .name{font-weight:700;}
+  .contact a{color:var(--green);text-decoration:none;font-size:.85rem;}
+  .contact a:hover{text-decoration:underline;}
+  table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.5rem 0;}
+  th,td{border:1px solid var(--line);padding:.4rem .5rem;text-align:left;vertical-align:top;}
+  th{background:var(--ink);color:#fff;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;}
+  tr:nth-child(even) td{background:var(--panel);}
+  .pending{
+    background:#fff8e1;
+    border:1px dashed #a68b00;
+    color:#5c4a00;
+    padding:.4rem .6rem;
+    font-size:.82rem;
+    border-radius:2px;
+    display:inline-block;
+    margin-top:.3rem;
+  }
+  .tag{
+    display:inline-block;
+    font-size:.7rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    padding:.05rem .4rem;
+    border-radius:2px;
+    border:1px solid var(--ink);
+    margin-left:.3rem;
+  }
+  .tag.draft{border-color:#a68b00;color:#5c4a00;background:#fff8e1;}
+  footer{
+    max-width:760px;margin:2rem auto 0;padding:1rem;
+    border-top:1px solid var(--line);
+    font-size:.75rem;color:var(--muted);
+  }
+  .map-fig{margin:.6rem 0;}
+  .map-fig svg{width:100%;height:auto;display:block;border:1px solid var(--line);background:#fff;}
+  .legend{display:flex;flex-wrap:wrap;gap:.8rem;font-size:.78rem;margin-top:.4rem;color:var(--muted);}
+  .legend span{display:inline-flex;align-items:center;gap:.3rem;}
+  .swatch-cross{color:var(--red);font-weight:900;}
+  details{border:1px solid var(--line);border-radius:2px;margin:.5rem 0;background:#fff;}
+  summary{padding:.5rem .8rem;font-weight:700;cursor:pointer;font-size:.9rem;}
+  details[open] summary{border-bottom:1px solid var(--line);}
+  details .inner{padding:.6rem .9rem;}
+  code{background:var(--panel);padding:.1rem .3rem;border-radius:2px;font-size:.85em;}
+  .toc{font-size:.85rem;}
+  .toc ol{padding-left:1.2rem;}
+  .print-note{font-size:.75rem;color:var(--muted);}
+  @media print{
+    header.top{background:#fff !important;color:#111 !important;}
+    .emergency{background:#fff !important;color:#111 !important;border:2px solid var(--red);}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="badge">Uso interno · Equipo de seguridad</span>
+    <h1>Datos de seguridad — Faroleada San José</h1>
+    <p>Guía offline para personas facilitadoras (chapeadoras) de seguridad durante la actividad. Guardar esta página o el PDF en el teléfono antes de salir — puede no haber señal en el sitio.</p>
+    <p class="print-note">Documento de trabajo, sujeto a revisión. Última actualización: ver pie de página.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="emergency">
+    <div class="num">911</div>
+    <div>Emergencias nacionales<br><small>Cualquier imprevisto de seguridad, médico o incendio. Llamar primero, documentar en paralelo.</small></div>
+  </div>
+
+  <nav class="toc" style="margin-top:1.2rem;">
+    <strong>Contenido</strong>
+    <ol>
+      <li><a href="#mapeo">Mapeo e instituciones cercanas</a></li>
+      <li><a href="#roles">Roles de seguridad</a></li>
+      <li><a href="#insumos">Insumos necesarios</a></li>
+      <li><a href="#autodefensa">Manejo de conflictos y autodefensa</a></li>
+      <li><a href="#alborotador">Personas alborotadoras / influencers</a></li>
+      <li><a href="#formaciones">Formaciones y preparación pre-marcha</a></li>
+      <li><a href="#lineas">Líneas de seguridad</a></li>
+      <li><a href="#mapa-parque">Mapa: Parque Morazán</a></li>
+    </ol>
+  </nav>
+
+  <section id="mapeo">
+    <h2><span class="n">1</span>Mapeo e instituciones cercanas</h2>
+
+    <h3>Comandancias de policía</h3>
+    <div class="grid two">
+      <div class="contact">
+        <div class="name">Comandancia Barrio México</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20de%20Polic%C3%ADa%20Barrio%20M%C3%A9xico%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
+      </div>
+      <div class="contact">
+        <div class="name">Primer circuito</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20Primer%20Circuito%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
+      </div>
+      <div class="contact">
+        <div class="name">Segundo circuito</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20Segundo%20Circuito%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
+      </div>
+    </div>
+
+    <h3>Hospitales</h3>
+    <div class="grid two">
+      <div class="contact">
+        <div class="name">Hospital Calderón Guardia</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Hospital%20Rafael%20%C3%81ngel%20Calder%C3%B3n%20Guardia%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
+      </div>
+    </div>
+
+    <h3>Cruz Roja</h3>
+    <div class="grid two">
+      <div class="contact">
+        <div class="name">Cruz Roja Guadalupe</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Cruz%20Roja%20Guadalupe%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
+      </div>
+    </div>
+
+    <h3>Bomberos</h3>
+    <div class="grid two">
+      <div class="contact">
+        <div class="name">Estación Barrio Luján</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Bomberos%20Barrio%20Luj%C3%A1n%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
+      </div>
+      <div class="contact">
+        <div class="name">Estación Metropolitana</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Bomberos%20Metropolitana%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
+      </div>
+    </div>
+
+    <h3>Parqueos cercanos</h3>
+    <div class="grid two">
+      <div class="contact"><div class="name">Parqueo Asamblea Legislativa</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Asamblea%20Legislativa%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
+      <div class="contact"><div class="name">Parqueo del Museo</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Museo%20Nacional%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
+      <div class="contact"><div class="name">Parqueo Redil</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Redil%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
+      <div class="contact"><div class="name">Parqueo Calle 17</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Calle%2017%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
+    </div>
+
+    <h3>Rutas de evacuación</h3>
+    <p>Zona de referencia: aledaño al Parque Morazán (ver mapa en la sección 8).</p>
+    <span class="pending">Pendiente de definir — completar antes de la marcha</span>
+  </section>
+
+  <section id="roles">
+    <h2><span class="n">2</span>Roles de seguridad</h2>
+    <table>
+      <tr><th>Rol</th><th>Función</th></tr>
+      <tr><td>Laterales</td><td>Caminan a los costados del bloque, controlan el ancho de la marcha y detectan riesgos desde afuera.</td></tr>
+      <tr><td>Cierre de calles</td><td>Bloquean intersecciones el tiempo mínimo necesario para el paso seguro del bloque.</td></tr>
+      <tr><td>Documentación</td><td>Graban y anotan incidentes con hora y ubicación. No intervienen físicamente.</td></tr>
+      <tr><td>Campaña (mensajería offline)</td><td>Llevan mensajes entre puntos de la marcha cuando no hay señal o radio.</td></tr>
+      <tr><td>Primeros auxilios</td><td>Atienden lesiones leves y coordinan traslado si es necesario.</td></tr>
+      <tr><td>Contacto con medios</td><td>Punto único de comunicación con prensa; evita que cualquier persona improvise declaraciones.</td></tr>
+    </table>
+  </section>
+
+  <section id="insumos">
+    <h2><span class="n">3</span>Insumos necesarios</h2>
+    <ul>
+      <li>Cuerdas (para cierres de calle y delimitar zonas)</li>
+      <li>Guantes</li>
+      <li>Extintores</li>
+      <li>Megáfonos</li>
+    </ul>
+  </section>
+
+  <section id="autodefensa">
+    <h2><span class="n">4</span>Manejo de conflictos y autodefensa</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Ante cualquier imprevisto: llamar al 911.</strong></li>
+        <li>Desescalar y evadir el conflicto — no responder con agresión.</li>
+        <li>Mientras una persona llama al 911, otra documenta (foto/video, hora, lugar) en simultáneo.</li>
+      </ul>
+    </div>
+    <h3>Principios generales de desescalada</h3>
+    <ul>
+      <li>Mantener manos visibles y tono de voz calmado.</li>
+      <li>Trabajar siempre en pareja (nunca actuar en solitario frente a un conflicto).</li>
+      <li>Crear espacio/distancia física antes que contacto.</li>
+      <li>No empujar, no tocar a terceros para "controlarlos".</li>
+      <li>Retirarse como equipo, no de forma individual y dispersa.</li>
+      <li>Un solo vocero designado habla con autoridades o medios; el resto no improvisa declaraciones.</li>
+    </ul>
+    <span class="tag draft">Sugerencia — validar con el equipo</span>
+  </section>
+
+  <section id="alborotador">
+    <h2><span class="n">5</span>Personas alborotadoras / influencers</h2>
+    <div class="card">
+      <ul>
+        <li>No interactuar ni confrontar directamente.</li>
+        <li>Documentar en tercera persona: grabar/anotar lo que hace, sin dirigirse a la persona.</li>
+        <li>Seguirle a distancia si continúa generando riesgo, e informar al rol de documentación.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="formaciones">
+    <h2><span class="n">6</span>Formaciones y preparación pre-marcha</h2>
+    <p><span class="pending">Pendiente de definir con el equipo — punto abierto en las notas originales</span></p>
+    <details>
+      <summary>Ideas de partida para discutir (no son protocolo aún)</summary>
+      <div class="inner">
+        <h3>Formación frente a policía en primera línea</h3>
+        <ul>
+          <li>Línea de brazos entrelazados o cadena humana, sin empujar hacia adelante.</li>
+          <li>Portavoz único visible que dialoga con la línea policial.</li>
+          <li>Manos visibles, sin objetos en las manos, sin correr.</li>
+          <li>Mantener una zona de amortiguación (buffer) entre el bloque y la policía cuando sea posible.</li>
+          <li>Retirada ordenada y acordada de antemano, nunca en estampida.</li>
+        </ul>
+        <h3>Checklist de preparación antes de salir</h3>
+        <ul>
+          <li>Repasar roles y asignaciones de la sección 2 con cada persona de seguridad.</li>
+          <li>Confirmar punto(s) de encuentro si el grupo se separa.</li>
+          <li>Definir una palabra o señal de alerta simple.</li>
+          <li>Repartir o confirmar contactos clave (esta guía) a todo el equipo, incluida 2da línea.</li>
+          <li>Revisar rutas de evacuación una vez definidas (sección 1).</li>
+          <li>Hidratación, protección solar/lluvia según clima del día.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section id="lineas">
+    <h2><span class="n">7</span>Líneas de seguridad</h2>
+    <div class="grid two">
+      <div class="contact">
+        <div class="name">1ra línea</div>
+        <p style="margin:.3rem 0 0;">Dan · Paloma · Camarada · Profe · AF · Piedrita · Tillo · Medellín · Potato</p>
+      </div>
+      <div class="contact">
+        <div class="name">2da línea</div>
+        <p style="margin:.3rem 0 0;">Day · maravfe</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapa-parque">
+    <h2><span class="n">8</span>Mapa: Parque Morazán</h2>
+    <p>Nombres de calles y esquinas <strong>provisionales</strong>, solo para ubicarse en este documento mientras se define la nomenclatura oficial. Los puntos rojos marcan las posiciones iniciales sugeridas para distribuir al equipo de seguridad (2 personas por esquina, 4 esquinas = 8; el resto del equipo queda móvil/central).</p>
+
+    <div class="map-fig">
+      <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Croquis del Parque Morazán con esquinas, calles y posiciones iniciales de seguridad">
+        <!-- outer streets -->
+        <rect x="0" y="0" width="420" height="420" fill="#ffffff"/>
+        <!-- street labels bands -->
+        <rect x="70" y="8" width="280" height="26" fill="#111111"/>
+        <text x="210" y="26" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="700">CALLE A (norte)</text>
+
+        <rect x="70" y="386" width="280" height="26" fill="#111111"/>
+        <text x="210" y="404" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="700">CALLE C (sur)</text>
+
+        <rect x="8" y="70" width="26" height="280" fill="#111111"/>
+        <text x="21" y="210" text-anchor="middle" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="700" transform="rotate(-90 21 210)">CALLE D (oeste)</text>
+
+        <rect x="386" y="70" width="26" height="280" fill="#111111"/>
+        <text x="399" y="210" text-anchor="middle" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="700" transform="rotate(90 399 210)">CALLE B (este)</text>
+
+        <!-- park block -->
+        <rect x="70" y="70" width="280" height="280" fill="#e8f3e8" stroke="#1b5e20" stroke-width="3"/>
+        <circle cx="210" cy="210" r="34" fill="#ffffff" stroke="#1b5e20" stroke-width="2"/>
+        <text x="210" y="206" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#1b5e20" font-weight="700">Templo</text>
+        <text x="210" y="220" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#1b5e20" font-weight="700">de Música</text>
+
+        <!-- corner labels -->
+        <text x="75" y="63" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina París (NO)</text>
+        <text x="345" y="63" text-anchor="end" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina Ámsterdam (NE)</text>
+        <text x="75" y="365" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina Lisboa (SO)</text>
+        <text x="345" y="365" text-anchor="end" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina Berlín (SE)</text>
+
+        <!-- red cross positions: 2 per corner -->
+        <!-- NW corner -->
+        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
+          <path d="M78,78 l14,14 M92,78 l-14,14"/>
+          <path d="M100,96 l14,14 M114,96 l-14,14"/>
+        </g>
+        <text x="78" y="128" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">1</text>
+        <text x="100" y="146" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">2</text>
+
+        <!-- NE corner -->
+        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
+          <path d="M328,78 l14,14 M342,78 l-14,14"/>
+          <path d="M306,96 l14,14 M320,96 l-14,14"/>
+        </g>
+        <text x="330" y="128" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">3</text>
+        <text x="298" y="146" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">4</text>
+
+        <!-- SE corner -->
+        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
+          <path d="M328,328 l14,14 M342,328 l-14,14"/>
+          <path d="M306,310 l14,14 M320,310 l-14,14"/>
+        </g>
+        <text x="330" y="358" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">5</text>
+        <text x="298" y="302" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">6</text>
+
+        <!-- SW corner -->
+        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
+          <path d="M78,328 l14,14 M92,328 l-14,14"/>
+          <path d="M100,310 l14,14 M114,310 l-14,14"/>
+        </g>
+        <text x="78" y="358" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">7</text>
+        <text x="100" y="302" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">8</text>
+      </svg>
+      <div class="legend">
+        <span class="swatch-cross">✚</span><span>Posición inicial de seguridad (par por esquina, 8 en total)</span>
+        <span>◯ Templo de Música (centro del parque, referencia visual)</span>
+      </div>
+    </div>
+    <span class="pending">Nombres de calles/esquinas y rutas de evacuación pendientes de confirmar con nomenclatura real</span>
+  </section>
+
+</div>
+
+<footer>
+  <p>Documento interno del equipo de seguridad para la Faroleada en San José. Pensado como base reutilizable para otras regiones — revisar y adaptar contactos, mapeo y roles a cada sitio antes de usar.</p>
+  <p>Versión borrador — 2026-09-05. No enlazado desde la navegación del sitio.</p>
+</footer>
+
+</body>
+</html>
