@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#111111">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="robots" content="noindex">
@@ -15,8 +15,8 @@
     --line:#111111;
     --panel:#f4f4f4;
     --green:#1b5e20;
-    --green-bg:#e8f3e8;
     --red:#b3261e;
+    --amber:#a68b00;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -34,127 +34,81 @@
     padding:1.5rem 1rem 1.2rem;
     border-bottom:6px solid var(--green);
   }
-  header.top h1{
-    margin:0 0 .3rem;
-    font-size:1.35rem;
-    letter-spacing:.01em;
-  }
+  header.top h1{margin:0 0 .3rem;font-size:1.35rem;letter-spacing:.01em;}
   header.top p{margin:.15rem 0;color:#d8d8d8;font-size:.85rem;}
   .badge{
-    display:inline-block;
-    background:var(--green);
-    color:#fff;
-    font-size:.7rem;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:.06em;
-    padding:.15rem .5rem;
-    border-radius:2px;
-    margin-bottom:.6rem;
+    display:inline-block;background:var(--green);color:#fff;font-size:.7rem;font-weight:700;
+    text-transform:uppercase;letter-spacing:.06em;padding:.15rem .5rem;border-radius:2px;margin-bottom:.6rem;
   }
   .emergency{
-    display:flex;
-    gap:.6rem;
-    align-items:center;
-    background:var(--red);
-    color:#fff;
-    margin:1rem 0 0;
-    padding:.7rem .9rem;
-    border-radius:4px;
-    font-weight:700;
-    font-size:1rem;
+    display:flex;gap:.6rem;align-items:center;background:var(--red);color:#fff;
+    margin:1rem 0 0;padding:.7rem .9rem;border-radius:4px;font-weight:700;font-size:1rem;
   }
   .emergency .num{font-size:1.5rem;line-height:1;}
   .emergency small{display:block;font-weight:400;font-size:.72rem;color:#ffdada;}
   section{margin:1.6rem 0;}
   h2{
-    font-size:1rem;
-    text-transform:uppercase;
-    letter-spacing:.04em;
-    border-bottom:2px solid var(--ink);
-    padding-bottom:.3rem;
-    margin:0 0 .7rem;
+    font-size:1rem;text-transform:uppercase;letter-spacing:.04em;
+    border-bottom:2px solid var(--ink);padding-bottom:.3rem;margin:0 0 .7rem;
   }
   h2 .n{
-    display:inline-block;
-    background:var(--green);
-    color:#fff;
-    width:1.5em;
-    text-align:center;
-    border-radius:2px;
-    margin-right:.4rem;
-    font-size:.85em;
+    display:inline-block;background:var(--green);color:#fff;width:1.5em;text-align:center;
+    border-radius:2px;margin-right:.4rem;font-size:.85em;
   }
-  h3{font-size:.92rem;margin:1rem 0 .3rem;color:var(--ink);}
+  h3{font-size:.85rem;margin:.9rem 0 .2rem;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);}
   p{margin:.4rem 0;}
   ul{margin:.3rem 0;padding-left:1.2rem;}
   li{margin:.25rem 0;}
   .card{
-    border:1px solid var(--line);
-    border-left:4px solid var(--green);
-    background:var(--panel);
-    padding:.7rem .9rem;
-    border-radius:2px;
-    margin:.6rem 0;
+    border:1px solid var(--line);border-left:4px solid var(--green);background:var(--panel);
+    padding:.7rem .9rem;border-radius:2px;margin:.6rem 0;
   }
-  .grid{display:grid;grid-template-columns:1fr;gap:.6rem;}
-  @media(min-width:560px){.grid.two{grid-template-columns:1fr 1fr;}}
-  .contact{
-    border:1px solid var(--line);
-    padding:.6rem .8rem;
-    border-radius:2px;
-    background:#fff;
+  .places{list-style:none;padding:0;margin:.1rem 0 .5rem;}
+  .places li{
+    display:flex;gap:.55rem;align-items:center;padding:.22rem 0;
+    border-bottom:1px solid #e4e4e4;font-size:.9rem;
   }
-  .contact .name{font-weight:700;}
-  .contact a{color:var(--green);text-decoration:none;font-size:.85rem;}
-  .contact a:hover{text-decoration:underline;}
-  table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.5rem 0;}
-  th,td{border:1px solid var(--line);padding:.4rem .5rem;text-align:left;vertical-align:top;}
-  th{background:var(--ink);color:#fff;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;}
+  .places a{
+    flex:0 0 auto;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+    color:#fff;background:var(--green);padding:.1rem .4rem;border-radius:2px;text-decoration:none;
+  }
+  table{width:100%;border-collapse:collapse;font-size:.85rem;margin:.5rem 0;}
+  th,td{border:1px solid var(--line);padding:.35rem .5rem;text-align:left;vertical-align:top;}
+  th{background:var(--ink);color:#fff;font-size:.74rem;text-transform:uppercase;letter-spacing:.03em;}
   tr:nth-child(even) td{background:var(--panel);}
   .pending{
-    background:#fff8e1;
-    border:1px dashed #a68b00;
-    color:#5c4a00;
-    padding:.4rem .6rem;
-    font-size:.82rem;
-    border-radius:2px;
-    display:inline-block;
-    margin-top:.3rem;
+    background:#fff8e1;border:1px dashed var(--amber);color:#5c4a00;padding:.4rem .6rem;
+    font-size:.82rem;border-radius:2px;display:inline-block;margin-top:.3rem;
   }
-  .tag{
-    display:inline-block;
-    font-size:.7rem;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:.04em;
-    padding:.05rem .4rem;
-    border-radius:2px;
-    border:1px solid var(--ink);
-    margin-left:.3rem;
-  }
-  .tag.draft{border-color:#a68b00;color:#5c4a00;background:#fff8e1;}
   footer{
-    max-width:760px;margin:2rem auto 0;padding:1rem;
-    border-top:1px solid var(--line);
+    max-width:760px;margin:2rem auto 0;padding:1rem;border-top:1px solid var(--line);
     font-size:.75rem;color:var(--muted);
   }
-  .map-fig{margin:.6rem 0;}
+  .map-fig{margin:.6rem 0 .3rem;}
   .map-fig svg{width:100%;height:auto;display:block;border:1px solid var(--line);background:#fff;}
-  .legend{display:flex;flex-wrap:wrap;gap:.8rem;font-size:.78rem;margin-top:.4rem;color:var(--muted);}
-  .legend span{display:inline-flex;align-items:center;gap:.3rem;}
-  .swatch-cross{color:var(--red);font-weight:900;}
-  details{border:1px solid var(--line);border-radius:2px;margin:.5rem 0;background:#fff;}
+  .keys{list-style:none;padding:0;margin:.4rem 0 0;font-size:.83rem;}
+  .keys li{display:flex;gap:.5rem;align-items:flex-start;margin:.28rem 0;}
+  .keys .k{
+    flex:0 0 auto;min-width:2.1rem;text-align:center;font-weight:700;font-size:.7rem;
+    padding:.08rem .3rem;border-radius:2px;color:#fff;
+  }
+  .k.pos{background:var(--red);}
+  .k.cut{background:var(--red);}
+  .k.div{background:var(--green);}
+  .k.warn{background:var(--amber);}
+  .k.cross{background:#7a6a00;}
+  details{border:1px solid var(--line);border-radius:2px;margin:.6rem 0;background:#fff;}
   summary{padding:.5rem .8rem;font-weight:700;cursor:pointer;font-size:.9rem;}
-  details[open] summary{border-bottom:1px solid var(--line);}
+  details[open] summary{border-bottom:1px solid var(--line);background:var(--panel);}
   details .inner{padding:.6rem .9rem;}
-  code{background:var(--panel);padding:.1rem .3rem;border-radius:2px;font-size:.85em;}
-  .toc{font-size:.85rem;}
-  .toc ol{padding-left:1.2rem;}
+  .stage-note{font-size:.83rem;color:var(--muted);margin:.4rem 0 0;}
   .print-note{font-size:.75rem;color:var(--muted);}
+  a.plain{color:var(--green);}
   @media print{
     header.top{background:#fff !important;color:#111 !important;}
     .emergency{background:#fff !important;color:#111 !important;border:2px solid var(--red);}
+    details{display:block;}
+    details .inner{display:block !important;}
   }
 </style>
 </head>
@@ -164,8 +118,8 @@
   <div class="wrap">
     <span class="badge">Uso interno · Equipo de seguridad</span>
     <h1>Datos de seguridad — Faroleada San José</h1>
-    <p>Guía offline para personas facilitadoras (chapeadoras) de seguridad durante la actividad. Guardar esta página o el PDF en el teléfono antes de salir — puede no haber señal en el sitio.</p>
-    <p class="print-note">Documento de trabajo, sujeto a revisión. Última actualización: ver pie de página.</p>
+    <p>Guía offline para el equipo de seguridad de la actividad. Guardar esta página en el teléfono antes de salir — puede no haber señal en el sitio.</p>
+    <p class="print-note">Documento de trabajo, sujeto a revisión.</p>
   </div>
 </header>
 
@@ -176,101 +130,54 @@
     <div>Emergencias nacionales<br><small>Cualquier imprevisto de seguridad, médico o incendio. Llamar primero, documentar en paralelo.</small></div>
   </div>
 
-  <nav class="toc" style="margin-top:1.2rem;">
-    <strong>Contenido</strong>
-    <ol>
-      <li><a href="#mapeo">Mapeo e instituciones cercanas</a></li>
-      <li><a href="#roles">Roles de seguridad</a></li>
-      <li><a href="#insumos">Insumos necesarios</a></li>
-      <li><a href="#autodefensa">Manejo de conflictos y autodefensa</a></li>
-      <li><a href="#alborotador">Personas alborotadoras / influencers</a></li>
-      <li><a href="#formaciones">Formaciones y preparación pre-marcha</a></li>
-      <li><a href="#lineas">Líneas de seguridad</a></li>
-      <li><a href="#mapa-parque">Mapa: Parque Morazán</a></li>
-    </ol>
-  </nav>
-
   <section id="mapeo">
     <h2><span class="n">1</span>Mapeo e instituciones cercanas</h2>
 
-    <h3>Comandancias de policía</h3>
-    <div class="grid two">
-      <div class="contact">
-        <div class="name">Comandancia Barrio México</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20de%20Polic%C3%ADa%20Barrio%20M%C3%A9xico%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
-      </div>
-      <div class="contact">
-        <div class="name">Primer circuito</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20Primer%20Circuito%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
-      </div>
-      <div class="contact">
-        <div class="name">Segundo circuito</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20Segundo%20Circuito%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
-      </div>
-    </div>
+    <h3>Comandancias</h3>
+    <ul class="places">
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20de%20Polic%C3%ADa%20Barrio%20M%C3%A9xico%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Barrio México</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20Primer%20Circuito%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Primer circuito</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Comandancia%20Segundo%20Circuito%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Segundo circuito</span></li>
+    </ul>
 
-    <h3>Hospitales</h3>
-    <div class="grid two">
-      <div class="contact">
-        <div class="name">Hospital Calderón Guardia</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Hospital%20Rafael%20%C3%81ngel%20Calder%C3%B3n%20Guardia%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
-      </div>
-    </div>
+    <h3>Hospital · Cruz Roja · Bomberos</h3>
+    <ul class="places">
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Hospital%20Rafael%20%C3%81ngel%20Calder%C3%B3n%20Guardia%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Hospital Calderón Guardia</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Cruz%20Roja%20Guadalupe%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Cruz Roja Guadalupe</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Bomberos%20Barrio%20Luj%C3%A1n%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Bomberos Barrio Luján</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Bomberos%20Metropolitana%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Bomberos Metropolitana</span></li>
+    </ul>
 
-    <h3>Cruz Roja</h3>
-    <div class="grid two">
-      <div class="contact">
-        <div class="name">Cruz Roja Guadalupe</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Cruz%20Roja%20Guadalupe%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
-      </div>
-    </div>
-
-    <h3>Bomberos</h3>
-    <div class="grid two">
-      <div class="contact">
-        <div class="name">Estación Barrio Luján</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Bomberos%20Barrio%20Luj%C3%A1n%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
-      </div>
-      <div class="contact">
-        <div class="name">Estación Metropolitana</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Bomberos%20Metropolitana%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a>
-      </div>
-    </div>
-
-    <h3>Parqueos cercanos</h3>
-    <div class="grid two">
-      <div class="contact"><div class="name">Parqueo Asamblea Legislativa</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Asamblea%20Legislativa%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
-      <div class="contact"><div class="name">Parqueo del Museo</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Museo%20Nacional%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
-      <div class="contact"><div class="name">Parqueo Redil</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Redil%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
-      <div class="contact"><div class="name">Parqueo Calle 17</div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Calle%2017%20San%20Jos%C3%A9" target="_blank" rel="noopener">Ver ubicación en el mapa →</a></div>
-    </div>
+    <h3>Parqueos</h3>
+    <ul class="places">
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Asamblea%20Legislativa%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Asamblea</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Museo%20Nacional%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Museo</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Redil%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Redil</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Calle%2017%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Calle 17</span></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=Parqueo%20Moraz%C3%A1n%2C%20San%20Jos%C3%A9" target="_blank" rel="noopener">link</a><span>Morazán (al norte del parque, ver croquis)</span></li>
+    </ul>
 
     <h3>Rutas de evacuación</h3>
-    <p>Zona de referencia: aledaño al Parque Morazán (ver mapa en la sección 8).</p>
-    <span class="pending">Pendiente de definir — completar antes de la marcha</span>
+    <span class="pending">Pendiente de definir — usar el croquis de la sección 8 y los sentidos de circulación para trazarlas antes de la marcha</span>
   </section>
 
   <section id="roles">
     <h2><span class="n">2</span>Roles de seguridad</h2>
     <table>
       <tr><th>Rol</th><th>Función</th></tr>
-      <tr><td>Laterales</td><td>Caminan a los costados del bloque, controlan el ancho de la marcha y detectan riesgos desde afuera.</td></tr>
+      <tr><td>Laterales</td><td>Caminan a los costados del bloque, controlan el ancho y detectan riesgos desde afuera.</td></tr>
       <tr><td>Cierre de calles</td><td>Bloquean intersecciones el tiempo mínimo necesario para el paso seguro del bloque.</td></tr>
       <tr><td>Documentación</td><td>Graban y anotan incidentes con hora y ubicación. No intervienen físicamente.</td></tr>
-      <tr><td>Campaña (mensajería offline)</td><td>Llevan mensajes entre puntos de la marcha cuando no hay señal o radio.</td></tr>
+      <tr><td>Campaña (mensajería offline)</td><td>Llevan mensajes entre puntos cuando no hay señal ni radio.</td></tr>
       <tr><td>Primeros auxilios</td><td>Atienden lesiones leves y coordinan traslado si es necesario.</td></tr>
-      <tr><td>Contacto con medios</td><td>Punto único de comunicación con prensa; evita que cualquier persona improvise declaraciones.</td></tr>
+      <tr><td>Contacto con medios</td><td>Punto único de comunicación con prensa; evita declaraciones improvisadas.</td></tr>
     </table>
   </section>
 
   <section id="insumos">
     <h2><span class="n">3</span>Insumos necesarios</h2>
     <ul>
-      <li>Cuerdas (para cierres de calle y delimitar zonas)</li>
+      <li>Cuerdas (cierres de calle y delimitación de zonas)</li>
       <li>Guantes</li>
       <li>Extintores</li>
       <li>Megáfonos</li>
@@ -286,16 +193,15 @@
         <li>Mientras una persona llama al 911, otra documenta (foto/video, hora, lugar) en simultáneo.</li>
       </ul>
     </div>
-    <h3>Principios generales de desescalada</h3>
+    <h3>Principios de desescalada</h3>
     <ul>
-      <li>Mantener manos visibles y tono de voz calmado.</li>
-      <li>Trabajar siempre en pareja (nunca actuar en solitario frente a un conflicto).</li>
-      <li>Crear espacio/distancia física antes que contacto.</li>
-      <li>No empujar, no tocar a terceros para "controlarlos".</li>
+      <li>Manos visibles y tono de voz calmado.</li>
+      <li>Trabajar siempre en pareja; nunca enfrentar un conflicto en solitario.</li>
+      <li>Crear espacio y distancia física antes que contacto.</li>
+      <li>No empujar ni tocar a terceros para "controlarlos".</li>
       <li>Retirarse como equipo, no de forma individual y dispersa.</li>
-      <li>Un solo vocero designado habla con autoridades o medios; el resto no improvisa declaraciones.</li>
+      <li>Un solo vocero designado habla con autoridades o medios.</li>
     </ul>
-    <span class="tag draft">Sugerencia — validar con el equipo</span>
   </section>
 
   <section id="alborotador">
@@ -303,7 +209,7 @@
     <div class="card">
       <ul>
         <li>No interactuar ni confrontar directamente.</li>
-        <li>Documentar en tercera persona: grabar/anotar lo que hace, sin dirigirse a la persona.</li>
+        <li>Documentar en tercera persona: grabar y anotar lo que hace, sin dirigirse a la persona.</li>
         <li>Seguirle a distancia si continúa generando riesgo, e informar al rol de documentación.</li>
       </ul>
     </div>
@@ -311,26 +217,26 @@
 
   <section id="formaciones">
     <h2><span class="n">6</span>Formaciones y preparación pre-marcha</h2>
-    <p><span class="pending">Pendiente de definir con el equipo — punto abierto en las notas originales</span></p>
+    <p><span class="pending">Pendiente de definir con el equipo</span></p>
     <details>
-      <summary>Ideas de partida para discutir (no son protocolo aún)</summary>
+      <summary>Ideas de partida para discutir</summary>
       <div class="inner">
         <h3>Formación frente a policía en primera línea</h3>
         <ul>
           <li>Línea de brazos entrelazados o cadena humana, sin empujar hacia adelante.</li>
           <li>Portavoz único visible que dialoga con la línea policial.</li>
           <li>Manos visibles, sin objetos en las manos, sin correr.</li>
-          <li>Mantener una zona de amortiguación (buffer) entre el bloque y la policía cuando sea posible.</li>
+          <li>Mantener zona de amortiguación entre el bloque y la línea policial.</li>
           <li>Retirada ordenada y acordada de antemano, nunca en estampida.</li>
         </ul>
-        <h3>Checklist de preparación antes de salir</h3>
+        <h3>Checklist antes de salir</h3>
         <ul>
-          <li>Repasar roles y asignaciones de la sección 2 con cada persona de seguridad.</li>
-          <li>Confirmar punto(s) de encuentro si el grupo se separa.</li>
+          <li>Repasar roles y asignaciones (sección 2) con cada persona.</li>
+          <li>Confirmar puntos de encuentro si el grupo se separa.</li>
           <li>Definir una palabra o señal de alerta simple.</li>
-          <li>Repartir o confirmar contactos clave (esta guía) a todo el equipo, incluida 2da línea.</li>
-          <li>Revisar rutas de evacuación una vez definidas (sección 1).</li>
-          <li>Hidratación, protección solar/lluvia según clima del día.</li>
+          <li>Repartir esta guía a todo el equipo, incluida la 2da línea.</li>
+          <li>Revisar cierres y sentidos de circulación (sección 8) con quienes cierran calles.</li>
+          <li>Hidratación y protección solar o de lluvia según el clima del día.</li>
         </ul>
       </div>
     </details>
@@ -338,96 +244,268 @@
 
   <section id="lineas">
     <h2><span class="n">7</span>Líneas de seguridad</h2>
-    <div class="grid two">
-      <div class="contact">
-        <div class="name">1ra línea</div>
-        <p style="margin:.3rem 0 0;">Dan · Paloma · Camarada · Profe · AF · Piedrita · Tillo · Medellín · Potato</p>
-      </div>
-      <div class="contact">
-        <div class="name">2da línea</div>
-        <p style="margin:.3rem 0 0;">Day · maravfe</p>
-      </div>
-    </div>
+    <table>
+      <tr><th style="width:22%">1ra línea</th><td>Dan · Paloma · Camarada · Profe · AF · Piedrita · Tillo · Medellín · Potato</td></tr>
+      <tr><th>2da línea</th><td>Day · maravfe</td></tr>
+    </table>
   </section>
 
-  <section id="mapa-parque">
-    <h2><span class="n">8</span>Mapa: Parque Morazán</h2>
-    <p>Nombres de calles y esquinas <strong>provisionales</strong>, solo para ubicarse en este documento mientras se define la nomenclatura oficial. Los puntos rojos marcan las posiciones iniciales sugeridas para distribuir al equipo de seguridad (2 personas por esquina, 4 esquinas = 8; el resto del equipo queda móvil/central).</p>
+  <section id="mapa">
+    <h2><span class="n">8</span>Croquis, cierres y etapas</h2>
+    <p>Convocatoria en <strong>Parque Morazán</strong>. Si la multitud crece, se toma también el <strong>Jardín de Paz</strong>; en un escenario poco probable, se extiende al <strong>Parque España</strong>. Un croquis por etapa: la etapa 1 va abierta, las otras dos se despliegan.</p>
+    <p class="print-note">Croquis esquemático: las proporciones no son exactas, pero los nombres de calle y los sentidos de circulación sí. <a class="plain" href="https://maps.app.goo.gl/SptWLSGjxEehw4cF8" target="_blank" rel="noopener">Ver mapa real →</a></p>
 
+    <h3>Sentidos de circulación y manejo</h3>
+    <table>
+      <tr><th>Vía</th><th>Sentido</th><th>Manejo</th></tr>
+      <tr><td>C 5</td><td>Sur → norte</td><td><strong>No cerrar.</strong> Mucho movimiento. Solo puede girar al este por Av 1A.</td></tr>
+      <tr><td>C 7</td><td>Sur → norte</td><td>Salida hacia el norte; recibe Av 5 desde ambos lados.</td></tr>
+      <tr><td>C 9 O y C 9 E</td><td>Norte → sur</td><td>Vías de descarga. Aquí se desvía el tránsito entrante.</td></tr>
+      <tr><td>C 11A</td><td>Norte → sur</td><td>Descarga del lado este.</td></tr>
+      <tr><td>Av 1A</td><td>Lado oeste: oeste → este. Lado este: este → oeste. Confluyen al centro y bajan por C 9 O.</td><td>Cierre fácil en la esquina con C 5.</td></tr>
+      <tr><td>Av 3 / Av 3A</td><td>Este → oeste</td><td><strong>Ingreso principal de tránsito.</strong> Desviarlo directo a C 9.</td></tr>
+      <tr><td>Av 5</td><td>Este → oeste. Al norte de la Plaza Orden de Malta va oeste → este y gira hacia C 7 (norte).</td><td>Lado este: cierre fácil, el tránsito se reencamina C 9 E → Av 3 → C 9 O.</td></tr>
+    </table>
+    <p class="stage-note"><strong>C 9 O</strong> = Calle 9 oeste (borde este de Morazán). <strong>C 9 E</strong> = Calle 9 este (borde este del Jardín de Paz).</p>
+
+    <!-- base map, reused by the three stage figures -->
+    <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+      <symbol id="mapbase" viewBox="0 0 560 400">
+        <rect width="560" height="400" fill="#ffffff"/>
+        <g fill="#f2f2f2" stroke="#dcdcdc" stroke-width="1">
+          <rect x="69" y="16" width="119" height="69"/>
+          <rect x="202" y="16" width="117" height="69"/>
+          <rect x="333" y="16" width="84" height="69"/>
+          <rect x="202" y="99" width="117" height="49"/>
+          <rect x="333" y="99" width="84" height="49"/>
+          <rect x="431" y="162" width="98" height="171"/>
+          <rect x="69" y="347" width="250" height="37"/>
+          <rect x="333" y="347" width="84" height="37"/>
+          <rect x="431" y="347" width="98" height="37"/>
+        </g>
+        <g stroke="#d9d9d9" stroke-width="13" stroke-linecap="butt">
+          <line x1="62" y1="16" x2="62" y2="384"/>
+          <line x1="195" y1="16" x2="195" y2="155"/>
+          <line x1="326" y1="16" x2="326" y2="384"/>
+          <line x1="424" y1="16" x2="424" y2="384"/>
+          <line x1="536" y1="16" x2="536" y2="384"/>
+          <line x1="390" y1="44" x2="552" y2="44"/>
+          <line x1="16" y1="92" x2="424" y2="92"/>
+          <line x1="16" y1="155" x2="552" y2="155"/>
+          <line x1="16" y1="340" x2="552" y2="340"/>
+        </g>
+        <g stroke="#b7ccb7" stroke-width="1.5" fill="#eaf2ea">
+          <rect x="69" y="162" width="250" height="171"/>
+          <rect x="333" y="162" width="84" height="171"/>
+          <rect x="431" y="51" width="98" height="97"/>
+          <rect x="69" y="99" width="119" height="49"/>
+        </g>
+        <circle cx="195" cy="250" r="26" fill="#ffffff" stroke="#b7ccb7" stroke-width="1.5"/>
+        <!-- direction arrows -->
+        <g fill="#555555">
+          <path d="M56,270 L68,270 L62,256 Z"/>
+          <path d="M56,127 L68,127 L62,113 Z"/>
+          <path d="M189,67 L201,67 L195,53 Z"/>
+          <path d="M320,113 L332,113 L326,127 Z"/>
+          <path d="M320,256 L332,256 L326,270 Z"/>
+          <path d="M320,361 L332,361 L326,375 Z"/>
+          <path d="M418,113 L430,113 L424,127 Z"/>
+          <path d="M418,256 L430,256 L424,270 Z"/>
+          <path d="M530,293 L542,293 L536,307 Z"/>
+          <path d="M123,86 L123,98 L137,92 Z"/>
+          <path d="M267,86 L267,98 L253,92 Z"/>
+          <path d="M387,86 L387,98 L373,92 Z"/>
+          <path d="M157,149 L157,161 L143,155 Z"/>
+          <path d="M262,149 L262,161 L248,155 Z"/>
+          <path d="M497,149 L497,161 L483,155 Z"/>
+          <path d="M153,334 L153,346 L167,340 Z"/>
+          <path d="M233,334 L233,346 L247,340 Z"/>
+          <path d="M372,334 L372,346 L358,340 Z"/>
+          <path d="M477,334 L477,346 L463,340 Z"/>
+        </g>
+        <!-- parking -->
+        <g>
+          <rect x="111" y="34" width="17" height="17" fill="#111111"/>
+          <text x="119.5" y="47" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">P</text>
+          <rect x="246" y="34" width="17" height="17" fill="#111111"/>
+          <text x="254.5" y="47" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffffff">P</text>
+          <text x="119.5" y="68" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#777777">Parqueo</text>
+          <text x="254.5" y="68" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#777777">Parqueo</text>
+        </g>
+        <!-- place labels -->
+        <g font-family="sans-serif" text-anchor="middle">
+          <text x="195" y="186" font-size="17" font-weight="700" fill="#1b5e20">PARQUE MORAZÁN</text>
+          <text x="195" y="247" font-size="10" fill="#4a4a4a">Templo</text>
+          <text x="195" y="259" font-size="10" fill="#4a4a4a">de Música</text>
+          <text x="375" y="243" font-size="13" font-weight="700" fill="#1b5e20">JARDÍN</text>
+          <text x="375" y="257" font-size="13" font-weight="700" fill="#1b5e20">DE PAZ</text>
+          <text x="480" y="93" font-size="13" font-weight="700" fill="#1b5e20">PARQUE</text>
+          <text x="480" y="107" font-size="13" font-weight="700" fill="#1b5e20">ESPAÑA</text>
+          <text x="128" y="120" font-size="10" fill="#4a4a4a">Plaza Orden</text>
+          <text x="128" y="132" font-size="10" fill="#4a4a4a">de Malta</text>
+          <text x="480" y="245" font-size="10" fill="#999999">Univ. San</text>
+          <text x="480" y="257" font-size="10" fill="#999999">Marcos</text>
+        </g>
+        <!-- street labels -->
+        <g font-family="sans-serif" font-size="14" font-weight="700" fill="#222222">
+          <text x="62" y="12" text-anchor="middle">C 5</text>
+          <text x="195" y="12" text-anchor="middle">C 7</text>
+          <text x="326" y="12" text-anchor="middle">C 9 O</text>
+          <text x="424" y="12" text-anchor="middle">C 9 E</text>
+          <text x="536" y="12" text-anchor="middle">C 11A</text>
+          <text x="18" y="86">Av 5</text>
+          <text x="18" y="149">Av 3</text>
+          <text x="18" y="334">Av 1A</text>
+          <text x="552" y="180" text-anchor="end">Av 3A</text>
+          <text x="516" y="36" text-anchor="end">Av 7</text>
+        </g>
+      </symbol>
+    </svg>
+
+    <h3>Etapa 1 — Parque Morazán</h3>
     <div class="map-fig">
-      <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Croquis del Parque Morazán con esquinas, calles y posiciones iniciales de seguridad">
-        <!-- outer streets -->
-        <rect x="0" y="0" width="420" height="420" fill="#ffffff"/>
-        <!-- street labels bands -->
-        <rect x="70" y="8" width="280" height="26" fill="#111111"/>
-        <text x="210" y="26" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="700">CALLE A (norte)</text>
-
-        <rect x="70" y="386" width="280" height="26" fill="#111111"/>
-        <text x="210" y="404" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="700">CALLE C (sur)</text>
-
-        <rect x="8" y="70" width="26" height="280" fill="#111111"/>
-        <text x="21" y="210" text-anchor="middle" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="700" transform="rotate(-90 21 210)">CALLE D (oeste)</text>
-
-        <rect x="386" y="70" width="26" height="280" fill="#111111"/>
-        <text x="399" y="210" text-anchor="middle" fill="#ffffff" font-size="13" font-family="sans-serif" font-weight="700" transform="rotate(90 399 210)">CALLE B (este)</text>
-
-        <!-- park block -->
-        <rect x="70" y="70" width="280" height="280" fill="#e8f3e8" stroke="#1b5e20" stroke-width="3"/>
-        <circle cx="210" cy="210" r="34" fill="#ffffff" stroke="#1b5e20" stroke-width="2"/>
-        <text x="210" y="206" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#1b5e20" font-weight="700">Templo</text>
-        <text x="210" y="220" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#1b5e20" font-weight="700">de Música</text>
-
-        <!-- corner labels -->
-        <text x="75" y="63" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina París (NO)</text>
-        <text x="345" y="63" text-anchor="end" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina Ámsterdam (NE)</text>
-        <text x="75" y="365" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina Lisboa (SO)</text>
-        <text x="345" y="365" text-anchor="end" font-size="12" font-family="sans-serif" fill="#111111" font-weight="700">Esquina Berlín (SE)</text>
-
-        <!-- red cross positions: 2 per corner -->
-        <!-- NW corner -->
-        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
-          <path d="M78,78 l14,14 M92,78 l-14,14"/>
-          <path d="M100,96 l14,14 M114,96 l-14,14"/>
+      <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Etapa 1: Parque Morazán con posiciones iniciales y cierres">
+        <use href="#mapbase" width="560" height="400"/>
+        <rect x="69" y="162" width="250" height="171" fill="#1b5e20" fill-opacity="0.17" stroke="#1b5e20" stroke-width="3"/>
+        <g stroke="#b3261e" stroke-width="3.5" stroke-linecap="round">
+          <path d="M93,148 l14,14 M107,148 l-14,14"/>
+          <path d="M55,185 l14,14 M69,185 l-14,14"/>
+          <path d="M281,148 l14,14 M295,148 l-14,14"/>
+          <path d="M319,185 l14,14 M333,185 l-14,14"/>
+          <path d="M281,333 l14,14 M295,333 l-14,14"/>
+          <path d="M319,293 l14,14 M333,293 l-14,14"/>
+          <path d="M103,333 l14,14 M117,333 l-14,14"/>
+          <path d="M55,293 l14,14 M69,293 l-14,14"/>
         </g>
-        <text x="78" y="128" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">1</text>
-        <text x="100" y="146" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">2</text>
-
-        <!-- NE corner -->
-        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
-          <path d="M328,78 l14,14 M342,78 l-14,14"/>
-          <path d="M306,96 l14,14 M320,96 l-14,14"/>
+        <g font-family="sans-serif" font-size="12" font-weight="700" fill="#b3261e">
+          <text x="100" y="141" text-anchor="middle">1</text>
+          <text x="44" y="199" text-anchor="end">2</text>
+          <text x="288" y="141" text-anchor="middle">3</text>
+          <text x="344" y="199">4</text>
+          <text x="288" y="367" text-anchor="middle">5</text>
+          <text x="344" y="304">6</text>
+          <text x="110" y="367" text-anchor="middle">7</text>
+          <text x="44" y="304" text-anchor="end">8</text>
         </g>
-        <text x="330" y="128" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">3</text>
-        <text x="298" y="146" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">4</text>
-
-        <!-- SE corner -->
-        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
-          <path d="M328,328 l14,14 M342,328 l-14,14"/>
-          <path d="M306,310 l14,14 M320,310 l-14,14"/>
+        <g font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">
+          <circle cx="62" cy="340" r="12" fill="#b3261e"/><text x="62" y="344" fill="#ffffff">C1</text>
+          <circle cx="390" cy="92" r="12" fill="#b3261e"/><text x="390" y="96" fill="#ffffff">C2</text>
+          <circle cx="326" cy="155" r="12" fill="#1b5e20"/><text x="326" y="159" fill="#ffffff">D1</text>
+          <circle cx="62" cy="240" r="12" fill="#a68b00"/><text x="62" y="244" fill="#ffffff">!</text>
         </g>
-        <text x="330" y="358" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">5</text>
-        <text x="298" y="302" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">6</text>
-
-        <!-- SW corner -->
-        <g stroke="#b3261e" stroke-width="4" stroke-linecap="round">
-          <path d="M78,328 l14,14 M92,328 l-14,14"/>
-          <path d="M100,310 l14,14 M114,310 l-14,14"/>
-        </g>
-        <text x="78" y="358" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">7</text>
-        <text x="100" y="302" font-size="10" font-family="sans-serif" fill="#b3261e" font-weight="700">8</text>
       </svg>
-      <div class="legend">
-        <span class="swatch-cross">✚</span><span>Posición inicial de seguridad (par por esquina, 8 en total)</span>
-        <span>◯ Templo de Música (centro del parque, referencia visual)</span>
-      </div>
     </div>
-    <span class="pending">Nombres de calles/esquinas y rutas de evacuación pendientes de confirmar con nomenclatura real</span>
+    <ul class="keys">
+      <li><span class="k pos">1–8</span><span>Posiciones iniciales, 2 por esquina: una sobre la avenida, otra sobre la calle.</span></li>
+      <li><span class="k cut">C1</span><span>Cierre Av 1A en la esquina con C 5 — fácil: es el único giro al este que tiene C 5.</span></li>
+      <li><span class="k cut">C2</span><span>Cierre Av 5 lado este — fácil: el tránsito se reencamina C 9 E → Av 3 → C 9 O.</span></li>
+      <li><span class="k div">D1</span><span>Desvío: el tránsito entrante por Av 3 baja directo por C 9 O.</span></li>
+      <li><span class="k warn">!</span><span>C 5 no se cierra: mucho movimiento. Se maneja con desvío, no con bloqueo.</span></li>
+    </ul>
+    <p class="stage-note">Reparto de las 15 personas: 8 en esquinas, 2 en C1, 2 en C2, 1 documentación móvil, 1 primeros auxilios en el centro (Templo de Música), 1 enlace con medios y con la 2da línea.</p>
+
+    <details>
+      <summary>Etapa 2 — se suma el Jardín de Paz</summary>
+      <div class="inner">
+        <div class="map-fig">
+          <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Etapa 2: Parque Morazán más Jardín de Paz">
+            <use href="#mapbase" width="560" height="400"/>
+            <rect x="69" y="162" width="250" height="171" fill="#1b5e20" fill-opacity="0.17" stroke="#1b5e20" stroke-width="3"/>
+            <rect x="333" y="162" width="84" height="171" fill="#1b5e20" fill-opacity="0.17" stroke="#1b5e20" stroke-width="3"/>
+            <rect x="320" y="162" width="12" height="171" fill="#a68b00" fill-opacity="0.55"/>
+            <g stroke="#b3261e" stroke-width="3.5" stroke-linecap="round">
+              <path d="M93,148 l14,14 M107,148 l-14,14"/>
+              <path d="M55,185 l14,14 M69,185 l-14,14"/>
+              <path d="M103,333 l14,14 M117,333 l-14,14"/>
+              <path d="M55,293 l14,14 M69,293 l-14,14"/>
+              <path d="M379,148 l14,14 M393,148 l-14,14"/>
+              <path d="M417,185 l14,14 M431,185 l-14,14"/>
+              <path d="M379,333 l14,14 M393,333 l-14,14"/>
+              <path d="M417,293 l14,14 M431,293 l-14,14"/>
+              <path d="M319,185 l14,14 M333,185 l-14,14"/>
+              <path d="M319,293 l14,14 M333,293 l-14,14"/>
+            </g>
+            <g font-family="sans-serif" font-size="12" font-weight="700" fill="#b3261e">
+              <text x="100" y="141" text-anchor="middle">1</text>
+              <text x="44" y="199" text-anchor="end">2</text>
+              <text x="110" y="367" text-anchor="middle">3</text>
+              <text x="44" y="304" text-anchor="end">4</text>
+              <text x="386" y="141" text-anchor="middle">5</text>
+              <text x="442" y="199">6</text>
+              <text x="386" y="367" text-anchor="middle">7</text>
+              <text x="442" y="304">8</text>
+              <text x="300" y="176" text-anchor="end">9</text>
+              <text x="300" y="288" text-anchor="end">10</text>
+            </g>
+            <g font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">
+              <circle cx="62" cy="340" r="12" fill="#b3261e"/><text x="62" y="344" fill="#ffffff">C1</text>
+              <circle cx="390" cy="92" r="12" fill="#b3261e"/><text x="390" y="96" fill="#ffffff">C2</text>
+              <circle cx="424" cy="155" r="12" fill="#1b5e20"/><text x="424" y="159" fill="#ffffff">D1</text>
+              <circle cx="62" cy="240" r="12" fill="#a68b00"/><text x="62" y="244" fill="#ffffff">!</text>
+            </g>
+          </svg>
+        </div>
+        <ul class="keys">
+          <li><span class="k pos">1–8</span><span>Perímetro exterior: esquinas de C 5 (oeste) y de C 9 E (este).</span></li>
+          <li><span class="k cross">9–10</span><span>Cruces de C 9 O, ahora calle interna con multitud a ambos lados. Es el punto más peligroso de esta etapa.</span></li>
+          <li><span class="k div">D1</span><span>El desvío sube a C 9 E: Av 3 queda cerrada desde C 9 E hacia el oeste.</span></li>
+        </ul>
+        <p class="stage-note"><strong>Cambio clave:</strong> al cerrar C 9 O se rompe el reencamine C 9 E → Av 3 → C 9 O, así que el tránsito entrante ya no puede bajar por C 9 O y debe bajar por C 9 E. C1, C2 y el manejo de C 5 se mantienen igual.</p>
+        <p class="stage-note">Con 15 personas esta etapa queda ajustada: 10 en perímetro y cruces, 2 en cierres, 3 móviles. Si se llega aquí, pedir refuerzo a la 2da línea antes de abrir el Jardín de Paz, no después.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Etapa 3 — se suma el Parque España (poco probable)</summary>
+      <div class="inner">
+        <div class="map-fig">
+          <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Etapa 3: Morazán, Jardín de Paz y Parque España">
+            <use href="#mapbase" width="560" height="400"/>
+            <rect x="69" y="162" width="250" height="171" fill="#1b5e20" fill-opacity="0.17" stroke="#1b5e20" stroke-width="3"/>
+            <rect x="333" y="162" width="84" height="171" fill="#1b5e20" fill-opacity="0.17" stroke="#1b5e20" stroke-width="3"/>
+            <rect x="431" y="51" width="98" height="97" fill="#1b5e20" fill-opacity="0.17" stroke="#1b5e20" stroke-width="3"/>
+            <rect x="320" y="162" width="12" height="171" fill="#a68b00" fill-opacity="0.55"/>
+            <rect x="424" y="149" width="112" height="12" fill="#a68b00" fill-opacity="0.55"/>
+            <g stroke="#b3261e" stroke-width="3.5" stroke-linecap="round">
+              <path d="M55,185 l14,14 M69,185 l-14,14"/>
+              <path d="M55,293 l14,14 M69,293 l-14,14"/>
+              <path d="M103,333 l14,14 M117,333 l-14,14"/>
+              <path d="M379,333 l14,14 M393,333 l-14,14"/>
+              <path d="M529,243 l14,14 M543,243 l-14,14"/>
+              <path d="M448,37 l14,14 M462,37 l-14,14"/>
+            </g>
+            <g font-family="sans-serif" font-size="12" font-weight="700" fill="#b3261e">
+              <text x="44" y="199" text-anchor="end">1</text>
+              <text x="44" y="304" text-anchor="end">2</text>
+              <text x="110" y="367" text-anchor="middle">3</text>
+              <text x="386" y="367" text-anchor="middle">4</text>
+              <text x="516" y="257" text-anchor="end">5</text>
+              <text x="455" y="30" text-anchor="middle">6</text>
+            </g>
+            <g font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">
+              <circle cx="62" cy="340" r="12" fill="#b3261e"/><text x="62" y="344" fill="#ffffff">C1</text>
+              <circle cx="390" cy="92" r="12" fill="#b3261e"/><text x="390" y="96" fill="#ffffff">C2</text>
+              <circle cx="536" cy="44" r="12" fill="#b3261e"/><text x="536" y="48" fill="#ffffff">C3</text>
+              <circle cx="536" cy="155" r="12" fill="#b3261e"/><text x="536" y="159" fill="#ffffff">C4</text>
+              <circle cx="62" cy="240" r="12" fill="#a68b00"/><text x="62" y="244" fill="#ffffff">!</text>
+            </g>
+          </svg>
+        </div>
+        <ul class="keys">
+          <li><span class="k pos">1–6</span><span>Solo los puntos de entrada vehicular al perímetro ampliado: C 5, Av 1A, C 11A y Av 7.</span></li>
+          <li><span class="k cross">▮</span><span>Franjas amarillas: C 9 O y Av 3A quedan como calles internas con multitud a ambos lados.</span></li>
+          <li><span class="k cut">C3 · C4</span><span>Cierres nuevos del lado este: Av 7 en C 11A, y C 11A en Av 3A.</span></li>
+        </ul>
+        <p class="stage-note"><strong>15 personas no alcanzan para este perímetro.</strong> Si se llega aquí, no intentar cubrir todo el borde: priorizar los cuatro cierres y los dos cruces internos, concentrar al resto en el paso entre Jardín de Paz y Parque España, y coordinar con tránsito y con la 2da línea para pedir refuerzo.</p>
+      </div>
+    </details>
   </section>
 
 </div>
 
 <footer>
-  <p>Documento interno del equipo de seguridad para la Faroleada en San José. Pensado como base reutilizable para otras regiones — revisar y adaptar contactos, mapeo y roles a cada sitio antes de usar.</p>
+  <p>Documento interno del equipo de seguridad para la Faroleada en San José. Pensado como base reutilizable para otras regiones — revisar y adaptar contactos, mapeo, cierres y roles a cada sitio antes de usar.</p>
+  <p>Los sentidos de circulación provienen del levantamiento del equipo; verificar en sitio antes de la marcha.</p>
   <p>Versión borrador — 2026-09-05. No enlazado desde la navegación del sitio.</p>
 </footer>
 
