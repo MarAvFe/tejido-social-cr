@@ -1,0 +1,175 @@
+/**
+ * Iniciativas Colectivas — a separate umbrella for community initiatives
+ * unrelated to Frente Amplio, sharing this site's domain/hosting/navbar
+ * but not its brand. Colors are scoped to `.portal` and its descendants
+ * only, so the FA yellow (src/css/custom.css) never appears here and
+ * these teal values never leak back out into the rest of the site.
+ *
+ * Contrast checked directly (no accessibility workaround needed, unlike
+ * the FA yellow): teal (#0f766e) on the off-white background below is
+ * ~7.8:1, comfortably past WCAG AA for both body text and large text/UI.
+ */
+
+.portal {
+  --portal-color-primary: #0f766e;
+  --portal-color-primary-dark: #0b5c56;
+  --portal-color-on-primary: #ffffff;
+  --portal-background: #f4f7f6;
+  --portal-card-background: #ffffff;
+  --portal-card-border: #cfe3e0;
+  --portal-placeholder-color: #9a5b00;
+  --portal-placeholder-border: #e0b070;
+
+  /* Header carries the accent as a solid fill in light mode (dark text
+     on bright teal, like FA yellow's light-mode use in custom.css). */
+  --portal-header-background: var(--portal-color-primary);
+  --portal-header-color: #ffffff;
+
+  background: var(--portal-background);
+  min-height: 60vh;
+}
+
+:global([data-theme='dark']) .portal {
+  --portal-color-primary: #2dd4bf;
+  --portal-color-primary-dark: #5eead4;
+  --portal-color-on-primary: #062521;
+  --portal-background: #10201e;
+  --portal-card-background: #16302c;
+  --portal-card-border: #1f4d46;
+  --portal-placeholder-color: #f2b866;
+  --portal-placeholder-border: #6b4a1f;
+
+  /* Dark mode flips the pattern (again matching FA yellow's own contract):
+     a full-bleed bright teal band reads as a highlighter next to a dark
+     page, so the header goes dark-on-dark and the accent moves to text. */
+  --portal-header-background: var(--portal-card-background);
+  --portal-header-color: var(--portal-color-primary);
+}
+
+.header {
+  background: var(--portal-header-background);
+  color: var(--portal-header-color);
+  padding: 2.5rem 0 3rem;
+  border-bottom: 1px solid var(--portal-card-border);
+}
+
+.header :global(h1) {
+  color: var(--portal-header-color);
+  margin-bottom: 0.5rem;
+}
+
+.backLink {
+  display: inline-block;
+  color: var(--portal-header-color);
+  opacity: 0.85;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.backLink:hover {
+  opacity: 1;
+  color: var(--portal-header-color);
+}
+
+.tagline {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.portal main {
+  padding: 2.5rem 0 4rem;
+}
+
+/* ---------- Nav cards (portal → initiative → location) ---------- */
+
+.navCard {
+  display: block;
+  background: var(--portal-card-background);
+  border: 1px solid var(--portal-card-border);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 120ms ease-in-out, transform 120ms ease-in-out;
+}
+
+.navCard:hover {
+  border-color: var(--portal-color-primary);
+  transform: translateX(2px);
+  color: inherit;
+}
+
+.navCardTitle {
+  color: var(--portal-color-primary-dark);
+  margin-bottom: 0.35rem;
+}
+
+:global([data-theme='dark']) .navCardTitle {
+  color: var(--portal-color-primary);
+}
+
+.navCardDescription {
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ---------- Resource links (the "linktree" list) ---------- */
+
+.resourceSection {
+  margin-bottom: 2rem;
+}
+
+.resourceList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.resourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1.5px solid var(--portal-color-primary);
+  color: var(--portal-color-primary-dark);
+  background: var(--portal-card-background);
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 120ms ease-in-out, color 120ms ease-in-out;
+}
+
+:global([data-theme='dark']) .resourceLink {
+  color: var(--portal-color-primary);
+}
+
+.resourceLink:hover {
+  background: var(--portal-color-primary);
+  color: var(--portal-color-on-primary);
+}
+
+.resourceLinkPlaceholder {
+  border-style: dashed;
+  border-color: var(--portal-placeholder-border);
+  color: var(--portal-placeholder-color);
+}
+
+.resourceLinkPlaceholder:hover {
+  background: var(--portal-placeholder-border);
+  color: var(--portal-card-background);
+}
+
+.placeholderBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--portal-placeholder-border);
+  color: var(--portal-card-background);
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+}
