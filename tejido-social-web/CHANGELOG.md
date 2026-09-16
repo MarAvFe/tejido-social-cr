@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Plain-text URLs in event descriptions, location, and contact fields (Zoom/Meet links, forms, a second Instagram link — anything pasted without Google Calendar's own "insert link" formatting) are now rendered as clickable links (`src/utils/linkify.ts`, used by `richText.ts`'s `linkifyUrls` for HTML descriptions and directly in `EventCalendar` for plain-text fields).
+- Event popup now shows the date and time (e.g. "Jueves 13 de agosto, 3:30pm") above the badge row, which previously showed no date/time at all.
 
 ## [0.6.1] - 2026-09-04
 

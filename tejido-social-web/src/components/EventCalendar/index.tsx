@@ -24,6 +24,7 @@ import {
 } from '@site/src/utils/eventMetadata';
 import {extractInstagramEmbedUrl} from '@site/src/utils/instagramEmbed';
 import {findUrls} from '@site/src/utils/linkify';
+import {formatEventDateTime} from '@site/src/utils/eventDateFormat';
 import styles from './styles.module.css';
 
 /** For plain-text fields (location, contacto) — HTML descriptions use linkifyUrls instead. */
@@ -241,6 +242,9 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
               ×
             </button>
             <h3>{selectedEvent.title}</h3>
+            <p className={styles.eventDateTime}>
+              {formatEventDateTime(selectedEvent.start, selectedEvent.allDay)}
+            </p>
             <div className={styles.badgeRow}>
               {selectedEvent.metadata.estado !== 'confirmada' && (
                 <span

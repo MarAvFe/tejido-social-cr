@@ -58,6 +58,12 @@
   flex-shrink: 0;
 }
 
+.eventDateTime {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0.15rem 0 0;
+}
+
 .badgeRow {
   display: flex;
   flex-wrap: wrap;
