@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
+import {extractInstagramEmbedUrl} from '@site/src/utils/instagramEmbed';
 import styles from './styles.module.css';
 
 interface PortalLayoutProps {
@@ -120,6 +121,46 @@ export function ResourceSection({title, children}: ResourceSectionProps): ReactN
     <section className={styles.resourceSection}>
       <Heading as="h2">{title}</Heading>
       <div className={styles.resourceList}>{children}</div>
+    </section>
+  );
+}
+
+interface InstagramPostEmbedProps {
+  /** Full post URL, e.g. https://www.instagram.com/p/ABC123/ */
+  url: string;
+}
+
+/** Renders a post as Instagram's own thumbnail-card embed (no API key needed) instead of a bare text link — reuses the same no-auth iframe trick EventCalendar uses for flyers. */
+export function InstagramPostEmbed({url}: InstagramPostEmbedProps): ReactNode {
+  const embedUrl = extractInstagramEmbedUrl(url);
+  if (!embedUrl) return null;
+  return (
+    <iframe
+      src={embedUrl}
+      className={styles.instagramThumb}
+      loading="lazy"
+      title="Publicación de Instagram"
+    />
+  );
+}
+
+interface MapEmbedProps {
+  title: string;
+  lat: number;
+  lng: number;
+  /** Standard Google Maps zoom level (integer). The classic embed URL has no way to request an exact ground distance — pick the level that shows roughly the intended span. */
+  zoom: number;
+  satellite?: boolean;
+}
+
+/** A Google Maps embed (no API key needed — the classic `output=embed` URL), for pinning a location like a project site. */
+export function MapEmbed({title, lat, lng, zoom, satellite}: MapEmbedProps): ReactNode {
+  const mapType = satellite ? 'k' : 'm';
+  const src = `https://maps.google.com/maps?q=${lat},${lng}&z=${zoom}&t=${mapType}&output=embed`;
+  return (
+    <section className={styles.resourceSection}>
+      <Heading as="h2">{title}</Heading>
+      <iframe src={src} className={styles.mapEmbed} loading="lazy" title={title} />
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import type {ReactNode} from 'react';
-import {PortalLayout, ResourceSection, ResourceLink} from '@site/src/components/IniciativasColectivas';
+import {PortalLayout, ResourceSection, ResourceLink, MapEmbed} from '@site/src/components/IniciativasColectivas';
 
 export default function DatacentersLimon(): ReactNode {
   return (
@@ -16,8 +16,18 @@ export default function DatacentersLimon(): ReactNode {
         <ResourceLink href="#" label="Carpeta de documentos (Mega)" placeholder />
       </ResourceSection>
       <ResourceSection title="Cobertura de prensa">
-        <ResourceLink href="#" label="Artículo de referencia" placeholder />
+        <ResourceLink
+          href="https://www.nacion.com/el-pais/data-center-de-ia-en-limon-se-construiria-sobre/N6W7QNCSTNFCLKH2AMSMX4GGRY/story/"
+          label="La Nación: cobertura del proyecto"
+        />
       </ResourceSection>
+      <MapEmbed
+        title="Ubicación de la finca (extraoficial)"
+        lat={9.964433307590527}
+        lng={-83.06379142703821}
+        zoom={17}
+        satellite
+      />
     </PortalLayout>
   );
 }

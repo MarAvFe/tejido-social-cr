@@ -15,7 +15,6 @@ export default function Datacenters(): ReactNode {
         to="/iniciativas-colectivas/datacenters/limon"
         title="Limón"
         description="Recursos y enlaces sobre proyectos de centros de datos en Limón."
-        disabled
       />
       <NavCard
         to="/iniciativas-colectivas/datacenters/bagaces"
