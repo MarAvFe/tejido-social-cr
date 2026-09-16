@@ -28,6 +28,14 @@ export function PortalLayout({title, tagline, description, backTo, children}: Po
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        {/* Docusaurus's site-wide favicon tag stays in the document (Head
+            doesn't dedupe by rel), but the last <link rel="icon"> in the
+            head wins in browsers — no dedicated icon exists yet for this
+            initiative, so this suppresses the inherited FA one rather than
+            show the wrong brand. Once there's a real one (e.g.
+            static/img/iniciativas-colectivas-favicon.ico), point this href
+            at that instead of 'data:,'. */}
+        <link rel="icon" href="data:," />
       </Head>
       <div className={styles.portal}>
         <header className={styles.header}>
@@ -51,16 +59,31 @@ interface NavCardProps {
   to: string;
   title: string;
   description: ReactNode;
+  /** Renders as a non-clickable card with a "pausado" flag instead of a link — for a child page that's temporarily not meant to be reached from here. */
+  disabled?: boolean;
 }
 
 /** A card linking to a child page (initiative → location, portal → initiative). */
-export function NavCard({to, title, description}: NavCardProps): ReactNode {
-  return (
-    <Link to={to} className={styles.navCard}>
+export function NavCard({to, title, description, disabled}: NavCardProps): ReactNode {
+  const content = (
+    <>
       <Heading as="h3" className={styles.navCardTitle}>
-        {title} →
+        {title} {disabled ? '' : '→'}
+        {disabled && <span className={styles.placeholderBadge}>pausado</span>}
       </Heading>
       <p className={styles.navCardDescription}>{description}</p>
+    </>
+  );
+  if (disabled) {
+    return (
+      <div className={clsx(styles.navCard, styles.navCardDisabled)} aria-disabled="true">
+        {content}
+      </div>
+    );
+  }
+  return (
+    <Link to={to} className={styles.navCard}>
+      {content}
     </Link>
   );
 }

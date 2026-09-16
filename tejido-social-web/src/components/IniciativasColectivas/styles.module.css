@@ -102,6 +102,22 @@
   color: inherit;
 }
 
+.navCardDisabled {
+  cursor: default;
+  opacity: 0.6;
+  border-style: dashed;
+}
+
+.navCardDisabled:hover {
+  border-color: var(--portal-card-border);
+  transform: none;
+}
+
+.navCardTitle .placeholderBadge {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
 .navCardTitle {
   color: var(--portal-color-primary-dark);
   margin-bottom: 0.35rem;
