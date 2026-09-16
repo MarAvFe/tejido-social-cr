@@ -14,11 +14,11 @@ El calendario en sí es un calendario de Google normal — su web no tiene campo
 | Dónde | Etiqueta | Valores | Efecto en el sitio |
 | --- | --- | --- | --- |
 | Título, como prefijo | `[Virtual]`, `[Presencial]`, `[Híbrida]` | — | Ícono de modalidad (💻/📍/🔀) junto al título |
-| Descripción | `Organiza:` (o `A cargo de:`, `Responsable:`, `Organizador:`) | texto libre | "A cargo de: …" |
-| Descripción | `Sector:` (o `Espacio:`) | texto libre | "Sector: …" |
-| Descripción | `Inscripción:` | `Sí` / `No` | "Requiere inscripción" / "No requiere inscripción" |
-| Descripción | `Contacto:` (o `Enlace:`) | texto libre | "Contacto: …" |
-| Descripción | `Estado:` | `Confirmada` (si no se indica), `Pendiente` (o `Tentativa`/`Por confirmar`), `Disponible`, `Cancelada` | Color del evento — ver abajo |
+| Descripción | `Organiza:`, `Responsable:`) | texto libre | "A cargo de: …" |
+| Descripción | `Sector:` `Espacio:` | texto libre | "Sector: ..." |
+| Descripción | `Inscripción:` | `Si` / `No` | "Requiere inscripción" / "No requiere inscripción" |
+| Descripción | `Contacto:`, `Enlace:` | texto libre | "Contacto: …" |
+| Descripción | `Estado:` | `Confirmada` (por defecto), `Tentativa`, `Cancelada` | Color del evento — ver abajo |
 | Descripción | `Título corto:` | texto libre | Título abreviado, usado solo en la vista Mes |
 
 Una actividad sin ninguna de estas etiquetas se sigue mostrando con normalidad — solo con el título, fecha, lugar y descripción que ya tiene un evento de Google Calendar. El resto del texto de la descripción (lo que no sea una de estas líneas) se muestra tal cual, como descripción de la actividad.
