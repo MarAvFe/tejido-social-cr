@@ -14,7 +14,7 @@ import {
   MODALITY_ICONS,
   type EventModality,
 } from '@site/src/utils/eventTags';
-import {sanitizeDescriptionHtml, descriptionToPlainText} from '@site/src/utils/richText';
+import {sanitizeDescriptionHtml, descriptionToPlainText, linkifyUrls} from '@site/src/utils/richText';
 import {
   parseEventMetadata,
   stripRecognizedLines,
@@ -23,7 +23,27 @@ import {
   type EventMetadata,
 } from '@site/src/utils/eventMetadata';
 import {extractInstagramEmbedUrl} from '@site/src/utils/instagramEmbed';
+import {findUrls} from '@site/src/utils/linkify';
 import styles from './styles.module.css';
+
+/** For plain-text fields (location, contacto) — HTML descriptions use linkifyUrls instead. */
+function renderWithLinks(text: string): React.ReactNode {
+  const matches = findUrls(text);
+  if (matches.length === 0) return text;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  matches.forEach(({start, end, url}, i) => {
+    if (start > lastIndex) parts.push(text.slice(lastIndex, start));
+    parts.push(
+      <a key={i} href={url} target="_blank" rel="noreferrer">
+        {url}
+      </a>,
+    );
+    lastIndex = end;
+  });
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts;
+}
 
 interface Props {
   apiKey: string;
@@ -109,7 +129,9 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
     // own badges below — leaving them in the prose too just repeats the
     // same information a second time, which for a description that's
     // *entirely* tag lines reads as a duplicated description.
-    const strippedHtml = rawDescription ? stripRecognizedLines(sanitizeDescriptionHtml(rawDescription)) : '';
+    const strippedHtml = rawDescription
+      ? linkifyUrls(stripRecognizedLines(sanitizeDescriptionHtml(rawDescription)))
+      : '';
     setSelectedEvent({
       title: cleanTitle,
       start: event.start as Date,
@@ -247,10 +269,10 @@ export default function EventCalendar({apiKey}: Props): React.ReactElement {
                 </span>
               )}
               {selectedEvent.metadata.contacto && (
-                <span className={styles.badge}>Contacto: {selectedEvent.metadata.contacto}</span>
+                <span className={styles.badge}>Contacto: {renderWithLinks(selectedEvent.metadata.contacto)}</span>
               )}
             </div>
-            {selectedEvent.location && <p>📍 {selectedEvent.location}</p>}
+            {selectedEvent.location && <p>📍 {renderWithLinks(selectedEvent.location)}</p>}
             {selectedEvent.instagramEmbedUrl && (
               <iframe
                 key={selectedEvent.instagramEmbedUrl}

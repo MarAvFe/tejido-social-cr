@@ -1,4 +1,5 @@
 import DOMPurify from 'dompurify';
+import {findUrls} from '@site/src/utils/linkify';
 
 /**
  * Google Calendar's description field comes back as real HTML (its own web
@@ -28,6 +29,55 @@ function newlinesToBreaks(text: string): string {
 /** Safe HTML for on-page rendering via dangerouslySetInnerHTML. */
 export function sanitizeDescriptionHtml(rawDescription: string): string {
   return DOMPurify.sanitize(newlinesToBreaks(rawDescription), {ALLOWED_TAGS, ALLOWED_ATTR});
+}
+
+/**
+ * Plain-text URLs (Zoom, Meet, a Google Form, a second Instagram link —
+ * anything a manager pastes without using Google Calendar's own "insert
+ * link" formatting) show up as inert text otherwise. Walks the already-
+ * sanitized HTML's text nodes and wraps any URL found in a real <a>,
+ * skipping text that's already inside a link so an existing one is never
+ * double-wrapped.
+ */
+export function linkifyUrls(html: string): string {
+  const container = document.createElement('div');
+  container.innerHTML = html;
+
+  const textNodes: Text[] = [];
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+  let node: Node | null;
+  while ((node = walker.nextNode())) {
+    if (!node.parentElement?.closest('a')) {
+      textNodes.push(node as Text);
+    }
+  }
+
+  for (const textNode of textNodes) {
+    const text = textNode.textContent || '';
+    const matches = findUrls(text);
+    if (matches.length === 0) continue;
+
+    const fragment = document.createDocumentFragment();
+    let lastIndex = 0;
+    for (const {start, end, url} of matches) {
+      if (start > lastIndex) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+      }
+      const a = document.createElement('a');
+      a.href = url;
+      a.textContent = url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      fragment.appendChild(a);
+      lastIndex = end;
+    }
+    if (lastIndex < text.length) {
+      fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+    }
+    textNode.parentNode?.replaceChild(fragment, textNode);
+  }
+
+  return container.innerHTML;
 }
 
 /** Plain text for contexts that can't render HTML (the .ics file, the Google "add event" link). */

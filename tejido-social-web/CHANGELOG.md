@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Plain-text URLs in event descriptions, location, and contact fields (Zoom/Meet links, forms, a second Instagram link — anything pasted without Google Calendar's own "insert link" formatting) are now rendered as clickable links (`src/utils/linkify.ts`, used by `richText.ts`'s `linkifyUrls` for HTML descriptions and directly in `EventCalendar` for plain-text fields).
+
 ## [0.6.1] - 2026-09-04
 
 ### Added
