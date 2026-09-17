@@ -28,6 +28,7 @@ Las iniciativas se agrupan bajo el [pilar de desarrollo](../../../../organismos/
 | Iniciativa | Estado |
 | --- | --- |
 | **[Buses de Sabanilla](./buses-sabanilla.md)** | En formulación — alcance sin definir |
+| **[San Pedro en Bus](./san-pedro-en-bus.md)** | En desarrollo activo (UAT) — fuera del proceso formal del comité, pendiente de alineación |
 | Techo para paradas de bus | Ilustrativa — ver [La historia de Angélica](../../../../tutorials/historia-de-angelica.md) |
 
 ### [Participación y Organización Comunitaria](../../../../organismos/pilares-desarrollo/participacion-organizacion.md)
@@ -40,8 +41,10 @@ Las iniciativas se agrupan bajo el [pilar de desarrollo](../../../../organismos/
 
 Los demás pilares ([Ambientes Saludables y Espacios Públicos](../../../../organismos/pilares-desarrollo/ambientes-espacios-publicos.md), [Cultura, Deporte y Recreación](../../../../organismos/pilares-desarrollo/cultura-deporte-recreacion.md), [Cuidados e Inclusión](../../../../organismos/pilares-desarrollo/cuidados-inclusion.md)) todavía no tienen iniciativas registradas en Sabanilla.
 
-## Qué significa "en formulación"
+## Qué significa cada estado
 
-Las tres iniciativas activas están en etapa temprana: el comité definió el tema y quién la impulsa, pero todavía no el alcance final, los recursos ni las fechas. Cada página lo dice campo por campo — lo que está decidido aparece como decidido, y lo que falta aparece como pendiente. Se actualizan conforme el comité avance, no antes.
+Las tres primeras iniciativas están **en formulación**: el comité definió el tema y quién la impulsa, pero todavía no el alcance final, los recursos ni las fechas. Cada página lo dice campo por campo — lo que está decidido aparece como decidido, y lo que falta aparece como pendiente. Se actualizan conforme el comité avance, no antes.
+
+**San Pedro en Bus** es distinta: no nació del proceso del comité, sino de una persona afiliada que ya construyó y mantiene la herramienta por su cuenta. Está **en desarrollo activo**, más avanzada en el sentido de que ya funciona, pero le falta lo que a las otras tres les sobra — pasar por la presentación formal ante la coordinación distrital. Ver su ficha para el detalle.
 
 _El comité tiene menos de un año de constituido — ver [CEC Ampliado](../../../../organismos/cec-ampliado.md) para el estado general de los comités distritales del cantón._

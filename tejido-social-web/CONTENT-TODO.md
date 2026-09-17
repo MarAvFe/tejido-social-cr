@@ -112,6 +112,12 @@ Was an open question; **decided 2026-07-29.** They are the same thing, and "comi
 
 Still unplaced from the same session: "puntos abstractos del Parque del Este" — too thin to place, needs the committee to say what it means.
 
+## Pending intake — San Pedro en Bus initiative (2026-09-17)
+
+Source: chat request, describing an already-built citizen bus-reporting app (`sanpedroenbus.vercel.app`) owned/maintained by Cris, a Sabanilla-affiliated person, plus follow-up clarifications on scope, deploy status, and next steps.
+
+- **I4 — San Pedro en Bus** (`iniciativas/san-pedro-en-bus.md`). Pilar: Movilidad y Derecho a la Ciudad. **Different in kind from I1–I3**: it wasn't proposed to the committee and routed through `tutorials/desarrollar-iniciativa-distrital.md` — it's a working tool an affiliated person built independently, being documented here specifically because it covers a route named Sabanilla and its owner is from the district. State is "en desarrollo activo (UAT)", explicitly flagged as pending the same formal presentation/alignment step the other three already have. **Do not silently promote this to "asignado por la coordinación"** in a future edit — that step (UAT + formal alignment) is the openly-stated blocker, not a formality already cleared. Cross-linked both ways with I2 (Buses de Sabanilla) since they're easy to confuse — I4 is a broader-scope tool covering 9 San Pedro-corridor routes (of which Sabanilla is one), I2 is a not-yet-scoped committee project about Sabanilla's service specifically. `iniciativas/index.md`'s closing note was split into two paragraphs (one for the "en formulación" three, one for I4) since the old single paragraph claimed all active initiatives were early-stage with no built product, which stopped being true.
+
 ## Pending intake — 2026-08-28 municipal orientation session (Montes de Oca)
 
 Source: orientation session for Montes de Oca militancia, facilitated by the Síndico por San Pedro al 2026, 2026-08-28 (`raw data/minuta-28ago26-organizacion-municipal.md`). What's saved so far is a session summary handed over by the user, not the full recording — **the full transcript is still pending.** Privacy note: the raw source names real individuals; per the standing rule at the top of this file, no personal name may appear in generated articles — cite by public office/role only (e.g. "Síndico por San Pedro al 2026"), see `VOICE.md`.

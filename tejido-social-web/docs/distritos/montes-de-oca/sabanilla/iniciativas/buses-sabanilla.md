@@ -40,6 +40,7 @@ La priorización sigue el mismo criterio que el resto del distrito: ver [Cómo s
 
 ## Ver también
 
+- **[San Pedro en Bus](./san-pedro-en-bus.md)** — otra iniciativa de movilidad del distrito, distinta de esta: una herramienta de reportes ya construida (fuera del comité) que cubre la ruta a Sabanilla junto con otras 8 rutas del corredor de San Pedro. Podría ser una fuente de datos útil una vez que esta iniciativa defina su alcance.
 - **[Techo para paradas de bus](../../../../tutorials/historia-de-angelica.md)** — ejemplo narrado de una iniciativa de movilidad del distrito, útil como referencia de escala.
 - **[Cómo Desarrollar una Iniciativa en mi Distrito](../../../../tutorials/desarrollar-iniciativa-distrital.md)** — el proceso y la ficha.
 - **[Iniciativas de Sabanilla](./index.md)** — el resto de las iniciativas del distrito.
