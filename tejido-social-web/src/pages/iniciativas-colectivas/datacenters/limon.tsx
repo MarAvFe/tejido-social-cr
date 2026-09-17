@@ -1,5 +1,12 @@
 import type {ReactNode} from 'react';
-import {PortalLayout, ResourceSection, ResourceLink, MapEmbed} from '@site/src/components/IniciativasColectivas';
+import Heading from '@theme/Heading';
+import {
+  PortalLayout,
+  ResourceSection,
+  ResourceLink,
+  NavCard,
+  MapEmbed,
+} from '@site/src/components/IniciativasColectivas';
 
 export default function DatacentersLimon(): ReactNode {
   return (
@@ -21,6 +28,17 @@ export default function DatacentersLimon(): ReactNode {
           label="La Nación: cobertura del proyecto"
         />
       </ResourceSection>
+      <Heading as="h2">Análisis de la comunidad</Heading>
+      <NavCard
+        to="/iniciativas-colectivas/datacenters/limon-informe-empleos"
+        title="Informe: empleo y números"
+        description="Dossier de investigación sobre cuántos empleos permanentes generaría el proyecto, frente a la inversión, el consumo de agua/energía y los requisitos técnicos de esos puestos."
+      />
+      <NavCard
+        to="/iniciativas-colectivas/datacenters/limon-volante-empleos"
+        title="Volante: ¿empleo para quién?"
+        description='Versión corta y de tono satírico del informe anterior, pensada para compartir. "Sí, va a generar empleos. La pregunta es: ¿va a ser el tuyo?"'
+      />
       <MapEmbed
         title="Ubicación de la finca (extraoficial)"
         lat={9.964433307590527}

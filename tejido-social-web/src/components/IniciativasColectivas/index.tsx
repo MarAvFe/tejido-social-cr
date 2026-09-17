@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import {extractInstagramEmbedUrl} from '@site/src/utils/instagramEmbed';
 import styles from './styles.module.css';
@@ -110,6 +111,38 @@ export function ResourceLink({href, label, placeholder}: ResourceLinkProps): Rea
   );
 }
 
+interface ArticleSummaryProps {
+  /** Outlet name shown as a small label above the title, e.g. "CNN", "CBS News". */
+  source: string;
+  /** Path under static/, e.g. "/img/press-sources/cnn.png" — the outlet's own logo/favicon, not an article photo (those are copyrighted press/wire photos, not licensed for reuse here). */
+  logo: string;
+  /** Spanish translation of the original (foreign-language) headline. */
+  title: string;
+  /** Summary paragraph in Spanish — not a translation of the lede, a plain restatement of the article's content. */
+  summary: string;
+  href: string;
+}
+
+/** A press article referenced in translation: outlet logo, translated title, summary paragraph, then a link to the original. Richer than ResourceLink because the source isn't in Spanish and readers need the gist before deciding to click through. */
+export function ArticleSummary({source, logo, title, summary, href}: ArticleSummaryProps): ReactNode {
+  const logoUrl = useBaseUrl(logo);
+  return (
+    <article className={styles.articleCard}>
+      <div className={styles.articleSourceRow}>
+        <img src={logoUrl} alt="" className={styles.articleSourceLogo} />
+        <p className={styles.articleSource}>{source}</p>
+      </div>
+      <Heading as="h3" className={styles.articleTitle}>
+        {title}
+      </Heading>
+      <p className={styles.articleSummary}>{summary}</p>
+      <a href={href} target="_blank" rel="noreferrer" className={styles.articleLink}>
+        Leer el artículo original →
+      </a>
+    </article>
+  );
+}
+
 interface ResourceSectionProps {
   title: string;
   children: ReactNode;
@@ -123,6 +156,58 @@ export function ResourceSection({title, children}: ResourceSectionProps): ReactN
       <div className={styles.resourceList}>{children}</div>
     </section>
   );
+}
+
+/**
+ * Renders `**bold**` spans in an otherwise plain string as <strong>. Lets
+ * long-form article content be authored as near-verbatim strings (matching
+ * how the source drafts in `raw data/` are written) instead of hand-built
+ * JSX per sentence.
+ */
+export function renderInlineMarkdown(text: string): ReactNode {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 === 1 ? <strong key={i}>{part}</strong> : part));
+}
+
+interface ProseProps {
+  children: ReactNode;
+}
+
+/** Wraps long-form article body content (headings, paragraphs, lists) with readable measure and spacing. */
+export function Prose({children}: ProseProps): ReactNode {
+  return <div className={styles.prose}>{children}</div>;
+}
+
+interface ArticleMetaProps {
+  children: ReactNode;
+}
+
+/** An italic byline/context line under an article's title, e.g. naming the source project or a "tono satírico" note. */
+export function ArticleMeta({children}: ArticleMetaProps): ReactNode {
+  return <p className={styles.articleMeta}>{children}</p>;
+}
+
+interface CalloutProps {
+  title: string;
+  children: ReactNode;
+}
+
+/** A bordered aside for caveats/disclaimers within an article — data-quality warnings, "this is satire" notes. Reuses the placeholder/pending color language since both signal "read this before trusting the rest." */
+export function Callout({title, children}: CalloutProps): ReactNode {
+  return (
+    <aside className={styles.callout}>
+      <p className={styles.calloutTitle}>{title}</p>
+      <div className={styles.calloutBody}>{children}</div>
+    </aside>
+  );
+}
+
+interface SourcesNoteProps {
+  children: ReactNode;
+}
+
+/** Closing "Fuentes" line for an article — small, muted, set off by a rule. */
+export function SourcesNote({children}: SourcesNoteProps): ReactNode {
+  return <p className={styles.sourcesNote}>{children}</p>;
 }
 
 interface InstagramPostEmbedProps {

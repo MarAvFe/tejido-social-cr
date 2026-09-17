@@ -19,6 +19,7 @@
   --portal-card-border: #cfe3e0;
   --portal-placeholder-color: #9a5b00;
   --portal-placeholder-border: #e0b070;
+  --portal-callout-background: #fdf3e4;
 
   /* Header carries the accent as a solid fill in light mode (dark text
      on bright teal, like FA yellow's light-mode use in custom.css). */
@@ -38,6 +39,7 @@
   --portal-card-border: #1f4d46;
   --portal-placeholder-color: #f2b866;
   --portal-placeholder-border: #6b4a1f;
+  --portal-callout-background: #2b2013;
 
   /* Dark mode flips the pattern (again matching FA yellow's own contract):
      a full-bleed bright teal band reads as a highlighter next to a dark
@@ -154,6 +156,100 @@
   border-radius: 0.5rem;
 }
 
+/* ---------- Long-form articles (investigation dossiers, flyers) ---------- */
+
+.articleMeta {
+  font-style: italic;
+  opacity: 0.85;
+  max-width: 760px;
+  margin: -0.5rem 0 2rem;
+}
+
+.prose {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.prose h2 {
+  margin: 2.5rem 0 1rem;
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose h3 {
+  margin: 1.75rem 0 0.75rem;
+  color: var(--portal-color-primary-dark);
+}
+
+:global([data-theme='dark']) .prose h3 {
+  color: var(--portal-color-primary);
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose li:last-child {
+  margin-bottom: 0;
+}
+
+.prose strong {
+  color: var(--portal-color-primary-dark);
+}
+
+:global([data-theme='dark']) .prose strong {
+  color: var(--portal-color-primary);
+}
+
+.callout {
+  border: 1.5px solid var(--portal-placeholder-border);
+  background: var(--portal-callout-background);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  max-width: 760px;
+}
+
+.calloutTitle {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: var(--portal-placeholder-color);
+}
+
+.calloutBody p,
+.calloutBody ul {
+  margin: 0 0 0.75rem;
+  line-height: 1.6;
+}
+
+.calloutBody p:last-child,
+.calloutBody ul:last-child {
+  margin-bottom: 0;
+}
+
+.sourcesNote {
+  max-width: 760px;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--portal-card-border);
+  opacity: 0.8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .mapEmbed {
   display: block;
   width: 100%;
@@ -195,6 +291,63 @@
 .resourceLinkPlaceholder:hover {
   background: var(--portal-placeholder-border);
   color: var(--portal-card-background);
+}
+
+/* ---------- Article summaries (translated press coverage) ---------- */
+
+.articleCard {
+  background: var(--portal-card-background);
+  border: 1px solid var(--portal-card-border);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.articleSourceRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.articleSourceLogo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 0.2rem;
+  flex-shrink: 0;
+}
+
+.articleSource {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--portal-color-primary-dark);
+}
+
+:global([data-theme='dark']) .articleSource {
+  color: var(--portal-color-primary);
+}
+
+.articleTitle {
+  margin-bottom: 0.5rem;
+}
+
+.articleSummary {
+  margin: 0 0 0.75rem;
+  opacity: 0.85;
+}
+
+.articleLink {
+  color: var(--portal-color-primary-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+:global([data-theme='dark']) .articleLink {
+  color: var(--portal-color-primary);
 }
 
 .placeholderBadge {
