@@ -6,6 +6,7 @@ import {
   ResourceLink,
   NavCard,
   MapEmbed,
+  FacebookPostEmbed,
 } from '@site/src/components/IniciativasColectivas';
 
 export default function DatacentersLimon(): ReactNode {
@@ -16,11 +17,7 @@ export default function DatacentersLimon(): ReactNode {
       tagline="Enlaces y recursos sobre el proyecto de centro de datos en Limón. Página en construcción — el contexto local todavía no está redactado."
       backTo={{to: '/iniciativas-colectivas/datacenters/', label: 'Data centers en Costa Rica'}}>
       <ResourceSection title="Redes sociales">
-        <ResourceLink href="#" label="Instagram" placeholder />
-        <ResourceLink href="#" label="X / Twitter" placeholder />
-      </ResourceSection>
-      <ResourceSection title="Documentos y recursos">
-        <ResourceLink href="#" label="Carpeta de documentos (Mega)" placeholder />
+        <FacebookPostEmbed url="https://www.facebook.com/share/p/1K1StkQAAS/" />
       </ResourceSection>
       <ResourceSection title="Cobertura de prensa">
         <ResourceLink
@@ -29,6 +26,11 @@ export default function DatacentersLimon(): ReactNode {
         />
       </ResourceSection>
       <Heading as="h2">Análisis de la comunidad</Heading>
+      <NavCard
+        to="/iniciativas-colectivas/datacenters/limon-quantum-quienes-son"
+        title="¿Quién está detrás de Quantum?"
+        description="Investigación sobre la empresa y las personas detrás del proyecto: la zona franca que perdieron ante COMEX pero siguen anunciando, dudas sobre el aval ambiental, y lo que se sabe públicamente de sus responsables."
+      />
       <NavCard
         to="/iniciativas-colectivas/datacenters/limon-informe-empleos"
         title="Informe: empleo y números"

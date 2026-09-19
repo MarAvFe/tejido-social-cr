@@ -17,10 +17,6 @@ export default function DatacentersBagaces(): ReactNode {
           href="https://docs.google.com/forms/d/e/1FAIpQLSc9_9ZZ8anwzzv2Tg3x5DK-oGl9CExUB3SApfEmUpgBZb7tUQ/viewform?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
           label="Quiero colaborar"
         />
-        <ResourceLink href="#" label="Carpeta de documentos (Mega)" placeholder />
-      </ResourceSection>
-      <ResourceSection title="Cobertura de prensa">
-        <ResourceLink href="#" label="Artículo de referencia" placeholder />
       </ResourceSection>
     </PortalLayout>
   );

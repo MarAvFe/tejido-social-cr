@@ -12,6 +12,11 @@ export default function IniciativasColectivas(): ReactNode {
         title="Data centers en Costa Rica"
         description="Monitoreo y recursos comunitarios sobre proyectos de centros de datos, organizados por localidad."
       />
+      <NavCard
+        to="/iniciativas-colectivas/consignas"
+        title="Consignas"
+        description="Consignas y cánticos para llevar a manifestaciones y actividades de organización comunitaria, etiquetadas por tema."
+      />
     </PortalLayout>
   );
 }

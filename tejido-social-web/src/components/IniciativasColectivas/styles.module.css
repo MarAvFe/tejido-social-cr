@@ -156,6 +156,15 @@
   border-radius: 0.5rem;
 }
 
+.facebookThumb {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  height: 600px;
+  border: 1px solid var(--portal-card-border);
+  border-radius: 0.5rem;
+}
+
 /* ---------- Long-form articles (investigation dossiers, flyers) ---------- */
 
 .articleMeta {
@@ -359,4 +368,46 @@
   color: var(--portal-card-background);
   border-radius: 999px;
   padding: 0.15rem 0.5rem;
+}
+
+/* ---------- Consignas (chants/slogans) ---------- */
+
+.consignaCard {
+  background: var(--portal-card-background);
+  border: 1px solid var(--portal-card-border);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  max-width: 760px;
+}
+
+.consignaTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.tagBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--portal-color-primary);
+  color: var(--portal-color-on-primary);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+
+.consignaText {
+  margin: 0;
+  white-space: pre-line;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--portal-color-primary-dark);
+}
+
+:global([data-theme='dark']) .consignaText {
+  color: var(--portal-color-primary);
 }

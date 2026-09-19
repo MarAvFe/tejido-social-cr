@@ -229,6 +229,53 @@ export function InstagramPostEmbed({url}: InstagramPostEmbedProps): ReactNode {
   );
 }
 
+interface TagBadgeProps {
+  label: string;
+}
+
+/** A small pill labeling an item's category (e.g. "datacenters") — used to filter/scan a growing list at a glance. */
+export function TagBadge({label}: TagBadgeProps): ReactNode {
+  return <span className={styles.tagBadge}>{label}</span>;
+}
+
+interface ConsignaProps {
+  /** The chant text itself, verbatim — line breaks are preserved as written. */
+  children: string;
+  tags: string[];
+}
+
+/** One chant/slogan card for a protest or campaign, tagged by topic (e.g. "datacenters") so a growing list can later be filtered by tag. */
+export function Consigna({children, tags}: ConsignaProps): ReactNode {
+  return (
+    <article className={styles.consignaCard}>
+      <div className={styles.consignaTags}>
+        {tags.map((tag) => (
+          <TagBadge key={tag} label={tag} />
+        ))}
+      </div>
+      <p className={styles.consignaText}>{children}</p>
+    </article>
+  );
+}
+
+interface FacebookPostEmbedProps {
+  /** Full Facebook post URL — a permalink or a `/share/p/...` share link both work. */
+  url: string;
+}
+
+/** Renders a public Facebook post via Facebook's own no-auth Page Plugin iframe (`plugins/post.php`) — same no-API-key approach as InstagramPostEmbed. */
+export function FacebookPostEmbed({url}: FacebookPostEmbedProps): ReactNode {
+  const embedUrl = `https://www.facebook.com/plugins/post.php?href=${encodeURIComponent(url)}&show_text=true&width=500`;
+  return (
+    <iframe
+      src={embedUrl}
+      className={styles.facebookThumb}
+      loading="lazy"
+      title="Publicación de Facebook"
+    />
+  );
+}
+
 interface MapEmbedProps {
   title: string;
   lat: number;
