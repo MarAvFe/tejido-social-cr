@@ -27,6 +27,11 @@ export default function Datacenters(): ReactNode {
         title="Bagaces"
         description="Recursos y enlaces sobre proyectos de centros de datos en Bagaces."
       />
+      <NavCard
+        to="/iniciativas-colectivas/datacenters/mapa-regional"
+        title="Mapa: data centers en Centroamérica"
+        description="Ocho proyectos identificados en cinco países, con una estimación de consumo de agua en millones de litros desde enero de 2026 donde la capacidad publicada lo permite."
+      />
       <ResourceSection title="Cobertura de prensa internacional">
         <ArticleSummary
           source="WRI (World Resources Institute)"
