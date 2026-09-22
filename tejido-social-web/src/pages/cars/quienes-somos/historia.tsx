@@ -31,30 +31,36 @@ export default function Historia(): ReactNode {
   return (
     <CarsLayout
       title="Historia"
-      description="De dónde viene la Colectiva Autónoma por la Resistencia Social (CARS): de la defensa del ICE al Plantón por la Justicia Democrática y la Faroleada por la Democracia de 2026."
-      tagline="La colectiva no nació de una asamblea fundacional, sino de una pelea concreta. En seis meses
-        pasó de acompañar la defensa del ICE a convocar dos de las movilizaciones ciudadanas más
-        grandes del año."
+      description="De dónde viene la Colectiva Autónoma por la Resistencia Social (CARS): de un chat que quedó de la defensa del ICE al Plantón por la Justicia Democrática y la Faroleada por la Democracia de 2026."
+      tagline="La colectiva no nació de una asamblea fundacional, sino de un chat que quedó de una pelea
+        concreta en la que todavía no existía. En seis meses pasó de ser ese chat a convocar dos de
+        las movilizaciones ciudadanas más grandes del año."
       backTo={{to: '/cars/quienes-somos/', label: 'Quiénes somos'}}>
       <Section title="Línea de tiempo">
         <Timeline>
-          {/* TODO: confirmar la fecha exacta de marzo y cuál fue la primera
-              actividad propia de la colectiva dentro de la campaña del ICE. */}
-          <TimelineItem date="Marzo de 2026" dateUnconfirmed title="Empieza por la defensa del ICE">
+          {/* TODO: confirmar la fecha exacta en que surgió el chat de coordinación
+              y en qué momento, meses después, ese chat se convirtió en la colectiva. */}
+          <TimelineItem date="Marzo de 2026" dateUnconfirmed title="El chat que la precede: la defensa del ICE">
             <p>
-              La colectiva surge para coordinar la respuesta ciudadana al proyecto de armonización
-              del sistema eléctrico nacional (expediente 23.414), que sindicatos y organizaciones
-              sociales señalaron como una puerta a la privatización del servicio eléctrico. Ese año
-              el proyecto provocó{' '}
+              La colectiva todavía no existía. El proyecto de armonización del sistema eléctrico
+              nacional (expediente 23.414) — que sindicatos y organizaciones sociales señalaron como
+              una puerta a la privatización del servicio eléctrico — provocó ese año{' '}
               <Fuente href={SOURCES.nacionIce}>
                 movilizaciones frente a la Asamblea Legislativa
               </Fuente>{' '}
-              de federaciones estudiantiles, la ANEP y los{' '}
-              <Fuente href={SOURCES.monumentalIce}>sindicatos del ICE</Fuente>.
+              impulsadas sobre todo por el movimiento estudiantil autónomo, con presencia puntual de
+              la ANEP y de los <Fuente href={SOURCES.monumentalIce}>sindicatos del ICE</Fuente>.
             </p>
             <p>
-              No se formó primero y buscó una causa después: se formó porque hacía falta coordinar a
-              gente que ya estaba preocupada por lo mismo y no tenía dónde encontrarse.
+              Algunas de las personas que hoy integran la colectiva estuvieron ahí — pero no como
+              colectiva, porque todavía no existía: participaron a título individual, cada una desde
+              su propia organización. De esa articulación nació un chat de coordinación, y solo meses
+              después, de ese chat, surgió la colectiva, que heredó el espacio y lo sigue usando.
+            </p>
+            <p>
+              Ese trabajo de coordinación se organizó primero como una comisión de comunicación, que
+              más adelante se convirtió en el grupo de logística del Plantón por la Justicia
+              Democrática.
             </p>
           </TimelineItem>
 
@@ -102,22 +108,24 @@ export default function Historia(): ReactNode {
 
       <Section title="Lo que quedó del camino">
         <p>
-          Entre marzo y setiembre la colectiva pasó de coordinar una sola pelea a acompañar varias. La
-          defensa del ICE y la defensa de la independencia judicial parecen temas distintos, y lo son
-          — pero la gente que se organizó por el primero descubrió que el segundo la interpelaba
-          igual, y que las organizaciones que enfrentaban uno y otro necesitaban exactamente lo mismo:
-          coordinación, formación y difusión.
+          Entre marzo y setiembre, ese espacio pasó de ser un chat de coordinación entre personas de
+          distintas organizaciones a convocar, ya como colectiva, dos de las movilizaciones ciudadanas
+          más grandes del año. La defensa del ICE y la defensa de la independencia judicial parecen
+          temas distintos, y lo son — pero la gente que coordinó la primera desde sus propias
+          organizaciones descubrió que la segunda la interpelaba igual, y que las organizaciones que
+          enfrentaban una y otra necesitaban exactamente lo mismo: coordinación, formación y difusión.
         </p>
         <p>
-          Nadie estaba sosteniendo ese trabajo común. Esa es la razón de ser del modelo actual.
+          Nadie estaba sosteniendo ese trabajo común. Por eso nació la colectiva, y esa es la razón de
+          ser del modelo actual.
         </p>
       </Section>
 
       <Callout title="Sobre estos datos">
         <p>
           Las fechas y los hechos de agosto y setiembre están respaldados por la cobertura de prensa
-          enlazada en cada entrada. La fecha de marzo todavía está por confirmar y aparece marcada
-          como tal.
+          enlazada en cada entrada. La fecha de marzo — cuándo surgió el chat de coordinación del que
+          más tarde nació la colectiva — todavía está por confirmar y aparece marcada como tal.
         </p>
       </Callout>
     </CarsLayout>

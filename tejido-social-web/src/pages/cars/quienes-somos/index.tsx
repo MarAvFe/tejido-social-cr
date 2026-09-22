@@ -27,13 +27,14 @@ export default function QuienesSomos(): ReactNode {
         intro="La colectiva no empezó como una idea sobre cómo debería organizarse la sociedad civil.
           Empezó por una pelea concreta.">
         <p>
-          CARS se formó en marzo de 2026 para coordinar la respuesta ciudadana al proyecto de
-          armonización del sistema eléctrico nacional. Hacía falta juntar a gente que ya estaba
-          preocupada por lo mismo y no tenía dónde encontrarse — y eso, hacer que la gente organizada
-          se encuentre, terminó siendo el trabajo permanente.
+          CARS todavía no existía en marzo de 2026, cuando el proyecto de armonización del sistema
+          eléctrico nacional generó una respuesta ciudadana. Personas de distintas organizaciones se
+          coordinaron entre sí, cada una a título individual, en un chat compartido — y meses
+          después, de ese chat, nació la colectiva: hacía falta juntar a gente que ya estaba
+          organizada y no tenía dónde encontrarse, y eso terminó siendo el trabajo permanente.
         </p>
         <p>
-          De ahí salió el <strong>Plantón por la Justicia Democrática</strong> del 6 de agosto, con
+          De ese trabajo salió el <strong>Plantón por la Justicia Democrática</strong> del 6 de agosto, con
           más de 20 000 personas en la Plaza de la Democracia y plantones simultáneos en catorce
           comunidades más, y la <strong>Faroleada por la Democracia</strong> del 14 de setiembre, en
           31 cantones. Para entonces la causa ya no era solo el ICE: era la independencia judicial y

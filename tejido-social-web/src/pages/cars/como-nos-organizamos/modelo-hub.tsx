@@ -12,9 +12,11 @@ export default function ModeloHub(): ReactNode {
       backTo={{to: '/cars/', label: 'CARS'}}>
       <Section title="El problema que tratamos de resolver">
         <p>
-          Lo aprendimos haciéndolo. CARS se formó en marzo de 2026 para coordinar la respuesta a un
-          proyecto puntual — la «armonización» del ICE — y en el camino se topó con que el problema
-          de fondo era otro: había mucha gente organizada que no se conocía entre sí.
+          Lo aprendimos haciéndolo. En marzo de 2026, durante la respuesta ciudadana a un proyecto
+          puntual — la «armonización» del ICE —, personas de distintas organizaciones se coordinaron
+          en un chat compartido, sin ser todavía una colectiva. CARS nació de ese chat meses después,
+          y en el camino se topó con que el problema de fondo era otro: había mucha gente organizada
+          que no se conocía entre sí.
         </p>
         <p>
           En Costa Rica hay sindicatos, asociaciones de desarrollo, colectivas de barrio, comités
