@@ -229,6 +229,18 @@ export function InstagramPostEmbed({url}: InstagramPostEmbedProps): ReactNode {
   );
 }
 
+interface FlyerImageProps {
+  /** Path under static/, e.g. "/img/datacenters/bagaces-volante-1.png". */
+  src: string;
+  alt: string;
+}
+
+/** A community flyer/volante page, shown as an image at full width — documents campaign material as it was shared, rather than retyping it. */
+export function FlyerImage({src, alt}: FlyerImageProps): ReactNode {
+  const url = useBaseUrl(src);
+  return <img src={url} alt={alt} className={styles.flyerImage} loading="lazy" />;
+}
+
 interface TagBadgeProps {
   label: string;
 }
