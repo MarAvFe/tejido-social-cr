@@ -60,15 +60,19 @@ export default function Historia(): ReactNode {
               ese chat, surgió la colectiva, que heredó el espacio y lo sigue usando.
             </p>
             <p>
-              Ese trabajo de coordinación se organizó primero como una comisión de comunicación, que
-              más adelante se convirtió en el grupo de logística del Plantón por la Justicia
-              Democrática.
+              Ese trabajo de coordinación se organizó primero como una comisión de comunicación.
+              Quienes integraban ese equipo se sumaron al llamado de forma orgánica, como respuesta a
+              la disconformidad social frente a los recortes y ataques constantes de sucesivos
+              gobiernos neoliberales a distintos sectores — y ese trabajo terminó por concluir en la
+              conformación de la colectiva misma: un grupo de personas con ganas de ver cambios
+              tangibles en la sociedad, la Colectiva Autónoma por la Resistencia Social.
             </p>
           </TimelineItem>
 
           <TimelineItem date="6 de agosto de 2026" title="Plantón por la Justicia Democrática">
             <p>
-              La colectiva convocó el{' '}
+              La organización de base de este plantón fue el debut de la colectiva como tal. La
+              colectiva convocó el{' '}
               <Fuente href={SOURCES.delfinoPlanton}>Plantón por la Justicia Democrática</Fuente> en
               la Plaza de la Democracia, de 4:00 p. m. a 8:00 p. m., en defensa de la independencia
               judicial y la separación de poderes — en respuesta a la acusación del Ejecutivo de que
