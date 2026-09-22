@@ -14,10 +14,10 @@ export default function ModeloHub(): ReactNode {
         <p>
           Lo aprendimos haciéndolo. En marzo de 2026, durante la respuesta ciudadana a un proyecto
           puntual — la «armonización» del ICE —, personas del movimiento estudiantil autónomo (MEA),
-          el FNL y la red de solidaridad con Palestina se coordinaron en un chat compartido creado
-          por el MEA, sin ser todavía una colectiva. CARS nació de ese chat meses después, y en el
-          camino se topó con que el problema de fondo era otro: había mucha gente organizada que no
-          se conocía entre sí.
+          el Frente Nacional de Lucha (FNL) y la red de solidaridad con Palestina se coordinaron en
+          un chat compartido creado por el MEA, sin ser todavía una colectiva. CARS nació de ese chat
+          meses después, y en el camino se topó con que el problema de fondo era otro: había mucha
+          gente organizada que no se conocía entre sí.
         </p>
         <p>
           En Costa Rica hay sindicatos, asociaciones de desarrollo, colectivas de barrio, comités

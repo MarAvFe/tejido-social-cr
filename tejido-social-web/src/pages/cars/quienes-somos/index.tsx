@@ -29,10 +29,11 @@ export default function QuienesSomos(): ReactNode {
         <p>
           CARS todavía no existía en marzo de 2026, cuando el proyecto de armonización del sistema
           eléctrico nacional generó una respuesta ciudadana. Personas de organizaciones como el
-          movimiento estudiantil autónomo (MEA), el FNL y la red de solidaridad con Palestina se
-          coordinaron entre sí, cada una a título individual, en un chat compartido creado por el
-          MEA — y meses después, de ese chat, nació la colectiva: hacía falta juntar a gente que ya
-          estaba organizada y no tenía dónde encontrarse, y eso terminó siendo el trabajo permanente.
+          movimiento estudiantil autónomo (MEA), el Frente Nacional de Lucha (FNL) y la red de
+          solidaridad con Palestina se coordinaron entre sí, cada una a título individual, en un chat
+          compartido creado por el MEA — y meses después, de ese chat, nació la colectiva: hacía
+          falta juntar a gente que ya estaba organizada y no tenía dónde encontrarse, y eso terminó
+          siendo el trabajo permanente.
         </p>
         <p>
           De ese trabajo salió el <strong>Plantón por la Justicia Democrática</strong> del 6 de agosto, con
