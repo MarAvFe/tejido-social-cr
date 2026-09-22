@@ -1,0 +1,812 @@
+/**
+ * CARS — Colectiva Autónoma por la Resistencia Social. A second sub-site under
+ * this domain, independent of both Frente Amplio and Iniciativas Colectivas.
+ * Every color is scoped to `.portal` and its descendants, so the FA yellow
+ * (src/css/custom.css) and the IC teal (components/IniciativasColectivas)
+ * never appear here, and these values never leak back out.
+ *
+ * Palette follows the collective's own logo, which is the Costa Rican flag:
+ * mostly white, red as the action color, navy blue as the structural one.
+ *
+ * Contrast checked directly against the off-white background below:
+ * navy (#1b2a6b) ~10.9:1, red (#b3121f) ~7.0:1 — both past WCAG AA for
+ * body text, not just large text. The logo's brighter flag red (#ce1126)
+ * is ~5.4:1, so it's used for fills and rules, never for small text.
+ */
+
+.portal {
+  --cars-navy: #1b2a6b;
+  --cars-navy-deep: #131d4a;
+  --cars-red: #b3121f;
+  --cars-red-bright: #ce1126;
+  --cars-on-dark: #ffffff;
+  --cars-background: #ffffff;
+  --cars-surface: #f7f8fc;
+  --cars-card-background: #ffffff;
+  --cars-card-border: #d7dcef;
+  --cars-muted-border: #e7eaf5;
+  --cars-placeholder-color: #8a5a00;
+  --cars-placeholder-border: #dfae6d;
+  --cars-callout-background: #fdf4e6;
+
+  /* Light mode puts the flag band at the top: solid navy header with white
+     text, with red reserved for the underline rule and accents below. */
+  --cars-header-background: var(--cars-navy);
+  --cars-header-color: #ffffff;
+  --cars-header-rule: var(--cars-red-bright);
+  --cars-heading-color: var(--cars-navy);
+  --cars-accent-text: var(--cars-red);
+
+  background: var(--cars-background);
+  min-height: 60vh;
+}
+
+:global([data-theme='dark']) .portal {
+  --cars-navy: #93a4e8;
+  --cars-navy-deep: #b6c2f2;
+  --cars-red: #f2808c;
+  --cars-red-bright: #e85a6a;
+  --cars-background: #10131f;
+  --cars-surface: #161b2c;
+  --cars-card-background: #181d30;
+  --cars-card-border: #2a3250;
+  --cars-muted-border: #232a44;
+  --cars-placeholder-color: #f2b866;
+  --cars-placeholder-border: #6b4a1f;
+  --cars-callout-background: #2b2013;
+
+  /* Dark mode keeps the header dark rather than painting a bright navy band
+     across a dark page, and moves the brand color into the text instead —
+     the same inversion the other sub-site's header makes. */
+  --cars-header-background: var(--cars-surface);
+  --cars-header-color: var(--cars-navy-deep);
+  --cars-header-rule: var(--cars-red-bright);
+  --cars-heading-color: var(--cars-navy-deep);
+  --cars-accent-text: var(--cars-red);
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  background: var(--cars-header-background);
+  color: var(--cars-header-color);
+  padding: 2.5rem 0 3rem;
+  border-bottom: 4px solid var(--cars-header-rule);
+}
+
+.headerInner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.headerText {
+  flex: 1;
+  min-width: 0;
+}
+
+.headerLogo {
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* The mark's own ring reads as white-on-navy in light mode, but on the dark
+   header it needs its own disc to stay legible. */
+:global([data-theme='dark']) .headerLogo {
+  background: #ffffff;
+  border-radius: 999px;
+}
+
+.header :global(h1) {
+  color: var(--cars-header-color);
+  margin-bottom: 0.25rem;
+}
+
+.headerEyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.85;
+}
+
+.backLink {
+  display: inline-block;
+  color: var(--cars-header-color);
+  opacity: 0.85;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.backLink:hover {
+  opacity: 1;
+  color: var(--cars-header-color);
+}
+
+.tagline {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.portal main {
+  padding: 2.5rem 0 4rem;
+}
+
+.portal main :global(h2) {
+  color: var(--cars-heading-color);
+}
+
+/* ---------- Inline prose links (press sources, references) ---------- */
+
+/* The site-wide link style (src/css/custom.css) is a near-black text with a
+   yellow highlighter underline, and it's scoped to `.markdown` — which these
+   pages don't use. Without this rule an inline source link inherits only
+   `color: #1a1a1a; text-decoration: none`, i.e. it looks exactly like body
+   text. Sources that don't look clickable may as well not be cited, and an
+   indicator that relies on color alone (or on none at all) fails WCAG 1.4.1 —
+   so these carry a permanent underline, not one that appears on hover.
+
+   Scoped to prose containers rather than `.portal a`, so it never repaints
+   the nav cards, path cards, pill links or CTA buttons, which are styled as
+   whole blocks and already read as clickable. */
+.timelineBody a,
+.section p a,
+.section li a,
+.statementBody a,
+.calloutBody a,
+.committeeDescription a,
+.principleBody a,
+.stepBody a {
+  color: var(--cars-accent-text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.08em;
+  font-weight: 600;
+  transition: color 120ms ease-in-out, background 120ms ease-in-out;
+}
+
+.timelineBody a:hover,
+.section p a:hover,
+.section li a:hover,
+.statementBody a:hover,
+.calloutBody a:hover,
+.committeeDescription a:hover,
+.principleBody a:hover,
+.stepBody a:hover {
+  color: var(--cars-navy);
+  background: var(--cars-surface);
+  text-decoration-thickness: 0.14em;
+}
+
+/* Keyboard focus needs to be visible against both themes. */
+.timelineBody a:focus-visible,
+.section p a:focus-visible,
+.section li a:focus-visible,
+.statementBody a:focus-visible,
+.calloutBody a:focus-visible,
+.committeeDescription a:focus-visible,
+.principleBody a:focus-visible,
+.stepBody a:focus-visible {
+  outline: 2px solid var(--cars-navy);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- Mission / vision statements ---------- */
+
+.statementGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.statement {
+  background: var(--cars-surface);
+  border: 1px solid var(--cars-muted-border);
+  border-left: 4px solid var(--cars-red-bright);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.statementLabel {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cars-accent-text);
+}
+
+.statementBody {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* ---------- Free-standing prose section ---------- */
+
+.section {
+  margin-bottom: 2.5rem;
+  max-width: 760px;
+}
+
+.sectionIntro {
+  line-height: 1.65;
+  margin: 0.75rem 0 1.25rem;
+}
+
+/* ---------- Committees ---------- */
+
+.committeeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.committeeCard {
+  background: var(--cars-card-background);
+  border: 1px solid var(--cars-card-border);
+  border-top: 3px solid var(--cars-navy);
+  border-radius: 0.5rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.committeeName {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--cars-heading-color);
+}
+
+.committeeDescription {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  opacity: 0.85;
+}
+
+/* ---------- Call to action ---------- */
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--cars-red);
+  color: #ffffff;
+  border: 2px solid var(--cars-red);
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 120ms ease-in-out, color 120ms ease-in-out;
+}
+
+.ctaButton:hover {
+  background: transparent;
+  color: var(--cars-accent-text);
+  text-decoration: none;
+}
+
+.ctaNote {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ---------- Nav cards (portal → page) ---------- */
+
+.navCard {
+  display: block;
+  background: var(--cars-card-background);
+  border: 1px solid var(--cars-card-border);
+  border-left: 4px solid var(--cars-navy);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 120ms ease-in-out, transform 120ms ease-in-out;
+}
+
+.navCard:hover {
+  border-left-color: var(--cars-red-bright);
+  transform: translateX(2px);
+  color: inherit;
+  text-decoration: none;
+}
+
+.navCardDisabled {
+  cursor: default;
+  opacity: 0.7;
+  border-style: dashed;
+  border-left-style: solid;
+  border-left-color: var(--cars-placeholder-border);
+}
+
+.navCardDisabled:hover {
+  border-left-color: var(--cars-placeholder-border);
+  transform: none;
+}
+
+.navCardTitle {
+  color: var(--cars-heading-color);
+  margin-bottom: 0.35rem;
+}
+
+.navCardTitle .badge {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.navCardDescription {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.55;
+}
+
+.navCardHost {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--cars-accent-text);
+}
+
+/* ---------- Badges ---------- */
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  background: var(--cars-navy);
+  color: var(--cars-on-dark);
+}
+
+:global([data-theme='dark']) .badge {
+  color: #10131f;
+}
+
+.badgePending {
+  background: var(--cars-placeholder-border);
+  color: #ffffff;
+}
+
+:global([data-theme='dark']) .badgePending {
+  color: #221703;
+}
+
+.badgeExternal {
+  background: var(--cars-red);
+  color: #ffffff;
+}
+
+:global([data-theme='dark']) .badgeExternal {
+  color: #2a0a0e;
+}
+
+/* ---------- Resource links (social media row) ---------- */
+
+.resourceSection {
+  margin-bottom: 2.5rem;
+}
+
+.resourceList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.resourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--cars-navy);
+  color: var(--cars-heading-color);
+  background: var(--cars-card-background);
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 120ms ease-in-out, color 120ms ease-in-out;
+}
+
+.resourceLink:hover {
+  background: var(--cars-navy);
+  color: var(--cars-on-dark);
+  text-decoration: none;
+}
+
+:global([data-theme='dark']) .resourceLink:hover {
+  color: #10131f;
+}
+
+.resourceLinkPlaceholder {
+  border-style: dashed;
+  border-color: var(--cars-placeholder-border);
+  color: var(--cars-placeholder-color);
+}
+
+.resourceLinkPlaceholder:hover {
+  background: var(--cars-placeholder-border);
+  color: var(--cars-card-background);
+}
+
+/* ---------- Cause metadata header ---------- */
+
+.causeMeta {
+  background: var(--cars-surface);
+  border: 1px solid var(--cars-card-border);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 760px;
+}
+
+.causeMetaHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.estadoBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  color: #ffffff;
+}
+
+.estadoActiva {
+  background: #15803d;
+}
+
+.estadoPausa {
+  background: #a16207;
+}
+
+.estadoCerrada {
+  background: #5b6478;
+}
+
+:global([data-theme='dark']) .estadoActiva {
+  background: #22c55e;
+  color: #052e16;
+}
+
+:global([data-theme='dark']) .estadoPausa {
+  background: #eab308;
+  color: #2a1f03;
+}
+
+:global([data-theme='dark']) .estadoCerrada {
+  background: #94a3b8;
+  color: #0f172a;
+}
+
+.causeTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.causeTag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--cars-card-border);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  opacity: 0.85;
+}
+
+.causeMetaList {
+  display: grid;
+  grid-template-columns: minmax(150px, auto) 1fr;
+  gap: 0.5rem 1.25rem;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.causeMetaList dt {
+  font-weight: 700;
+  color: var(--cars-heading-color);
+}
+
+.causeMetaList dd {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.causeHelpList {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.causeHelpList li {
+  margin-bottom: 0.3rem;
+}
+
+.causeHelpList li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 570px) {
+  .causeMetaList {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .causeMetaList dd {
+    margin-bottom: 0.65rem;
+  }
+}
+
+/* ---------- Entry paths (landing page's three doors) ---------- */
+
+.pathGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2.5rem;
+}
+
+.pathCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--cars-card-background);
+  border: 1px solid var(--cars-card-border);
+  border-top: 4px solid var(--cars-red-bright);
+  border-radius: 0.5rem;
+  padding: 1.35rem 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 120ms ease-in-out, box-shadow 120ms ease-in-out;
+}
+
+.pathCard:hover {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(27, 42, 107, 0.12);
+}
+
+:global([data-theme='dark']) .pathCard:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.pathCardTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: var(--cars-heading-color);
+}
+
+.pathCardDescription {
+  margin: 0 0 1rem;
+  flex: 1;
+  line-height: 1.55;
+  opacity: 0.85;
+}
+
+.pathCardArrow {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--cars-accent-text);
+}
+
+/* ---------- Timeline (history) ---------- */
+
+.timeline {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0 0 0 1.75rem;
+  border-left: 2px solid var(--cars-card-border);
+}
+
+.timelineItem {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timelineItem:last-child {
+  padding-bottom: 0;
+}
+
+/* The dot sits on the rule itself: -1.75rem back out to the border, then
+   half the dot's own width so it straddles the 2px line. */
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: calc(-1.75rem - 7px);
+  top: 0.3rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--cars-red-bright);
+  border: 2px solid var(--cars-background);
+}
+
+.timelineDate {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cars-accent-text);
+}
+
+.timelineDatePending {
+  color: var(--cars-placeholder-color);
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.timelineDateUnconfirmed {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--cars-placeholder-color);
+  border: 1px solid var(--cars-placeholder-border);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  vertical-align: 1px;
+}
+
+.timelineTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  color: var(--cars-heading-color);
+}
+
+.timelineBody {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.timelineBody p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Numbered principles ---------- */
+
+.principleList,
+.stepList {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+}
+
+.principle,
+.step {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.principle:last-child,
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.principleNumber,
+.stepNumber {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: var(--cars-navy);
+  color: var(--cars-on-dark);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+:global([data-theme='dark']) .principleNumber,
+:global([data-theme='dark']) .stepNumber {
+  color: #10131f;
+}
+
+.stepNumber {
+  background: var(--cars-red);
+}
+
+.principleTitle,
+.stepTitle {
+  margin: 0.3rem 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--cars-heading-color);
+}
+
+.principleBody,
+.stepBody {
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.stepBody p:last-child,
+.stepBody ul:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Status notice (unratified proposals) ---------- */
+
+.statusNotice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border: 1.5px solid var(--cars-placeholder-border);
+  background: var(--cars-callout-background);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 0 0 2rem;
+  max-width: 760px;
+}
+
+.statusNoticeBody {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ---------- Callout ---------- */
+
+.callout {
+  border: 1.5px solid var(--cars-placeholder-border);
+  background: var(--cars-callout-background);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  max-width: 760px;
+}
+
+.calloutTitle {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: var(--cars-placeholder-color);
+}
+
+.calloutBody p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 570px) {
+  .headerInner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerLogo {
+    width: 84px;
+    height: 84px;
+  }
+
+  .tagline {
+    text-align: left;
+  }
+}

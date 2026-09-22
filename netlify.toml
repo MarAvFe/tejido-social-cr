@@ -16,3 +16,18 @@
   from = "/docs/organismos/comisiones-tematicas/*"
   to = "/docs/organismos/pilares-desarrollo/:splat"
   status = 301
+
+# CARS's initiatives page was renamed to "causas" when the section was
+# restructured, before the URL was ever published — kept anyway so the
+# earlier path doesn't 404 for anyone who has it.
+[[redirects]]
+  from = "/cars/iniciativas"
+  to = "/cars/causas/"
+  status = 301
+
+# The collective's own term is "comisiones", not "comités" — the page was
+# renamed to match before the URL was published.
+[[redirects]]
+  from = "/cars/como-nos-organizamos/comites"
+  to = "/cars/como-nos-organizamos/comisiones"
+  status = 301
