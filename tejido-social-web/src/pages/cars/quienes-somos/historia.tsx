@@ -54,8 +54,10 @@ export default function Historia(): ReactNode {
             <p>
               Algunas de las personas que hoy integran la colectiva estuvieron ahí — pero no como
               colectiva, porque todavía no existía: participaron a título individual, cada una desde
-              su propia organización. De esa articulación nació un chat de coordinación, y solo meses
-              después, de ese chat, surgió la colectiva, que heredó el espacio y lo sigue usando.
+              su propia organización — entre ellas el movimiento estudiantil autónomo (MEA), el FNL y
+              la red de solidaridad con Palestina. De esa articulación nació un chat de coordinación,
+              creado por el MEA, y solo meses después, de ese chat, surgió la colectiva, que heredó el
+              espacio y lo sigue usando.
             </p>
             <p>
               Ese trabajo de coordinación se organizó primero como una comisión de comunicación, que
