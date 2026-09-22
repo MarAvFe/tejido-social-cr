@@ -32,6 +32,11 @@ export default function Datacenters(): ReactNode {
         title="Mapa: data centers en Centroamérica"
         description="Ocho proyectos identificados en cinco países, con una estimación de consumo de agua en millones de litros desde enero de 2026 donde la capacidad publicada lo permite."
       />
+      <NavCard
+        to="/iniciativas-colectivas/datacenters/pueblos-indigenas-consulta"
+        title="Data centers y consulta a pueblos indígenas"
+        description="El Convenio 169 de la OIT (Ley 7316) exige consultar a los pueblos indígenas ante medidas que puedan afectarles directamente. Qué dice la ley costarricense y qué precedente dejan las Tribus Shoshone-Bannock frente a data centers en Idaho, EE. UU."
+      />
       <ResourceSection title="Cobertura de prensa internacional">
         <ArticleSummary
           source="WRI (World Resources Institute)"

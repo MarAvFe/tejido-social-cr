@@ -48,6 +48,11 @@ export default function DatacentersLimon(): ReactNode {
         zoom={17}
         satellite
       />
+      <NavCard
+        to="/iniciativas-colectivas/datacenters/pueblos-indigenas-consulta"
+        title="Data centers y consulta a pueblos indígenas"
+        description="El Convenio 169 de la OIT exige consultar a los pueblos indígenas ante medidas que puedan afectarles directamente. Marco legal y un precedente en Estados Unidos."
+      />
     </PortalLayout>
   );
 }
