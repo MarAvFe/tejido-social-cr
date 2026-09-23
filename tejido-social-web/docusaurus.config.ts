@@ -33,8 +33,12 @@ const config: Config = {
   // the client bundle. Set it in Netlify's build environment; for local
   // dev, copy .env.example to .env (gitignored) and fill it in. See
   // /calendar.
+  // PADRON_API_URL is the public base URL of the PocketBase instance behind
+  // /padron. Also not a secret: access is enforced by PocketBase's API
+  // rules, not by hiding the URL.
   customFields: {
     googleCalendarApiKey: process.env.GOOGLE_CALENDAR_API_KEY || '',
+    padronApiUrl: process.env.PADRON_API_URL || '',
   },
 
   i18n: {
@@ -51,6 +55,9 @@ const config: Config = {
           remarkPlugins: [remarkAcronyms],
         },
         blog: false,
+        sitemap: {
+          ignorePatterns: ['/padron'],
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
