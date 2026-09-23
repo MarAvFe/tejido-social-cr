@@ -1,16 +1,8 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import PocketBase, {ClientResponseError} from 'pocketbase';
 import {DISTRITOS, cantonDe} from '@site/src/config/padron';
+import {localStore, pocketBaseStore, type PadronStore, type Persona} from './store';
 import styles from './styles.module.css';
-
-interface Persona {
-  id: string;
-  nombre: string;
-  telefono: string;
-  distrito: string;
-  /** PocketBase datetime, e.g. "2025-03-14 12:00:00.000Z", or "". */
-  fecha_ingreso: string;
-}
 
 type Borrador = Omit<Persona, 'id'> & {id?: string};
 
@@ -41,12 +33,60 @@ function mensajeDeError(err: unknown): string {
 }
 
 export default function Padron({apiUrl}: {apiUrl: string}): React.ReactElement {
+  return apiUrl ? <PadronPocketBase apiUrl={apiUrl} /> : <PadronDemo />;
+}
+
+function PadronPocketBase({apiUrl}: {apiUrl: string}): React.ReactElement {
   const pb = useMemo(() => new PocketBase(apiUrl), [apiUrl]);
+  const store = useMemo(() => pocketBaseStore(pb), [pb]);
   const [autenticado, setAutenticado] = useState(pb.authStore.isValid);
 
   useEffect(() => pb.authStore.onChange(() => setAutenticado(pb.authStore.isValid)), [pb]);
 
-  return autenticado ? <Tabla pb={pb} /> : <Ingreso pb={pb} />;
+  if (!autenticado) return <Ingreso pb={pb} />;
+  return (
+    <Tabla
+      store={store}
+      alExpirarSesion={() => pb.authStore.clear()}
+      encabezado={
+        <div className={styles.session}>
+          <span>Sesión: {pb.authStore.record?.email}</span>
+          <button type="button" className="button button--link button--sm"
+            onClick={() => pb.authStore.clear()}>
+            Cerrar sesión
+          </button>
+        </div>
+      }
+    />
+  );
+}
+
+function PadronDemo(): React.ReactElement {
+  const store = useMemo(() => localStore(), []);
+  const [version, setVersion] = useState(0);
+
+  function restablecer() {
+    if (!window.confirm('¿Descartar tus cambios y volver a los 30 registros de demostración?')) return;
+    store.restablecer();
+    setVersion((v) => v + 1);
+  }
+
+  return (
+    <Tabla
+      key={version}
+      store={store}
+      encabezado={
+        <div className="alert alert--info margin-bottom--md">
+          <strong>Modo demostración.</strong> Todas las personas son ficticias. Los cambios se
+          guardan solo en este navegador: nadie más los ve y se pierden si borrás los datos del
+          sitio. No ingresés datos reales.{' '}
+          <button type="button" className="button button--link button--sm" onClick={restablecer}>
+            Restablecer demo
+          </button>
+        </div>
+      }
+    />
+  );
 }
 
 function Ingreso({pb}: {pb: PocketBase}): React.ReactElement {
@@ -93,7 +133,11 @@ function Ingreso({pb}: {pb: PocketBase}): React.ReactElement {
   );
 }
 
-function Tabla({pb}: {pb: PocketBase}): React.ReactElement {
+function Tabla({store, encabezado, alExpirarSesion}: {
+  store: PadronStore;
+  encabezado: React.ReactNode;
+  alExpirarSesion?: () => void;
+}): React.ReactElement {
   const [personas, setPersonas] = useState<Persona[] | null>(null);
   const [busqueda, setBusqueda] = useState('');
   const [distrito, setDistrito] = useState('');
@@ -103,21 +147,21 @@ function Tabla({pb}: {pb: PocketBase}): React.ReactElement {
   const manejarError = useCallback(
     (err: unknown) => {
       if (err instanceof ClientResponseError && (err.status === 401 || err.status === 403)) {
-        pb.authStore.clear();
+        alExpirarSesion?.();
         return;
       }
       setError(mensajeDeError(err));
     },
-    [pb],
+    [alExpirarSesion],
   );
 
   const cargar = useCallback(async () => {
     try {
-      setPersonas(await pb.collection('personas').getFullList<Persona>({sort: 'nombre'}));
+      setPersonas(await store.listar());
     } catch (err) {
       manejarError(err);
     }
-  }, [pb, manejarError]);
+  }, [store, manejarError]);
 
   useEffect(() => {
     cargar();
@@ -142,8 +186,8 @@ function Tabla({pb}: {pb: PocketBase}): React.ReactElement {
       fecha_ingreso: datos.fecha_ingreso ? `${soloFecha(datos.fecha_ingreso)} 12:00:00.000Z` : '',
     };
     try {
-      if (id) await pb.collection('personas').update(id, cuerpo);
-      else await pb.collection('personas').create(cuerpo);
+      if (id) await store.actualizar(id, cuerpo);
+      else await store.crear(cuerpo);
       setBorrador(null);
       await cargar();
     } catch (err) {
@@ -155,7 +199,7 @@ function Tabla({pb}: {pb: PocketBase}): React.ReactElement {
     if (!window.confirm(`¿Eliminar a ${p.nombre} del padrón? Esto no se puede deshacer.`)) return;
     setError('');
     try {
-      await pb.collection('personas').delete(p.id);
+      await store.eliminar(p.id);
       await cargar();
     } catch (err) {
       manejarError(err);
@@ -164,13 +208,7 @@ function Tabla({pb}: {pb: PocketBase}): React.ReactElement {
 
   return (
     <>
-      <div className={styles.session}>
-        <span>Sesión: {pb.authStore.record?.email}</span>
-        <button type="button" className="button button--link button--sm"
-          onClick={() => pb.authStore.clear()}>
-          Cerrar sesión
-        </button>
-      </div>
+      {encabezado}
 
       <div className={styles.toolbar}>
         <input type="search" className={styles.search} placeholder="Buscar por nombre o teléfono"

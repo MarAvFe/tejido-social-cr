@@ -6,6 +6,11 @@ schema and the demo seed. Netlify can't run it: it needs a host with a
 long-running process and a persistent disk (Fly.io with a volume,
 PocketHost, a small VPS).
 
+Until this is hosted, the site runs `/padron` in demo mode (no
+`PADRON_API_URL` set): the same 30 fake people from
+`tejido-social-web/src/data/padron-demo.json`, stored per browser in
+localStorage, no login.
+
 **Access is enforced here, not in the page.** Only accounts in the `users`
 collection can list, view, create, edit or delete `personas`. Public sign-up
 is disabled by the migration, so accounts can only be created by a

@@ -1,0 +1,182 @@
+[
+  {
+    "nombre": "Ana Rojas Mora",
+    "telefono": "0000-0001",
+    "distrito": "San Pedro",
+    "fecha_ingreso": "2024-01-01 12:00:00.000Z"
+  },
+  {
+    "nombre": "Luis Vargas Chaves",
+    "telefono": "0000-0002",
+    "distrito": "Mercedes",
+    "fecha_ingreso": "2025-02-02 12:00:00.000Z"
+  },
+  {
+    "nombre": "María Araya Castro",
+    "telefono": "0000-0003",
+    "distrito": "San Rafael",
+    "fecha_ingreso": "2026-03-03 12:00:00.000Z"
+  },
+  {
+    "nombre": "José Brenes Jiménez",
+    "telefono": "0000-0004",
+    "distrito": "Sabanilla",
+    "fecha_ingreso": "2024-04-04 12:00:00.000Z"
+  },
+  {
+    "nombre": "Carmen Jiménez Brenes",
+    "telefono": "0000-0005",
+    "distrito": "Mata de Plátano",
+    "fecha_ingreso": "2025-05-05 12:00:00.000Z"
+  },
+  {
+    "nombre": "Diego Castro Araya",
+    "telefono": "0000-0006",
+    "distrito": "El Alto",
+    "fecha_ingreso": "2026-06-06 12:00:00.000Z"
+  },
+  {
+    "nombre": "Lucía Chaves Vargas",
+    "telefono": "0000-0007",
+    "distrito": "San Pedro",
+    "fecha_ingreso": "2024-07-07 12:00:00.000Z"
+  },
+  {
+    "nombre": "Andrés Mora Rojas",
+    "telefono": "0000-0008",
+    "distrito": "Mercedes",
+    "fecha_ingreso": "2025-08-08 12:00:00.000Z"
+  },
+  {
+    "nombre": "Sofía Solís Quesada",
+    "telefono": "0000-0009",
+    "distrito": "San Rafael",
+    "fecha_ingreso": "2026-09-09 12:00:00.000Z"
+  },
+  {
+    "nombre": "Pablo Quesada Solís",
+    "telefono": "0000-0010",
+    "distrito": "Sabanilla",
+    "fecha_ingreso": "2024-10-10 12:00:00.000Z"
+  },
+  {
+    "nombre": "Ana Mora Solís",
+    "telefono": "0000-0011",
+    "distrito": "Mata de Plátano",
+    "fecha_ingreso": "2025-11-11 12:00:00.000Z"
+  },
+  {
+    "nombre": "Luis Solís Mora",
+    "telefono": "0000-0012",
+    "distrito": "El Alto",
+    "fecha_ingreso": "2026-12-12 12:00:00.000Z"
+  },
+  {
+    "nombre": "María Quesada Chaves",
+    "telefono": "0000-0013",
+    "distrito": "San Pedro",
+    "fecha_ingreso": "2024-01-13 12:00:00.000Z"
+  },
+  {
+    "nombre": "José Rojas Castro",
+    "telefono": "0000-0014",
+    "distrito": "Mercedes",
+    "fecha_ingreso": "2025-02-14 12:00:00.000Z"
+  },
+  {
+    "nombre": "Carmen Vargas Jiménez",
+    "telefono": "0000-0015",
+    "distrito": "San Rafael",
+    "fecha_ingreso": "2026-03-15 12:00:00.000Z"
+  },
+  {
+    "nombre": "Diego Araya Brenes",
+    "telefono": "0000-0016",
+    "distrito": "Sabanilla",
+    "fecha_ingreso": "2024-04-16 12:00:00.000Z"
+  },
+  {
+    "nombre": "Lucía Brenes Araya",
+    "telefono": "0000-0017",
+    "distrito": "Mata de Plátano",
+    "fecha_ingreso": "2025-05-17 12:00:00.000Z"
+  },
+  {
+    "nombre": "Andrés Jiménez Vargas",
+    "telefono": "0000-0018",
+    "distrito": "El Alto",
+    "fecha_ingreso": "2026-06-18 12:00:00.000Z"
+  },
+  {
+    "nombre": "Sofía Castro Rojas",
+    "telefono": "0000-0019",
+    "distrito": "San Pedro",
+    "fecha_ingreso": "2024-07-19 12:00:00.000Z"
+  },
+  {
+    "nombre": "Pablo Chaves Quesada",
+    "telefono": "0000-0020",
+    "distrito": "Mercedes",
+    "fecha_ingreso": "2025-08-20 12:00:00.000Z"
+  },
+  {
+    "nombre": "Ana Jiménez Quesada",
+    "telefono": "0000-0021",
+    "distrito": "San Rafael",
+    "fecha_ingreso": "2026-09-21 12:00:00.000Z"
+  },
+  {
+    "nombre": "Luis Castro Solís",
+    "telefono": "0000-0022",
+    "distrito": "Sabanilla",
+    "fecha_ingreso": "2024-10-22 12:00:00.000Z"
+  },
+  {
+    "nombre": "María Chaves Mora",
+    "telefono": "0000-0023",
+    "distrito": "Mata de Plátano",
+    "fecha_ingreso": "2025-11-23 12:00:00.000Z"
+  },
+  {
+    "nombre": "José Mora Chaves",
+    "telefono": "0000-0024",
+    "distrito": "El Alto",
+    "fecha_ingreso": "2026-12-24 12:00:00.000Z"
+  },
+  {
+    "nombre": "Carmen Solís Castro",
+    "telefono": "0000-0025",
+    "distrito": "San Pedro",
+    "fecha_ingreso": "2024-01-25 12:00:00.000Z"
+  },
+  {
+    "nombre": "Diego Quesada Jiménez",
+    "telefono": "0000-0026",
+    "distrito": "Mercedes",
+    "fecha_ingreso": "2025-02-26 12:00:00.000Z"
+  },
+  {
+    "nombre": "Lucía Rojas Brenes",
+    "telefono": "0000-0027",
+    "distrito": "San Rafael",
+    "fecha_ingreso": "2026-03-27 12:00:00.000Z"
+  },
+  {
+    "nombre": "Andrés Vargas Araya",
+    "telefono": "0000-0028",
+    "distrito": "Sabanilla",
+    "fecha_ingreso": "2024-04-01 12:00:00.000Z"
+  },
+  {
+    "nombre": "Sofía Araya Vargas",
+    "telefono": "0000-0029",
+    "distrito": "Mata de Plátano",
+    "fecha_ingreso": "2025-05-02 12:00:00.000Z"
+  },
+  {
+    "nombre": "Pablo Brenes Rojas",
+    "telefono": "0000-0030",
+    "distrito": "El Alto",
+    "fecha_ingreso": "2026-06-03 12:00:00.000Z"
+  }
+]
