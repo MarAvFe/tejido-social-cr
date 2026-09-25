@@ -51,9 +51,31 @@ Meta doc — English throughout, per `CLAUDE.md`'s language rule.
   source label.
 - [ ] **CONTENT-FRAMEWORK.md registry audit** — the concept-thread registry
   was populated once, in one pass, against the site as it existed on
-  2026-07-25. Confirm it still matches reality after a few more batches of
-  content land (new threads not yet registered, or registered threads whose
-  articles moved).
+  2026-07-25. Moved or renamed registered articles are now caught in CI
+  (`node scripts/link-graph.mjs --check`). Still manual: threads that exist
+  but aren't registered, and the three editorial gaps the script reports
+  as of 2026-09-25, where a registered article has no link to or from the
+  rest of its thread: `explicacion/por-que-comites-de-base.md` (Asamblea),
+  `organismos/roles-y-responsabilidades.md` (Gobierno municipal, listed as
+  "Related, do not conflate"), `organismos/cec-ampliado.md` (Estructura
+  del partido). Each needs a "Ver también" or a registry correction.
+- [ ] **Convert the remaining *usted* pages to voseo** — pending the owner's
+  confirmation of the voseo rule in `VOICE.md` (recommended 2026-09-25, not
+  yet confirmed against the party's own communications). Pages using *usted*
+  imperatives or pronouns: `guias/ampliar-alcance-encuesta.md`,
+  `guias/conformar-comite-distrital.md`,
+  `guias/disenar-encuesta-plan-accion.md`,
+  `guias/organizar-asamblea-constitutiva.md`,
+  `guias/presentar-denuncia-tribunal-etica.md` (mixed), `intro.md`,
+  `principios/index.md`, `tutorials/unirse-a-un-organismo.md`,
+  `explicacion/por-que-descentralizar.md`, `recursos/index.md`,
+  `recursos/plantilla-minuta.md`. The scan behind this list also matches
+  third-person subjunctives ("que el comité defina"), so read each hit
+  before changing it; those stay as they are.
+- [ ] **Vendor `security-and-hardening`** from Agent Skills (`bcab6a1`, MIT)
+  into `.claude/skills/` when `padron-backend/` gets a real host, trimmed
+  to PocketBase + static front end, following how the other three were
+  adapted (see `.claude/skills/THIRD_PARTY_NOTICES.md`).
 
 ## Agent tooling evaluation (2026-09-25)
 
@@ -100,7 +122,7 @@ Ponytail `e3ba2aa` (v4.10.0), OmniRoute `4b9388a1`, Graphify `4000de1`
 
 ### Prioritized execution
 
-- [ ] **P1 — Mechanical content gates + CI.** Add `scripts/check-content.mjs`
+- [x] **P1 — Mechanical content gates + CI.** Done 2026-09-25: `scripts/check-content.mjs` (rules 1–4 as errors, rule 5 as a PR warning; the `placeholder` rule targets artifacts, not the word, since `niveles/index.md` uses it honestly), `.github/workflows/ci.yml`, self-tests in `scripts/*.test.mjs`, and `CONSTRAINTS.md` at the root as the written bar. Original spec: Add `scripts/check-content.mjs`
   (Node, no deps) and a GitHub Actions workflow on push/PR to `main` that
   runs `npm ci`, `npm run typecheck` and `npm run build` for both apps
   (mirroring `scripts/netlify-build.sh`), then the check script. The script
@@ -123,14 +145,14 @@ Ponytail `e3ba2aa` (v4.10.0), OmniRoute `4b9388a1`, Graphify `4000de1`
   Agent Skills' `constraint-driven-development` + `ci-cd-and-automation`.
   Done when the workflow is green on current `main` and each rule has been
   shown to fail on a planted example.
-- [ ] **P2 — Resolve the address-form and framework contradiction.** Owner
+- [x] **P2 — Resolve the address-form and framework contradiction.** Done 2026-09-25: voseo recommended and written into `VOICE.md`; PR/issue templates and `CONTRIBUTE.md` updated (Diataxis kept, since the docs are organized that way). Counting properly showed the site is mixed, not all voseo; converting the *usted* pages is its own open item above. Original spec: Owner
   decision first: voseo (what the site uses) or ustedeo (what the PR
   template demands). Then write the answer into `VOICE.md` (replacing the
   line-153 non-rule) and bring `pull_request_template.md`,
   `ISSUE_TEMPLATE/correccion.md` and `CONTRIBUTE.md` in line, dropping the
   "causa-neutral" item and the Diataxis requirement if they no longer
   apply. Blocks P1's review checklist from encoding the wrong rule.
-- [ ] **P3 — Vendor a small set of skills into `.claude/skills/`.** Copy
+- [x] **P3 — Vendor a small set of skills into `.claude/skills/`.** Done 2026-09-25 for three skills plus `content-article`; `security-and-hardening` deferred to when the padrón has a host (open item above). Original spec: Copy
   (pinned to `bcab6a1`, with the MIT notice) only:
   `doubt-driven-development` (fresh-context review of factual claims about
   real organizations, laws and people before publishing, which is what
@@ -145,13 +167,13 @@ Ponytail `e3ba2aa` (v4.10.0), OmniRoute `4b9388a1`, Graphify `4000de1`
   language split, and the changelog. Project-level so cloud sessions load
   them; no marketplace plugin, since plugin hooks run shell commands on
   every session.
-- [ ] **P4 — Docs link graph (instead of Graphify).** `scripts/link-graph.mjs`
+- [x] **P4 — Docs link graph (instead of Graphify).** Done 2026-09-25: `scripts/link-graph.mjs`. Stale registry paths and broken links fail CI; unlinked thread members are warnings (the fix is editorial). Findings are in the registry-audit item above. Original spec: `scripts/link-graph.mjs`
   builds the doc→doc graph from the ~330 relative `.md` links in `docs/`,
   reports orphans (no inbound links) and dead ends, and checks each thread
   in `CONTENT-FRAMEWORK.md`'s registry against its "must stay linked"
   list. That turns the open **registry audit** item above into a
   repeatable check that can join P1. Deterministic, offline, no API key.
-- [ ] **P5 — Optional one-off `/ponytail-audit` over `src/`.** Run it once from a
+- [x] **P5 — Optional one-off `/ponytail-audit` over `src/`.** Done 2026-09-25, method applied by hand. Verdict: lean. One cut (unused `JAN_2026` constant). Kept on purpose: the `placeholder`/`disabled` props (the site's "never ship a dead link silently" mechanism, used by the cause template), the look-alike components in `Cars` vs `IniciativasColectivas` (unrelated organizations, independent styling by decision), the Padrón's two stores (demo and backend are both real modes), `ReadAloud`'s chunking and voice fallback (real browser quirks), and `@docusaurus/faster` (enabled by `future.v4`). Original spec: Run it once from a
   local checkout, after P1 exists so the build catches regressions, and
   triage its delete-list by hand. The likely candidates are the four
   `src/components/*/index.tsx` files over 300 lines (`Cars` 570, `Padron`
@@ -171,3 +193,7 @@ _(move items here with the date closed, instead of deleting them, so there's
 a record of what's already been done — mirrors `CONTENT-TODO.md`'s HECHO
 convention, but kept minimal: one line, no need to preserve full detail once
 it's done and reflected in `CHANGELOG.md`.)_
+
+- 2026-09-25 — Agent tooling P1–P5 (CI content gates, voseo rule + template
+  fixes, project skills, docs link graph, Ponytail audit); detail in the
+  evaluation section above.

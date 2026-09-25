@@ -38,8 +38,6 @@ export interface DataCenterEntry {
   sourceLabel: string;
 }
 
-export const JAN_2026 = new Date('2026-01-01T00:00:00Z');
-
 /** Central estimate from the Lawrence Berkeley National Laboratory-cited industry average; see the article's methodology callout for the full range (1–9 L/kWh) and caveats. */
 export const DEFAULT_WUE_L_PER_KWH = 1.8;
 
