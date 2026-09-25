@@ -93,6 +93,17 @@ in the same change if you add or move an article that touches a thread. This
 is what catches organization conflicts (like comisiones↔iniciativas) at
 creation time instead of in a later audit.
 
+## Quality bar and project skills
+
+`CONSTRAINTS.md` (repo root) lists every enforced rule and the command that
+checks it; CI runs them on every push. Run `node scripts/check-content.mjs`
+and `node scripts/link-graph.mjs` before finishing content work, and do not
+weaken a check to make a change pass. Project skills in `.claude/skills/`:
+`content-article` (the checklist for any reader-facing change),
+`doubt-driven-development` (review factual claims before they ship),
+`interview-me` (underspecified requests), `constraint-driven-development`
+(guarding the checks themselves).
+
 ## Other context
 
 - `PROJECT.md` — background on the project's purpose and philosophy

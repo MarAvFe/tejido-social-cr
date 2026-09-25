@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Checker self-tests
+        run: node --test scripts/*.test.mjs
+
+      - name: Content rules
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          if [ -n "$BASE_REF" ]; then
+            node scripts/check-content.mjs --base "origin/$BASE_REF"
+          else
+            node scripts/check-content.mjs
+          fi
+
+      - name: Docs link graph
+        run: node scripts/link-graph.mjs --check
+
+      # Same script Netlify runs: installs and builds both apps. The build
+      # fails on broken internal doc links (onBrokenLinks: 'throw').
+      - name: Build (as Netlify)
+        run: bash scripts/netlify-build.sh
+
+      - name: Typecheck
+        run: |
+          (cd tejido-social-web && npm run typecheck)
+          (cd tejido-social-web-demo && npm run typecheck)
