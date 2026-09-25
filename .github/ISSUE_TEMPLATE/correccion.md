@@ -15,7 +15,7 @@ Describa el problema que encontró:
 - [ ] Enlace roto
 - [ ] Lenguaje poco claro
 - [ ] Error ortográfico/gramatical
-- [ ] Incumplimiento de ustedeo (formal address)
+- [ ] Forma de tratamiento inconsistente (el sitio usa voseo)
 - [ ] Otro:
 
 ## Ubicación del Problema
@@ -50,7 +50,7 @@ Si tiene una sugerencia para arreglarlo:
 
 ## Contexto Adicional
 
-- ¿Usted es Observador/Participante/Miembro Activo/Coordinador/Formador?
+- ¿Qué nivel tiene en el partido (simpatizante, afiliado, integrante de comité, coordinación)?
 - ¿Encontró este problema mientras buscaba algo específico?
 - ¿Hay otros documentos con problemas similares?
 

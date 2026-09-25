@@ -68,11 +68,11 @@ Violations of these principles may result in removal from the project.
 
 #### Content Contributions (Spanish documentation)
 
-All Spanish content should follow the **Diataxis framework** and **ustedeo** (formal address):
+All Spanish content should follow the **Diataxis framework** and address the reader with **voseo** (see `VOICE.md`):
 
 **1. Tutorials** (Learning by doing)
 - Step-by-step lessons that teach through experience
-- Use imperative voice: "Haga esto", "Lea aquello"
+- Use imperative voice: "Hacé esto", "Leé aquello"
 - Include outcomes: "At the end, you will have..."
 - Start with Observadores/beginners
 
@@ -96,7 +96,7 @@ All Spanish content should follow the **Diataxis framework** and **ustedeo** (fo
 
 **Language Rules:**
 - Primary language: **Spanish**
-- Use **ustedeo** (formal address) - "usted", "su", not "tú", "tu"
+- Use **voseo** - "consultá", "si querés", not "usted" or "tú" (see `VOICE.md`)
 - Keep sentences short and clear
 - Define terms in `docs/recursos/glosario.md`
 
@@ -174,7 +174,7 @@ git checkout -b feature/your-feature-name
 **For content:**
 - Create new `.md` files in appropriate folders (`docs/tutorials/`, `docs/guias/`, etc.)
 - Follow the Diataxis type guidelines above
-- Use ustedeo (formal address) in Spanish
+- Use voseo in Spanish (see `VOICE.md`)
 - Link to related content using relative paths: `[Link Text](../path/to/file.md)`
 
 **For code:**
@@ -219,9 +219,9 @@ Then create a PR on GitHub with:
 ### 6. Code Review & Merge
 
 - Maintainers will review for:
-  - Content accuracy and alignment with Tejido Social principles
+  - Content accuracy and `VOICE.md` compliance
   - Diataxis framework adherence
-  - Language consistency (ustedeo, Spanish/English split)
+  - Language consistency (voseo, Spanish/English split)
   - Links and cross-references
 - Make requested changes
 - Once approved, your PR will be merged
@@ -268,13 +268,13 @@ Then create a release section in CHANGELOG.md:
 Before submitting a PR, verify:
 
 - [ ] Content follows Diataxis framework (Tutorial/Guide/Reference/Explanation)
-- [ ] Spanish content uses **ustedeo** (formal address)
+- [ ] Spanish content uses **voseo** (see `VOICE.md`)
 - [ ] All links are relative and working (`../path/to/file.md`)
 - [ ] No broken image links or references
 - [ ] Code builds without errors (`yarn build`)
 - [ ] Changes are documented in CHANGELOG.md
 - [ ] No spelling or grammar errors
-- [ ] Aligns with Tejido Social principles (dignity, non-violence, etc.)
+- [ ] Passes `node scripts/check-content.mjs`
 
 ---
 
@@ -282,20 +282,19 @@ Before submitting a PR, verify:
 
 ### Spanish Documentation Standards
 
-#### Ustedeo (Formal Address) Examples
+#### Voseo Examples
 
 ✅ Correct:
 ```markdown
-Lea los principios.
-Escriba su nombre.
-¿Dónde va usted?
+Leé los principios.
+Escribí tu nombre.
+Si querés sumarte, consultá con la Coordinación.
 ```
 
-❌ Incorrect (tú/voseo):
+❌ Incorrect (usted / tú):
 ```markdown
-Lee los principios.
-Escribe tu nombre.
-¿Dónde vas?
+Lea los principios. / Lee los principios.
+Escriba su nombre. / Escribe tu nombre.
 ```
 
 #### Structure Template
@@ -336,7 +335,7 @@ See **[Acción Callejera Organismo](../organismos/accion-callejera.md)**.
 
 - **Questions about content?** - Check PROJECT.md for philosophy and design decisions
 - **Technical questions?** - See Docusaurus docs: https://docusaurus.io/
-- **Questions about Spanish/ustedeo?** - Email or open an issue
+- **Questions about Spanish/voseo?** - See `VOICE.md`, or open an issue
 - **Issues or bugs?** - Create a GitHub issue with clear description
 
 ---

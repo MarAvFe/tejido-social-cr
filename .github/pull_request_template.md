@@ -15,13 +15,13 @@
 
 ### Contenido
 - [ ] Sigue el **framework Diataxis** (Tutorial/Guía/Referencia/Explicación)
-- [ ] Contenido en **español** con **ustedeo** (formal address "usted", "su")
-- [ ] Ejemplo correcto: "Lea esto" no "Lee esto"
+- [ ] Contenido en **español** con **voseo** ("Consultá", "Si querés"), según `VOICE.md`
 - [ ] Todos los enlaces son **relativos** y válidos (`../path/to/file.md`)
 - [ ] Sin enlaces rotos a imágenes o archivos
 - [ ] Sin errores ortográficos ni gramaticales
-- [ ] Alineado con los **Principios** de Tejido Social (dignidad, no-violencia, horizontalidad, inclusión)
-- [ ] Causa-neutral (aplicable a cualquier movimiento)
+- [ ] Cumple `VOICE.md` (registro sobrio, fuentes, sin nombres de personas privadas)
+- [ ] Ubicación y enlaces obligatorios según la prueba de `CONTENT-FRAMEWORK.md`
+- [ ] Afirmaciones sobre personas, organizaciones o leyes reales verificadas contra una fuente
 
 ### Técnico
 - [ ] Código compila sin errores (`npm build`)
@@ -38,7 +38,6 @@
 
 ### Antes de Merging
 - [ ] Revisor ha verificado exactitud de contenido
-- [ ] Revisor ha confirmado alineación con Tejido Social
 - [ ] Sin conflictos de merge
 - [ ] Rama actualizada con main
 
@@ -121,6 +120,7 @@
 - [ ] He leído `CONTRIBUTE.md`
 - [ ] He actualizado `CHANGELOG.md`
 - [ ] He probado localmente (`npm start`, `npm build`)
-- [ ] He verificado que ustedeo es consistente
+- [ ] He verificado que el voseo es consistente
+- [ ] `node scripts/check-content.mjs` pasa
 - [ ] He verificado que todos los enlaces funcionan
 - [ ] Este PR está listo para revisión

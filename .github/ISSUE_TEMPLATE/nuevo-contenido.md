@@ -37,15 +37,15 @@ Especifique la carpeta y nombre del archivo propuesto:
 
 ¿Por qué es importante este contenido? ¿Qué problema resuelve o qué valor aporta?
 
-## Alineación con Tejido Social
+## Ubicación y fuentes
 
-- [ ] Sigue los **[Principios](https://tejidosocial.org/docs/principios)** de Tejido Social
-- [ ] Respeta la **neutralidad de causa** (no es específico de un movimiento)
-- [ ] Está alineado con los **[Niveles de Participación](https://tejidosocial.org/docs/intro#los-niveles-de-participaci%C3%B3n)**
+- [ ] Pasa la prueba de ubicación de `CONTENT-FRAMEWORK.md` (categoría, genérico o instancia, hilo, fuente)
+- [ ] Tiene una fuente identificable (directriz, estatuto, minuta, cobertura de prensa o conocimiento de campo)
+- [ ] No publica nombres ni contactos de personas privadas
 
 ## Audiencia
 
-¿Para quién es este contenido? (Observadores, Participantes, Miembros Activos, Coordinadores, Formadores)
+¿Para quién es este contenido? (simpatizante, afiliado, integrante de comité, coordinación distrital, cantonal, provincial o nacional — ver `docs/niveles/`)
 
 ## Esquema Propuesto
 

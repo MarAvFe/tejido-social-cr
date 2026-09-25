@@ -27,6 +27,21 @@ recruitment pitch, not a blog. Compare:
   llenara esos vacíos."
 - ❌ "¡El TEFA dio un paso histórico para fortalecer la democracia interna!"
 
+**Address the reader with *vos* (voseo).** "Consultá con la Coordinación",
+"Si querés sumarte", "Aprendé sobre el FA" — the site's own name. This is
+Costa Rican peer-to-peer address, which suits committees explaining the
+party to new affiliates. Not *usted*, not *tú*. Impersonal constructions
+("se recomienda...") are fine where no direct address is needed.
+Decided 2026-09-25, after the PR and issue templates were found demanding
+*ustedeo* (inherited from the old generic Tejido Social template, never a
+decision for this site). As of that date the site is mixed: the name,
+contact/editorial pages and most content written since August use *vos*;
+the older how-to guides (`guias/`), `intro.md` and a few tutorials still
+use *usted* imperatives ("Defina", "Revise", "Vea"). Those are listed for
+conversion in `SITE-TODO.md`; new and edited text uses *vos* now. If the
+party's own official communications settle on *usted*, change this rule
+and the site together, not page by page.
+
 No exclamation points. No rhetorical questions used as hooks. No slogans
 invented for the site — if a phrase like "La Sabanilla que soñamos" is being
 quoted, it's because it's the committee's own lema, cited as such, not
@@ -150,7 +165,8 @@ in the future distrital roster page.
 
 ## What this document is not
 
-Not a grammar/style guide (no rules on Oxford commas, voseo vs. usted,
-etc.) — if none of that has caused inconsistency yet, don't invent rules
+Not a grammar/style guide (no rules on Oxford commas and the like; the
+one exception, voseo, is under Register because it did cause friction) —
+if something hasn't caused inconsistency yet, don't invent rules
 preemptively. Add a rule here only after it's actually caused friction
 across two or more articles, not speculatively.
