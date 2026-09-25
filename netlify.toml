@@ -25,6 +25,13 @@
   to = "/cars/causas/"
   status = 301
 
+# San Pedro en Bus covers routes across the whole canton, so it moved from
+# Sabanilla's initiatives to Montes de Oca's canton-level ones.
+[[redirects]]
+  from = "/docs/distritos/montes-de-oca/sabanilla/iniciativas/san-pedro-en-bus"
+  to = "/docs/distritos/montes-de-oca/iniciativas/san-pedro-en-bus"
+  status = 301
+
 # The collective's own term is "comisiones", not "comités" — the page was
 # renamed to match before the URL was published.
 [[redirects]]

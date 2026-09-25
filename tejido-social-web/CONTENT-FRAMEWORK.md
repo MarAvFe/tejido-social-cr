@@ -118,6 +118,10 @@ creating a new thread, add a row.
   real initiatives arrived, because each accumulates enough detail (interview
   context, per-initiative open questions) to outgrow a table row. Built for
   Sabanilla: `biblioteca-ambulante`, `buses-sabanilla`, `comercio-local`.
+  **Canton-level home:** `distritos/<canton>/iniciativas/`, same shape, for
+  initiatives whose scope spans several districts. Built for Montes de Oca:
+  `san-pedro-en-bus`. A district index that one of these touches links to
+  it in a line under the relevant pillar, not as a row of its own.
 - **Related, must stay linked:** `organismos/pilares-desarrollo/index.md`
   (every initiative is framed under a pillar),
   `explicacion/como-se-priorizan-necesidades.md`.

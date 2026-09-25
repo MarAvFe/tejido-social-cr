@@ -10,6 +10,7 @@ description: "Distritos por cantón con comité documentado, estructura municipa
 Distritos del cantón de Montes de Oca con comité de base documentado en este sitio.
 
 - **[Sabanilla](./sabanilla/index.md)** — primer distrito organizado del cantón.
+- **[Iniciativas del cantón](./iniciativas/index.md)** — proyectos que abarcan más de un distrito de Montes de Oca, como San Pedro en Bus.
 - **[Gobierno municipal](./gobierno-municipal.md)** — cómo funciona la Municipalidad de Montes de Oca: estructura, presupuestos participativos, sesiones y concejos de distrito.
 - **[Composición política del Concejo](./composicion-politica-concejo.md)** — la coalición vigente y el panorama electoral (en revisión).
 
