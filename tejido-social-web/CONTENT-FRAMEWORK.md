@@ -314,7 +314,7 @@ creating a new thread, add a row.
 
 ### Thread: **Recursos ante la Sala Constitucional** — civic legal help, not party structure
 
-- **Generic blueprint:** `guias/presentar-recurso-de-amparo.md`.
+- **Generic blueprint:** `recursos/presentar-recurso-de-amparo.md`.
 - **Instance home:** none (the remedy doesn't vary by district).
 - **Invariant:** every claim that paraphrases law is listed in the claim
   register in `LEGAL-REVIEW.md`, and the page keeps its "no revisada por una
@@ -322,7 +322,10 @@ creating a new thread, add a row.
   legal-help artifacts (hábeas corpus, example escritos, the helper) are
   added to that file's artifact table in the same change.
 - **Note:** unlike the rest of the registry this is not about the party's own
-  organization; it sits in `guias/` because it answers "how do I do X".
+  organization. It lives in `recursos/` under an explicit "recurso
+  independiente" notice (the party is not responsible for it), so it must
+  never be moved into `guias/` or `organismos/`, where it would read as party
+  procedure.
 
 ---
 

@@ -2,12 +2,18 @@
 source_label: "Fuente pendiente"
 source_note: "Constitución Política (art. 48), Ley de la Jurisdicción Constitucional N.º 7135 (arts. 35 y 57) y guía de la Sala Constitucional para presentar un recurso de amparo. Los textos vigentes todavía no se cotejaron artículo por artículo y falta la revisión de una persona abogada."
 source_url: "http://www.pgrweb.go.cr/scij/"
-description: "Qué es un recurso de amparo, cómo saber si te corresponde, qué datos reunir para el escrito, cómo se presenta ante la Sala Constitucional y dónde pedir ayuda gratuita."
+description: "Recurso independiente, no del partido: qué es un recurso de amparo, cómo saber si te corresponde, qué datos reunir para el escrito, cómo se presenta ante la Sala Constitucional y dónde pedir ayuda gratuita."
 ---
 
 # Cómo Presentar un Recurso de Amparo
 
 Guía práctica para quien siente que una institución pública le violó un derecho fundamental y quiere pedirle a la Sala Constitucional que lo restablezca. No hace falta ser afiliada al partido ni ser abogada.
+
+:::note[Recurso independiente]
+
+Este es un recurso independiente, de acceso democrático: cualquier persona puede usarlo, sin afiliarse al Frente Amplio ni registrarse en ninguna parte. Vive en esta sección de consulta, pero no es un documento del partido, no fue aprobado por él y el Frente Amplio no responde por su contenido.
+
+:::
 
 :::caution
 

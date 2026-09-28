@@ -15,4 +15,3 @@ Pasos concretos para tareas frecuentes del trabajo distrital.
 - **[Cómo Ampliar el Alcance de una Encuesta Distrital](./ampliar-alcance-encuesta.md)** — crecer la base de respuestas más allá de una encuesta inicial pequeña.
 - **[Cómo Convocar una Reunión Bimestral](./convocar-reunion-bimestral.md)** — guía breve para la Presidencia y la Secretaría del comité.
 - **[Cómo Presentar una Denuncia ante el Tribunal de Ética](./presentar-denuncia-tribunal-etica.md)** — pasos para iniciar y seguir un proceso disciplinario interno del partido.
-- **[Cómo Presentar un Recurso de Amparo](./presentar-recurso-de-amparo.md)** — cómo saber si te corresponde, qué reunir para el escrito y cómo se presenta ante la Sala Constitucional. Sin revisión legal todavía.

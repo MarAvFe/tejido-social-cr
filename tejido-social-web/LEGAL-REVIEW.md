@@ -38,7 +38,7 @@ Last updated: 2026-09-28.
 
 | ID | Artifact | Exists? | Level | Why it needs review | What the reviewer checks |
 | --- | --- | --- | --- | --- | --- |
-| A1 | Guide `docs/guias/presentar-recurso-de-amparo.md` (text and flowchart) | Yes, with notice | B3 | Paraphrases the Constitution and Ley 7135 and tells readers what to do and when. Readers may act on it without a lawyer, which is its purpose. | Every row of the claim register (C1–C13). Whether the flowchart's redirects ("otra vía", "plazo pudo vencer") discourage a valid amparo. |
+| A1 | Guide `docs/recursos/presentar-recurso-de-amparo.md` (text and flowchart) | Yes, with notice | B3 | Paraphrases the Constitution and Ley 7135 and tells readers what to do and when. Readers may act on it without a lawyer, which is its purpose. | Every row of the claim register (C1–C13). Whether the flowchart's redirects ("otra vía", "plazo pudo vencer") discourage a valid amparo. |
 | A2 | Illustration `static/img/asistente-amparo-ilustracion.png` | Yes | V | Shows the imagined interface only. Contains no legal wording (skeleton lines, placeholders) and is labelled as an illustration. | Nothing, as long as it stays that way. Any real legal text added to it becomes part of A4 and needs review. |
 | A3 | Helper: orientation filter (the 3–4 questions, the warnings each answer triggers) | No | B1 | Each rule is a legal judgment (deadline, admissibility against private parties, "another route"). A wrong rule steers people away from a valid remedy. Design rule to keep: it advises, it never blocks. | Rule text and thresholds against Ley 7135 (arts. 35 and 57 at least); that no answer blocks continuing; wording of each warning. |
 | A4 | Helper: amparo question wording and the generated escrito | No | B1 | The output is a legal document filed with the Sala. Fixed boilerplate, the order of sections and how the petition (petitoria) is phrased can make a filing weaker or inadmissible. | Section structure against the Sala's guide; boilerplate; that generated text never asserts more than the person entered; the fields for who files vs. who is harmed. |
@@ -105,6 +105,10 @@ once a year.
    set `unlisted: true` in its frontmatter (reachable by link, out of the
    sidebar and search) until A1 is reviewed. The notice is on the page either
    way.
-3. **Does this sit under the party's name?** If the party publishes it, the
-   party answers for it. If not, it may belong to a different host or
-   organization, and the placement in `guias/` should be revisited.
+3. **Who answers for it?** Decided 2026-09-28: the guide lives in
+   `docs/recursos/` with a visible notice that it is an independent resource
+   and that the Frente Amplio does not answer for it. That removes the party
+   from the liability chain but not the need for review: the people who
+   maintain this site now answer for what it says, which makes a named
+   reviewer more important, not less. The notice must stay on the page and on
+   any future artifact of this family (the helper, the library).

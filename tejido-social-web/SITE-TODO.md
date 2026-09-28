@@ -16,7 +16,7 @@ Meta doc — English throughout, per `CLAUDE.md`'s language rule.
 ## Open items
 
 - [ ] **Amparo guide and assistant blocked on a lawyer** — the guide
-  (`docs/guias/presentar-recurso-de-amparo.md`) is live-ready with a "not
+  (`docs/recursos/presentar-recurso-de-amparo.md`) is live-ready with a "not
   reviewed" notice; the assistant is not built and must not be until
   `LEGAL-REVIEW.md` has a named reviewer and its B1 artifacts are logged as
   reviewed. Verify every claim in that file's register against SCIJ and the
