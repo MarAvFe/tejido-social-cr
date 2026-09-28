@@ -115,5 +115,9 @@ weaken a check to make a change pass. Project skills in `.claude/skills/`:
   config changes, one-off audits and sweeps across published content,
   tooling.
 - `VOICE.md` — editorial voice/tone standard.
+- `LEGAL-REVIEW.md` — artifacts that need a lawyer's review before they
+  ship (today: the amparo guide and the planned helper), the reason for each,
+  and what each one blocks. Read it before touching anything that tells
+  readers how to use the law.
 - `CONTENT-FRAMEWORK.md` — where new content goes and what it links to
   (placement test + concept-thread registry).

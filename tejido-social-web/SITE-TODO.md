@@ -15,6 +15,14 @@ Meta doc — English throughout, per `CLAUDE.md`'s language rule.
 
 ## Open items
 
+- [ ] **Amparo guide and assistant blocked on a lawyer** — the guide
+  (`docs/guias/presentar-recurso-de-amparo.md`) is live-ready with a "not
+  reviewed" notice; the assistant is not built and must not be until
+  `LEGAL-REVIEW.md` has a named reviewer and its B1 artifacts are logged as
+  reviewed. Verify every claim in that file's register against SCIJ and the
+  Sala's pages first. If the assistant is built later: client-side only, load
+  the PDF/Word libraries on that page only, and audit that nothing leaves the
+  browser (the privacy claim depends on it).
 - [ ] **`/calendar` needs its API key set in Netlify before it's live** — the
   real Sabanilla Calendar ID is already in `src/config/calendars.ts` and a
   restricted (HTTP-referrer + API-scope) API key has been confirmed working

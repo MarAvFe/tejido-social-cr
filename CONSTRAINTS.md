@@ -33,6 +33,9 @@ Last reviewed: 2026-09-25.
 - Factual claims about real organizations, people, laws and events are
   sourced and reviewed (`doubt-driven-development`).
 - No private individuals' names or contacts on any page.
+- Content that tells readers how to use the law is not presented as reviewed
+  until a lawyer's review is logged in `tejido-social-web/LEGAL-REVIEW.md`;
+  until then the page carries the visible "not reviewed" notice.
 - Voseo, Spanish for published content, English for meta docs (`VOICE.md`,
   `tejido-social-web/CLAUDE.md`).
 - Nothing from `raw data/` or `padron-backend/` data is committed.

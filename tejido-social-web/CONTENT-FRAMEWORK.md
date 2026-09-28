@@ -312,6 +312,18 @@ creating a new thread, add a row.
   (`organismos/roles-municipales.md`), which is the State, not the party. See
   Part 3 — this folder overlap is flagged for review.
 
+### Thread: **Recursos ante la Sala Constitucional** — civic legal help, not party structure
+
+- **Generic blueprint:** `guias/presentar-recurso-de-amparo.md`.
+- **Instance home:** none (the remedy doesn't vary by district).
+- **Invariant:** every claim that paraphrases law is listed in the claim
+  register in `LEGAL-REVIEW.md`, and the page keeps its "no revisada por una
+  persona abogada" notice until that file's review log says otherwise. New
+  legal-help artifacts (hábeas corpus, example escritos, the helper) are
+  added to that file's artifact table in the same change.
+- **Note:** unlike the rest of the registry this is not about the party's own
+  organization; it sits in `guias/` because it answers "how do I do X".
+
 ---
 
 ## Part 3 — Known conflicts (flagged, some already resolved)
