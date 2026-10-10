@@ -298,6 +298,30 @@ creating a new thread, add a row.
   `transcrip-28ago26-organizacion-municipal.anon.md`). MU1–4 published 2026-09-02; see
   `CONTENT-TODO.md` for per-article sourcing caveats.
 
+### Thread: **Plan Regulador** — cantonal zoning instrument and gentrification fights
+
+- **Generic blueprint:** none yet. Every canton has its own Plan Regulador (it's a
+  Código Municipal mechanism), but no "what is a Plan Regulador / how does an
+  update go through the Concejo" explainer exists on the site yet. This thread
+  starts instance-only — if a second canton's plan regulador fight gets
+  documented, split out the generic mechanics into `organismos/` at that point
+  rather than duplicating the explanation per canton.
+- **Instance home:** `distritos/<canton>/plan-regulador.md`. First one:
+  `distritos/montes-de-oca/plan-regulador.md` — FAQ format (not a full
+  article-by-article walkthrough) covering Montes de Oca's in-progress Proyecto
+  de Actualización and the Fracción Municipal del Frente Amplio's October 2026
+  "Derecho a la Ciudad" amendment package (vivienda asequible, freno a la
+  gentrificación, protección del comercio local, alquileres de corta estancia).
+- **Related, must stay linked:** `distritos/montes-de-oca/gobierno-municipal.md`
+  (the Concejo that will vote on this), `distritos/montes-de-oca/composicion-politica-concejo.md`
+  (who currently sits on it).
+- **Invariant:** the FAQ distinguishes explicitly, question by question, between
+  what the current draft reglamentos say today, what the Frente Amplio proposes
+  changing, and what the source document itself flags as still undefined (e.g.
+  "vivienda asequible" has no legal definition yet in the draft, "mecanismos de
+  permanencia" still needs MIVAH/INVU coordination) — never presenting a
+  not-yet-voted proposal as already-adopted policy.
+
 ### Thread: **Estructura del partido** — district → canton → province → national
 
 - **Generic blueprint:** `organismos/directrices-capb.md`,
