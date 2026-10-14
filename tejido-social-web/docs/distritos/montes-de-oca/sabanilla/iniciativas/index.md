@@ -37,6 +37,7 @@ La ruta a Sabanilla también está cubierta por [San Pedro en Bus](../../iniciat
 | Iniciativa | Estado |
 | --- | --- |
 | **[Comercio local: entrevistas y perfil del distrito](./comercio-local.md)** | En formulación |
+| **[Grupos focales: sentir vecinal](./grupos-focales-sentir-vecinal.md)** | En curso — dos sesiones realizadas, análisis preliminar |
 
 ### Otros pilares
 
@@ -44,6 +45,6 @@ Los demás pilares ([Ambientes Saludables y Espacios Públicos](../../../../orga
 
 ## Qué significa cada estado
 
-Las tres iniciativas están **en formulación**: el comité definió el tema y quién la impulsa, pero todavía no el alcance final, los recursos ni las fechas. Cada página lo dice campo por campo — lo que está decidido aparece como decidido, y lo que falta aparece como pendiente. Se actualizan conforme el comité avance, no antes.
+Tres de las iniciativas están **en formulación**: el comité definió el tema y quién la impulsa, pero todavía no el alcance final, los recursos ni las fechas. Los grupos focales están **en curso**: ya hubo sesiones, pero sus resultados todavía son preliminares. Cada página lo dice campo por campo — lo que está decidido aparece como decidido, y lo que falta aparece como pendiente. Se actualizan conforme el comité avance, no antes.
 
 _El comité tiene menos de un año de constituido — ver [CEC Ampliado](../../../../organismos/cec-ampliado.md) para el estado general de los comités distritales del cantón._

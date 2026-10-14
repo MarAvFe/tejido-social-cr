@@ -117,7 +117,8 @@ creating a new thread, add a row.
   (`iniciativas/<slug>.md`). Was a single flat `iniciativas.md`; split once
   real initiatives arrived, because each accumulates enough detail (interview
   context, per-initiative open questions) to outgrow a table row. Built for
-  Sabanilla: `biblioteca-ambulante`, `buses-sabanilla`, `comercio-local`.
+  Sabanilla: `biblioteca-ambulante`, `buses-sabanilla`, `comercio-local`,
+  `grupos-focales-sentir-vecinal`.
   **Canton-level home:** `distritos/<canton>/iniciativas/`, same shape, for
   initiatives whose scope spans several districts. Built for Montes de Oca:
   `san-pedro-en-bus`. A district index that one of these touches links to
@@ -204,6 +205,16 @@ creating a new thread, add a row.
   page).
 - **Note:** the two guides are **not** duplicates — designing ≠ growing
   reach. Don't merge them.
+- **Qualitative sibling:** the Sabanilla initiative
+  `distritos/montes-de-oca/sabanilla/iniciativas/grupos-focales-sentir-vecinal.md`
+  (focus groups) is the open-ended counterpart to the survey and links to the
+  design guide. Its results live in
+  `distritos/montes-de-oca/sentir-vecinal-2026.md`, which is **`unlisted`
+  on purpose**: reachable by URL only, never linked from any index, sidebar
+  or other page (including the initiative). Participants were told the
+  recordings would not be published, so that article paraphrases themes and
+  must never carry verbatim quotes, segment IDs or anything that identifies
+  a speaker or a session venue.
 
 ### Thread: **Frentes y Secretarías** — party structure by sector, not territory
 
