@@ -121,7 +121,8 @@ creating a new thread, add a row.
   `grupos-focales-sentir-vecinal`.
   **Canton-level home:** `distritos/<canton>/iniciativas/`, same shape, for
   initiatives whose scope spans several districts. Built for Montes de Oca:
-  `san-pedro-en-bus`. A district index that one of these touches links to
+  `san-pedro-en-bus`, `plan-regulador` (teaser that hands the reader off to an
+  external explainer site; it deliberately does not restate the plan). A district index that one of these touches links to
   it in a line under the relevant pillar, not as a row of its own.
 - **Related, must stay linked:** `organismos/pilares-desarrollo/index.md`
   (every initiative is framed under a pillar),

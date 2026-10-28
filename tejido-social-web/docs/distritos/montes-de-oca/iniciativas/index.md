@@ -20,6 +20,7 @@ Cada iniciativa se agrupa bajo el [pilar de desarrollo](../../../organismos/pila
 | Iniciativa | Estado |
 | --- | --- |
 | **[San Pedro en Bus](./san-pedro-en-bus.md)** | En pruebas públicas (UAT) |
+| **[Leer el Plan Regulador](./plan-regulador.md)** | En curso — audiencia pública el 21 de noviembre de 2026 |
 
 ### Otros pilares
 

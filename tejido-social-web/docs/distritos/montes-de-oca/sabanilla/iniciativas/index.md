@@ -30,7 +30,7 @@ Las iniciativas se agrupan bajo el [pilar de desarrollo](../../../../organismos/
 | **[Buses de Sabanilla](./buses-sabanilla.md)** | En formulación — alcance sin definir |
 | Techo para paradas de bus | Ilustrativa — ver [La historia de Angélica](../../../../tutorials/historia-de-angelica.md) |
 
-La ruta a Sabanilla también está cubierta por [San Pedro en Bus](../../iniciativas/san-pedro-en-bus.md), una iniciativa de alcance cantonal.
+La ruta a Sabanilla también está cubierta por [San Pedro en Bus](../../iniciativas/san-pedro-en-bus.md), una iniciativa de alcance cantonal. Desde Sabanilla también salió [Leer el Plan Regulador](../../iniciativas/plan-regulador.md), cantonal porque el plan aplica a todo Montes de Oca.
 
 ### [Participación y Organización Comunitaria](../../../../organismos/pilares-desarrollo/participacion-organizacion.md)
 
