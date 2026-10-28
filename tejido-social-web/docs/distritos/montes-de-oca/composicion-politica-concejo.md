@@ -19,18 +19,18 @@ description: "Composición del Concejo Municipal 2024–2028, reportada desde fu
 El Concejo Municipal de Montes de Oca tiene siete regidurías propietarias, cada una con su suplencia, repartidas — según lo reportado — entre seis partidos o coaliciones distintos:
 
 - **Unidad Social Cristiana** — dos regidurías propietarias. Este partido también ocupa la alcaldía.
-- **La coalición Frente Amplio + Gente Montesoca** (formada para la elección de 2024) — dos regidurías propietarias.
+- **La coalición Frente Amplio + Gente Montes de Oca** (formada para la elección de 2024) — dos regidurías propietarias.
 - **Liberación Nacional** — una regiduría propietaria.
-- **Somos Montedioca** (coalición electoral entre el Partido Humanista y el PAC) — una regiduría propietaria.
+- **Somos Montes de Oca** (coalición electoral entre el Partido Humanista y el PAC) — una regiduría propietaria.
 - **En Común** — un partido cantonal, fundado por una persona que anteriormente militó en el Frente Amplio — una regiduría propietaria.
 
 Las cuatro sindicaturas, una por distrito, se reportan así: San Pedro (Frente Amplio), Sabanilla (Unidad Social Cristiana), San Rafael (Unidad Social Cristiana) y Mercedes (Liberación Nacional — sin suplencia, porque ese partido no postuló a nadie para ese puesto).
 
-## La coalición Frente Amplio + Gente Montesoca
+## La coalición Frente Amplio + Gente Montes de Oca
 
-Para la elección de 2024, el Frente Amplio y el partido cantonal Gente Montesoca formaron una coalición y repartieron puestos entre sí: la alcaldía y una vicealcaldía para Gente Montesoca, la otra vicealcaldía para el Frente Amplio, las regidurías propietarias y suplentes alternadas entre ambos partidos, y las cuatro sindicaturas divididas dos y dos — Frente Amplio en San Pedro y Sabanilla, Gente Montesoca en Mercedes y San Rafael. Las suplencias de cada sindicatura se asignaron al partido contrario y de sexo opuesto a la persona propietaria, para cumplir con la paridad de género (ver **[Concejos de Distrito: Composición y Elección](../../organismos/concejos-de-distrito.md)** sobre esta regla).
+Para la elección de 2024, el Frente Amplio y el partido cantonal Gente Montes de Oca formaron una coalición y repartieron puestos entre sí: la alcaldía y una vicealcaldía para Gente Montes de Oca, la otra vicealcaldía para el Frente Amplio, las regidurías propietarias y suplentes alternadas entre ambos partidos, y las cuatro sindicaturas divididas dos y dos — Frente Amplio en San Pedro y Sabanilla, Gente Montes de Oca en Mercedes y San Rafael. Las suplencias de cada sindicatura se asignaron al partido contrario y de sexo opuesto a la persona propietaria, para cumplir con la paridad de género (ver **[Concejos de Distrito: Composición y Elección](../../organismos/concejos-de-distrito.md)** sobre esta regla).
 
-**Importante: esta coalición ya no funciona como bloque de gobierno**, aunque se haya mantenido para la papeleta. Según lo reportado, tras la elección la regiduría de Gente Montesoca se realineó con el grupo que apoya a la alcaldía. El patrón de votación que se describe en la sesión es, con frecuencia, de cinco votos a favor y dos en contra — con el Frente Amplio en el bloque de los dos. El partido "En Común" también se describe como aliado inicial que pasó a la oposición.
+**Importante: esta coalición ya no funciona como bloque de gobierno**, aunque se haya mantenido para la papeleta. Según lo reportado, tras la elección la regiduría de Gente Montes de Oca se realineó con el grupo que apoya a la alcaldía. El patrón de votación que se describe en la sesión es, con frecuencia, de cinco votos a favor y dos en contra — con el Frente Amplio en el bloque de los dos. El partido "En Común" también se describe como aliado inicial que pasó a la oposición.
 
 ## Presidencia y vicepresidencia del Concejo
 
